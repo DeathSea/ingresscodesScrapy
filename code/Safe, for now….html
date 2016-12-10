@@ -1,0 +1,66 @@
+<div class="entry-content">
+			<p>From the post “<a href="http://investigate.ingress.com/2016/05/10/safe-for-now" target="_blank">Safe, for now…</a>” on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog, we found one code in the image and two codes hidden in the source of the post.</p>
+<p><code>[1] wusytrswwuswsqsztrtysrszwvsswrsw</code><br>
+<code>[2] shz.ugs.kboyd.bqgo.u.vrnl.h.ysr.b</code><br>
+<code>[3] XXIII MXI XII XXIX XXXXI MXI I III XXX XI IX XI CMXI I XII MMIII MMXI MMMXX XX</code></p>
+<p><span id="more-940"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>With a length of 32 characters, it is safe to assume that we might need to somehow pair up the characters.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Can you say the ABC on your fingers?</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Looking at the code you might notice that the first two characters (<code>wu</code>) have an interesting correlation with the Hex ranges for numbers (<em>30-39</em>).<br>
+<code>w</code> and <code>u</code> are the 4th and 6th last characters in the alphabet, subtracting one from each, will give us <code>35</code> that converts to <code>5</code><br>
+From this identification, convert each character to its <a href="http://multidec.web-lab.at/abc.php" target="_blank">Alphabet index</a> where a=25 and z=0<br>
+<code>3 5 7 1 6 8 7 3 3 5 7 3 7 9 7 0 6 8 6 1 7 8 7 0 3 4 7 7 3 8 7 3</code><br>
+Pair the numbers up<br>
+<code>35 71 68 73 35 73 79 70 68 61 78 70 34 77 38 73</code><br>
+Convert from Hex to text for the solve<br>
+<code>5qhs5syphaxp4w8s</code></p>
+<p>Notice that until now <code>syphax</code> was not a valid keyword.<br>
+One smart thing to do sometimes is try to redeem a code before substituting it when the keyword section is a single word.<br>
+This is how we identify new keywords, as was the case here.<br>
+</p></div></div>
+<hr>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>Dots seems to be a split point. Looking at it more closely we can assume that numbers would be written since we can clearly see the passcode format.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">That key has been used before but you’ll need to reorder it </div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>After trying rot, atbash and morse nothing comes out. Let’s try Vigenere.</p>
+<p>Let’s assume that the first part SHZ needs to be a number. The only possible fit would be TWO or SIX. You can “brute” Vigenere by simply typing the numbers as the passphrase.</p>
+<p><code>Passphrase:TWO<br>
+Message: SHZ<br>
+Result:ZLL</code></p>
+<p><code>Passphrase:SIX<br>
+Message:SHZ<br>
+Result:AZC</code></p>
+<p>AZC is an interesting result, seems like the alphabet read AZ next would be BY but there seems to be a skip which explains AZC. Logically the rest of the sequence would then be AZCXEVGTIRKPMNOLQJSHUFWDYB</p>
+<p>Let’s try it:</p>
+<p><code>Passphrase: AZCXEVGTIRKPMNOLQJSHUFWDYB<br>
+Message: shz.ugs.kboyd.bqgo.u.vrnl.h.ysr.b<br>
+Result: six.xcx.eight.meta.j.five.n.two.d</code></p>
+<p class="p1"><code>6xcx8metaj5n2d</code></p>
+<p></p></div></div>
+<p> </p>
+<hr>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>Looks like roman numerals but with those M it would make numbers way to high for decimal.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">– – you might want to look at the distribution . .</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Look closely at how the groups are formed, especially where the numbers would be in the code. Notice that they are all 5 characters long ? In morse we know that numbers use 5 bits.</p>
+<p>We have 4 characters I,X,C &amp; M. By trail and error the only possible combination is that X &amp; C are dashes and I &amp; M are dots</p>
+<p>Let’s translate:<br>
+<code>XXIII MXI XII XXIX XXXXI MXI I III XXX XI IX XI CMXI I XII MMIII MMXI MMMXX XX</code><br>
+<code>--... .-. -.. --.- ----. .-. . ... --- -. .- -. -.-. . -.. ..... ..-. ...-- --</code><br>
+Convert morse to text</p>
+<p class="p1"><code>7rdq9resonanced5f3m</code></p>
+<p></p></div></div>
+<hr>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-940" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/05/13/safe-for-now/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-940" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/05/13/safe-for-now/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-940" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/05/13/safe-for-now/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/05/13/safe-for-now/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

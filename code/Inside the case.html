@@ -1,0 +1,200 @@
+<div class="entry-content">
+			<p>Three codes could be found in the <a class="d-s ot-anchor" tabindex="0" title="Inside the case" href="http://investigate.ingress.com/2016/11/14/inside-the-case/" target="_blank" rel="nofollow">Inside the case</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] 2r3zqasjfji5p6v5</code></p>
+<p><code>[2] lp312shpqfw48rhb</code></p>
+<p><code>[3] htyt-nh-ybb-axwws-;o-/oo-ngb-bybt-hghg-ppo-bygg-thh-gn-//o-l.pl-bgy-b-/-oo-qssxx-p;p-/pl-o.;o-asxxw</code></p>
+<p><span id="more-2113"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>16 characters with the right amount of numbers for a valid passcode</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Make a 4×4 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 36px;"><code>2</code></td>
+<td style="width: 36px;"><code>r</code></td>
+<td style="width: 36px;"><code>3</code></td>
+<td style="width: 51px;"><code>z</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>q</code></td>
+<td style="width: 36px;"><code>a</code></td>
+<td style="width: 36px;"><code>s</code></td>
+<td style="width: 51px;"><code>j</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>f</code></td>
+<td style="width: 36px;"><code>j</code></td>
+<td style="width: 36px;"><code>i</code></td>
+<td style="width: 51px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>p</code></td>
+<td style="width: 36px;"><code>6</code></td>
+<td style="width: 36px;"><code>v</code></td>
+<td style="width: 51px;"><code>5</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read going up from lower left P</p>
+<p><code>pfq26jarvis355jz</code></p>
+<p>Invalid. Jarvis is Roland Jarvis</p>
+<p><code>pfq26roland355jz</code></p>
+<p></p></div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>Passcode format is there, a simple manipulation is needed.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Rot and Atbash didn’t give anything. Let’s convert the string to morse</p>
+<p class="p1"><code>.-.. .--. ...-- .---- ..--- ... .... .--. --.- ..-. .-- ....- ---.. .-. .... -...</code></p>
+<p class="p1">Reverse the morse string</p>
+<p class="p1"><code>...- .... .-. ..--- -.... --. .-.. -.-- .--. .... ... ---.. ----. --... .--. ..-.</code></p>
+<p class="p1">Convert morse to text</p>
+<p class="p1"><code>VHR26GLYPHS897PF</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">Look for what could split the string and examine the groupings</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Dashes are never repeating and seem to be a split point</p>
+<p class="p1"><code>htyt nh ybb axwws ;o /oo ngb bybt hghg ppo bygg thh gn //o l.pl bgy b / oo qssxx p;p /pl o.;o asxxw</code></p>
+<p class="p1">Looking at the different groups we can see the there seems to be 3 sets of characters used</p>
+<table class=" table table-hover" width="129">
+<tbody>
+<tr>
+<td style="text-align: center;" width="43">#1</td>
+<td style="text-align: center;" width="43">#2</td>
+<td style="text-align: center;" width="43">#3</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="43"><code>qw</code></td>
+<td style="text-align: center;" width="43"><code>ty</code></td>
+<td style="text-align: center;" width="43"><code>op</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>as</code></td>
+<td style="text-align: center;"><code>gh</code></td>
+<td style="text-align: center;"><code>l;</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>zx</code></td>
+<td style="text-align: center;"><code>bn</code></td>
+<td style="text-align: center;"><code>./</code></td>
+</tr>
+</tbody>
+</table>
+<p>The biggest groups are 5 characters long. This could indicate morse. For each sets the characters in the left columns are dots and characters in the right columns are dashes.</p>
+<table class=" table table-hover" style="width: 146px;">
+<tbody>
+<tr>
+<td style="width: 71px;"><code>htyt</code></td>
+<td style="width: 71px;"><code>-.-.</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>nh</code></td>
+<td style="width: 71px;"><code>--</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>ybb</code></td>
+<td style="width: 71px;"><code>-..</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>axwws</code></td>
+<td style="width: 71px;"><code>.----</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>;o</code></td>
+<td style="width: 71px;"><code>-.</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>/oo</code></td>
+<td style="width: 71px;"><code>-..</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>ngb</code></td>
+<td style="width: 71px;"><code>-..</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>bybt</code></td>
+<td style="width: 71px;"><code>.-..</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>hghg</code></td>
+<td style="width: 71px;"><code>-.-.</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>ppo</code></td>
+<td style="width: 71px;"><code>--.</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>bygg</code></td>
+<td style="width: 71px;"><code>.-..</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>thh</code></td>
+<td style="width: 71px;"><code>.--</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>gn</code></td>
+<td style="width: 71px;"><code>.-</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>//o</code></td>
+<td style="width: 71px;"><code>--.</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>l.pl</code></td>
+<td style="width: 71px;"><code>..-.</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>bgy</code></td>
+<td style="width: 71px;"><code>..-</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>b</code></td>
+<td style="width: 71px;"><code>.</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>/</code></td>
+<td style="width: 71px;"><code>-</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>oo</code></td>
+<td style="width: 71px;"><code>..</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>qssxx</code></td>
+<td style="width: 71px;"><code>.----</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>p;p</code></td>
+<td style="width: 71px;"><code>---</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>/pl</code></td>
+<td style="width: 71px;"><code>--.</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>o.;o</code></td>
+<td style="width: 71px;"><code>..-.</code></td>
+</tr>
+<tr>
+<td style="width: 71px;"><code>asxxw</code></td>
+<td style="width: 71px;"><code>.----</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>-.-. -- -.. .---- -. -.. -.. .-.. -.-. --. .-.. .-- .- --. ..-. ..- . - .. .---- --- --. ..-. .----</code></p>
+<p>Convert morse to text</p>
+<p><code>CMD1NDDLCGLWAGFUETI1OGF1</code></p>
+<p>We now have 24 characters with a mix of letter and numbers. Could be Base64 but we would need to determine which letters are lowercase and uppercase. Clearly numbers came from set #1. Playing a bit with the string we can determine that set #2 are lowercase and set #3 uppercase</p>
+<p class="p1"><code>cmd1NDdlcGlwaGFueTI1OGF1</code></p>
+<p class="p1">Convert Base64 to text</p>
+<p class="p1"><code>rgu47epiphany258au</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2113" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/11/18/inside-the-case/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2113" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/11/18/inside-the-case/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-2113" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/11/18/inside-the-case/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/11/18/inside-the-case/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

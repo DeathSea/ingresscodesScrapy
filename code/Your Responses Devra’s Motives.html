@@ -1,0 +1,120 @@
+<div class="entry-content">
+			<p>Three codes could be found hidden in the HTML source of the <a class="d-s ot-anchor" tabindex="0" title="Your Responses: Devra’s Motives" href="http://investigate.ingress.com/2016/11/26/your-responses-devras-motives/" target="_blank" rel="nofollow">Your Responses: Devra’s Motives</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] rfdurtipnsfcvstjoosfdussioosfcursiporfcursjpnsecurtjoosfcustiooredvrsiporfdvrtio9</code></p>
+<p><code>[2] 844a@54885\a83862389347984/923\63348256725991</code></p>
+<p><code>[3] gmdcbfiojuerteoidgihbtnfiimvdebsieevgeentioidihbetbp</code></p>
+<p><span id="more-2167"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>81 characters containing only 1 number</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">That 9 is useless except to guide you to the first step</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Strange that there is only one number in the whole string but since there are 81 characters it can be divided in groups of 9 hence the hint.</p>
+<table class=" table table-hover" width="1">
+<tbody>
+<tr>
+<td width="43"><code>rfdurtipn</code></td>
+</tr>
+<tr>
+<td><code>sfcvstjoo</code></td>
+</tr>
+<tr>
+<td><code>sfdussioo</code></td>
+</tr>
+<tr>
+<td><code>sfcursipo</code></td>
+</tr>
+<tr>
+<td><code>rfcursjpn</code></td>
+</tr>
+<tr>
+<td><code>securtjoo</code></td>
+</tr>
+<tr>
+<td><code>sfcustioo</code></td>
+</tr>
+<tr>
+<td><code>redvrsipo</code></td>
+</tr>
+<tr>
+<td><code>rfdvrtio9</code></td>
+</tr>
+</tbody>
+</table>
+<p>If you look at the individual columns you can see that they are formed by only two letters: r/s, e/f, c/d, u/v, r/s, s/t, i/j &amp; n/o</p>
+<p>The only 9 letter keyword that would fit using 1 letter from each column is RECURSION. From these groups, interpret no change to orignal letters as 0 and change as 1</p>
+<table class=" table table-hover" style="width: 222px;">
+<tbody>
+<tr>
+<td style="width: 135px;" colspan="3"><code>recursion</code></td>
+<td style="width: 99px;"><code> </code></td>
+</tr>
+<tr>
+<td style="width: 135px;" colspan="3"><code>rfdurtipn</code></td>
+<td style="width: 99px;"><code>011001010</code></td>
+</tr>
+<tr>
+<td style="width: 135px;" colspan="3"><code>sfcvstjoo</code></td>
+<td style="width: 99px;"><code>110111101</code></td>
+</tr>
+<tr>
+<td style="width: 135px;" colspan="3"><code>sfdussioo</code></td>
+<td style="width: 99px;"><code>111010001</code></td>
+</tr>
+<tr>
+<td style="width: 135px;" colspan="3"><code>sfcursipo</code></td>
+<td style="width: 99px;"><code>110000011</code></td>
+</tr>
+<tr>
+<td style="width: 135px;" colspan="3"><code>rfcursjpn</code></td>
+<td style="width: 99px;"><code>010000110</code></td>
+</tr>
+<tr>
+<td style="width: 135px;" colspan="3"><code>securtjoo</code></td>
+<td style="width: 99px;"><code>100001101</code></td>
+</tr>
+<tr>
+<td style="width: 135px;" colspan="3"><code>sfcustioo</code></td>
+<td style="width: 99px;"><code>110011001</code></td>
+</tr>
+<tr>
+<td style="width: 135px;" colspan="3"><code>redvrsipo</code></td>
+<td style="width: 99px;"><code>001100011</code></td>
+</tr>
+<tr>
+<td style="width: 135px;" colspan="3"><code>rfdvrtio9</code></td>
+<td style="width: 99px;"><code>011101001</code></td>
+</tr>
+</tbody>
+</table>
+<p>We now have 81 binary bit. You can remove the last bit since 9 was used as a hint. This will give 80 bits, group them in 8s</p>
+<p class="p1"><code>01100101 01101111 01111010 00111000 00110100 00110100 00110111 00110010 01100011 01110100</code></p>
+<p class="p1">Convert Binary to Ascii</p>
+<p><code>eoz84472ct</code></p>
+<p>Insert the keyword recursion</p>
+<p><code>eoz84recursion472ct</code></p>
+<p></p></div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>A skip of 2 will reveal two strings with one containing the prefix and suffix in Hex. Although I bruted all keyword, none gave a valid passcode.</p>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>52 characters, you can spot the letters that would make up numbers.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Use a skip of 2</p>
+<p class="p1"><code>gdbijetodibnimdbiegetodhebmcfoureightfiveseveniiibtp</code></p>
+<p class="p1">Split in two groups of 26</p>
+<p class="p1"><code>gdbijetodibnimdbiegetodheb</code><br>
+<code>mcfoureightfiveseveniiibtp</code></p>
+<p class="p1">With the second string, change numbers to numeral form</p>
+<p class="p1"><code>mc48573btp</code></p>
+<p class="p1">Reverse to get prefix and suffix</p>
+<p class="p1"><code>ptb37584cm</code></p>
+<p class="p1">The first string must contain the information to the keyword but I was not able to make sense of it. Played with reversing some groups of letters, found the word bed, hot, mind but did not find the complete solve. I bruted the keyword fear to give the valid passcode</p>
+<p class="p1"><code>ptb37fear584cm</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2167" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/11/30/your-responses-devras-motives/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2167" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/11/30/your-responses-devras-motives/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-2167" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/11/30/your-responses-devras-motives/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/11/30/your-responses-devras-motives/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

@@ -1,0 +1,165 @@
+<div class="entry-content">
+			<p>Three codes were hidden in the <a class="d-s ot-anchor" tabindex="0" title="Susanna’s Visit with Nigel" href="http://investigate.ingress.com/2016/06/07/susannas-visit-with-nigel/" target="_blank" rel="nofollow">Susanna’s Visit with Nigel</a> on the Investigate Ingress blog.</p>
+<p><code>[1] cba1357df9ffff63470014a84cbb1700755e663854000000967117614051d9603b2c1608ce2029c0362cfada5eb48395009000f0ead6</code></p>
+<p><code>[2] fabnournrtzafmaerdgojrrndiptmhcociud</code></p>
+<p><code>[3] oquuwqotoovwnfwetawtsyumw</code></p>
+<p><span id="more-1209"></span></p>
+<h1>Code #1</h1>
+<h2>Obesrvations</h2>
+<p>Seems like hex but values are out of range. Total of 108 characters.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">The pot of gold is at the end of the rainbow</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>108 characters can be divided into 18 groups of 6. Groups of 6 using hexadecimal can be colours.</p>
+<table class=" table table-hover" style="width: 253px;">
+<tbody>
+<tr>
+<td style="width: 74px;" colspan="2"><code>cba135</code></td>
+<td style="width: 277px;"><code>Satin Sheen Gold</code></td>
+</tr>
+<tr>
+<td style="width: 74px;" colspan="2"><code>7df9ff</code></td>
+<td style="width: 277px;"><code>Electric blue</code></td>
+</tr>
+<tr>
+<td style="width: 74px;" colspan="2"><code>ff6347</code></td>
+<td style="width: 277px;"><code>Tomato</code></td>
+</tr>
+<tr>
+<td style="width: 74px;" colspan="2"><code>0014a8</code></td>
+<td style="width: 277px;"><code>Zaffre</code></td>
+</tr>
+<tr>
+<td style="width: 74px;" colspan="2"><code>4cbb17</code></td>
+<td style="width: 277px;"><code>Kelly Green</code></td>
+</tr>
+<tr>
+<td style="width: 74px;" colspan="2"><code>00755e</code></td>
+<td style="width: 277px;"><code>Tropical Rain Forest</code></td>
+</tr>
+<tr>
+<td style="width: 74px;" colspan="2"><code>663854</code></td>
+<td style="width: 277px;"><code>Halaya Ube</code></td>
+</tr>
+<tr>
+<td style="width: 74px;" colspan="2"><code>000000</code></td>
+<td style="width: 277px;"><code>Black</code></td>
+</tr>
+<tr>
+<td style="width: 74px;" colspan="2"><code>967117</code></td>
+<td style="width: 277px;"><code>Drab</code></td>
+</tr>
+<tr>
+<td style="width: 74px;" colspan="2"><code>614051</code></td>
+<td style="width: 277px;"><code>Eggplant</code></td>
+</tr>
+<tr>
+<td style="width: 74px;" colspan="2"><code>d9603b</code></td>
+<td style="width: 277px;"><code>Vermillon</code></td>
+</tr>
+<tr>
+<td style="width: 74px;" colspan="2"><code>2c1608</code></td>
+<td style="width: 277px;"><code>Zinnwaldite</code></td>
+</tr>
+<tr>
+<td style="width: 74px;" colspan="2"><code>ce2029</code></td>
+<td style="width: 277px;"><code>Fire Engine Red</code></td>
+</tr>
+<tr>
+<td style="width: 74px;" colspan="2"><code>c0362c</code></td>
+<td style="width: 277px;"><code>Internation Orange</code></td>
+</tr>
+<tr>
+<td style="width: 74px;" colspan="2"><code>fada5e</code></td>
+<td style="width: 277px;"><code>Jonquil</code></td>
+</tr>
+<tr>
+<td style="width: 74px;" colspan="2"><code>b48395</code></td>
+<td style="width: 277px;"><code>English Lavander</code></td>
+</tr>
+<tr>
+<td style="width: 74px;" colspan="2"><code>009000</code></td>
+<td style="width: 277px;"><code>Islamic Green</code></td>
+</tr>
+<tr>
+<td style="width: 74px;" colspan="2"><code>f0ead6</code></td>
+<td style="width: 277px;"><code>Eggshell</code></td>
+</tr>
+</tbody>
+</table>
+<p>Take the first letter of every colours</p>
+<p class="p1"><code>setzkthb</code><code>devzfijeie</code></p>
+<p class="p1"><code>7tzk3bdevz5j8e</code></p>
+<p class="p1">Notice how the b was for the colour black, blackdev is a valid keyword</p>
+<p class="p1"><code>7tzk3blackdevz5j8e</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p>All letters, go through your normal cipher routine of atbash, rot, morse, transposition, skip, playfair…</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Star trek will reveal the keyword</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>After trying a few cipher, had to look twice at skip of two to see a phrase in there</p>
+<p class="p1"><code>fborrzfargjrdpmccuanuntamedornithoid</code></p>
+<p class="p1">You can see the phrase <code>an untamed ornithoid</code></p>
+<p class="p1">We have an equal amount of gibberish letter and that phrase</p>
+<p class="p1">Use vigenere to reveal the prefix and suffix</p>
+<p class="p1">Passphrase: <code>anuntamedornithoid</code></p>
+<p class="p1">Message: <code>fborrzfargjrdpmccu</code></p>
+<p class="p1">Result:  <code>foueyztwossevwfour</code></p>
+<p class="p1"><code>4eyz2 s7w4r</code></p>
+<p class="p1">Now for the keyword.</p>
+<p class="p1">Searching on google revealed that in Star Trek Data once stated he was possibly “pursuing an untamed ornithoid without cause”. Data is a valid keyword.</p>
+<p class="p1"><code>4eyz2datas7w4r</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p>25 letters, again go through your usual cipher routine</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Grid 5×5 reveals the answer</p>
+<table class=" table table-hover" style="width: 1px;" width="1">
+<tbody>
+<tr>
+<td width="43"><code>o</code></td>
+<td width="43"><code>q</code></td>
+<td width="43"><code>u</code></td>
+<td width="43"><code>u</code></td>
+<td width="43"><code>w</code></td>
+</tr>
+<tr>
+<td><code>q</code></td>
+<td><code>o</code></td>
+<td><code>t</code></td>
+<td><code>o</code></td>
+<td><code>o</code></td>
+</tr>
+<tr>
+<td><code>v</code></td>
+<td><code>w</code></td>
+<td><code>n</code></td>
+<td><code>f</code></td>
+<td><code>w</code></td>
+</tr>
+<tr>
+<td><code>e</code></td>
+<td><code>t</code></td>
+<td><code>a</code></td>
+<td><code>w</code></td>
+<td><code>t</code></td>
+</tr>
+<tr>
+<td><code>s</code></td>
+<td><code>y</code></td>
+<td><code>u</code></td>
+<td><code>m</code></td>
+<td><code>w</code></td>
+</tr>
+</tbody>
+</table>
+<p class="p1">Read up from the bottom left s</p>
+<p class="p1"><code>sevqoytwoquantumwfouwtwow</code></p>
+<p class="p1"><code>7qoy2quantumw4w2w</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1209" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/06/13/susannas-visit-with-nigel/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1209" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/06/13/susannas-visit-with-nigel/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1209" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/06/13/susannas-visit-with-nigel/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/06/13/susannas-visit-with-nigel/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

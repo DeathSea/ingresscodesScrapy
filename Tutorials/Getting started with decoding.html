@@ -1,0 +1,83 @@
+<div class="entry-content">
+			<p><a id="top"></a>Welcome to the world of Ingress passcode solving. By checking out this tutorial, you’ve taken the first step to ascend beyond the ranks of a field agent.</p>
+<p>In this tutorial series, we’ll be going through a few basic topics, we’ll be adding more topics as they are written.</p>
+<ul>
+<li><a href="#top">Where to look for codes</a></li>
+<li><a href="https://ingress.codes/2016/05/10/brief-introduction-to-ciphers/" target="_blank">Brief introduction to ciphers</a></li>
+<li><a href="https://ingress.codes/2016/05/19/useful-tools-and-weblinks-for-decoding/" target="_blank">Useful links</a></li>
+</ul>
+<p>This post will discuss where to look for codes.</p>
+<p><span id="more-741"></span></p>
+<h1>Daily Codes</h1>
+<p>Daily Codes are currently found on <a href="http://investigate.ingress.com/">Niantic’s Investigation Blog</a>. They are usually hidden within the source code of the page but some codes are found in an image associated with the post.</p>
+<p>There are usually 3 codes per day and codes are released every day unless there is an <a href="#IngressReports">Ingress Report</a>.</p>
+<h2>Source Code</h2>
+<p>There are various ways to access the source code of a page depending on your operating system and web browser. I’ll leave that up to you to figure out. On mobile, there isn’t an easy way to view the source code.</p>
+<p>The codes will always be in-between the <code>&lt;div id="entry-content"&gt;</code> and <code>&lt;/div&gt;&lt;!-- .entry-content --&gt;</code> lines. Codes can be hidden at the end of URLs, <code>alt</code> attributes, within <code>&lt;span&gt;</code> tags.</p>
+<h3>URLs</h3>
+<p>A good indication that a URL has a code is the presence of a <code>#</code>. In a URL, anything after the <code>#</code> is considered a fragment identifier. When you visit a URL with a fragment identifier, it visits the chosen URL (everything before the first <code>#</code>), and would visit the section of a webpage that is identified by the fragment identifier, if it is there.</p>
+<p>In the <a href="http://investigate.ingress.com/2016/04/23/where-ideas-come-from/">Where Ideas Come From</a> post, the link for Operación Excalibur looks like this:</p>
+<p><code>https://plus.google.com/events/cvsvpaa6lfpst7ovia1sqambgv8#ohp5wpd6tp5s2etni</code></p>
+<p><code>https://plus.google.com/events/cvsvpaa6lfpst7ovia1sqambgv8</code> is the page it is visiting</p>
+<p><code>ohp5wpd6tp5s2etni</code> is the code</p>
+<p>Also from the same page, there is a link to the Synchronicity Wikipedia entry:</p>
+<p><code>https://en.wikipedia.org/wiki/Synchronicity#bo37#ttu2#yme1rt</code></p>
+<p>But there are 3 #, the first one in the URL separates the URL and code:</p>
+<p><code>https://en.wikipedia.org/wiki/Synchronicity</code></p>
+<p><code>bo37#ttu2#yme1rt</code></p>
+<h3><code>alt/id</code> Attributes</h3>
+<p><code>alt</code> attributes are used in HTML <code>&lt;img&gt;</code> tags to text when an image is not displayed. <code>id</code> attributes are used in various HTML to name a block.</p>
+<p>Looking at <a href="http://investigate.ingress.com/2016/04/22/the-eruption-of-vesuvius/">The Eruption of Vesuvius</a> post, there is one image at the top of the page:</p>
+<p><code>&lt;img class="aligncenter size-large wp-image-1085" src="http://investigate.ingress.com/wp-content/uploads/2016/04/TheEruption-1024x951.png" alt="n13k23tn1137ufu3" width="1024" height="951" srcset="http://investigate.ingress.com/wp-content/uploads/2016/04/TheEruption-300x279.png 300w, http://investigate.ingress.com/wp-content/uploads/2016/04/TheEruption-768x714.png 768w, http://investigate.ingress.com/wp-content/uploads/2016/04/TheEruption-1024x951.png 1024w, http://investigate.ingress.com/wp-content/uploads/2016/04/TheEruption.png 1200w" sizes="(max-width: 1024px) 100vw, 1024px" /&gt;</code></p>
+<p><code>alt="n13k23tn1137ufu3" </code>and the code is <code>n13k23tn1137ufu3</code></p>
+<h3><code>&lt;span&gt;</code> tags</h3>
+<p><code>&lt;span&gt;</code> tags are places in a blog post where codes can be found.</p>
+<p>Looking at the <a href="http://investigate.ingress.com/2016/04/26/oliver-lynton-wolfe-missing/">Oliver Lynton-Wolfe Missing</a> post:</p>
+<p><code>&lt;span style="display: none; font-size: 4px;"&gt;htmamip3hseh27r2&lt;/span&gt;</code></p>
+<p>Sometimes, there are clues within the <code>&lt;span&gt;</code> tag attributes. In this example, <code>font-size: 4px;</code> is a clue.</p>
+<h3>Gotchas</h3>
+<p>Certain symbols are sometimes encoded in HTML entities, most notably the <code>&amp;</code> symbol.</p>
+<p>In <a href="http://investigate.ingress.com/2016/04/24/pacs-weekly-wrap-up-april-24-2016/">PAC’s Weekly Wrap-Up: April 24, 2016</a>, one of the codes is a URL:</p>
+<p><code>http://investigate.ingress.com/2016/04/16/the-balance-of-the-universe/#j*c%d&amp;erif$abb^</code></p>
+<p><code>&amp;amp;</code> is the entity that converts into <code>&amp;</code>, and it must be converted before a code solve attempt.</p>
+<p><code>j*c%d&amp;amp;erif$abb^</code></p>
+<p><code>j*c%d&amp;erif$abb^</code></p>
+<p>There are other entities that are used and you can find a HTML entity decoder to convert these.</p>
+<h2>Images</h2>
+<p>Sometimes code are embedded into images.</p>
+<p>In the <a href="http://investigate.ingress.com/2016/04/21/change-the-universe/">Change The Universe</a> post’s <a href="http://investigate.ingress.com/wp-content/uploads/2016/04/ChangeTheUniverse.png">image</a>, there are two codes.</p>
+<p>The original image is on the left, with the right one having highlights where the codes are found.</p>
+<p><a href="https://i0.wp.com/ingress.codes/wp-content/uploads/2016/05/ChangeTheUniverse.png?ssl=1"><img class="alignnone wp-image-742 size-large" src="https://i0.wp.com/ingress.codes/wp-content/uploads/2016/05/ChangeTheUniverse.png?resize=648%2C436&amp;ssl=1" alt="ChangeTheUniverse" srcset="https://i0.wp.com/ingress.codes/wp-content/uploads/2016/05/ChangeTheUniverse.png?resize=1024%2C689&amp;ssl=1 1024w, https://i0.wp.com/ingress.codes/wp-content/uploads/2016/05/ChangeTheUniverse.png?resize=300%2C202&amp;ssl=1 300w, https://i0.wp.com/ingress.codes/wp-content/uploads/2016/05/ChangeTheUniverse.png?resize=768%2C517&amp;ssl=1 768w, https://i0.wp.com/ingress.codes/wp-content/uploads/2016/05/ChangeTheUniverse.png?w=1296&amp;ssl=1 1296w, https://i0.wp.com/ingress.codes/wp-content/uploads/2016/05/ChangeTheUniverse.png?w=1944&amp;ssl=1 1944w" sizes="(max-width: 648px) 100vw, 648px" data-recalc-dims="1"></a></p>
+<p><code>ItIlcoNm0hcIsGmsIl</code></p>
+<p><code>fg!edi0afenVnbt00vehtwt!ziXarf3rzert</code></p>
+<h2><a id="IngressReports"></a>Ingress Reports</h2>
+<p>Ingress Reports usually have 3 codes in the episode and are available as annotations. Waiting for annotations to display on screen is tedious so there is a shortcut available.</p>
+<p>The annotations are available as XML. For the Ingress Report on April 24 2016 (Aegis Nova Revealed), the link to the video:</p>
+<p><code>https://wwww.youtube.com/watch?v=AZeeziJYpGE</code></p>
+<p>and the link to the annotation:</p>
+<p><code>https://www.youtube.com/annotations_invideo?features=1&amp;legacy=1&amp;video_id=AZeeziJYpGE</code></p>
+<p>Change the end of the annotation URL to match the video URL and you can get any video’s annotation XML.</p>
+<p>Inside the XML, the codes are usually within the &lt;TEXT&gt; tags.</p>
+<p><code>&lt;TEXT&gt;f7upu6tilanif6y6by&lt;/TEXT&gt;</code></p>
+<p><code>&lt;TEXT&gt;--... .. --. -. .---- .-.- --. .--- - .-.- --... -.. ..--- -...&lt;/TEXT&gt;</code></p>
+<p><code>&lt;TEXT&gt;ada3zc36qq9&lt;/TEXT&gt;</code></p>
+<p>However, sometimes, this is not enough for a complete solve (missing keyword, etc), and you must go back to the video at the annotation’s appearance for a hint. For example, for <code>ada3zc36qq3</code> (there is no keyword sub for this code), this is the relevant XML that tells you when the annotation appears:</p>
+<p><code>&lt;TEXT&gt;ada3zc36qq9&lt;/TEXT&gt;</code><br>
+<code>&lt;segment&gt;</code><br>
+<code>  &lt;movingRegion type="rect"&gt;</code><br>
+<code>    &lt;rectRegion d="0" h="7.8220000267" t="1:05.259" w="25.8719997406" x="6.33900022507" y="3.36599993706"/&gt;</code><br>
+<code>    &lt;rectRegion d="0" h="7.8220000267" t="1:10.300" w="25.8719997406" x="6.33900022507" y="3.36599993706"/&gt;</code><br>
+<code>  &lt;/movingRegion&gt;</code><br>
+<code>&lt;/segment&gt;</code></p>
+<p>The annotation first appears at 1 minute 5 seconds in the video and disappears at 1 minute 10 seconds.</p>
+<h1>Word of the Day</h1>
+<p>The Word of the Day codes are found in links posted by <a href="https://plus.google.com/u/0/+JoJoStratton/posts">JoJo Straton on Google+</a> and are tagged with <a href="https://plus.google.com/u/0/explore/jojoingresswotd">#jojoingresswotd</a>.</p>
+<p>Word of the Day codes are also usually found in the source code and the majority of them are inside <code>&lt;code&gt;</code> tags. Sometimes they are hidden elsewhere: inside the <code>&lt;style&gt;</code> tag, in a <code>&lt;meta&gt;</code> tag, inside comment tags (<code>&lt;!--</code> <code>--&gt;</code>), maybe even the background image itself.</p>
+<h1>Anomaly Codes</h1>
+<p>Anomaly Codes are announced by <a href="https://plus.google.com/u/0/109846653838501599116/posts">Verum Inveniri</a> and the location of such codes changes each time.</p>
+<h1>VI Access Dive</h1>
+<p>Access Dive codes are found on <a href="http://veruminveniri.com/">VerumInveniri.com</a> whenever there is an active Access Dive. The latest Access Dive as of this post is <a href="http://veruminveniri.com/ad4/console">Access Dive 4</a>.</p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-741" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/05/02/getting-started-with-decoding/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-741" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/05/02/getting-started-with-decoding/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-741" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/05/02/getting-started-with-decoding/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/05/02/getting-started-with-decoding/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

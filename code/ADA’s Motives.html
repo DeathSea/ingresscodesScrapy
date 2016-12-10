@@ -1,0 +1,79 @@
+<div class="entry-content">
+			<p>Within the post “<a href="http://investigate.ingress.com/2016/05/14/adas-motives/" target="_blank">ADA’s Motives</a>” on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog, we can find two codes inside the source and one on the image in the post.</p>
+<p><code>[1] 3j2m5mes4get</code><br>
+<code>[2] y1000y01o1o10qqqy9fffcy280387zx09fuxpcjpyjjjpypyjpyjjpccrcfypjfjuxxrzxczqzcb0000000b00000100</code><br>
+<code>[3] bqryc2l3b6qx4rxzory34ry6lp46j</code></p>
+<p><span id="more-967"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>Looks like we have everything needed for a passocde, that means we’ll just need to rearrange it somehow.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Write the code into a grid of 4×3</p>
+<p> </p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="padding: 2px;"><code>3</code></td>
+<td style="padding: 2px;"><code>j</code></td>
+<td style="padding: 2px;"><code>2</code></td>
+<td style="padding: 2px;"><code>m</code></td>
+</tr>
+<tr>
+<td style="padding: 2px;"><code>5</code></td>
+<td style="padding: 2px;"><code>m</code></td>
+<td style="padding: 2px;"><code>e</code></td>
+<td style="padding: 2px;"><code>s</code></td>
+</tr>
+<tr>
+<td style="padding: 2px;"><code>4</code></td>
+<td style="padding: 2px;"><code>g</code></td>
+<td style="padding: 2px;"><code>e</code></td>
+<td style="padding: 2px;"><code>t</code></td>
+</tr>
+</tbody>
+</table>
+<p>Start at the bottom and read each row normally for the solve<br>
+<code>4get5mes3j2m</code></p>
+<p></p></div></div>
+<hr>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>A very long string of letters and numbers not revealing much as to how to decode.<br>
+The normal Rot, Atbash, Vig or transpositions do not reveal anything.<br>
+Seems like we need to find something else entirely.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Sometimes the <em>art</em> of decoding is in the eye of the beholder.</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Convert the entire string to it’s <a href="https://en.wikipedia.org/wiki/Morse_code" target="_blank">Morse</a> equivalent.<br>
+<code>-.-- .---- ----- ----- ----- -.-- ----- .---- --- .---- --- .---- ----- --.- --.- --.- -.-- ----. ..-. ..-. ..-. -.-. -.-- ..--- ---.. ----- ...-- ---.. --... --.. -..- ----- ----. ..-. ..- -..- .--. -.-. .--- .--. -.-- .--- .--- .--- .--. -.-- .--. -.-- .--- .--. -.-- .--- .--- .--. -.-. -.-. .-. -.-. ..-. -.-- .--. .--- ..-. .--- ..- -..- -..- .-. --.. -..- -.-. --.. --.- --.. -.-. -... ----- ----- ----- ----- ----- ----- ----- -... ----- ----- ----- ----- ----- .---- ----- ----- </code></p>
+<p>Ignoring the spaces, group everything into a grid of 79×5<br>
+<code>-.--.--------------------.-------.-------.-------.-----------.---.---.--.------<br>
+...-...-...-.-.-.-.--..------..-----...-----..--...--..-..----------...-...--..<br>
+-.--.-.-..---.--.-.--.---.---.---.--.-.--.--.-.--.---.--.-.--.---.---.--.-.-.-.<br>
+-..-.-.-...-.-.--.--..---..-..---..--..--..-.-.--..-..--.-.--..--.---..-.-.-...<br>
+------------------------------------...-------------------------.--------------</code></p>
+<p>Replacing all the <code>-</code> with spaces and the <code>.</code> with any type of block character, you will see something interesting.</p>
+<pre> ▓  ▓                    ▓       ▓       ▓       ▓           ▓   ▓   ▓  ▓      
+▓▓▓ ▓▓▓ ▓▓▓ ▓ ▓ ▓ ▓  ▓▓      ▓▓     ▓▓▓     ▓▓  ▓▓▓  ▓▓ ▓▓          ▓▓▓ ▓▓▓  ▓▓
+ ▓  ▓ ▓ ▓▓   ▓  ▓ ▓  ▓   ▓   ▓   ▓  ▓ ▓  ▓  ▓ ▓  ▓   ▓  ▓ ▓  ▓   ▓   ▓  ▓ ▓ ▓ ▓
+ ▓▓ ▓ ▓ ▓▓▓ ▓ ▓  ▓  ▓▓   ▓▓ ▓▓   ▓▓  ▓▓  ▓▓ ▓ ▓  ▓▓ ▓▓  ▓ ▓  ▓▓  ▓   ▓▓ ▓ ▓ ▓▓▓
+                                    ▓▓▓                         ▓              
+</pre>
+<p>Since it might look a bit weird depending on what browser you are using, I have included an image below:<br>
+<img class="alignnone size-thumbnail wp-image-973" src="https://i1.wp.com/ingress.codes/wp-content/uploads/2016/05/20160515.png?resize=150%2C78&amp;ssl=1" alt="20160515" srcset="https://i1.wp.com/ingress.codes/wp-content/uploads/2016/05/20160515.png?resize=150%2C78&amp;ssl=1 150w, https://i1.wp.com/ingress.codes/wp-content/uploads/2016/05/20160515.png?zoom=2&amp;resize=150%2C78&amp;ssl=1 300w, https://i1.wp.com/ingress.codes/wp-content/uploads/2016/05/20160515.png?zoom=3&amp;resize=150%2C78&amp;ssl=1 450w" sizes="(max-width: 150px) 100vw, 150px" data-recalc-dims="1"></p>
+<p>Write out what you see.<br>
+<code>thexvsisigintsnijtha</code><br>
+Substituting out the written numbers, we get our final solve<br>
+<code>3exv6sigints9j3a</code></p>
+<p></p></div></div>
+<hr>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>No solve is currently known for this code. If you have solved it, let us know either via the comments or feedback section.</p>
+<p><!-- [hint][/hint][spoiler][/spoiler] --></p>
+<hr>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-967" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/05/18/adas-motives/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-967" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/05/18/adas-motives/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-967" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/05/18/adas-motives/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/05/18/adas-motives/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

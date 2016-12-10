@@ -1,0 +1,58 @@
+<div class="entry-content">
+			<p>3 codes where found hidden in the HTML of the <a href="http://investigate.ingress.com/2016/05/07/mission-in-san-diego-accomplished/">Mission in San Diego: Accomplished</a> post on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog.</p>
+<p>[1] <code>xruofqhgiezruatonimerhtezherht</code></p>
+<p>[2] <code>5b3a45a4b3b32c51db32cc25a4a4a4d1c22cc24ac2d15b3a4d15a4c2c2</code></p>
+<p>[3] <code>h5169d89a65527g7a57695fa282</code></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>We see characters that could spell numbers.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Look for the hidden <em>srebmun</em></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Near the start we see rouf or four backwards.</p>
+<p><code>xruofqhgiezruatonimerhtezherht</code></p>
+<p>Reversing the string:</p>
+<p><code>threhzethreminotaurzeighqfourx</code></p>
+<p>Convert numbers to digits.  Note they only use the first four characters of spelled numbers.</p>
+<p><code>thre hze thre minotaurz eigh q four x</code></p>
+<p><code>3 hze 3 minotaur z 8 q 4 x</code></p>
+<p><code>3hze3minotaurz8q4x</code></p>
+<p></p></div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>We see numbers and letters.  Ranges seem limited and some combinations seem to repeat.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">It’s not hex.  Note the limited range of numbers and letters. Except for the 5’s, we can group in pairs.  What do you notice about the value of the pairs.</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>We see that some pairs repeat.  Keep the 5 separate, and group the rest into pairs.  5 is lonely.</p>
+<p class="p1"><code>5 b3 a4 5 a4 b3 b3 2c 5 1d b3 2c c2 5 a4 a4 a4 d1 c2 2c c2 4a c2 d1 5 b3 a4 d1 5 a4 c2 c2</code></p>
+<p class="p1">Notice how each pair ‘adds’ up to 5.  <span id=":ky.co" class="tL8wMe EMoHub" dir="ltr">What systems have groupings of 5 things?  N</span><span id=":kx.co" class="tL8wMe EMoHub" dir="ltr">umbers in Morse.</span></p>
+<p class="p1">Use a run length encoding (RLE) convert numbers to .’s and letters to -‘s  e.g.:  <code>b = --</code>  , <code>3 = ...</code></p>
+<p class="p1"><code>..... --... -.... ..... -.... --... --... ..--- ..... .---- --... ..--- ---.. ..... -.... -.... -.... ----. ---.. ..--- ---.. ....- ---.. ----. ..... --... -.... ----. ..... -.... ---.. ---..</code></p>
+<p class="p1">Decrypt from morse:</p>
+<p class="p1"><code>57656772517285666982848957695688</code></p>
+<p class="p1">Group them into pairs and convert from Dec to Ascii</p>
+<p class="p1"><code>57 65 67 72 51 72 85 66 69 82 84 89 57 69 56 88</code></p>
+<p class="p1"><code>9ACH3HUBERTY9E8X</code></p>
+<p class="p1"></p></div></div>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>We see a jumble of numbers and letters.  Letters are not valid for hex.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Separate the letters from numbers.  Convert for the keyword</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Separate the number and letters:</p>
+<p><code>51698965527757695282   hdagafa</code></p>
+<p>Group them into pairs and convert the numbers from decimal</p>
+<p><code>51 69 89 65 52 77 57 69 52 82</code>   –&gt;  <code>3EYA4M9E4R</code></p>
+<p>We have our fixes.</p>
+<p>The letters don’t match the pattern of a known keyword (<code>^..(.).\1.\1$)</code> and google search isn’t helpful so we have to try something else.</p>
+<p>Convert the letters to numbers using A=0</p>
+<p>7306050</p>
+<p>Now a google search finds a worth watching video:</p>
+<div class="embed-vimeo" style="text-align: center;"><iframe src="https://player.vimeo.com/video/7306050" width="648" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+<p>Note the title is a known key word:  MORE</p>
+<p>Combining we get:</p>
+<p><code>3EYA4moreM9E4R</code></p>
+<p></p></div></div>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-859" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/05/12/mission-in-san-diego-accomplished/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-859" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/05/12/mission-in-san-diego-accomplished/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-859" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/05/12/mission-in-san-diego-accomplished/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/05/12/mission-in-san-diego-accomplished/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

@@ -1,0 +1,93 @@
+<div class="entry-content">
+			<p>Inside the post “<a href="http://investigate.ingress.com/2016/06/03/not-currently-possible/" target="_blank">Not Currently Possible</a>” on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog, there are two codes hidden in the source and one displayed on the image itself:</p>
+<p><code>[1] ad766f7bae8d7a889a879aab7aab9a</code><br>
+<code>[2] sitnidenmoftimkpwnfip</code><br>
+<code>[3] t3c4yiflb8vvp4</code></p>
+<p><span id="more-1172"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>Looks like hex, but on the other side of the ranges as what we need when pairing and converting them.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>There is one cipher that we can always use when the ranges are the wrong way around!</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Using the Hex version of Atbash (<code>0123456789abcdef</code> = <code>fedcba9876543210</code>), translate the given text.<br>
+<code>528990845172857765786554855465</code><br>
+Pair them up<br>
+<code>52 89 90 84 51 72 85 77 65 78 65 54 85 54 65</code><br>
+Convert from decimal to text for the final solve<br>
+<code>4YZT3HUMANA6U6A</code></p>
+<p></p></div></div>
+<hr>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>We can spot some numbers in the code (<code>si</code>, <code>fi</code>, <code>ni</code>), so potentially we have everything there, just need to rearrange them.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Look for the keyword, then arrange them so to make it readable.</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Form a grid of 3×7 with the text</p>
+<table class=" table table-hover" style="width:1px">
+<tr>
+<td style="padding:5px"><code>s</code></td>
+<td style="padding:5px"><code>i</code></td>
+<td style="padding:5px"><code>t</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>n</code></td>
+<td style="padding:5px"><code>i</code></td>
+<td style="padding:5px"><code>d</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>e</code></td>
+<td style="padding:5px"><code>n</code></td>
+<td style="padding:5px"><code>m</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>o</code></td>
+<td style="padding:5px"><code>f</code></td>
+<td style="padding:5px"><code>t</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>i</code></td>
+<td style="padding:5px"><code>m</code></td>
+<td style="padding:5px"><code>k</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>p</code></td>
+<td style="padding:5px"><code>w</code></td>
+<td style="padding:5px"><code>n</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>f</code></td>
+<td style="padding:5px"><code>i</code></td>
+<td style="padding:5px"><code>p</code></td>
+</tr>
+</table>
+<p>Read each row normally, but starting at the last row (<code>fip</code>, then <code>pwn</code>, etc)<br>
+<code>fippwnimkoftenmnidsit</code></p>
+<p>Replace the written numbers with numbers for the final solve:<br>
+<code>5ppw9mkoftenm9d6t</code></p>
+<p></p></div></div>
+<hr>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>Format is there, albeit in reverse order.<br>
+Seems easy enough, the normal solve steps should give us something.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>When you see something that fits, try it on before exchanging it for something else.</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Get the reverse out of the way first<br>
+<code>4pvv8blfiy4c3t</code><br>
+Running the normal Atbash (with numbers Atbash this time, <code>123456789</code> = <code>987654321</code>) against the code, we are left with this<br>
+<code>6kee2yourb6x7g</code></p>
+<p>From our list we see that <em>your</em> is not a known valid keyword.<br>
+After attempting to substitute it with anything that could be a valid keyword and getting no valid codes, we are left with just one option: <em>Try it as is.</em><br>
+Putting the code into the scanner and getting a valid passcode response, we have found ourselfs a new keyword: <strong><em><code>your</code></em></strong></p>
+<p></p></div></div>
+<hr>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1172" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/06/07/not-currently-possible/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1172" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/06/07/not-currently-possible/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1172" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/06/07/not-currently-possible/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/06/07/not-currently-possible/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

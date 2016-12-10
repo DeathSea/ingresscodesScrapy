@@ -1,0 +1,186 @@
+<div class="entry-content">
+			<p>Three codes were hidden in the <a class="d-s ot-anchor" tabindex="0" title="My thoughts at the brink of Aegis Nova" href="http://investigate.ingress.com/2016/07/15/thoughts-at-the-brink-of-aegis-nova" target="_blank" rel="nofollow">My thoughts at the brink of Aegis Nova</a> post on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog.</p>
+<p><code>[1] 112325152421244313453135444542154315445221243435</code></p>
+<p><code>[2] brk71shnre774sl</code></p>
+<p><code>[3] 704407703330444033304440222044020660403308090777704440333066606609999</code></p>
+<p><span id="more-1407"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>48 numbers ranging from 1 to 5. There is a cipher that uses that range.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">5×5 square</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Numbers ranging from 1 to 5 usually means a Polybius square cipher</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 10px;"></td>
+<td style="width: 9px;">1</td>
+<td style="width: 15px;">2</td>
+<td style="width: 10px;">3</td>
+<td style="width: 10px;">4</td>
+<td style="width: 47px;">5</td>
+</tr>
+<tr>
+<td style="width: 10px;">1</td>
+<td style="width: 9px;">a</td>
+<td style="width: 15px;">b</td>
+<td style="width: 10px;">c</td>
+<td style="width: 10px;">d</td>
+<td style="width: 47px;">e</td>
+</tr>
+<tr>
+<td style="width: 10px;">2</td>
+<td style="width: 9px;">f</td>
+<td style="width: 15px;">g</td>
+<td style="width: 10px;">h</td>
+<td style="width: 10px;">j</td>
+<td style="width: 47px;">k</td>
+</tr>
+<tr>
+<td style="width: 10px;">3</td>
+<td style="width: 9px;">l</td>
+<td style="width: 15px;">m</td>
+<td style="width: 10px;">n</td>
+<td style="width: 10px;">o</td>
+<td style="width: 47px;">p</td>
+</tr>
+<tr>
+<td style="width: 10px;">4</td>
+<td style="width: 9px;">q</td>
+<td style="width: 15px;">r</td>
+<td style="width: 10px;">s</td>
+<td style="width: 10px;">t</td>
+<td style="width: 47px;">u</td>
+</tr>
+<tr>
+<td style="width: 10px;">5</td>
+<td style="width: 9px;">v</td>
+<td style="width: 15px;">w</td>
+<td style="width: 10px;">x</td>
+<td style="width: 10px;">y</td>
+<td style="width: 47px;">z</td>
+</tr>
+</tbody>
+</table>
+<p>Separate the string in pairs to make it easier</p>
+<p class="p1"><code>11 23 25 15 24 21 24 43 13 45 31 35 44 45 42 15 43 15 44 52 21 24 34 35</code></p>
+<p class="p1">Each pair correspond to a letter on the grid (11=a, 23=h…)</p>
+<p class="p1"><code>ahkeifisculpturesetwfiop</code></p>
+<p class="p1"><code>ahk85sculpture725op</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">It’s the right passcode format, go through your usual cipher routine</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Atbash and ROT not giving anything good, let’s try some morse manipulation</p>
+<p class="p1">Convert the string to morse</p>
+<p class="p1"><code>-... .-. -.- --... .---- ... .... -. .-. . --... --... ....- ... .-..</code></p>
+<p class="p1">Reverse the morse code</p>
+<p class="p1"><code>..-. ... -.... ...-- ...-- . .-. .- .... ... ----. ...-- -.- .-. ...-</code></p>
+<p class="p1">Convert morse to text</p>
+<p class="p1"><code>FS633ERAHS93KRV</code></p>
+<p class="p1">Reverse</p>
+<p class="p1"><code>VRK39SHARE336SF</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">All numbers most of them repeating except for 0.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">0 is used as a split</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">This is a classic phone cipher. The 0 is used as a split.</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 121px;"><code>7</code></td>
+<td style="width: 159px;"><code>p</code></td>
+</tr>
+<tr>
+<td style="width: 121px;"><code>44</code></td>
+<td style="width: 159px;"><code>h</code></td>
+</tr>
+<tr>
+<td style="width: 121px;"><code>77</code></td>
+<td style="width: 159px;"><code>q</code></td>
+</tr>
+<tr>
+<td style="width: 121px;"><code>333</code></td>
+<td style="width: 159px;"><code>f</code></td>
+</tr>
+<tr>
+<td style="width: 121px;"><code>444</code></td>
+<td style="width: 159px;"><code>i</code></td>
+</tr>
+<tr>
+<td style="width: 121px;"><code>333</code></td>
+<td style="width: 159px;"><code>f</code></td>
+</tr>
+<tr>
+<td style="width: 121px;"><code>444</code></td>
+<td style="width: 159px;"><code>i</code></td>
+</tr>
+<tr>
+<td style="width: 121px;"><code>222</code></td>
+<td style="width: 159px;"><code>c</code></td>
+</tr>
+<tr>
+<td style="width: 121px;"><code>44</code></td>
+<td style="width: 159px;"><code>h</code></td>
+</tr>
+<tr>
+<td style="width: 121px;"><code>2</code></td>
+<td style="width: 159px;"><code>a</code></td>
+</tr>
+<tr>
+<td style="width: 121px;"><code>66</code></td>
+<td style="width: 159px;"><code>n</code></td>
+</tr>
+<tr>
+<td style="width: 121px;"><code>4</code></td>
+<td style="width: 159px;"><code>g</code></td>
+</tr>
+<tr>
+<td style="width: 121px;"><code>33</code></td>
+<td style="width: 159px;"><code>e</code></td>
+</tr>
+<tr>
+<td style="width: 121px;"><code>8</code></td>
+<td style="width: 159px;"><code>t</code></td>
+</tr>
+<tr>
+<td style="width: 121px;"><code>9</code></td>
+<td style="width: 159px;"><code>w</code></td>
+</tr>
+<tr>
+<td style="width: 121px;"><code>7777</code></td>
+<td style="width: 159px;"><code>s</code></td>
+</tr>
+<tr>
+<td style="width: 121px;"><code>444</code></td>
+<td style="width: 159px;"><code>i</code></td>
+</tr>
+<tr>
+<td style="width: 121px;"><code>333</code></td>
+<td style="width: 159px;"><code>f</code></td>
+</tr>
+<tr>
+<td style="width: 121px;"><code>666</code></td>
+<td style="width: 159px;"><code>o</code></td>
+</tr>
+<tr>
+<td style="width: 121px;"><code>66</code></td>
+<td style="width: 159px;"><code>n</code></td>
+</tr>
+<tr>
+<td style="width: 121px;"><code>9999</code></td>
+<td style="width: 159px;"><code>z</code></td>
+</tr>
+</tbody>
+</table>
+<p class="p1"><code>phqfifichangetwsifonz</code></p>
+<p class="p1"><code>phq55change264nz</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1407" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/07/17/my-thoughts-at-the-brink-of-aegis-nova/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1407" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/07/17/my-thoughts-at-the-brink-of-aegis-nova/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1407" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/07/17/my-thoughts-at-the-brink-of-aegis-nova/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/07/17/my-thoughts-at-the-brink-of-aegis-nova/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

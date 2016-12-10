@@ -1,0 +1,86 @@
+<div class="entry-content">
+			<p>There were 3 codes found in the <a href="http://investigate.ingress.com/2016/04/01/a-dangerous-path/">A Dangerous Path</a> post on the <a href="http://investigate.ingress.com/">Investigation Blog</a>.</p>
+<p><code>[1] 9170910231408070803030403150917020508061<br>
+[2] uy2fpy1lpc7xzx6ylyj2jpvjppry72fqlplqs<br>
+[3] ODJz20gBHvxCLHJBIPgn<br>
+</code></p>
+<p><span id="more-380"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>There is a significant number of <code>0</code>‘s and <code>1</code>‘s in the code, looking at pairs of numbers:</p>
+<p><code>91 70 91 02 31 40 80 70 80 30 30 40 31 50 91 70 20 50 80 61</code></p>
+<p>The <code>0</code>‘s and <code>1</code>‘s are mostly found in the second digit.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Reversing each pair of numbers shows us all the numbers are within 26:</p>
+<p><code>19 07 19 20 13 04 08 07 08 03 03 04 13 05 19 07 02 05 08 16</code></p>
+<p>Substituting the numbers to their alphabet equivalent, using <code>a = 0</code>:</p>
+<p><code>thtuneihiddenfthcfiq<br>
+3tun8hiddenf3c5q<br>
+</code></p>
+<p></p></div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>There is a random assortment of 37 letters and numbers, 37 is prime so transposition won’t work easily. Reencoding the code may give us more favourable lengths.</p>
+<p>Encoding all characters to Morse code:</p>
+<p><code>..- -.-- ..--- ..-. .--. -.-- .---- .-.. .--. -.-. --... -..- --.. -..- -.... -.-- .-.. -.-- .--- ..--- .--- .--. ...- .--- .--. .--. .-. -.-- --... ..--- ..-. --.- .-.. .--. .-.. --.- ...</code></p>
+<p>Shows us there are 152 dits and dahs</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>152 has a factor of 8 in it. ASCII values are 8-bit. Splitting the Morse encoding into groups of 8:</p>
+<p><code>..--.--.</code><br>
+<code>.---..-.</code><br>
+<code>.--.-.--</code><br>
+<code>.----.-.</code><br>
+<code>..--.-.-</code><br>
+<code>.--...-.</code><br>
+<code>.---..-.</code><br>
+<code>.--....-</code><br>
+<code>.--.-..-</code><br>
+<code>.--.---.</code><br>
+<code>.---.---</code><br>
+<code>.--....-</code><br>
+<code>.---.--.</code><br>
+<code>.--..-.-</code><br>
+<code>.----...</code><br>
+<code>..---..-</code><br>
+<code>.--.-.-.</code><br>
+<code>..--..-.</code><br>
+<code>.--.-...</code></p>
+<p>Substituting the dits for <code>0</code>, and dahs for <code>1</code>:</p>
+<p><code>00110110</code><br>
+<code>01110010</code><br>
+<code>01101011</code><br>
+<code>01111010</code><br>
+<code>00110101</code><br>
+<code>01100010</code><br>
+<code>01110010</code><br>
+<code>01100001</code><br>
+<code>01101001</code><br>
+<code>01101110</code><br>
+<code>01110111</code><br>
+<code>01100001</code><br>
+<code>01110110</code><br>
+<code>01100101</code><br>
+<code>01111000</code><br>
+<code>00111001</code><br>
+<code>01101010</code><br>
+<code>00110010</code><br>
+<code>01101000</code></p>
+<p>And finally, converting from binary to ASCII:</p>
+<p><code>6rkz5brainwavex9j2h</code></p>
+<p></p></div></div>
+<h1>Code #3</h1>
+<h2>Observation</h2>
+<p>The characters in the code look like they are in Base64 encoding, but when passed through a Base64 decoder, there are a lot of non-ASCII characters.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Having a <code>M</code>, <code>N</code>, or <code>O</code> is typically a clue that a decoded Base64 starts with a number.</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>The code ends in with the letter n, in lowercase. Reversing the code and converting lowercase to uppercase and vice-versa:</p>
+<p><code>NGpibjhlcXVhbG02Zjdo</code></p>
+<p>Decoding the Base64 string:</p>
+<p><code>4jbn8equalm6f7h</code></p>
+<p></p></div></div>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-380" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/04/08/a-dangerous-path/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-380" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/04/08/a-dangerous-path/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-380" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/04/08/a-dangerous-path/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/04/08/a-dangerous-path/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

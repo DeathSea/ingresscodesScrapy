@@ -1,0 +1,88 @@
+<div class="entry-content">
+			<p>Hidden within the source of the “<a href="http://investigate.ingress.com/2016/06/08/hank-the-aegis-nova-conflict/" target="_blank">Hank: The Aegis Nova Conflict</a>” post on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog, there were two codes:</p>
+<p><code>[1] 81/27dw352/16eb96/16nx88/4ni60/12ho16/8hs30/15bf84/14iw1/1</code><br>
+<code>[2] watrthsqdgdnonohubfd</code></p>
+<p><span id="more-1216"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>The string seems a bit weird for a single passcode and since we have only two codes to solve from the post, there might be two codes within this code.<br>
+Let us split them in a way that seems logically:<br>
+<code>81/27dw352/16eb96/16nx88/4ni60/12ho16/8hs30/15bf84/14iw1/1</code><br>
+becomes<br>
+<code>1a:      dw      eb     nx    ni     ho    hs     bf     iw   </code><br>
+<code>1b: 81/27  352/16  96/16  88/4  60/12  16/8  30/15  84/14  1/1</code></p>
+<p>Let us take care of <strong>1a</strong> first:<br>
+<code>dwebnxnihohsbfiw</code></p>
+<p>The length looks good for everything to be there and a keyword can be spotted, but the numbers are missing so we will need to either find them or become creative.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Find the transposition to make the keyword readable, then look at what you have in the locations for the numbers.</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Form a grid of 2×8 of all the characters</p>
+<table class=" table table-hover" style="width:1px">
+<tr>
+<td style="padding:5px"><code>d</code></td>
+<td style="padding:5px"><code>w</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>e</code></td>
+<td style="padding:5px"><code>b</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>n</code></td>
+<td style="padding:5px"><code>x</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>n</code></td>
+<td style="padding:5px"><code>i</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>h</code></td>
+<td style="padding:5px"><code>o</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>h</code></td>
+<td style="padding:5px"><code>s</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>b</code></td>
+<td style="padding:5px"><code>f</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>i</code></td>
+<td style="padding:5px"><code>w</code></td>
+</tr>
+</table>
+<p>Read each row normally, but starting at the bottom (<code>iw</code> then <code>bf</code>)<br>
+<code>iwbfhshoninxebdw</code><br>
+Notice that in the positions of the numbers, we have letters that are not greater than <code>J</code>. Which means we can use the <a href="http://multidec.web-lab.at/abc.php" target="_blank">Alphaindex</a> of each character to obtain numbers (marked with capital letters below).<br>
+<code>IwbfHshoninxEbDw</code><br>
+If you should use the index of <em>a=1..z=26</em> or <em>a=0..z=25</em> will be determined by trail &amp; error, but most of the time it will be <em>a=0..z=25</em>.<br>
+Doing the above step with our code gives us the final valid passcode:<br>
+<code>8wbf7shoninx4b3w</code></p>
+<p></p></div></div>
+<p>Now for <strong>1b</strong>:<br>
+<code>81/27 352/16 96/16 88/4 60/12 16/8 30/15 84/14 1/1</code><br>
+Doing the given math for each section, we see that the left side is evenly dividable by the right side (eg. <code>81 / 27 = 3</code> )</p>
+<p>But that is currently as far as we have gotten.<br>
+If you have a solve for this, let us know via one of the avenues of contacting us.</p>
+<hr>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>Length of the code points to potentially written our numbers.<br>
+The normal basic steps of Atbash, ROT and Rectangles gives no visible solution, so we’ll need another kind of ciphers.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>They haven’t used this one for a few months, but it should be there in your toolbox of things to try.<br>
+Be fair and give all your known ciphers a chance to solve it for you 😉</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Running our code through the <a href="http://rumkin.com/tools/cipher/playfair.php" target="_blank">Playfair</a> cipher, we get a very usable text with a keyword in plain view.<br>
+<code>vbsqsirubiconmnireia</code><br>
+Substitute the first letter with its Roman Numeral and the rest of the letters that are written out for the final solve.<br>
+<code>5bsq6rubiconm9r8a</code></p>
+<p></p></div></div>
+<hr>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1216" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/06/13/hank-the-aegis-nova-conflict/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1216" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/06/13/hank-the-aegis-nova-conflict/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1216" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/06/13/hank-the-aegis-nova-conflict/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/06/13/hank-the-aegis-nova-conflict/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

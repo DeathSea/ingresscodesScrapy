@@ -1,0 +1,108 @@
+<div class="entry-content">
+			<p>Three codes were found in the <a class="d-s ot-anchor" tabindex="0" title="Worlds Enough" href="http://investigate.ingress.com/2016/10/21/worlds-enough/" target="_blank" rel="nofollow">Worlds Enough</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] 2544295850304528343123415554554533</code></p>
+<p><code>[2] 170409231303H131720L1920af0520JKc12b2117</code></p>
+<p><code>[3] #%!@$!@!@$$$@##!#$$#$#$#@$$$%@$#@$!$$$</code></p>
+<p><span id="more-1968"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>34 numbers. Look closely at the distribution to find the hint to the cipher.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Easiest thing with this is to start with pairs</p>
+<p class="p1"><code>25 44 29 58 50 30 45 28 34 31 23 41 55 54 55 45 33</code></p>
+<p class="p1">Look at where numbers should fall in the passcode format. They are all in the 50 range. Atbash the numbers</p>
+<p class="p1"><code>85 66 81 52 50 70 65 82 76 79 87 69 55 56 55 65 77</code></p>
+<p class="p1">Convert decimal to Ascii</p>
+<p class="p1"><code>UBQ42FARLOWE787AM</code></p>
+<p class="p1">Invalid. Farlowe is Hubert Farlowe</p>
+<p class="p1"><code>ubq42hubert787am</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">A mix of numbers, capital letters and lowercase letters.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">There is a cipher that uses all three type of characters but they mixed them up</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">The fact that we have numbers, capital and lowercase letters points to Base64. Start by making pairs with the numbers</p>
+<p class="p1"><code>17 04 09 23 13 03 H 13 17 20 L 19 20 a f 05 20 J K c 12 b 21 17</code></p>
+<p class="p1">Convert numbers to cap letters, cap letters to lowercase and lowercase to numbers</p>
+<p class="p1"><code>REJXNDhNRUlTU05FUjk2M1VR</code></p>
+<p class="p1">Convert Base64 to text</p>
+<p class="p1"><code>DBW48MEISSNER963UQ</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">All symbols</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Well lets convert those symbols to there respective numbers on the keyboard.</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 378px;"><code>#%!@$!@!@$$$@##!#$$#$#$#@$$$%@$#@$!$$$</code></td>
+</tr>
+<tr>
+<td style="width: 378px;"><code>35124121244423313443434324445243241444</code></td>
+</tr>
+</tbody>
+</table>
+<p>We now have numbers ranging from 1 to 5. This could be a Polybius square</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 10px;"></td>
+<td style="width: 9px;">1</td>
+<td style="width: 15px;">2</td>
+<td style="width: 10px;">3</td>
+<td style="width: 10px;">4</td>
+<td style="width: 21px;">5</td>
+</tr>
+<tr>
+<td style="width: 10px;">1</td>
+<td style="width: 9px;">a</td>
+<td style="width: 15px;">b</td>
+<td style="width: 10px;">c</td>
+<td style="width: 10px;">d</td>
+<td style="width: 21px;">e</td>
+</tr>
+<tr>
+<td style="width: 10px;">2</td>
+<td style="width: 9px;">f</td>
+<td style="width: 15px;">g</td>
+<td style="width: 10px;">h</td>
+<td style="width: 10px;">j</td>
+<td style="width: 21px;">k</td>
+</tr>
+<tr>
+<td style="width: 10px;">3</td>
+<td style="width: 9px;">l</td>
+<td style="width: 15px;">m</td>
+<td style="width: 10px;">n</td>
+<td style="width: 10px;">o</td>
+<td style="width: 21px;">p</td>
+</tr>
+<tr>
+<td style="width: 10px;">4</td>
+<td style="width: 9px;">q</td>
+<td style="width: 15px;">r</td>
+<td style="width: 10px;">s</td>
+<td style="width: 10px;">t</td>
+<td style="width: 21px;">u</td>
+</tr>
+<tr>
+<td style="width: 10px;">5</td>
+<td style="width: 9px;">v</td>
+<td style="width: 15px;">w</td>
+<td style="width: 10px;">x</td>
+<td style="width: 10px;">y</td>
+<td style="width: 21px;">z</td>
+</tr>
+</tbody>
+</table>
+<p>Using this grid convert each pairs of numbers to its corresponding letter</p>
+<p class="p1"><code>pbqfithlosssitwsidt</code></p>
+<p class="p1"><code>pbq53loss626dt</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1968" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/10/24/worlds-enough/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1968" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/10/24/worlds-enough/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1968" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/10/24/worlds-enough/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/10/24/worlds-enough/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

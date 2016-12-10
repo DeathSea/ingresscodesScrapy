@@ -1,0 +1,147 @@
+<div class="entry-content">
+			<p>Three codes were found in the <a class="d-s ot-anchor" tabindex="0" title="PAC’S WEEKLY WRAP-UP: OCTOBER 23, 2016" href="http://investigate.ingress.com/2016/10/23/pacs-weekly-wrap-up-october-23-2016/" target="_blank" rel="nofollow">PAC’S WEEKLY WRAP-UP: OCTOBER 23, 2016</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] bcbbbbccdbcdgcbbecbbddfcbebdbdbccbbbbdcbccdcbdbbbbbcdbcccbbbcdcbccbcdcbbbbbdbbdebbb</code></p>
+<p><code>[2] xlhgvvrwwzzrptpnihhpkgafctille</code></p>
+<p><code>[3] eedpnbeecsilniytnaigthecnhhrbketrego</code></p>
+<p><span id="more-1980"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>All letters ranging between B &amp; G and lots of them repeating.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>With that type of range, letters to numbers is probably a safe bet</p>
+<p class="p1"><code>12111122312362114211335214131312211113212232131111123122211123212212321111131134111</code></p>
+<p class="p1">If you add up all the digits in the string you get 152. 152 can be divided by 8 which could mean binary. Use Run Length Encoding to get the following binary string</p>
+<p class="p1"><code>01101010 01100010 01110000 00110100 00110100 01110000 01101111 01110111 01100101 01110010 01100011 01110101 01100010 01100101 00111001 00110110 00110101 01110100 01111010</code></p>
+<p class="p1">Convert binary to Ascii</p>
+<p class="p1"><code>jbp44powercube965tz</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">30 letters with no particular range.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Haven’t seen this in a while but your hint is “A”</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">After trying multiple cipher including morse, BiFid, Playfair I opted for one that hasn’t been used in a long time: Vigenere Autokey with A</p>
+<p class="p1"><code>xotninesevencryptotwosixfouruk</code></p>
+<p class="p1"><code>xot97crypto264uk</code></p>
+<p class="p1">Yep, sometimes you just need to try stuff !!!</p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">36 letters… that a perfect square!</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">It’s a square but mixed up</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Make a 6×6 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 36px;"><code>e</code></td>
+<td style="height: 24px; width: 36px;"><code>e</code></td>
+<td style="height: 24px; width: 36px;"><code>d</code></td>
+<td style="height: 24px; width: 36px;"><code>p</code></td>
+<td style="height: 24px; width: 37px;"><code>n</code></td>
+<td style="height: 24px; width: 67px;"><code>b</code></td>
+</tr>
+<tr style="height: 24.3438px;">
+<td style="height: 24.3438px; width: 36px;"><code>e</code></td>
+<td style="height: 24.3438px; width: 36px;"><code>e</code></td>
+<td style="height: 24.3438px; width: 36px;"><code>c</code></td>
+<td style="height: 24.3438px; width: 36px;"><code>s</code></td>
+<td style="height: 24.3438px; width: 37px;"><code>i</code></td>
+<td style="height: 24.3438px; width: 67px;"><code>l</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 36px;"><code>n</code></td>
+<td style="height: 24px; width: 36px;"><code>i</code></td>
+<td style="height: 24px; width: 36px;"><code>y</code></td>
+<td style="height: 24px; width: 36px;"><code>t</code></td>
+<td style="height: 24px; width: 37px;"><code>n</code></td>
+<td style="height: 24px; width: 67px;"><code>a</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 36px;"><code>i</code></td>
+<td style="height: 24px; width: 36px;"><code>g</code></td>
+<td style="height: 24px; width: 36px;"><code>t</code></td>
+<td style="height: 24px; width: 36px;"><code>h</code></td>
+<td style="height: 24px; width: 37px;"><code>e</code></td>
+<td style="height: 24px; width: 67px;"><code>c</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 36px;"><code>n</code></td>
+<td style="height: 24px; width: 36px;"><code>h</code></td>
+<td style="height: 24px; width: 36px;"><code>h</code></td>
+<td style="height: 24px; width: 36px;"><code>r</code></td>
+<td style="height: 24px; width: 37px;"><code>b</code></td>
+<td style="height: 24px; width: 67px;"><code>k</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 36px;"><code>e</code></td>
+<td style="height: 24px; width: 36px;"><code>t</code></td>
+<td style="height: 24px; width: 36px;"><code>r</code></td>
+<td style="height: 24px; width: 36px;"><code>e</code></td>
+<td style="height: 24px; width: 37px;"><code>g</code></td>
+<td style="height: 24px; width: 67px;"><code>o</code></td>
+</tr>
+</tbody>
+</table>
+<p>We have some numbers in there but things are out of place. The BlackO columns sort of gives it away for the keyword which should be BlackOps. Let’s rearrange the columns in this way: 3, 1, 6, 4, 2, 5</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 35px;"><code>d</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 36px;"><code>b</code></td>
+<td style="width: 37px;"><code>p</code></td>
+<td style="width: 37px;"><code>e</code></td>
+<td style="width: 55px;"><code>n</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>c</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 36px;"><code>l</code></td>
+<td style="width: 37px;"><code>s</code></td>
+<td style="width: 37px;"><code>e</code></td>
+<td style="width: 55px;"><code>i</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>y</code></td>
+<td style="width: 36px;"><code>n</code></td>
+<td style="width: 36px;"><code>a</code></td>
+<td style="width: 37px;"><code>t</code></td>
+<td style="width: 37px;"><code>i</code></td>
+<td style="width: 55px;"><code>n</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>t</code></td>
+<td style="width: 36px;"><code>i</code></td>
+<td style="width: 36px;"><code>c</code></td>
+<td style="width: 37px;"><code>h</code></td>
+<td style="width: 37px;"><code>g</code></td>
+<td style="width: 55px;"><code>e</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>h</code></td>
+<td style="width: 36px;"><code>n</code></td>
+<td style="width: 36px;"><code>k</code></td>
+<td style="width: 37px;"><code>r</code></td>
+<td style="width: 37px;"><code>h</code></td>
+<td style="width: 55px;"><code>b</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>r</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 36px;"><code>o</code></td>
+<td style="width: 37px;"><code>e</code></td>
+<td style="width: 37px;"><code>t</code></td>
+<td style="width: 55px;"><code>g</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read going down from the upper left D</p>
+<p class="p1"><code>dcythreenineblackopsthreeeightninebg</code></p>
+<p class="p1"><code>dcy39blackops389bg</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1980" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/10/27/pacs-weekly-wrap-up-october-23-2016/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1980" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/10/27/pacs-weekly-wrap-up-october-23-2016/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1980" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/10/27/pacs-weekly-wrap-up-october-23-2016/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/10/27/pacs-weekly-wrap-up-october-23-2016/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

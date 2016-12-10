@@ -1,0 +1,94 @@
+<div class="entry-content">
+			<p>Three codes were found hidden in the <a href="http://investigate.ingress.com/2016/05/05/a-mission-in-san-diego/" target="_blank">A Mission in San Diego</a> post on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog.</p>
+<p><code>[1] 2bqa7mlmztu2b4p</code></p>
+<p><code>[2] ohodwxfsxnysxndsiqfdc</code></p>
+<p><code>[3] wwkugrdgwuwdkugswdwgordswgdrkwurkgwskd</code></p>
+<p><span id="more-794"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>It has the right passcode format, go through the usual set of tools (atbash, rot, morse…) to try to find the answer.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">If your a gamer you’ll see were you need to Link</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;"><br>
+That one was not obvious. ROT and Morse didn’t give any hint of a keyword sub. The only thing that makes it look a bit better is Atbash.
+<p class="p1"><code>8yjz3nonagf8y6k</code></p>
+<p class="p1">Nonag doesn’t really mean anything but reversed it gives Ganon. Any of you played The legend of Zelda right to the end ? Ganon is the final boss you needed to defeat with Link.</p>
+<p class="p1"><code>8yjz3linkf8y6k</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p>Again, go through your normal routine of atbash, rot, morse… to see what you can get.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Well no easy way to explain that one, it comes with experience and gut feeling. It’s all letters so most probable that the numbers are to be in the written form. First thing is try to see if you have repeated letter sequence.</p>
+<p class="p1">ohodwxf<code>sxn</code>y<code>sxn</code>dsiqfdc</p>
+<p class="p1">Next step would be to see how you can convert SXN to a number and also OHO since they are the first letters of the code that needs to start with a number.</p>
+<p class="p1">Atbash doesn’t give anything. Let’s try ROT. ROT +1 on SXN is interesting. It give TYO, really close to TWO. To get the X to convert to W it would need to be ROT -1. What if we alternate ROT -1 &amp; ROT +1</p>
+<p><code>ohodwxfsxnysxndsiqfdc</code><br>
+<code>-+-+-+-+-+-+-+-+-+-+-</code><br>
+<code>ninevyetwoxtwocthreeb</code></p>
+<p>We now have</p>
+<p><code>9vye2x2c3b</code></p>
+<p>No keyword and no hints. Maybe the method is the hint, seeing those -1 +1 on graph would be a wave right ?</p>
+<p><code>9vye2wavex2c3b</code></p>
+<p></p></div></div>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>Nothing special to notice. High level letters could mean binary RLE, again, go through your normal routine for all letter code.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">This one uses 2 ciphers, you’ll need to feel your way through all the bumps</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>First instinct was to think binary RLE by converting the letters to numbers but the sum of the numbers wasn’t divisible by 8. Let try morse:</p>
+<p class="p1"><code>.-- .-- -.- ..- --. .-. -.. --. .-- ..- .-- -.. -.- ..- --. ... .-- -.. .-- --. --- .-. -.. ... .-- --. -.. .-. -.- .-- ..- .-. -.- --. .-- ... -.- -..</code></p>
+<p class="p1">The sum of characters is 114. Divided by 6 is gives 19 which is a good length for a passcode. Let’s see how we can convert that to braille. One way I find that is quick and easy is to remove all the space and make a 3 by X rectangle. In this case it’s 3 by 38.</p>
+<p><code>.--<br>
+.--<br>
+-.-<br>
+..-<br>
+--.<br>
+.-.<br>
+-..<br>
+--.<br>
+.--<br>
+..-<br>
+.--<br>
+-..<br>
+-.-<br>
+..-<br>
+--.<br>
+...<br>
+.--<br>
+-..<br>
+.--<br>
+--.<br>
+---<br>
+.-.<br>
+-..<br>
+...<br>
+.--<br>
+--.<br>
+-..<br>
+.-.<br>
+-.-<br>
+.--<br>
+..-<br>
+.-.<br>
+-.-<br>
+--.<br>
+.--<br>
+...<br>
+-.-<br>
+-..</code></p>
+<p>I then use a transposition cipher to make them horizontal<br>
+<code>..-.-.--...--.-..-.--.-..--.-...--..--<br>
+--..--.--.-...-.-.----..--.-.-.-.--...<br>
+----....---.--..-.-.-...-...---.-.-.-.</code></p>
+<p>And then simply add spaces to make groups of two on each lines<br>
+<code>.. -. -. -- .. .- -. -. .- .- -. -. .- -. -. .. -- .. --<br>
+-- .. -- .- -. -. .. -. -. -- -- .. -- .- .- .- .- -. ..<br>
+-- -- .. .. -- -. -- .. -. -. -. .. -. .. -- -. -. -. -.</code></p>
+<p>Finally convert braille to text</p>
+<p class="p1"><code>7uhd8substratez9n2m</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-794" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/05/08/a-mission-in-san-diego/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-794" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/05/08/a-mission-in-san-diego/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-794" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/05/08/a-mission-in-san-diego/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/05/08/a-mission-in-san-diego/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

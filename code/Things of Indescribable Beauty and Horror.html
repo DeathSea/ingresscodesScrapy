@@ -1,0 +1,189 @@
+<div class="entry-content">
+			<p>Three codes were hidden in the <a class="d-s ot-anchor" tabindex="0" title="Things of Indescribable Beauty and Horror" href="http://investigate.ingress.com/2016/10/14/things-of-indescribable-beauty-and-horror/" target="_blank" rel="nofollow">Things of Indescribable Beauty and Horror</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] \//\\\//\//\/\/\\///\\/\\\//\//\\\///\\\\\///\\\\\//\/\/\\//\///\///\\\/\//\\\//</code></p>
+<p><code>[2] 53063064839495f52738508515165p475062m</code></p>
+<p><code>[3] अष्टएकअष्टअष्टसप्तशून्यपञ्चत्रिपञ्चत्रिदर्शनपञ्चसप्तपञ्चत्रिपञ्चएकषष्अष्टअष्टअष्ट</code></p>
+<p><span id="more-1936"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>80 characters using only combinations of / and \</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>80 can be divided by 8 which would make 10 words. Exactly what we need for a prefix and suffix. Let’s make groups of 8</p>
+<p><code>\//\\\// \//\/\/\ \///\\/\ \\//\//\ \\///\\\ \\///\\\ \\//\/\/ \\//\/// \///\\\/ \//\\\//</code></p>
+<p>Convert \ to 0 and / to 1</p>
+<p class="p1"><code>01100011 01101010 01110010 00110110 00111000 00111000 00110101 00110111 01110001 01100011</code></p>
+<p class="p1">Convert binary to Ascii</p>
+<p class="p1"><code>cjr68857qc</code></p>
+<p class="p1">I had to brute the keyword, got “message”. You could say that a combination of /\/\ could make up the glyph for message.</p>
+<p class="p1"><code>cjr68message857qc</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">37 characters, mostly numbers and 3 letters</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">37 characters, first thing that comes to mind is to try morse</p>
+<p class="p1"><code>..... ...-- ----- -.... ...-- ----- -.... ....- ---.. ...-- ----. ....- ----. ..... ..-. ..... ..--- --... ...-- ---.. ..... ----- ---.. ..... .---- ..... .---- -.... ..... .--. ....- --... ..... ----- -.... ..--- --</code></p>
+<p class="p1">Nice distribution of dots and dashes. Let’s group them splitting after each groups of dashes</p>
+<table class=" table table-hover" style="width: 179px;">
+<tbody>
+<tr>
+<td style="width: 173px;"><code>........--------</code></td>
+</tr>
+<tr>
+<td style="width: 173px;"><code>.......--------</code></td>
+</tr>
+<tr>
+<td style="width: 173px;"><code>........----</code></td>
+</tr>
+<tr>
+<td style="width: 173px;"><code>.....------</code></td>
+</tr>
+<tr>
+<td style="width: 173px;"><code>.....-----</code></td>
+</tr>
+<tr>
+<td style="width: 173px;"><code>........-</code></td>
+</tr>
+<tr>
+<td style="width: 173px;"><code>........-----</code></td>
+</tr>
+<tr>
+<td style="width: 173px;"><code>......-----</code></td>
+</tr>
+<tr>
+<td style="width: 173px;"><code>.......--------</code></td>
+</tr>
+<tr>
+<td style="width: 173px;"><code>........----</code></td>
+</tr>
+<tr>
+<td style="width: 173px;"><code>......-----</code></td>
+</tr>
+<tr>
+<td style="width: 173px;"><code>..........--</code></td>
+</tr>
+<tr>
+<td style="width: 173px;"><code>.....---</code></td>
+</tr>
+<tr>
+<td style="width: 173px;"><code>........------</code></td>
+</tr>
+<tr>
+<td style="width: 173px;"><code>......-----</code></td>
+</tr>
+</tbody>
+</table>
+<p>Count the numbers of dots and dashes in each groups</p>
+<p class="p1"><code>88 78 84 56 55 81 85 65 78 84 65 102 53 86 65</code></p>
+<p class="p1">That 102 seems out of place, it should be interpreted as ….. …..– then 50 52</p>
+<p class="p1"><code>88 78 84 56 55 81 85 65 78 84 65 50 52 53 86 65</code></p>
+<p class="p1">Convert decimal to Ascii</p>
+<p class="p1"><code>XNT87QUANTA245VA</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">You’ll need to find what language it is.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">There is an error on one of the number position in the code</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Convert Sanskrit to English</p>
+<p class="p1"><code>astaekaastaastasaptasunyapancatripancatridarsanapancasaptapancatripancaekasasastaastaasta</code></p>
+<p class="p1">Split Sanskrit numbers and convert them to numerals except for the keyword part which is darsana</p>
+<table class=" table table-hover" style="width: 118px;">
+<tbody>
+<tr style="height: 24.3438px;">
+<td style="height: 24.3438px; width: 79px;"><code>asta</code></td>
+<td style="height: 24.3438px; width: 27px;"><code>8</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 79px;"><code>eka</code></td>
+<td style="height: 24px; width: 27px;"><code>1</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 79px;"><code>asta</code></td>
+<td style="height: 24px; width: 27px;"><code>8</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 79px;"><code>asta</code></td>
+<td style="height: 24px; width: 27px;"><code>8</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 79px;"><code>sapta</code></td>
+<td style="height: 24px; width: 27px;"><code>7</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 79px;"><code>sunya</code></td>
+<td style="height: 24px; width: 27px;"><code>0</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 79px;"><code>panca</code></td>
+<td style="height: 24px; width: 27px;"><code>5</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 79px;"><code>tri</code></td>
+<td style="height: 24px; width: 27px;"><code>3</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 79px;"><code>panca</code></td>
+<td style="height: 24px; width: 27px;"><code>5</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 79px;"><code>tri</code></td>
+<td style="height: 24px; width: 27px;"><code>3</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 79px;"><code>darsana</code></td>
+<td style="height: 24px; width: 27px;"><code> </code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 79px;"><code>panca</code></td>
+<td style="height: 24px; width: 27px;"><code>5</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 79px;"><code>sapta</code></td>
+<td style="height: 24px; width: 27px;"><code>7</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 79px;"><code>panca</code></td>
+<td style="height: 24px; width: 27px;"><code>5</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 79px;"><code>tri</code></td>
+<td style="height: 24px; width: 27px;"><code>3</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 79px;"><code>panca</code></td>
+<td style="height: 24px; width: 27px;"><code>5</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 79px;"><code>eka</code></td>
+<td style="height: 24px; width: 27px;"><code>1</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 79px;"><code>sas</code></td>
+<td style="height: 24px; width: 27px;"><code>6</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 79px;"><code>asta</code></td>
+<td style="height: 24px; width: 27px;"><code>8</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 79px;"><code>asta</code></td>
+<td style="height: 24px; width: 27px;"><code>8</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 79px;"><code>asta</code></td>
+<td style="height: 24px; width: 27px;"><code>8</code></td>
+</tr>
+</tbody>
+</table>
+<p class="p1"><code>81 88 70 53 53 darsana 57 53 51 68 88</code></p>
+<p class="p1">Convert the decimal numbers to Ascii</p>
+<p class="p1"><code>QXF55DARSANA953DX</code></p>
+<p class="p1">Invalid. There is an error in the code. The 51 should be 52</p>
+<p class="p1"><code>QXF55DARSANA954DX</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1936" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/10/17/things-of-indescribable-beauty-and-horror/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1936" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/10/17/things-of-indescribable-beauty-and-horror/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1936" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/10/17/things-of-indescribable-beauty-and-horror/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/10/17/things-of-indescribable-beauty-and-horror/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

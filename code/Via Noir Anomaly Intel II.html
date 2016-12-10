@@ -1,0 +1,110 @@
+<div class="entry-content">
+			<p>Three codes could be found hidden in the HTML source of the <a class="d-s ot-anchor" tabindex="0" title="Via Noir: Anomaly Intel II" href="http://investigate.ingress.com/2016/11/06/via-noir-anomaly-intel-ii/" target="_blank" rel="nofollow">Via Noir: Anomaly Intel II</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] n9u7c831m612p613p621=7k3t7</code></p>
+<p><code>[2] pydyexvdeddpfyexedyedcefeee</code></p>
+<p><code>[3] ris91nyy811xj</code></p>
+<p><span id="more-2077"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>There’s a lot of numbers in there.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">A bit of math</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Try a skip of 2</p>
+<p class="p1"><code>nuc3m1p1p2=kt9781626361737</code></p>
+<p class="p1">Look like we have a good start</p>
+<p class="p1">Split the string in two</p>
+<p class="p1"><code>nuc3m1p1p2=kt</code></p>
+<p class="p1"><code>9781626361737</code></p>
+<p class="p1">In the first half we have what seems to look like the start and end of prefix and suffix</p>
+<p class="p1">Notice those m, p and =. Looks like Niantic math which would be</p>
+<p class="p1"><code>nuc 3 -1 +1 +2 = kt</code></p>
+<p>Use 3 for all operations</p>
+<p><code>nuc 3 (3-1) (3+1) (3+2) (=3) kt</code></p>
+<p><code>nuc32453kt</code></p>
+<p>Now we have 13 numbers for the keyword. Can’t be Ascii as we would need an even number. Try Googling the string</p>
+<p>Google gives a BIN for a book called Discover Magazine’s Vital Signs</p>
+<p><code>nuc32discover453kt</code></p>
+<p></p></div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>27 letters, notice that lots of them are repeating</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">2 steps to get the passcode. Check the range of those letters.</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>The code includes a lot of D, E, P, and Y. Because it’s 27 letters first instinct was to think of morse but nothing came up. Let’s try to convert letters to numbers using a=0</p>
+<p class="p1"><code>15 24 3 24 4 23 21 3 4 3 3 15 5 24 4 23 4 3 24 4 3 2 4 5 4 4 4</code></p>
+<p class="p1">Notice the range of these numbers, no single digit is higher than 5. Polybius square uses a range from 1 to 5.</p>
+<p class="p1">Pair those digits</p>
+<p class="p1"><code>15 24 32 44 23 21 34 33 15 52 44 23 43 24 43 24 54 44</code></p>
+<p class="p1">Use this grid to map out the letters</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 10px;"></td>
+<td style="width: 9px;">1</td>
+<td style="width: 15px;">2</td>
+<td style="width: 10px;">3</td>
+<td style="width: 10px;">4</td>
+<td style="width: 29px;">5</td>
+</tr>
+<tr>
+<td style="width: 10px;">1</td>
+<td style="width: 9px;">a</td>
+<td style="width: 15px;">b</td>
+<td style="width: 10px;">c</td>
+<td style="width: 10px;">d</td>
+<td style="width: 29px;">e</td>
+</tr>
+<tr>
+<td style="width: 10px;">2</td>
+<td style="width: 9px;">f</td>
+<td style="width: 15px;">g</td>
+<td style="width: 10px;">h</td>
+<td style="width: 10px;">j</td>
+<td style="width: 29px;">k</td>
+</tr>
+<tr>
+<td style="width: 10px;">3</td>
+<td style="width: 9px;">l</td>
+<td style="width: 15px;">m</td>
+<td style="width: 10px;">n</td>
+<td style="width: 10px;">o</td>
+<td style="width: 29px;">p</td>
+</tr>
+<tr>
+<td style="width: 10px;">4</td>
+<td style="width: 9px;">q</td>
+<td style="width: 15px;">r</td>
+<td style="width: 10px;">s</td>
+<td style="width: 10px;">t</td>
+<td style="width: 29px;">u</td>
+</tr>
+<tr>
+<td style="width: 10px;">5</td>
+<td style="width: 9px;">v</td>
+<td style="width: 15px;">w</td>
+<td style="width: 10px;">x</td>
+<td style="width: 10px;">y</td>
+<td style="width: 29px;">z</td>
+</tr>
+</tbody>
+</table>
+<p class="p1"><code>ejmthfonewthsisiyt</code></p>
+<p class="p1"><code>ejm34new366yt</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">Passcode format is there, go through your usual basic ciphers</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Atbash and ROT didn’t give anything good to work with, next up is morse manipulation</p>
+<p class="p1">Convert to morse</p>
+<p class="p1"><code>.-. .. ... ----. .---- -. -.-- -.-- ---.. .---- .---- -..- .---</code></p>
+<p class="p1">Swap the morse bits</p>
+<p class="p1"><code>-.- -- --- ....- -.... .- .-.. .-.. ...-- -.... -.... .--. -...</code></p>
+<p class="p1">Convert morse to text</p>
+<p class="p1"><code>KMO46ALL366PB</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2077" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/11/10/via-noir-anomaly-intel-ii/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2077" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/11/10/via-noir-anomaly-intel-ii/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-2077" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/11/10/via-noir-anomaly-intel-ii/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/11/10/via-noir-anomaly-intel-ii/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

@@ -1,0 +1,59 @@
+<div class="entry-content">
+			<p>Three codes were found in the HTLM source of the <a href="http://investigate.ingress.com/2016/06/11/obsidius-fragment-a-long-journey-ahead/" target="_blank">Obsidius Fragment: A Long Journey Ahead</a> post on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog.</p>
+<p><code>[1] b0aaadb4ac9493a8aaba9888a9ba93b0a9ba90caad85adac</code></p>
+<p><code>[2] 210293611698321237021268202713302024</code></p>
+<p><code>[3] $%~!%!%~!&amp;~&amp;!~#^~&amp;~!%@~@~!&amp;~#~%!^~&amp;~!^!~#^~!&amp;~@&amp;~!^</code></p>
+<p><span id="more-1254"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>Looks like hex but ranges are off for Ascii. If you are thinking that it’s colours that would make only 8 words of 6 bits, not enough for a passcode.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">nzbyv rg’h zgyzhs</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Let’s try making pairs</p>
+<p><code>b0 aa ad b4 ac 94 93 a8 aa ba 98 88 a9 ba 93 b0 a9 ba 90 ca ad 85 ad ac</code></p>
+<p>Interesting to see that many pairs start with A and B. In the past “hex atbash” as been used several times and A and B convert to 5 and 4 which makes a good Ascii range.</p>
+<p>Here’s the index for the “hex atbash”:</p>
+<p>0123456789abcdef<br>
+fedcba9876543210</p>
+<p>Atbash all pairs</p>
+<p><code>b0 aa ad b4 ac 94 93 a8 aa ba 98 88 a9 ba 93 b0 a9 ba 90 ca ad 85 ad ac</code></p>
+<p><code>4f 55 52 4b 53 6b 6c 57 55 45 67 77 56 45 6c 4f 56 45 6f 35 52 7a 52 53</code></p>
+<p>Convert hex to Ascii</p>
+<p class="p1"><code>OURKSklWUEgwVElOVEo5RzRS</code></p>
+<p class="p1">Not quite there yet but that does look like Base64, convert it to text</p>
+<p class="p1"><code>9DJJIVPH0TINTJ9G4R</code></p>
+<p class="p1">Change that IV to 4 and that 0 to O</p>
+<p class="p1"><code>9DJJ4PHOTINTJ9G4R</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">All numbers, 18 pairs.</p>
+<p class="p1">We did not find the solution yet.</p>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">All symbols, usually means to convert to numbers</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">~ is used to split the groups</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Since ~ does not convert to a number on a keyboard, let assume it is used to split the groups.</p>
+<p class="p1"><code>$% !%!% !&amp; &amp;! #^ &amp; !%@ @ !&amp; # %!^ &amp; !^! #^ !&amp; @&amp; !^</code></p>
+<p class="p1">Now let’s convert those symbols to their respective keyboard numbers</p>
+<p class="p1"><code>45 1515 17 71 36 7 152 2 17 3 516 7 161 36 17 27 16</code></p>
+<p class="p1">Notice how number from 1 to 4 are never beside each other and same thing for 5 to 8 ? That’s a hint that we are searching for a cipher that only uses 2 bits. Morse is one of them, here’s the index:</p>
+<p class="p1"><code>1=-</code><br>
+<code> 2=--</code><br>
+<code> 3=---</code><br>
+<code> 4=----</code><br>
+<code> 5=.</code><br>
+<code> 6=..</code><br>
+<code> 7=...</code><br>
+<code> 8=....</code></p>
+<p class="p1">Now let’s translate the number sequence to morse</p>
+<p class="p1"><code>----. -.-. -... ...- ---.. ... -.-- -- -... --- .-.. ... -..- ---.. -... --... -..</code></p>
+<p class="p1">Convert morse to text</p>
+<p class="p1"><code>9CBV8SYMBOLSX8B7D</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1254" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/06/20/obsidius-fragment-a-long-journey-ahead/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1254" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/06/20/obsidius-fragment-a-long-journey-ahead/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1254" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/06/20/obsidius-fragment-a-long-journey-ahead/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/06/20/obsidius-fragment-a-long-journey-ahead/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

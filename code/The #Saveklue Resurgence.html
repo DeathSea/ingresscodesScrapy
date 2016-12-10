@@ -1,0 +1,136 @@
+<div class="entry-content">
+			<p>Three codes where found hidden in the <a href="http://investigate.ingress.com/2016/06/13/the-saveklue-resurgence/" target="_blank">The #Saveklue Resurgence</a> post in the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog.</p>
+<p><code>[1] b9stfj8aa6ft2aeu</code></p>
+<p><code>[2] nrmeklylbibkrdunlixmxeihct</code></p>
+<p><code>[3] nriieseingeikeapoa</code></p>
+<p><span id="more-1266"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>All the ingredients are there, the regular manipulation will help you get it.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Round and round we go !</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>4 numbers and the rest are letters, surely it’s a transposition cipher. Make a 4×4 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 35px;"><code>b</code></td>
+<td style="width: 36px;"><code>9</code></td>
+<td style="width: 36px;"><code>s</code></td>
+<td style="width: 57px;"><code>t</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>f</code></td>
+<td style="width: 36px;"><code>j</code></td>
+<td style="width: 36px;"><code>8</code></td>
+<td style="width: 57px;"><code>a</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>a</code></td>
+<td style="width: 36px;"><code>6</code></td>
+<td style="width: 36px;"><code>f</code></td>
+<td style="width: 57px;"><code>t</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>2</code></td>
+<td style="width: 36px;"><code>a</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 57px;"><code>u</code></td>
+</tr>
+</tbody>
+</table>
+<p>Different twist on how to read the code. Read in a spiral going up from the bottom left 2</p>
+<p><code>2afb9statues6j8f</code></p>
+<p></p></div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>All letters, go through your usual cipher routine</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Need to practise reading backwards</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>After ROT and Atbash didn’t give anything try skip. Look carefully at a skip of 2</p>
+<p class="p1"><code>nmkybbrulxxicrellikdnimeht</code></p>
+<p class="p1">Doesn’t look like much at first glance but try reading backwards, can you see <code>The Mind Killer</code> ?</p>
+<p class="p1">Let’s split the string in 2 and reverse the last part</p>
+<p class="p1"><code>nmkybbrulxxic</code></p>
+<p class="p1"><code>themindkiller</code></p>
+<p class="p1">The mind killer refers to fear which is a valid keyword</p>
+<p class="p1">Let’s use Vigenere autokey</p>
+<p class="p1">Passphrase: <code>fear</code></p>
+<p class="p1">Message: <code>nmkybbrulxxic</code></p>
+<p class="p1">Result: <code>iikhtthnseqvk</code></p>
+<p class="p1">That gives</p>
+<p class="p1"><code>2kht3n7q5k</code></p>
+<p class="p1">Simply insert the keyword between the prefix and suffix to get</p>
+<p class="p1"><code>2kht3fearn7q5k</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">Again, all letters, go through the usual ROT, Atbash, Transposition routine</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Guess Niantic was out of ideas for cipher, we have yet another transposition.</p>
+<p class="p1">Make a 6×3 rectangle</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 35px;"><code>n</code></td>
+<td style="width: 36px;"><code>r</code></td>
+<td style="width: 36px;"><code>i</code></td>
+<td style="width: 37px;"><code>i</code></td>
+<td style="width: 37px;"><code>e</code></td>
+<td style="width: 67px;"><code>s</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>e</code></td>
+<td style="width: 36px;"><code>i</code></td>
+<td style="width: 36px;"><code>n</code></td>
+<td style="width: 37px;"><code>g</code></td>
+<td style="width: 37px;"><code>e</code></td>
+<td style="width: 67px;"><code>i</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>k</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 36px;"><code>a</code></td>
+<td style="width: 37px;"><code>p</code></td>
+<td style="width: 37px;"><code>o</code></td>
+<td style="width: 67px;"><code>a</code></td>
+</tr>
+</tbody>
+</table>
+<p>Not seeing much of a code? Old tick, reverse the second row</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 36px;"><code>n</code></td>
+<td style="width: 36px;"><code>r</code></td>
+<td style="width: 36px;"><code>i</code></td>
+<td style="width: 36px;"><code>i</code></td>
+<td style="width: 37px;"><code>e</code></td>
+<td style="width: 76px;"><code>s</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>i</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 36px;"><code>g</code></td>
+<td style="width: 36px;"><code>n</code></td>
+<td style="width: 37px;"><code>i</code></td>
+<td style="width: 76px;"><code>e</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>k</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 36px;"><code>a</code></td>
+<td style="width: 36px;"><code>p</code></td>
+<td style="width: 37px;"><code>o</code></td>
+<td style="width: 76px;"><code>a</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read down from the upper left n</p>
+<p><code>nikreeigainpeiosea</code></p>
+<p><code>9kre8gainp8o7a</code></p>
+<p></p></div></div>
+<p> </p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1266" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/06/22/the-saveklue-resurgence/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1266" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/06/22/the-saveklue-resurgence/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1266" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/06/22/the-saveklue-resurgence/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/06/22/the-saveklue-resurgence/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

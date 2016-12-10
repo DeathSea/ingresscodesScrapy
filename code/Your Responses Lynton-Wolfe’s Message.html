@@ -1,0 +1,318 @@
+<div class="entry-content">
+			<p>Three codes were hidden in the <a class="d-s ot-anchor" tabindex="0" title="Your Responses: Lynton-Wolfe’s Message" href="http://investigate.ingress.com/2016/11/28/your-responses-lynton-wolfes-message/" target="_blank" rel="nofollow">Your Responses: Lynton-Wolfe’s Message</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] 4$0$406$$60332220*&amp;06^$^04$640%^5504$0(&amp;9079&amp;80%6%$0(&amp;980(0*&amp;9*0%$660*90$^0^550%6^^</code></p>
+<p><code>[2] #79!9@71!597$129%939@3%09%23!627!3%3&amp;#79#53</code></p>
+<p><code>[3] wernhervonbraunwolfgangernstpaulijohnrayalexandergrahambellgalenfriedrichaugustkekulégalenjohanneskepleradalbertczernyfranzboasmichaelfaradaygalenfrederickgowlandhopkinsmaxplanckfredericksoddyheikekamerlinghonnesfrederickgowlandhopkinsabdulqadeerkhaneuclidtimnoakeswilburandorvillewrightgaleneucliddmitrimendeleevevangelistatorricellimohammadabdussalamrudolfchristiankarldieselprafullachandraray</code></p>
+<h1><span id="more-2174"></span>Code #1</h1>
+<h2>Observations</h2>
+<p>83 characters composed of numbers and symbols. You’ll need to look for a split.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;"> . – </div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>With a string like that, there as to be a character that is use as a split. Having a closer look at the string you can see that the longest sequence of consecutive numbers is 0332220. If zero is used as a split point we are left with 33222 which is 5 bits and fits number coding in morse. Split at 0 and numbers are dot, symbols are dashes</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 56px;"><code>4$</code></td>
+<td style="width: 71px;"><code>.-</code></td>
+</tr>
+<tr>
+<td style="width: 56px;"><code>$4</code></td>
+<td style="width: 71px;"><code>-.</code></td>
+</tr>
+<tr>
+<td style="width: 56px;"><code>6$$6</code></td>
+<td style="width: 71px;"><code>.--.</code></td>
+</tr>
+<tr>
+<td style="width: 56px;"><code>33222</code></td>
+<td style="width: 71px;"><code>.....</code></td>
+</tr>
+<tr>
+<td style="width: 56px;"><code>*&amp;</code></td>
+<td style="width: 71px;"><code>--</code></td>
+</tr>
+<tr>
+<td style="width: 56px;"><code>6^$^</code></td>
+<td style="width: 71px;"><code>.---</code></td>
+</tr>
+<tr>
+<td style="width: 56px;"><code>4$64</code></td>
+<td style="width: 71px;"><code>.-..</code></td>
+</tr>
+<tr>
+<td style="width: 56px;"><code>%^55</code></td>
+<td style="width: 71px;"><code>--..</code></td>
+</tr>
+<tr>
+<td style="width: 56px;"><code>4$</code></td>
+<td style="width: 71px;"><code>.-</code></td>
+</tr>
+<tr>
+<td style="width: 56px;"><code>(&amp;9</code></td>
+<td style="width: 71px;"><code>--.</code></td>
+</tr>
+<tr>
+<td style="width: 56px;"><code>79&amp;8</code></td>
+<td style="width: 71px;"><code>..-.</code></td>
+</tr>
+<tr>
+<td style="width: 56px;"><code>%6%$</code></td>
+<td style="width: 71px;"><code>-.--</code></td>
+</tr>
+<tr>
+<td style="width: 56px;"><code>(&amp;98</code></td>
+<td style="width: 71px;"><code>--..</code></td>
+</tr>
+<tr>
+<td style="width: 56px;"><code>(</code></td>
+<td style="width: 71px;"><code>-</code></td>
+</tr>
+<tr>
+<td style="width: 56px;"><code>*&amp;9*</code></td>
+<td style="width: 71px;"><code>--.-</code></td>
+</tr>
+<tr>
+<td style="width: 56px;"><code>%$66</code></td>
+<td style="width: 71px;"><code>--..</code></td>
+</tr>
+<tr>
+<td style="width: 56px;"><code>*9</code></td>
+<td style="width: 71px;"><code>-.</code></td>
+</tr>
+<tr>
+<td style="width: 56px;"><code>$^</code></td>
+<td style="width: 71px;"><code>--</code></td>
+</tr>
+<tr>
+<td style="width: 56px;"><code>^55</code></td>
+<td style="width: 71px;"><code>-..</code></td>
+</tr>
+<tr>
+<td style="width: 56px;"><code>%6^^</code></td>
+<td style="width: 71px;"><code>-.--</code></td>
+</tr>
+</tbody>
+</table>
+<p>The full morse string is</p>
+<p><code>.- -. .--. ..... -- .--- .-.. --.. .- --. ..-. -.-- --.. - --.- --.. -. -- -.. -.--</code></p>
+<p>Convert morse to text</p>
+<p><code>ANP5MJLZAGFYZTQZNMDY</code></p>
+<p>We now have 20 characters containing one number. Could be Base64 but we need to figure out which letters are capital and lowercase</p>
+<p>Look at the how the strings are made. If you convert symbols to numbers, notice how each digit in a group follows a range</p>
+<p>123 are numbers<br>
+456 are lowercase<br>
+789 are capital</p>
+<p><code>anp5MjlzaGFyZTQzNmdy</code></p>
+<p>Convert Base64 to text</p>
+<p><code>jzy29share436gr</code></p>
+<p></p></div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>Symbols followed by numbers, the split points are obvious</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Codes should come out during Prime time…</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Split at symbols and replace them with their respective numbers on the keyboard</p>
+<p><code>379 19 271 1597 4129 5939 23 509 523 1627 13 53 7 379 353</code></p>
+<p class="p1">All those numbers are prime numbers. Using this <a href="https://primes.utm.edu/lists/small/1000.txt">list</a> get their position. Note that your count should start at 0 not 1.</p>
+<table class=" table table-hover" style="width: 105px;">
+<tbody>
+<tr>
+<td style="width: 67px;"><code>379</code></td>
+<td style="width: 84px;"><code>74</code></td>
+</tr>
+<tr>
+<td style="width: 67px;"><code>19</code></td>
+<td style="width: 84px;"><code>7</code></td>
+</tr>
+<tr>
+<td style="width: 67px;"><code>271</code></td>
+<td style="width: 84px;"><code>57</code></td>
+</tr>
+<tr>
+<td style="width: 67px;"><code>1597</code></td>
+<td style="width: 84px;"><code>250</code></td>
+</tr>
+<tr>
+<td style="width: 67px;"><code>4129</code></td>
+<td style="width: 84px;"><code>567</code></td>
+</tr>
+<tr>
+<td style="width: 67px;"><code>5939</code></td>
+<td style="width: 84px;"><code>779</code></td>
+</tr>
+<tr>
+<td style="width: 67px;"><code>23</code></td>
+<td style="width: 84px;"><code>8</code></td>
+</tr>
+<tr>
+<td style="width: 67px;"><code>509</code></td>
+<td style="width: 84px;"><code>96</code></td>
+</tr>
+<tr>
+<td style="width: 67px;"><code>523</code></td>
+<td style="width: 84px;"><code>98</code></td>
+</tr>
+<tr>
+<td style="width: 67px;"><code>1627</code></td>
+<td style="width: 84px;"><code>257</code></td>
+</tr>
+<tr>
+<td style="width: 67px;"><code>13</code></td>
+<td style="width: 84px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="width: 67px;"><code>53</code></td>
+<td style="width: 84px;"><code>15</code></td>
+</tr>
+<tr>
+<td style="width: 67px;"><code>7</code></td>
+<td style="width: 84px;"><code>3</code></td>
+</tr>
+<tr>
+<td style="width: 67px;"><code>379</code></td>
+<td style="width: 84px;"><code>74</code></td>
+</tr>
+<tr>
+<td style="width: 67px;"><code>353</code></td>
+<td style="width: 84px;"><code>70</code></td>
+</tr>
+</tbody>
+</table>
+<p>Group the results</p>
+<p><code>747572505677798969825751537470</code></p>
+<p>Make pairs</p>
+<p><code>74 75 72 50 56 77 79 89 69 82 57 51 53 74 70</code></p>
+<p>Convert decimal to Ascii</p>
+<p><code>JKH28MOYER935JF</code></p>
+<p></p></div></div>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>A long list of scientists</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Split at every scientist name and count the number of characters for each of them.</p>
+<table class=" table table-hover" style="width: 349px;">
+<tbody>
+<tr>
+<td style="width: 314px;" colspan="2"><code>wernher von braun</code></td>
+<td style="width: 37px;"><code>15</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>wolfgang ernst pauli</code></td>
+<td style="width: 37px;"><code>18</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>john ray</code></td>
+<td style="width: 37px;"><code>7</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>alexander graham bell</code></td>
+<td style="width: 37px;"><code>19</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>galen</code></td>
+<td style="width: 37px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>friedrich august kekulé</code></td>
+<td style="width: 37px;"><code>22</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>galen</code></td>
+<td style="width: 37px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>johannes kepler</code></td>
+<td style="width: 37px;"><code>14</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>adalbert czerny</code></td>
+<td style="width: 37px;"><code>14</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>franz boas</code></td>
+<td style="width: 37px;"><code>9</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>michael faraday</code></td>
+<td style="width: 37px;"><code>14</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>galen</code></td>
+<td style="width: 37px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>frederick gowland hopkins</code></td>
+<td style="width: 37px;"><code>23</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>max planck</code></td>
+<td style="width: 37px;"><code>9</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>frederick soddy</code></td>
+<td style="width: 37px;"><code>14</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>heike kamerling honnes</code></td>
+<td style="width: 37px;"><code>20</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>frederick gowland hopkins</code></td>
+<td style="width: 37px;"><code>23</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>abdul qadeer khan</code></td>
+<td style="width: 37px;"><code>15</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>euclid</code></td>
+<td style="width: 37px;"><code>6</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>tim noakes</code></td>
+<td style="width: 37px;"><code>9</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>wilbur and orville wright</code></td>
+<td style="width: 37px;"><code>22</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>galen</code></td>
+<td style="width: 37px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>euclid</code></td>
+<td style="width: 37px;"><code>6</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>dmitri mendeleev</code></td>
+<td style="width: 37px;"><code>15</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>evangelista torricelli</code></td>
+<td style="width: 37px;"><code>21</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>mohammad abdus salam</code></td>
+<td style="width: 37px;"><code>18</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>rudolf christian karl diesel</code></td>
+<td style="width: 37px;"><code>25</code></td>
+</tr>
+<tr>
+<td style="width: 314px;" colspan="2"><code>prafulla chandra ray</code></td>
+<td style="width: 37px;"><code>18</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>15 18 7 19 5 22 5 14 14 9 14 5 23 9 14 20 23 15 6 9 22 5 6 15 21 18 25 18</code></p>
+<p>Convert numbers to letters using a=1</p>
+<p><code>ORGSEVENNINEWINTWOFIVEFOURYR</code></p>
+<p><code>org79win254yr</code></p>
+<p></p></div></div>
+<p> </p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2174" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/12/02/your-responses-lynton-wolfes-message/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2174" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/12/02/your-responses-lynton-wolfes-message/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-2174" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/12/02/your-responses-lynton-wolfes-message/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/12/02/your-responses-lynton-wolfes-message/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

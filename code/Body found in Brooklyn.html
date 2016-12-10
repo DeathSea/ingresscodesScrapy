@@ -1,0 +1,128 @@
+<div class="entry-content">
+			<p>Within the scary post “<a href="http://investigate.ingress.com/2016/06/04/body-found-in-brooklyn/" target="_blank">Body found in Brooklyn</a>” on the <a href="http://investigate.ingress.com" target="_blank">Investigate Igress</a> blog, there were three codes hidden within the source:</p>
+<p><code>[1] rzuumnllxhabgromirsqaonszyhs</code><br>
+<code>[2] 95ot6walnyhial7gmikb</code><br>
+<code>[3] djg03h00g05gjgjhag02gbhdg03gbhggjgjhidfhd</code></p>
+<p><span id="more-1183"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>With a length of 28 characters, it is very likely that the numbers are written out.<br>
+We’ll just need to find the right cipher that will reveal all.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>There are only two step for this whole code.<br>
+The first one is the hardest to find, but try out all ciphers that you know!</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>As said in the hint, the first step is the hardest.<br>
+The <a href="http://rumkin.com/tools/cipher/bifid.php" target="_blank">Bifid cipher</a> has been used recently a few times, so it is wise to add it to your list of “first things to try”<br>
+<code>sixwrytwohollandxnineeeighth﻿</code><br>
+Replace the numbers for the final solve<br>
+<code>6wry2hollandx9e8h﻿</code></p>
+<p></p></div></div>
+<hr>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>Four numbers in the code points to not specifically needing a substitution cipher (atbash/rot/vig/etc), but the length hints at either a very long keyword or a keyword substitution.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Look for meaningful words when using the different types of transpositions (Skip, Rectangle, Railfence).</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Arrange the code in a grid of 5×4</p>
+<table class=" table table-hover" style="width:1px">
+<tr>
+<td style="padding:5px"><code>9</code></td>
+<td style="padding:5px"><code>5</code></td>
+<td style="padding:5px"><code>o</code></td>
+<td style="padding:5px"><code>t</code></td>
+<td style="padding:5px"><code>6</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>w</code></td>
+<td style="padding:5px"><code>a</code></td>
+<td style="padding:5px"><code>l</code></td>
+<td style="padding:5px"><code>n</code></td>
+<td style="padding:5px"><code>y</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>h</code></td>
+<td style="padding:5px"><code>i</code></td>
+<td style="padding:5px"><code>a</code></td>
+<td style="padding:5px"><code>l</code></td>
+<td style="padding:5px"><code>7</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>g</code></td>
+<td style="padding:5px"><code>m</code></td>
+<td style="padding:5px"><code>i</code></td>
+<td style="padding:5px"><code>k</code></td>
+<td style="padding:5px"><code>b</code></td>
+</tr>
+</table>
+<p>Now reverse just the even rows (2 and 4)</p>
+<table class=" table table-hover" style="width:1px">
+<tr>
+<td style="padding:5px"><code>9</code></td>
+<td style="padding:5px"><code>5</code></td>
+<td style="padding:5px"><code>o</code></td>
+<td style="padding:5px"><code>t</code></td>
+<td style="padding:5px"><code>6</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>y</code></td>
+<td style="padding:5px"><code>n</code></td>
+<td style="padding:5px"><code>l</code></td>
+<td style="padding:5px"><code>a</code></td>
+<td style="padding:5px"><code>w</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>h</code></td>
+<td style="padding:5px"><code>i</code></td>
+<td style="padding:5px"><code>a</code></td>
+<td style="padding:5px"><code>l</code></td>
+<td style="padding:5px"><code>7</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>b</code></td>
+<td style="padding:5px"><code>k</code></td>
+<td style="padding:5px"><code>i</code></td>
+<td style="padding:5px"><code>m</code></td>
+<td style="padding:5px"><code>g</code></td>
+</tr>
+</table>
+<p>Read each column from top to bottom, starting with the most left one.<br>
+<code>9yhb5nikolaitalm6w7g</code></p>
+<p>Throwing <code>nikolaital</code> into Google gives us the Wikipage “<a href="https://en.wikipedia.org/wiki/Mattertal" target="_blank">Matter Valley</a>“, also known as “<em>Nikolaital</em>“.<br>
+We know <em>matter</em> is a known keyword, so pop that into our code for the solution.<br>
+<code>9yhb5matterm6w7g</code></p>
+<p>I can feel you thinking “<em>How on earth did you figure out to only reverse those rows?!?!</em>“.<br>
+Don’t worry, at the start I felt the same way. But with time and the right tools you will learn to notice such things, learn to real columns and rows in different ways.<br>
+<strong><em>Practice makes perfect!</em></strong></p>
+<p></p></div></div>
+<hr>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>We have an odd range of letters (a-j) and numbers (00-05) in a code with a prime number for it’s length (meaning rectangles and pairs won’t work).<br>
+But look at those letters again, notice something peculiar?</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Count them and think why would there be only so many of them.<br>
+What do you know that has such a constraint to it’s different values?</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Looking at the ranges of the letters and numbers, we notice that if we were to substitute the letters with numbers (starting at a=0..j=9) and numbers with letters (00=a..05=f), we get a very good mixture of hex values!<br>
+<code>djg03h00g05gjgjhag02gbhdg03gbhggjgjhidfhd</code><br>
+becomes<br>
+<code>396d7a6f6969706c61736d61766969783573</code></p>
+<p>Now we have a code length that can be paired up<br>
+<code>39 6d 7a 6f 69 69 70 6c 61 73 6d 61 76 69 69 78 35 73</code></p>
+<p>Convert from hex to text<br>
+<code>9mzoiiplasmaviix5s</code></p>
+<p>and replace the Roman numerals with numbers for the final solution (be careful with, that v is part of the format, not the Roman numeral 😉 )<br>
+<code>9mzo2plasmav2x5s</code></p>
+<p>Sometimes codes seem much more difficult than what they actually are.<br>
+Always remember to analyse the text, see what you have and what you don’t have and what the ranges are for what you have.</p>
+<p></p></div></div>
+<hr>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1183" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/06/08/body-found-in-brooklyn/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1183" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/06/08/body-found-in-brooklyn/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1183" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/06/08/body-found-in-brooklyn/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/06/08/body-found-in-brooklyn/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

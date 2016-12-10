@@ -1,0 +1,121 @@
+<div class="entry-content">
+			<p><a href="https://ingress.codes/2016/05/02/getting-started-with-decoding/">Last time</a> we took a look at the various sources to find codes provided by Ingress. In today’s article, we are going to take a look at some of the ciphers used to solve these codes.</p>
+<p><span id="more-802"></span></p>
+<h1>Passcode Formats</h1>
+<p>But first, let’s take a look at the various passcode formats currently (May 2016) available so we know what to aim for when attempting solves.</p>
+<h2>Investigation Blog &amp; WOTD</h2>
+<p>Passcodes for the investigation blog and JoJo’s Word of the Day fall under this format:</p>
+<p><code>#xxx#keywordx#x#x</code></p>
+<p>In this case, <code>#</code> represents the numbers <code>2</code> through <code>9</code>, <code>0</code> and <code>1</code> are not included. <code>x</code> represents most of the letters from <code>a</code> through <code>z</code>, with the notable exception of the letters <code>i</code> and <code>l</code>. We will discuss <a href="#keywords">keywords below</a>.</p>
+<h2>Ingress Report</h2>
+<p>The Ingress Report has codes hidden within the annotations of the video. They come in two varieties: the same format as the Investigation Blog (see above) and the forever passcodes (passcodes that have a much higher redeem limit).</p>
+<p><code>keyword#xx##xx#</code></p>
+<p>The numbers <code>0</code> to <code>9</code> are valid for these types of passcodes, letters are still everything from <code>a</code> to <code>z</code> except <code>i</code> and <code>l</code>.</p>
+<h2>Anomaly Media</h2>
+<p>Anomaly media codes have the following format:</p>
+<p><code>xxxxxxxx#keyword#</code></p>
+<p>The same restrictions for the Investigation/WOTD passcodes applies to Anomaly media passcodes, <code>a-z</code> (except <code>i</code> and <code>l</code>), and <code>2-9</code>.</p>
+<h1><a id="keywords"></a>Keywords</h1>
+<p>Having a good keyword list is essential when solving for passcodes. One of the more advanced passcode solving techniques involve guessing what potential keywords that could be hiding in the code to help figure out how to begin solving.</p>
+<p>We have compiled a list of known keywords and are constantly updating it whenever we notice a new one. Glyphs are also used as keywords and we’ve extracted a list from our friends over at <a href="http://glyphtionary.com">Glyphtionary.com</a>. You can see our list at:</p>
+<p><a href="https://github.com/ingresscodes/keywords">https://github.com/ingresscodes/keywords</a></p>
+<p><code>keywords.txt</code> is the list of generic keywords<br>
+<code>glyphs.txt</code> is the list of glyphs courtesy of <a href="http://glyphtionary.com">Glyphtionary.com</a><br>
+<code>sorted.txt</code> is a merge of both <code>keywords.txt</code> and <code>glyphs.txt</code></p>
+<p>Feel free to send changes if you have a new keyword that is confirmed.</p>
+<h1>Ciphers</h1>
+<h2>Caesar or ROT cipher</h2>
+<p>The Caesar or ROT (rotate) cipher involves shifting a letter a fix number of positions down the alphabet. The most common cipher of this type is ROT 13, meaning shifting 13 letters down the 26 letter alphabet.</p>
+<p><code>CIPHER =&gt; PVCURE</code></p>
+<p>Looking at the alphabetical positions of the numbers</p>
+<p><code>C (3)  + 13 = P (16)</code><br>
+<code>I (9)  + 13 = V (22)</code><br>
+<code>P (16) + 13 = C (29 ≡ 3)</code><br>
+<code>H (8)  + 13 = U (21)</code><br>
+<code>E (5)  + 13 = R (18)</code><br>
+<code>R (18) + 13 = E (31 ≡ 5)</code></p>
+<p>Notice how for <code>P (16)</code> and <code>R (18)</code>, when adding 13 to its position, equals a number greater than 26, it wraps around <code>Z (26)</code> back to <code>A (27 ≡ 1)</code> and goes up from there.</p>
+<p>ROT doesn’t have to always be 13, it can work with any number. <code>CODE</code> ROT 2:</p>
+<p><code>CODE =&gt; EQFG</code></p>
+<p>ROT can also work with negative numbers. <code>CODE</code> ROT -2:</p>
+<p><code>CODE =&gt; AMBC</code></p>
+<p>ROT also works on numbers, remember that numbers are only from 0 to 9, so after 9, it wraps back to 0. <code>1357</code> ROT 17:</p>
+<p><code>1357 =&gt; 8024</code></p>
+<p>If a code is using this cipher, it won’t tell you which ROT to use, you will have to try them all (trying 13 first is a good idea). If a given code has numbers that are out of range for the passcode type, chances are it could be using a ROT cipher. If all 4 numbers are within the right range and the keyword looks good, there’s a good chance it will be a valid passcode.</p>
+<p>Try to see if you can find which ROT the following codes are using, you can use <a href="http://rumkin.com/tools/cipher/caesar.php">Rumkin.com</a> for help with ROT, note that not all web tools will apply ROT to numbers. As always, passcodes featured on this site are always Fully Redeemed.</p>
+<p><code>2erc0ntragl1z4j</code></p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;"><br>
+ROT 13<br>
+<code>5rep3agenty4m7w</code><br>
+</div></div>
+<p><code>6efj3sedifyhuh6m5e</code></p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;"><br>
+ROT 10<br>
+<code>6opt3conspirer6w5o</code><br>
+</div></div>
+<h2>Atbash</h2>
+<p>The atbash cipher substitutes the first letter of the alphabet for the last, second letter for the second last, etc. A becomes Z, B becomes Y, etc. Running atbash on <code>ATBASH</code>:</p>
+<p><code>ATBASH =&gt; ZGYZHS</code></p>
+<p>Atbash also works with numbers though there are discrepancies about including the <code>0</code> or not for this “alphabet”.</p>
+<p>Without <code>0</code>:</p>
+<p><code>123456789 =&gt; 987654321</code></p>
+<p>With <code>0</code>:</p>
+<p><code>123456789 =&gt; 876543210</code></p>
+<p>See if you can figure these out, here’s <a href="http://rumkin.com/tools/cipher/atbash.php">Rumkin.com’s Atbash tool</a>, we will be making a post of our favourite websites in the next tutorial. Again, not all websites will apply atbash to numbers.</p>
+<p><code>5lsx4kfivi2j0q</code></p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;"><br>
+Atbash, with a 0 included:<br>
+<code>4ohc5purer7q9j</code><br>
+</div></div>
+<p><code>2gap6yozxpwvea4q1v</code></p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;"><br>
+Atbash, with a 0 included again:<br>
+<code>7tzk3blackdevz5j8e</code><br>
+</div></div>
+<h2>Transposition Cipher</h2>
+<p>Transposition ciphers typically involve transposing the code onto a rectangle and reading it in another orientation to reveal a code. Knowing the length of the code and the multiples of that length will help in figuring out the possible lengths and widths of the rectangle.</p>
+<p><code>25u3</code><code>hirs</code><code>jme8</code><code>qpfw</code></p>
+<p>The length of the code is 16 characters, which have multiples: 2×8, 4×4, 8×2. Let’s look at all of them:</p>
+<h3>2×8</h3>
+<p><code>25</code><br>
+<code>u3</code><br>
+<code>hi</code><br>
+<code>rs</code><br>
+<code>jm</code><br>
+<code>e8</code><br>
+<code>qp</code><br>
+<code>fw</code></p>
+<h3>4×4</h3>
+<p><code>25u3</code><br>
+<code> hirs</code><br>
+<code> jme8</code><br>
+<code> qpfw</code></p>
+<h3>8×2</h3>
+<p><code>25u3hirs</code><br>
+<code> jme8qpfw</code></p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Remember the format of the passcodes.</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>4×4 is the correct one, and we read the code from the top-left corner downwards to reveal:</p>
+<p><code>2hjq5impuref3s8w</code></p>
+<p></p></div></div>
+<p><code>xgo9tf3uh36olnc</code></p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p><code>gluon</code></p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>5×3 rectangle:</p>
+<p><code>xgo9t<br>
+f3uh3<br>
+6olnc</code></p>
+<p>Reading from the bottom-left upwards:</p>
+<p><code>6fxo3gluonh9c3t</code></p>
+<p></p></div></div>
+<p> </p>
+<p>In the next article, we’ll be looking at various online tools that will apply these ciphers and many others.</p>
+<h2></h2>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-802" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/05/10/brief-introduction-to-ciphers/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-802" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/05/10/brief-introduction-to-ciphers/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-802" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/05/10/brief-introduction-to-ciphers/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/05/10/brief-introduction-to-ciphers/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

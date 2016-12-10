@@ -1,0 +1,71 @@
+<div class="entry-content">
+			<p>Three codes appeared hidden in The Balance of the Universe post on the <a href="http://investigate.ingress.com/" target="_blank">Investigate Ingress</a> blog.</p>
+<p><code>[1] uvpgtqghwdckbblcfuamjmffuvpe</code></p>
+<p><code>[2] 7971*$fe898482*$^%87fd&amp;%^&amp;fafhej^^7181ei^*&amp;$^*ei</code></p>
+<p><code>[3] 0508060218070104000000130800040003120701110401060000021101231200040905031407061203050603</code></p>
+<p><span id="more-576"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>All letters, many ciphers can be used. I usually go through my sequence: Atbash, ROT, Morse, Vigenere, Rectangles…</p>
+<p>No luck</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Well in this case, you win some, you loose some!!!
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Since none of the usual cipher worked I tried to split the code to see if somethings were matching. Niantic usually use three letters for word so here is how I made the split:<br>
+<code>uvp gtq ghw dckbblcfua m jmf f uvp e</code></p>
+<p>Looking at the number positions, <code>uvp</code> comes up twice.<br>
+Now to find how can this sequence of letters become TWO, THR, FOU, FIV, SIX, SEV, EIG or NIN</p>
+<p>The only answer was that it had to be TWO by alternating ROT-1 &amp; ROT+1:<br>
+<code>-+-+-+-+-+-+-+-+-+-+-+-+-+-+<br>
+uvpgtqghwdckbblcfuamjmffuvpe<br>
+twohsrfiveblackdevzninegtwof</code></p>
+<p><code>2hsr5blackdevz9g2f</code></p>
+<p></p></div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>Numbers, letters and symbols, all in pairs. 24 of them.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Think of a cipher that uses 3 type of characters and has to be divisible by 4 to make it work good.
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>The fact that the numbers fall in the decimal to Ascii range can’t be coincidence. Then looking at the letters, they range from a to j or 0 to 9. Symbols can also be converted to numbers. Everything is pointing to a decimal to Ascii conversion.</p>
+<p>Start by making pairs</p>
+<p><code>79 71 *$ fe 89 84 82 *$ ^% 87 fd &amp;% ^&amp; fa fh ej ^^ 71 81 ei ^* &amp;$ ^* ei</code></p>
+<p>Convert everything to numbers, a=0 and symbols convert to their number position on the keyboard</p>
+<p><code>79 71 84 54 89 84 82 84 65 87 53 75 67 50 57 49 66 71 81 48 68 74 68 48</code></p>
+<p>Convert decimal to Ascii</p>
+<p><code>OGT6YTRTAW5KC291BGQ0DJD0</code></p>
+<p>Remember that strings starting with N or O can be Base64 to Ascii. Now we need to know which are lowercase and uppercase. From the original string, whatever was a pair of symbols needs to be converted to lowercase<br>
+<code>79 71 *$ fe 89 84 82 *$ ^% 87 fd &amp;% ^&amp; fa fh ej ^^ 71 81 ei ^* &amp;$ ^* ei</code><br>
+<code>O  G  t  6  Y  T  R  t  a  W  5  k  c  2  9  1  b  G  Q  0  d  j  d  0</code><br>
+<code>OGt6YTRtaW5kc291bGQ0djd0</code></p>
+<p>Convert Base64 to Ascii</p>
+<p><code>8kza4mindsould4v7t</code></p>
+<p>Need a substitution for Mind Soul, it usually is Body Mind Soul.</p>
+<p><code>8kza4bodyd4v7t</code></p>
+<p></p></div></div>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>All numbers, nothing really stands out.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">If you are thinking numbers to letters, you are on the right path. Just with a different twist.
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Niantic used a common cipher but with a different approach to make it a bit more harder to solve.</p>
+<p>I first started by making pairs<br>
+<code>05 08 06 02 18 07 01 04 00 00 00 13 08 00 04 00 03 12 07 01 11 04 01 06 00 00 02 11 01 23 12 00 04 09 05 03 14 07 06 12 03 05 06 03</code></p>
+<p>Seeing that 05 08 at the beginning I thought numbers to letters (a=0)<br>
+<code>FIGCSHBEAAANIAEADMHBLEBGAACLBXMAEJFDOHGMDFGD</code></p>
+<p>That just didn’t make any sense and was way to long to convert to a code.</p>
+<p>I then started playing with different ways of grouping the numbers. Groups of 4 gave me 22 groups which could lead to a code if numbers are spelled.<br>
+<code>0508 0602 1807 0104 0000 0013 0800 0400 0312 0701 1104 0106 0000 0211 0123 1200 0409 0503 1407 0612 0305 0603</code></p>
+<p>My first instinct was to just add up the numbers in each groups (0508=0+5+0+8=13). Seemed good since the first two set gave 13 &amp; 8 which gave NI. But the rest just didn’t make sense.</p>
+<p>Then I started adding pairs in each groups of 4 (0508=05 + 08=13) and got</p>
+<p><code>13 8 25 5 0 13 8 4 15 8 15 7 0 13 24 12 13 8 21 18 8 9</code></p>
+<p>Convert numbers to letters (a=0)</p>
+<p><code>NIZFANIEPIPHANYMNIVSIJ</code></p>
+<p><code>9zfa9epiphanym9v6j</code></p>
+<p></p></div></div>
+<p> </p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-576" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/04/17/the-balance-of-the-universe/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-576" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/04/17/the-balance-of-the-universe/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-576" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/04/17/the-balance-of-the-universe/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/04/17/the-balance-of-the-universe/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

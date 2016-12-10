@@ -1,0 +1,90 @@
+<div class="entry-content">
+			<p>Hidden inside the source of the “<a href="http://investigate.ingress.com/2016/06/01/devra-in-tainan/" target="_blank">Devra in Tainan</a>” post over at the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog, there are three codes:</p>
+<p><code>[1] m7k8vgmvnmtroz6kai8</code><br>
+<code>[2] 9f3t7ait6fdo</code><br>
+<code>[3] g5r2e1y0w7i1n0d0l1a1d9y5n6y1m0e3r1i1a5s1u0m1m1e1r8s1h1a3g5g7y1d1o6g</code></p>
+<p><span id="more-1153"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>Everything looks to be there, the obvious first step as well.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>This time, don’t do the full “normal” head bashing.</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p><code>m7k8vgmvnmtroz6kai8</code><br>
+Reverse the string to get everything in the right order<br>
+<code>8iak6zortmnvmgv8k7m</code><br>
+Atbash the entire code, but with this code, do not bash the numbers like we normally should.<br>
+<code>8rzp6alignmente8p7n</code><br>
+Popping that into your scanner gives a valid code.</p>
+<p></p></div></div>
+<hr>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>Everything is looks to be there, just in the wrong order. Should be simple enough.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>When you don’t find a known keyword, try what you have.</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Arrange the code into a 4×3 Grid</p>
+<table class=" table table-hover" style="width:2px">
+<tr>
+<td style="padding:5px"><code>o</code></td>
+<td style="padding:5px"><code>d</code></td>
+<td style="padding:5px"><code>f</code></td>
+<td style="padding:5px"><code>6</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>t</code></td>
+<td style="padding:5px"><code>i</code></td>
+<td style="padding:5px"><code>a</code></td>
+<td style="padding:5px"><code>7</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>t</code></td>
+<td style="padding:5px"><code>3</code></td>
+<td style="padding:5px"><code>f</code></td>
+<td style="padding:5px"><code>9</code></td>
+</tr>
+</table>
+<p>Read each row from right to left<br>
+<code>6fdo7ait9f3t</code></p>
+<p>Looking at our lists of known keywords we see that <code>AI</code> is not one of them.<br>
+Trying out the various possible substitutions gave no valid responses, which leads one to try the new word in the code as is.<br>
+With a response of valid passcode (even with FR) we now have a new keyword: <code>ai</code>.</p>
+<p></p></div></div>
+<hr>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>An interesting combination of alternating letter and number in this string.<br>
+This sometimes points towards two codes in one text, but since we already have three codes in this post, that is highly unlikely.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Don’t be afraid of separation anxiety!</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Separate the letters and numbers:<br>
+<code>greywindladynymeriasummershaggydog</code><br>
+<code>521071001195610311510111811357116</code></p>
+<p>Let us work with just the number section first.<br>
+Notice that we have numbers that look like they could be inside the desired decimal ranges.<br>
+Simple pairing will not be useful here since some for the decimal ranges are below 100 and above 100.<br>
+So separate the numbers into sensible pairs<br>
+<code>52 107 100 119 56 103 115 101 118 113 57 116</code><br>
+Convert from decimal to text<br>
+<code>4kdw8gsevq9t</code><br>
+Sub out that single written out number<br>
+<code>4kdw8 g7q9t</code><br>
+We have our pre-/suffix!</p>
+<p>Taking a look at the letters section now, we see some names.<br>
+Now for all of you Game of Thrones fans, this should be very easy to solve.<br>
+For those of you that don’t watch that series, here is a wiki entry found via Google: <a href="http://awoiaf.westeros.org/index.php/Direwolf#Named_Direwolves" target="_blank">Direwolfs</a> (Don’t worry, I took a page that doesn’t have any spoilers on it 🙂 )</p>
+<p>The first potential keyword that you might think of is <code>wolfe</code>, which in this case is not valid for this code.<br>
+Notice however that “Ghost” is missing from the listed names in our code and remember that ghost is also a valid keyword.<br>
+Combine that with our pre-/suffix for a valid code.</p>
+<p><code>4kdw8ghostg7q9t</code></p>
+<p></p></div></div>
+<hr>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1153" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/06/07/devra-in-tainan/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1153" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/06/07/devra-in-tainan/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1153" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/06/07/devra-in-tainan/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/06/07/devra-in-tainan/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

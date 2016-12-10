@@ -1,0 +1,122 @@
+<div class="entry-content">
+			<p>There are 6 codes found in the <a href="http://investigate.ingress.com/2016/05/19/klues-nightmares-and-her-dream/">Klue’s Nightmares and her Dream</a> post on the <a href="http://investigate.ingress.com/">Investigation Blog</a>. Normally there are only 3 codes found but there are 3 codes found in the image which was recycled from November 2014. 1, 2, and 3 are found in the source code; 4, 5, and 6 were found in the image.</p>
+<ol>
+<li><code>mcrhuq.wayzlsywfli.qeobbs.rumd<br>
+</code></li>
+<li><code>gsncftwgsiwtrevowevdrosik<br>
+</code></li>
+<li><code>hrxnotznitermatsixvmmthr</code></li>
+<li><img class="alignnone size-full wp-image-1005" src="https://i1.wp.com/ingress.codes/wp-content/uploads/2016/05/peace4.png?resize=180%2C25&amp;ssl=1" alt="peace4" data-recalc-dims="1"></li>
+<li><img class="alignnone size-full wp-image-1006" src="https://i1.wp.com/ingress.codes/wp-content/uploads/2016/05/peace5.png?resize=29%2C199&amp;ssl=1" alt="peace5" data-recalc-dims="1"></li>
+<li><img class="alignnone size-full wp-image-1007" src="https://i1.wp.com/ingress.codes/wp-content/uploads/2016/05/peace6.png?resize=79%2C142&amp;ssl=1" alt="peace6" data-recalc-dims="1"></li>
+</ol>
+<p><span id="more-1002"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>The code starts with an m, which could possibly lead it toward a Base64 decoding, but looking at the number of characters (30, or 27 excluding periods) it might not work. ROT-2 gives us a <code>two</code> at the end.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Looking at a ROT table will help.</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p><code>01 ndsivr.xbzamtzxgmj.rfpcct.svne<br>
+02 oetjws.ycabnuayhnk.sgqddu.twof<br>
+03 pfukxt.zdbcovbziol.threev.uxpg<br>
+04 qgvlyu.aecdpwcajpm.uisffw.vyqh<br>
+05 rhwmzv.bfdeqxdbkqn.vjtggx.wzri<br>
+06 sixnaw.cgefryeclro.wkuhhy.xasj<br>
+07 tjyobx.dhfgszfdmsp.xlviiz.ybtk<br>
+08 ukzpcy.eightagentq.ymwjja.zcul<br>
+09 vlaqdz.fjhiubhfour.znxkkb.advm<br>
+10 wmbrea.gkijvcigpvs.aoyllc.bewn<br>
+11 xncsfb.hljkwdjhqwt.bpzmmd.cfxo<br>
+12 yodtgc.imklxekirxu.cqanne.dgyp<br>
+13 zpeuhd.jnlmyfljsyv.drboof.ehzq<br>
+14 aqfvie.komnzgmktzw.escppg.fiar<br>
+15 brgwjf.lpnoahnluax.ftdqqh.gjbs<br>
+16 cshxkg.mqopbiomvby.guerri.hkct<br>
+17 dtiylh.nrpqcjpnwcz.hvfssj.ildu<br>
+18 eujzmi.osqrdkqoxda.iwgttk.jmev<br>
+19 fvkanj.ptrselrpyeb.jxhuul.knfw<br>
+20 gwlbok.qustfmsqzfc.kyivvm.logx<br>
+21 hxmcpl.rvtugntragd.lzjwwn.mphy<br>
+22 iyndqm.swuvhousbhe.makxxo.nqiz<br>
+23 jzoern.txvwipvtcif.nblyyp.orja<br>
+24 kapfso.uywxjqwudjg.ocmzzq.pskb<br>
+25 lbqgtp.vzxykrxvekh.pdnaar.qtlc</code></p>
+<p>The words six, eight, three, and two appear when the code is ROT against those numbers. Taking out those specific pieces:</p>
+<p><code>sixnaweightagentqthreevtwof</code></p>
+<p><code>6naw8agentq3v2f</code></p>
+<p></p></div></div>
+<hr>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>There are 25 characters in the code, which can give us a nice 5×5 square to look at.</p>
+<p><code>gsncf<br>
+twgsi<br>
+wtrev<br>
+owevd<br>
+rosik</code></p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Reading down and to the left from the top-right corner gives us:</p>
+<p><code>fivdkcsevingresswtwogtwor</code></p>
+<p><code>5dkc7ingressw2g2r</code></p>
+<p></p></div></div>
+<hr>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>We see <code>thr</code> and <code>six</code> near the end of the code which can be substituted for 3 and 6 respectively. There is nothing at the beginning of the code though but there is an <code>hrx</code>.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p><code>(t)hrx</code></p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Grouping them into 3’s:</p>
+<p><code>hrx not zni ter mat six vmm thr</code></p>
+<p>And reversing each set of 3:</p>
+<p><code>xrh ton inz ret tam xis mmv rht</code></p>
+<p>And reversing the whole string:</p>
+<p><code>thrvmmsixmatterzninothrx</code></p>
+<p><code>3vmm6matterz9o3x</code></p>
+<p></p></div></div>
+<hr>
+<h1>Code #4</h1>
+<p><code>f5q0sfwpsqnj6ceg4 (top section of hair)</code></p>
+<h2>Observations</h2>
+<p>The code is in the right format if it were reversed but the 0 is a bit off.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Go backwards</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p><code>f5q0sfwpsqnj6ceg4</code></p>
+<p>Apply ROT – -1 (ROT negative 1):</p>
+<p><code>e4p9revorpmi5bdf3</code></p>
+<p>And reverse the code:</p>
+<p><code>3fdb5improver9p4e</code></p>
+<p></p></div></div>
+<hr>
+<h1>Code #5</h1>
+<p><code>5pnh31.34ga7a8b (middle of the right edge)</code></p>
+<h2>Observations</h2>
+<p>The code has the proper format but <code>1.34g</code> is not a valid keyword. The reverse: <code>g43.1</code>, however, shows results for <a href="http://www.icd10data.com/ICD10CM/Codes/G00-G99/G40-G47/G43-/G43.1">Migraine with aura.</a></p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">There is more than one thing to reverse.</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Reverse the prefix, keyword portion, and suffix:</p>
+<p><code>3hnp5</code><br>
+<code>g43.1</code><br>
+<code>b8a7a</code></p>
+<p>Substitute g43.1 with aura</p>
+<p><code>3hnp5aurab8a7a</code></p>
+<p></p></div></div>
+<hr>
+<h1>Code #6</h1>
+<p><code>octc</code><br>
+<code>uear</code><br>
+<code>ress</code><br>
+<code>quab</code><br>
+<code>eeba</code><br>
+<code>abee</code><br>
+<code>quac</code><br>
+<code>uehe</code><br>
+<code>xyou</code></p>
+<p><code>(bottom section of hair)</code></p>
+<h2></h2>
+<p><span style="color: #ff0000;">Code is still live at the time of this writing.</span></p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1002" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/05/21/klues-nightmares-and-her-dream/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1002" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/05/21/klues-nightmares-and-her-dream/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1002" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/05/21/klues-nightmares-and-her-dream/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/05/21/klues-nightmares-and-her-dream/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

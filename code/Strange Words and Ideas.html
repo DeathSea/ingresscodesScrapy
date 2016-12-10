@@ -1,0 +1,189 @@
+<div class="entry-content">
+			<p>Inside the blog post <a href="http://investigate.ingress.com/2016/04/11/strange-words-and-ideas/" target="_blank">Strange Words and Ideas</a> over at <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a>, the following three codes where found:</p>
+<p><code>[1] lvilxxxvlxixlxxviiiliVlxxviiilivlxvililxxxii<br>
+[2] kfkbzqtqeobbpvmexuzvybiixlqtlbclroz<br>
+[3] 7c4848a2add0446ccfc3b091f8de7e23297ab48395905d5d6f00ff0abab5a52a2ae1a95ffdee0000827f006a4effa343ba160c738678c19a6bff4f00d2b48c</code></p>
+<p><span id="more-484"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">All the letters used in the code looks like what was once used for counting.<br>
+</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">Split the code into sensible Roman Numerals<br>
+<code>lvi lxxxv lxix lxxviii li V lxxviii liv lxvi li lxxxii</code>
+<p>Notice that the capital <code>V</code> is a bit out of place among the lower-case characters.<br>
+This points strongly towards it being an indicator for being the keyword.<br>
+Looking at <a href="http://glyphtionary.com/" target="_blank">Glyphtionary</a>, we see it most likely is the <code>Defend</code> glyph. If that doesn’t work, we will try the <code>Less</code> glyph.</p>
+<p>Convert Roman numerals to Numbers, ignoring the capital <code>V</code><br>
+<code>lvi lxxxv lxix lxxviii li V lxxviii liv lxvi li lxxxii<br>
+56 85 69 78 51 78 54 66 51 82</code><br>
+Convert Decimal to ASCII<br>
+<code>8UEN3N6B3R</code><br>
+Add the keyword<br>
+<code>8UEN3defendN6B3R</code><br>
+</p></div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">Running the code through the initial analysing steps, we notice that ROT-3 seems to be what we will need here<br>
+<code>ninectwthreesyphaxcybellaotwoefourc</code>
+<p>Substitute out the numbers<br>
+<code>9ctw3syphaxcybellao2e4c</code></p>
+<p>Doing a bit of searching, we find the post <a href="http://investigate.ingress.com/2016/02/03/on-syphax-words-from-the-acolyte/" target="_blank">“On Syphax – Words from The Acolyte”</a> over at the Investigation Board.<br>
+There the Acolyte speaks on the subjects of Cybella, Syphax and <strong>Obsidius</strong><br>
+Trying out both <code>Acolyte</code> and <code>Obsidius</code> as the keywords, we find that <code>Obsidius</code> is the valid one here<br>
+<code>9ctw3Obsidiuso2e4c</code><br>
+</p></div></div>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">This is a long code, so look at how it can be <a href="http://multidec.web-lab.at/rects.php" target="_blank">columnised</a> to make smaller, more usable chunks and what those chunks can represent.<br>
+</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">Making a grid of 6×21 gives us<br>
+<code>7c4848<br>
+a2add0<br>
+446ccf<br>
+c3b091<br>
+f8de7e<br>
+23297a<br>
+b48395<br>
+905d5d<br>
+6f00ff<br>
+0abab5<br>
+a52a2a<br>
+e1a95f<br>
+fdee00<br>
+00827f<br>
+006a4e<br>
+ffa343<br>
+ba160c<br>
+738678<br>
+c19a6b<br>
+ff4f00<br>
+d2b48c</code><br>
+Many of the Hex values are well out of the range of ASCII characters, so we’ll need to find something else that they represent.<br>
+Looking at <a href="https://en.wikipedia.org/wiki/RGB_color_model#Numeric_representations" target="_blank">RGB</a> colour values and what names our values point at, we find that this might be the right path.
+<p>Using either <a href="http://www.spycolor.com/" target="_blank">SpyColor.com</a> or <a href="http://encycolorpedia.com" target="_blank">Encycolorpedia.com</a>, get the colour names of all the values.</p>
+<table class=" table table-hover">
+<thead>
+<tr>
+<th>Value</th>
+<th>Links</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7c4848</td>
+<td><a href="http://www.spycolor.com/7c4848" target="_blank">[1]</a><a href="http://encycolorpedia.com/7c4848" target="_blank">[2]</a></td>
+<td>Tuscan Red</td>
+</tr>
+<tr>
+<td>a2add0</td>
+<td><a href="http://www.spycolor.com/a2add0" target="_blank">[1]</a><a href="http://encycolorpedia.com/a2add0" target="_blank">[2]</a></td>
+<td>Wild Blue Yonder</td>
+</tr>
+<tr>
+<td>446ccf</td>
+<td><a href="http://www.spycolor.com/446ccf" target="_blank">[1]</a><a href="http://encycolorpedia.com/446ccf" target="_blank">[2]</a></td>
+<td>Han Blue</td>
+</tr>
+<tr>
+<td>c3b091</td>
+<td><a href="http://www.spycolor.com/c3b091" target="_blank">[1]</a><a href="http://encycolorpedia.com/c3b091" target="_blank">[2]</a></td>
+<td>Khaki</td>
+</tr>
+<tr>
+<td>f8de7e</td>
+<td><a href="http://www.spycolor.com/f8de7e" target="_blank">[1]</a><a href="http://encycolorpedia.com/f8de7e" target="_blank">[2]</a></td>
+<td>Jasmine, Mellow Yellow</td>
+</tr>
+<tr>
+<td>23297a</td>
+<td><a href="http://www.spycolor.com/23297a" target="_blank">[1]</a><a href="http://encycolorpedia.com/23297a" target="_blank">[2]</a></td>
+<td>St. Patrick’s Blue</td>
+</tr>
+<tr>
+<td>b48395</td>
+<td><a href="http://www.spycolor.com/b48395" target="_blank">[1]</a><a href="http://encycolorpedia.com/b48395" target="_blank">[2]</a></td>
+<td>English Lavender</td>
+</tr>
+<tr>
+<td>905d5d</td>
+<td><a href="http://www.spycolor.com/905d5d" target="_blank">[1]</a><a href="http://encycolorpedia.com/905d5d" target="_blank">[2]</a></td>
+<td>Rose Taupe</td>
+</tr>
+<tr>
+<td>6f00ff</td>
+<td><a href="http://www.spycolor.com/6f00ff" target="_blank">[1]</a><a href="http://encycolorpedia.com/6f00ff" target="_blank">[2]</a></td>
+<td>Electric Indigo, Indigo</td>
+</tr>
+<tr>
+<td>0abab5</td>
+<td><a href="http://www.spycolor.com/0abab5" target="_blank">[1]</a><a href="http://encycolorpedia.com/0abab5" target="_blank">[2]</a></td>
+<td>Tiffany Blue</td>
+</tr>
+<tr>
+<td>a52a2a</td>
+<td><a href="http://www.spycolor.com/a52a2a" target="_blank">[1]</a><a href="http://encycolorpedia.com/a52a2a" target="_blank">[2]</a></td>
+<td>Red-brown, Brown (web), Auburn</td>
+</tr>
+<tr>
+<td>e1a95f</td>
+<td><a href="http://www.spycolor.com/e1a95f" target="_blank">[1]</a><a href="http://encycolorpedia.com/e1a95f" target="_blank">[2]</a></td>
+<td>Earth Yellow</td>
+</tr>
+<tr>
+<td>fdee00</td>
+<td><a href="http://www.spycolor.com/fdee00" target="_blank">[1]</a><a href="http://encycolorpedia.com/fdee00" target="_blank">[2]</a></td>
+<td>Aureolin</td>
+</tr>
+<tr>
+<td>00827f</td>
+<td><a href="http://www.spycolor.com/00827f" target="_blank">[1]</a><a href="http://encycolorpedia.com/00827f" target="_blank">[2]</a></td>
+<td>Teal Green</td>
+</tr>
+<tr>
+<td>006a4e</td>
+<td><a href="http://www.spycolor.com/006a4e" target="_blank">[1]</a><a href="http://encycolorpedia.com/006a4e" target="_blank">[2]</a></td>
+<td>Bangladesh Green, Bottle Green</td>
+</tr>
+<tr>
+<td>ffa343</td>
+<td><a href="http://www.spycolor.com/ffa343" target="_blank">[1]</a><a href="http://encycolorpedia.com/ffa343" target="_blank">[2]</a></td>
+<td>Neon Carrot</td>
+</tr>
+<tr>
+<td>ba160c</td>
+<td><a href="http://www.spycolor.com/ba160c" target="_blank">[1]</a><a href="http://encycolorpedia.com/ba160c" target="_blank">[2]</a></td>
+<td>International Orange</td>
+</tr>
+<tr>
+<td>738678</td>
+<td><a href="http://www.spycolor.com/738678" target="_blank">[1]</a><a href="http://encycolorpedia.com/738678" target="_blank">[2]</a></td>
+<td>Xanadu</td>
+</tr>
+<tr>
+<td>c19a6b</td>
+<td><a href="http://www.spycolor.com/c19a6b" target="_blank">[1]</a><a href="http://encycolorpedia.com/c19a6b" target="_blank">[2]</a></td>
+<td>Fallow, Camel, Desert, Lion, Wood Brown</td>
+</tr>
+<tr>
+<td>ff4f00</td>
+<td><a href="http://www.spycolor.com/ff4f00" target="_blank">[1]</a><a href="http://encycolorpedia.com/ff4f00" target="_blank">[2]</a></td>
+<td>International Orange (aerospace)</td>
+</tr>
+<tr>
+<td>d2b48c</td>
+<td><a href="http://www.spycolor.com/d2b48c" target="_blank">[1]</a><a href="http://encycolorpedia.com/d2b48c" target="_blank">[2]</a></td>
+<td>Tan</td>
+</tr>
+</tbody>
+</table>
+<p>Take the first character of each colour name<br>
+Note that sometimes you need to repeat this and use one of the other names listed. Look at what is needed for the passcode to determine which one to use.<br>
+<code>TWHKJSERETREATBNIXFIT</code><br>
+Sub out the numbers<br>
+<code>2HKJ7RETREATB9X5T</code><br>
+</p></div></div>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-484" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/04/14/strange-words-and-ideas/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-484" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/04/14/strange-words-and-ideas/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-484" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/04/14/strange-words-and-ideas/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/04/14/strange-words-and-ideas/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

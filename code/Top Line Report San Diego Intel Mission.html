@@ -1,0 +1,121 @@
+<div class="entry-content">
+			<p>3 codes where found hidden in the HTML of the <a class="d-s ot-anchor" tabindex="0" title="Top Line Report: San Diego Intel Mission" href="http://investigate.ingress.com/2016/05/07/top-line-report-san-diego-intel-mission/" target="_blank" rel="nofollow">Top Line Report: San Diego Intel Mission</a> post on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog.</p>
+<p>[1] <code>cccfchchcfahaiacbcbfcdabcebebfcdadahaibh</code></p>
+<p>[2] <code>uk4ruh8r8t8teyez</code></p>
+<p>[3] <code>6983098964768885779162966598</code></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>We see a set of limited alpha characters.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">It may be easier to dial with numbers</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>In pairs we notice the first digit is always low (1-3), the second is 2-9.</p>
+<p><code>33 36 38 38 36 18 19 13 23 26 34 12 35 25 26 34 14 18 19 28</code></p>
+<p>This resembles a phone cipher, similar to (non-predictive) T9 texting.  Find the 2-9 digit and select the 1-4 letter.  eg: 3rd letter on the “3” button</p>
+<p><code>FOVVOTWDENIALKNIGTWU</code></p>
+<p>Replace the numbers (first two letters) with numbers</p>
+<p><code>4VVO2DENIALK9G2U</code></p>
+<p></p></div></div>
+<h1> Code #2</h1>
+<h2>Observations</h2>
+<p>Has all the elements of a passcode.  A keyword can be found.  Appears to be a rearrangement of sorts.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Sometimes the keyword is found divided</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">Make a grid of 2×8
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="padding: 2px;"><code>u</code></td>
+<td style="padding: 2px;"><code>k</code></td>
+</tr>
+<tr>
+<td style="padding: 2px;"><code>4</code></td>
+<td style="padding: 2px;"><code>r</code></td>
+</tr>
+<tr>
+<td style="padding: 2px;"><code>u</code></td>
+<td style="padding: 2px;"><code>h</code></td>
+</tr>
+<tr>
+<td style="padding: 2px;"><code>8</code></td>
+<td style="padding: 2px;"><code>r</code></td>
+</tr>
+<tr>
+<td style="padding: 2px;"><code>8</code></td>
+<td style="padding: 2px;"><code>t</code></td>
+</tr>
+<tr>
+<td style="padding: 2px;"><code>8</code></td>
+<td style="padding: 2px;"><code>t</code></td>
+</tr>
+<tr>
+<td style="padding: 2px;"><code>e</code></td>
+<td style="padding: 2px;"><code>y</code></td>
+</tr>
+<tr>
+<td style="padding: 2px;"><code>e</code></td>
+<td style="padding: 2px;"><code>z</code></td>
+</tr>
+</tbody>
+</table>
+<p>Reverse each row</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="padding: 2px;"><code>k</code></td>
+<td style="padding: 2px;"><code>u</code></td>
+</tr>
+<tr>
+<td style="padding: 2px;"><code>r</code></td>
+<td style="padding: 2px;"><code>4</code></td>
+</tr>
+<tr>
+<td style="padding: 2px;"><code>h</code></td>
+<td style="padding: 2px;"><code>u</code></td>
+</tr>
+<tr>
+<td style="padding: 2px;"><code>r</code></td>
+<td style="padding: 2px;"><code>8</code></td>
+</tr>
+<tr>
+<td style="padding: 2px;"><code>t</code></td>
+<td style="padding: 2px;"><code>8</code></td>
+</tr>
+<tr>
+<td style="padding: 2px;"><code>t</code></td>
+<td style="padding: 2px;"><code>8</code></td>
+</tr>
+<tr>
+<td style="padding: 2px;"><code>y</code></td>
+<td style="padding: 2px;"><code>e</code></td>
+</tr>
+<tr>
+<td style="padding: 2px;"><code>z</code></td>
+<td style="padding: 2px;"><code>e</code></td>
+</tr>
+</tbody>
+</table>
+<p>Regroup keyword and affix<br>
+<code>kur 4hur8t8t8y eze</code><br>
+Rearrange each part so that the keyword is now combined in the middle<br>
+<code>4hur8kurezet8t8y</code><br>
+Substitute the keyword<br>
+<code>4hur8victort8t8y</code></p>
+<p></p></div></div>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>This code is nested withing <code>&lt;SPAN&gt;</code> tags which may offer some hints:</p>
+<p><code>&lt;span style="font-size: 1px; letter-spacing: -1px;"&gt;6983098964768885779162966598</code></p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">The numbers looks close to decimal range.  Perhaps we should apply the SPAN hints (-1, +1)</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Using the span hints we ROT alternating digits -1, +1</p>
+<p><code>-1: 5 7 9 7 5 6 7 7 6 8 5 8 5 8</code><br>
+<code>00: 6983098964768885779162966598</code><br>
+<code>+1:  0 4 0 0 5 7 9 6 8 2 3 7 6 9</code></p>
+<p>Combine the pairs</p>
+<p><code> 50 74 90 70 55 67 79 76 68 82 53 87 56 89</code></p>
+<p>Convert from Decimal</p>
+<p><code>2JZF7COLDR5W8Y</code><br>
+</p></div></div>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-888" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/05/11/top-line-report-san-diego-intel-mission/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-888" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/05/11/top-line-report-san-diego-intel-mission/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-888" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/05/11/top-line-report-san-diego-intel-mission/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/05/11/top-line-report-san-diego-intel-mission/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

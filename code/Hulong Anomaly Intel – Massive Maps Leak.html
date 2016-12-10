@@ -1,0 +1,69 @@
+<div class="entry-content">
+			<p>Inside the “<a href="http://investigate.ingress.com/2016/05/20/hulong-anomaly-intel-massive-maps-leak/" target="_blank">Hulong Anomaly Intel – Massive Maps Leak</a>” post on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog, we ca find three codes hidden in the source:</p>
+<p><code>[1] 6jhs5a-ag2h7v</code><br>
+<code>[2] cfo9vrj2rn7n9tswo</code><br>
+<code>[3] %$^(^&amp;*#%)^&amp;!%%&amp;*%)&amp;&amp;</code></p>
+<p><span id="more-1013"></span></p>
+<hr>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>Seems like we have everything for a passcode, just need to figure out the KW section.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Sometimes that which is not there should be.</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Dividing up the code into our sections, we can determine what the keyword section could spell out<br>
+<code>6jhs5 a-a g2h7v</code><br>
+<code>ADA</code> is a known keyword, but for this code it is not the right keyword.<br>
+They “<em>marked</em>” the <code>D</code> in a different way, which stands for <code>Detection</code> in the acronym.<br>
+Substitute that into the KW section for the final solve.<br>
+<code>6jhs5detectiong2h7v</code></p>
+<p></p></div></div>
+<hr>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>Looks like we have everything we need again, even in some form of a correct order.<br>
+The normal transposition ciphers (Skip, Rectangle, Railfence) bring nothing usefull, so a different type of transposition looks to be needed than what we normally do.<br>
+</p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>It is all about the middle.</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Notice that we have the prefix and suffix in the code, but it looks somewhat backwards?<br>
+Split up the code so that there is a left, middle and right side.<br>
+<code>cfo9vrj2 r n7n9tswo</code><br>
+Reverse the left section on itself and do the same with the right section<br>
+<code>2jrv9ofc r owst9n7n</code><br>
+Piece it all together<br>
+<code>2jrv9ofcrowst9n7n</code><br>
+Googling “<em>of crows</em>” (or if you happen to know it) will direct you to the <a href="https://en.wikipedia.org/wiki/List_of_English_terms_of_venery,_by_animal" target="_blank">collective noun</a> of crows, “<em>Murder of crows</em>.<br>
+Sub in the keyword for the final solve<br>
+<code>2jrv9murdert9n7n</code></p>
+<p></p></div></div>
+<hr>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>Symbols, symbols, symbols, this almost always rings just one thing in my head.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Looks at your hands, if they are on the keyboard.</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>These symbols are <em>almost</em> always used for a <a href="https://ingress.codes/keyboard-layout-qwerty/" target="_blank">QWERTY US-Layout Keyboard</a> substitution as a first step, so let us do that first<br>
+<code>546967835067155785077</code><br>
+Notice that we have an uneven number which prevents us from doing pairs?<br>
+They have used this trick before, but this time it doesn’t throw us off!<br>
+Looking at the original code, we see that between the first (<code>%</code>), middle (<code>^</code>) and last character (<code>&amp;</code>), only the middle one could be seen as a glyph, so keep it in its original state.<br>
+<code>5469678350^7155785077</code><br>
+Pair up the rest of the numbers<br>
+<code>54 69 67 83 50 ^ 71 55 78 50 77</code><br>
+Convert from Decimal to ASCII<br>
+<code>6ECS2 ^ G7N2M</code><br>
+Looking at <a href="http://glyphtionary.com/" target="_blank">Glyphtionary</a> we see that <code>^</code> can either be the <code>Attack</code>, <code>War</code>, <code>Die</code> or <code>More</code> glyph.<br>
+For this code, it is the Attack glyph.<br>
+<code>6ECS2attackG7N2M</code></p>
+<p></p></div></div>
+<hr>
+<p>As a bonus hidden puzzle, the image of the <em><a href="http://investigate.ingress.com/wp-content/uploads/2016/05/RotterdamAnomalyZone.png" target="_blank">Full Anomaly Zone</a></em> for Rotterdam included a hint to some extra storyline Media, which is what lead to the next <a href="http://investigate.ingress.com/2016/05/21/a-cryptic-message-from-nigel-moyer/" target="_blank">Investigate Ingress</a> post with codes. So it is always good to have a closer look at everything in a post.</p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1013" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/05/22/hulong-anomaly-intel-massive-maps-leak/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1013" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/05/22/hulong-anomaly-intel-massive-maps-leak/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1013" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/05/22/hulong-anomaly-intel-massive-maps-leak/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/05/22/hulong-anomaly-intel-massive-maps-leak/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

@@ -1,0 +1,183 @@
+<div class="entry-content">
+			<p>Three codes were hidden in the HTML code of the <a class="d-s ot-anchor" tabindex="0" title="The Festival" href="http://investigate.ingress.com/2016/08/14/the-festival/" target="_blank" rel="nofollow">The Festival</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] .--. ---.. --.- .--. --... --.. --.- --.. --.- --.- -..- -..- -.-. .-. --.. -.-. --.- -... --.. -.... --.- --.. --.- -... --.- ...-- .-.. ..- -... --</code></p>
+<p><code>[2] rrreccoxrrrecowrrroxxweccxxxweconxrecoxxwrrecoxwecwrrrcccorrrexcxxw</code></p>
+<p><code>[3] isjdsisieuraifisaocf</code></p>
+<p><span id="more-1701"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>Sometime things are not what they seem. Maybe count how many characters you have.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>You could try converting to morse and figure what it all means but if you count the characters in the string it comes up to 120. 120 divided by 8 is 15 which makes it a good candidate for binary. Make groups of 8 and convert dots to 0 and dashes to 1</p>
+<table class=" table table-hover" style="width: 193px;">
+<tbody>
+<tr>
+<td style="width: 116px;" colspan="3"><code>.--.---.</code></td>
+<td style="width: 89px;"><code>01101110</code></td>
+</tr>
+<tr>
+<td style="width: 116px;" colspan="3"><code>.--.-.--</code></td>
+<td style="width: 89px;"><code>01101011</code></td>
+</tr>
+<tr>
+<td style="width: 116px;" colspan="3"><code>.--...--</code></td>
+<td style="width: 89px;"><code>01100011</code></td>
+</tr>
+<tr>
+<td style="width: 116px;" colspan="3"><code>..--.---</code></td>
+<td style="width: 89px;"><code>00110111</code></td>
+</tr>
+<tr>
+<td style="width: 116px;" colspan="3"><code>..--.---</code></td>
+<td style="width: 89px;"><code>00110111</code></td>
+</tr>
+<tr>
+<td style="width: 116px;" colspan="3"><code>.--..--.</code></td>
+<td style="width: 89px;"><code>01100110</code></td>
+</tr>
+<tr>
+<td style="width: 116px;" colspan="3"><code>.--.-..-</code></td>
+<td style="width: 89px;"><code>01101001</code></td>
+</tr>
+<tr>
+<td style="width: 116px;" colspan="3"><code>.--..-.-</code></td>
+<td style="width: 89px;"><code>01100101</code></td>
+</tr>
+<tr>
+<td style="width: 116px;" colspan="3"><code>.--.--..</code></td>
+<td style="width: 89px;"><code>01101100</code></td>
+</tr>
+<tr>
+<td style="width: 116px;" colspan="3"><code>.--..-..</code></td>
+<td style="width: 89px;"><code>01100100</code></td>
+</tr>
+<tr>
+<td style="width: 116px;" colspan="3"><code>..--.---</code></td>
+<td style="width: 89px;"><code>00110111</code></td>
+</tr>
+<tr>
+<td style="width: 116px;" colspan="3"><code>..--.--.</code></td>
+<td style="width: 89px;"><code>00110110</code></td>
+</tr>
+<tr>
+<td style="width: 116px;" colspan="3"><code>..--.-..</code></td>
+<td style="width: 89px;"><code>00110100</code></td>
+</tr>
+<tr>
+<td style="width: 116px;" colspan="3"><code>.--.-...</code></td>
+<td style="width: 89px;"><code>01101000</code></td>
+</tr>
+<tr>
+<td style="width: 116px;" colspan="3"><code>.--...--</code></td>
+<td style="width: 89px;"><code>01100011</code></td>
+</tr>
+</tbody>
+</table>
+<p>Convert binary to Ascii</p>
+<p class="p1"><code>nkc77field764hc</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">Notice how characters are repeating and only use certain letters ?</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Start with Atbash</p>
+<p class="p1"><code>iiivxxlciiivxldiiilccdvxxcccdvxlmcivxlccdiivxlcdvxdiiixxxliiivcxccd</code></p>
+<p class="p1">We now have roman numerals, reverse the string</p>
+<p class="p1"><code>dccxcviiilxxxiiidxvdclxviidcclxvicmlxvdcccxxvdccliiidlxviiiclxxviii</code></p>
+<p class="p1">Split to have valid roman numerals and convert them to decimal.</p>
+<table class=" table table-hover" style="width: 161px;">
+<tbody>
+<tr style="height: 24.5625px;">
+<td style="height: 24.5625px; width: 96px;"><code>dccxcviii</code></td>
+<td style="height: 24.5625px; width: 53px;"><code>798</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 96px;"><code>lxxxiii</code></td>
+<td style="height: 24px; width: 53px;"><code>083</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 96px;"><code>dxv</code></td>
+<td style="height: 24px; width: 53px;"><code>515</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 96px;"><code>dclxvii</code></td>
+<td style="height: 24px; width: 53px;"><code>667</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 96px;"><code>dcclxvi</code></td>
+<td style="height: 24px; width: 53px;"><code>766</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 96px;"><code>cmlxv</code></td>
+<td style="height: 24px; width: 53px;"><code>965</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 96px;"><code>dcccxxv</code></td>
+<td style="height: 24px; width: 53px;"><code>825</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 96px;"><code>dccliii</code></td>
+<td style="height: 24px; width: 53px;"><code>753</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 96px;"><code>dlxviii</code></td>
+<td style="height: 24px; width: 53px;"><code>568</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 96px;"><code>clxxviii</code></td>
+<td style="height: 24px; width: 53px;"><code>178</code></td>
+</tr>
+</tbody>
+</table>
+<p>Make sure to put the leading 0 on the second value (83).</p>
+<p>Make pairs</p>
+<p class="p1"><code>79 80 83 51 56 67 76 69 65 82 57 53 56 81 78</code></p>
+<p class="p1">Convert decimal to Ascii</p>
+<p class="p1"><code>OPS38CLEAR958QN</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">20 characters, you can see a few 2 letter numbers in there.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Reverse the string</p>
+<p class="p1"><code>fcoasifiarueisisdjsi</code></p>
+<p class="p1">When making a rectangle you can almost see the keyword aura put the rest doesn’t work. Change the 2 letter numbers to numbers first</p>
+<p class="p1"><code>fcoa65aru86sdj6</code></p>
+<p class="p1">Make a 3×5 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 35px; height: 24px;"><code>f</code></td>
+<td style="width: 36px; height: 24px;"><code>c</code></td>
+<td style="width: 47px; height: 24px;"><code>o</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 35px; height: 24px;"><code>a</code></td>
+<td style="width: 36px; height: 24px;"><code>6</code></td>
+<td style="width: 47px; height: 24px;"><code>5</code></td>
+</tr>
+<tr style="height: 24.3438px;">
+<td style="width: 35px; height: 24.3438px;"><code>a</code></td>
+<td style="width: 36px; height: 24.3438px;"><code>r</code></td>
+<td style="width: 47px; height: 24.3438px;"><code>u</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 35px; height: 24px;"><code>8</code></td>
+<td style="width: 36px; height: 24px;"><code>6</code></td>
+<td style="width: 47px; height: 24px;"><code>s</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 35px; height: 24px;"><code>d</code></td>
+<td style="width: 36px; height: 24px;"><code>j</code></td>
+<td style="width: 47px; height: 24px;"><code>6</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read left from the upper right O</p>
+<p class="p1"><code>ocf56auras686jd</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1701" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/08/17/the-festival/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1701" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/08/17/the-festival/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1701" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/08/17/the-festival/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/08/17/the-festival/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

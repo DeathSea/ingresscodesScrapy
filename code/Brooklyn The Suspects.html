@@ -1,0 +1,83 @@
+<div class="entry-content">
+			<p>Looking inside the source of the “<a href="http://investigate.ingress.com/2016/06/09/brooklyn-the-suspects/" target="_blank">Brooklyn: The Suspects</a>” post over on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog, we can find two codes hidden in the source and one in the image of the post:</p>
+<p><code>[1] 17m691m7212698459&amp;3p3m2468802436547&amp;2p2m3m281m23083330619</code><br>
+<code>[2] f9u4o8v4a8p7b9l7o7g7o5s6q8q6</code><br>
+<code>[3] ++ugsdfsrythyosdtpvdwtzdjfisdejufa--</code></p>
+<p><span id="more-1231"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>If you are good at math, you might find some character in the numbers</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Primes matter</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Lets seperate the code by ‘&amp;’<br>
+<code>17m691m7212698459</code><br>
+<code>3p3m2468802436547</code><br>
+<code>2p2m3m281m23083330619</code><br>
+You may notice that all numbers are primes.<br>
+Substituting ‘m’ with ‘*’ and ‘p’ with ‘^’ gives</p>
+<p><code>17*691*7212698459</code><br>
+<code>3^3*2468802436547</code><br>
+<code>2^2*3*281*23083330619</code><br>
+Calculate each block (note that power should be calculated first, e.g (3^3)*2468802436547 = 9*2468802436547 )</p>
+<p><code>84727568797873</code><br>
+<code>66657665786769</code><br>
+<code>77836990847268</code></p>
+<p>Convert each row into ASCII and join them together</p>
+<p><code>THKDONIBALANCEMSEZTHD</code></p>
+<p>Substitute numbers</p>
+<p><code>3KDO9BALANCEM7Z3D</code><br>
+</p></div></div>
+<hr>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>We have an interesting code of alternating letters and numbers.<br>
+This normally means that we could split the two for two different parts of the solve.<br>
+Remember that if the original string itself was longer, that that might hint at there being two codes hidden in it.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Solve numbers first, that is the key ingredient to solving the letters.</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Splitting the letters and numbers, we end up with this:<br>
+<code>94848797775686</code><br>
+<code>fuovapblogosqq</code></p>
+<p>Let us solve the numbers first.<br>
+They seem to be almost in a decent range when paired up, but not quite there, instead reverse them first (shown here after pairing)<br>
+<code>68 65 77 79 78 48 49</code><br>
+Convert from decimal to text<br>
+<code>DAMON01</code><br>
+Reverse this<br>
+<code>10NOMAD</code></p>
+<p>Now somehow, <code>10NOMAD</code> needs to refer one to the keyword of <code>mystic</code>. If you happen to know what links these two, let us know.<br>
+But since we could not find any concrete direct referencing, <a href="https://ingress.codes/author/kokuryuu/" target="_blank">Kokuryuu</a> did a Vig brute with all the keywords to find it.</p>
+<p>Because the numbers section gave us a keyword, we know that the letters section should then be the pre-/suffix, we take the result of the Vig for our next step<br>
+<code>twwcsnipsewfib</code><br>
+Replace the written numbers to show us the pre-/suffix<br>
+<code>2wcs9p7w5b</code></p>
+<p>Add everything together for the final solve.<br>
+<code>2wcs9mysticp7w5b</code></p>
+<p></p></div></div>
+<hr>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>Here we have a code preceded by <code>+</code> and followed by <code>-</code>, this is a good indicator that something should sometimes be positive and sometimes negative.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Look a bit further into the normal “try these first” ciphers.</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Running the text through the normal, all possibles of <a href="http://multidec.web-lab.at/rot.php" target="_blank">ROT</a>, we can see something intriguing with the first and last one.<br>
+<code>ROT +01: v<em><strong>h</strong></em>t<em><strong>e</strong></em>gtszu<em><strong>i</strong></em>zpteuqwexuaekgjtefkvgb</code><br>
+<code>ROT +25: <em><strong>t</strong></em>f<em><strong>r</strong></em>c<em><strong>e</strong></em>rqx<em><strong>s</strong></em>g<em><strong>x</strong></em>nrcsoucvsyciehrcditez</code><br>
+See that if you were to take alternating letters from each line, we get spelled out numbers?<br>
+Remember that <em>ROT +25</em> is the same as <em>ROT -1</em>, which links back nicely to the given hint.</p>
+<p>Reading the lines, starting with the ROT -1 and alternating between them, we get<br>
+<code>threetqzsixpresquevuyeightcfiveb</code><br>
+Substituting the written numbers gives us the final solve<br>
+<code>3tqz6presquevuy8c5b</code></p>
+<p></p></div></div>
+<hr>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1231" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/06/17/brooklyn-the-suspects/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1231" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/06/17/brooklyn-the-suspects/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1231" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/06/17/brooklyn-the-suspects/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/06/17/brooklyn-the-suspects/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

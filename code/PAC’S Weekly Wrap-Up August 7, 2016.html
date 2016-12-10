@@ -1,0 +1,97 @@
+<div class="entry-content">
+			<p>Three codes could be found in the <a class="d-s ot-anchor" tabindex="0" title="PAC’S WEEKLY WRAP-UP: AUGUST 7, 2016" href="http://investigate.ingress.com/2016/08/08/pacs-weekly-wrap-up-august-7-2016" target="_blank" rel="nofollow">PAC’S WEEKLY WRAP-UP: AUGUST 7, 2016</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] ifshenp6j6ee3s7k6iqsek</code></p>
+<p><code>[2] kvrjjfzvtkflglaklpbbffcfgfhbmji</code></p>
+<p><code>[3] d464a5048233850513032533256363237464</code></p>
+<p><span id="more-1679"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>Right amount of numbers for a passcode.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Ok, here’s a weird one to explain. The only way I could get a valid passcode format was with a 2×11 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 35px;"><code>i</code></td>
+<td style="width: 73px;"><code>f</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>s</code></td>
+<td style="width: 73px;"><code>h</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>e</code></td>
+<td style="width: 73px;"><code>n</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>p</code></td>
+<td style="width: 73px;"><code>6</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>j</code></td>
+<td style="width: 73px;"><code>6</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>e</code></td>
+<td style="width: 73px;"><code>e</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>3</code></td>
+<td style="width: 73px;"><code>s</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>7</code></td>
+<td style="width: 73px;"><code>k</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>6</code></td>
+<td style="width: 73px;"><code>i</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>q</code></td>
+<td style="width: 73px;"><code>s</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>e</code></td>
+<td style="width: 73px;"><code>k</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read down from the upper right F</p>
+<p class="p1"><code>fhn66eskiskisepje376qe</code></p>
+<p class="p1">Now don’t ask me how or why but the first hunch I had was that the keyword was skepsis…</p>
+<p class="p1"><code>fhn66skepsis376qe</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">31 letters without any particular range.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">In a case like this Morse or Vigenere would be my first try but nothing good came up. I then tried letters to numbers (a=0)</p>
+<p class="p1"><code>10 21 17 9 9 5 25 21 19 10 5 11 6 11 0 10 11 15 1 1 5 5 2 5 6 5 7 1 12 9 8</code></p>
+<p class="p1">This actually gives a pretty good range. Let’s rearrange it for Ascii</p>
+<p class="p1"><code>102 117 99 52 52 119 105 116 110 101 115 115 52 56 57 112 98</code></p>
+<p class="p1">Convert decimal to Ascii</p>
+<p class="p1"><code>fuc44witness489pb</code></p>
+<p class="p1">In Japanese, witness translates to shonin</p>
+<p class="p1"><code>fuc44shonin489pb</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">This is definitely hex but needs a bit of work</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Start by making pairs to see what you have to work with</p>
+<p class="p1"><code>d4 64 a5 04 82 33 85 05 13 03 25 33 25 63 63 23 74 64</code></p>
+<p class="p1">Reversing it will put everything more closely to a good Ascii range</p>
+<p class="p1"><code>46 47 32 36 36 52 33 52 30 31 50 58 33 28 40 5a 46 4d</code></p>
+<p class="p1">Convert Hex to Ascii</p>
+<p class="p1"><code>FG266R3R01PX3(@ZFM</code></p>
+<p class="p1">Let’s reverse everything again</p>
+<p class="p1"><code>MFZ@(3XP10R3R662GF</code></p>
+<p class="p1">Now convert those symbols to numbers and the keyword is leetspeak</p>
+<p class="p1"><code>mfz29explorer662gf</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1679" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/08/11/pacs-weekly-wrap-up-august-7-2016/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1679" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/08/11/pacs-weekly-wrap-up-august-7-2016/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1679" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/08/11/pacs-weekly-wrap-up-august-7-2016/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/08/11/pacs-weekly-wrap-up-august-7-2016/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

@@ -1,0 +1,92 @@
+<div class="entry-content">
+			<p>There are 3 codes found in the <a href="http://investigate.ingress.com/2016/03/25/inquiries/">Inquiries</a> post:</p>
+<p><code>[1] @7^4@5*&amp;29@401^4#(%@%12^4#43#6^4@*(@16<br>
+[2] sviruqcfriraosvirwgjbp<br>
+[3] cy1fq9pcypr9rz0fub0prq3cc38cx1d</code></p>
+<p><span id="more-193"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>String consists of all numbers but some have been “shift”ed.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Separate the string using the shifted characters as delimiters:</p>
+<p><code>@7  ^4  @5  *  &amp;29  @401  ^4  #  (  %  @  %12  ^4  #43  #6  ^4  @  *  (  @16</code></p>
+<p>Convert everything to numbers:</p>
+<p><code>27 64 25 8 729 2401 64 3 9 5 2 512 64 343 36 64 2 8 9 216</code></p>
+<p>Now that we have separated numbers we can see that every number has single digit factors of the same digit(ie 27=3x3x3).  Unfortunately there are a few that are ambiguous groups based on this pattern (ie 8=8 or 8=2x2x2) and a controlled brute must be performed.  Pre-brute string:</p>
+<p><code>3x3x3 (2x2x2x2x2x2/4x4x4/8x8) 5x5 (2x2x2/8) 9x9x9 7x7x7x7 (2x2x2x2x2x2/4x4x4/8x8) 3 (3x3/9) 5 2 (2x2x2x2x2x2x2x2x2/8x8x8) (2x2x2x2x2x2/4x4x4/8x8)  7x7x7 6x6 (2x2x2x2x2x2/4x4x4/8x8) 2 (2x2x2/8) (3x3/9) 6x6x6</code></p>
+<p>Certain ambiguities can be eliminated if the reference index is identified.  In this case it is the phone keypad (3x3x3=3rd letter on the “3” button = F.  2x2x2x2x2x2 is not a valid grouping since there is no 6th letter on the “2” button.).  String with only keypad possibilities:</p>
+<p><code>3x3x3 (4x4x4/8x8) 5x5 (2x2x2/8) 9x9x9 7x7x7x7 (4x4x4/8x8) 3 (3x3/9) 5 2 (8x8x8) (4x4x4/8x8)  7x7x7 6x6 (4x4x4/8x8) 2 (2x2x2/8) (3x3/9) 6x6x6</code></p>
+<p>Using our index, translate to letters:</p>
+<p><code>F(I/U)K(C/T)YS(I/U)D(E/W)JAV(I/U)RN(I/U)A(C/T)(C/W)O</code></p>
+<p>Although it is difficult to see there is the beginning of a passcode prefix that can be formed assuming the numbers are represented by the first two letters of the written number (FI=FIVE=5).  Separating the prefix, keyword and suffix out helps to make it more evident:</p>
+<p><code>F(I/U)K(C/T)YS(I/U)   D(E/W)JAV(I/U)   RN(I/U)A(C/T)(C/W)O</code></p>
+<p>Certain letters can now be eliminated based on the limitations of the way the numbers are represented and after the keyword is identified:</p>
+<p><code>FIK(C/T)YSI   DEJAVU   RNIATWO</code></p>
+<p>After subbing in the numbers there are only 2 possibilities left and one is the correct passcode:</p>
+<p><code>5KTY6DEJAVUR9A2O</code></p>
+<p></p></div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>The length of the code is 22 characters, which is the around the average number of characters for a string with 4 numbers and 6 letters.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p><code>sviruqcfriraosvirwgjbp</code></p>
+<p>with ROT-13 applied to it:</p>
+<p><code>fivehdpsevenbfivejtwoc</code></p>
+<p>and gives us:</p>
+<p><code>5hdp7b5j2c</code></p>
+<p>But the keyword is still missing, we used ROT-13, which is a direct link to the keyword: magnus</p>
+<p><code>5hdp7magnusb5j2c</code></p>
+<p></p></div></div>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>The length of the code is 31 characters, a prime number, not too suitable for transposition cipher. There is also a mix of letters and numbers.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Converting the characters into Morse code equivalent gives us 128 dits and dahs.</p>
+<p>128 has a many interesting factors…</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Convert the characters into Morse code:</p>
+<p><code>-.-. -.-- .---- ..-. --.- ----. .--. -.-. -.-- .--. .-. ----. .-. --.. ----- ..-. ..- -... ----- .--. .-. --.- ...-- -.-. -.-. ...-- ---.. -.-. -..- .---- -..</code></p>
+<p>Group them, without spaces, into 8 dits and dahs:</p>
+<p><code>-.-.-.--<br>
+.----..-<br>
+.--.----<br>
+-..--.-.<br>
+-.-.--.-<br>
+-..-.---<br>
+-..-.--.<br>
+.-----..<br>
+-...--..<br>
+.-----.-<br>
+-..-.--.<br>
+-...---.<br>
+-.-.-...<br>
+.-----..<br>
+-.-.-..-<br>
+.-----..</code></p>
+<p>Dits (dots) are 1, dahs (dash) are 0:</p>
+<p><code>01010100<br>
+10000110<br>
+10010000<br>
+01100101<br>
+01010010<br>
+01101000<br>
+01101001<br>
+10000011<br>
+01110011<br>
+10000010<br>
+01101001<br>
+01110001<br>
+01010111<br>
+10000011<br>
+01010110<br>
+10000011</code></p>
+<p>Converting them into ASCII gives us… something unpleasant. Converting them into hexadecimal:</p>
+<p><code>54 86 90 65 52 68 69 83 73 82 69 71 57 83 56 83</code></p>
+<p>Interestingly, the hexadecimal values have ranges that are safe for ASCII:</p>
+<p><code>6VZA4DESIREG9S8S</code></p>
+<p></p></div></div>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-193" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/03/25/inquiries-2/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-193" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/03/25/inquiries-2/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-193" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/03/25/inquiries-2/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/03/25/inquiries-2/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

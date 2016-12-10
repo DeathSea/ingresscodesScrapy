@@ -1,0 +1,71 @@
+<div class="entry-content">
+			<p>There were 3 codes in the <a href="http://investigate.ingress.com/2016/04/09/stockpiles/">Stockpiles</a> post on the <a href="http://investigate.ingress.com/">Investigation Blog</a>.</p>
+<p><code>[1 (line 288)] aa98998fa87b8d968898ad76aa87<br>
+[2 (line 291)] ttyouuyyteyiiwyoytuuiptwiettir<br>
+[3 (line 306)] jdnjoruulruonxubsdtgmkvfu0jnuyl0t1</code></p>
+<p><span id="more-465"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>At first glance, the code looks like a hexadecimal encoding, pairing up the digits:</p>
+<p><code>aa 98 99 8f a8 7b 8d 96 88 98 ad 76 aa 87</code></p>
+<p>However, it falls outside the range for the hexadecimal characters 0-9, A-Z or a-z, so there is more work to do with the code.</p>
+<p>In the ASCII system, numbers (<code>30</code>–<code>39</code>) have a lower value than letters (<code>41</code>–<code>5a</code>, <code>61</code>–<code>7a</code>). Looking at the code we have, the values we have in the number positions (<code>aa, a8, ad</code>) are larger than all the other values.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>If only there was a cipher that reverses the order…</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Running a specialized atbash on the code would reverse the values, this version will change values <code>0123456789ABCDEF</code> to <code>FEDCBA9876543210</code></p>
+<p><code>aa 98 99 8f a8 7b 8d 96 88 98 ad 76 aa 87</code><br>
+<code>55 67 66 70 57 84 72 69 77 67 52 89 55 78</code></p>
+<p>The resulting code doesn’t fit into hexadecimal values for numbers or letters, but they do look like decimal values for numbers and letter, converting them to ASCII:</p>
+<p><code>7CBF9THEMC4Y7N</code></p>
+<p></p></div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>The letter distribution reveals an interesting subset of the alphabet:</p>
+<p><code>EIOPRTUWY</code></p>
+<p>Maybe not too interesting, however, if you change the order of them:</p>
+<p><code>WERTYUIOP</code></p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Maybe look down on your keyboard?</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Our apologies to users without a QWERTY keyboard, but the letters are all one row below the QWERTY line of a standard US keyboard.</p>
+<p>Converting <code>WERTYUIOP</code> to <code>234567890</code>:</p>
+<p><code>ttyouuyyteyiiwyoytuuiptwiettir</code><br>
+<code>556977665368826965778052835584</code></p>
+<p>Taking each pair of numbers as decimal and converting it to ASCII:</p>
+<p><code>55 69 77 66 53 68 82 69 65 77 80 52 83 55 84</code><br>
+<code>7EMB5DREAMP4S7T</code></p>
+<p></p></div></div>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>The distribution of the letters seems slightly mixed up, but looking at letter pairs could reveal a pattern hidden in the code:</p>
+<p><code>jd nj or uu lr uo nx ub sd tg mk vf u0 jn uy l0 t1</code></p>
+<p>Just looking at the number positions (first, fifth, fourth last, second last) for now:</p>
+<p><code>jd lr jn l0</code></p>
+<p>If we assuming the code is either in hexadecimal or decimal, the <code>J</code> and <code>L</code> values should be <code>3</code> or <code>5</code> respectively.</p>
+<p>There’s also values of <code>0</code> and <code>1</code> we need to deal with…</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Maybe you want to <strong>call</strong> a friend for help?</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p><code>J</code> and <code>L</code> both map to the number <code>5</code> on a <a href="http://www.geocachingtoolbox.com/index.php?page=codeTables&amp;id=vanityCode" target="_blank">standard telephone keypad</a>.</p>
+<p><code>2: ABC </code><br>
+<code>3: DEF</code><br>
+<code>4: GHI</code><br>
+<code>5: JKL</code><br>
+<code>6: MNO</code><br>
+<code>7: PQRS</code><br>
+<code>8: TUV</code><br>
+<code>9: WXYZ</code></p>
+<p>The letters are mapped to numbers, and we’re left with <code>0</code> and <code>1</code> which don’t have letters to map from.</p>
+<p><code>jd nj or uu lr uo nx ub sd tg mk vf u0 jn uy l0 t1</code><br>
+<code>53 65 67 88 57 86 69 82 73 84 65 83 80 56 89 50 81</code></p>
+<p>Converting number pairs as a decimal number into ASCII:</p>
+<p><code>5ACX9VERITASP8Y2Q</code></p>
+<p></p></div></div>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-465" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/04/13/stockpiles/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-465" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/04/13/stockpiles/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-465" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/04/13/stockpiles/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/04/13/stockpiles/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

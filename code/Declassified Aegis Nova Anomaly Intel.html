@@ -1,0 +1,194 @@
+<div class="entry-content">
+			<p>Three codes were found in the <a href="http://investigate.ingress.com/2016/05/21/declassified-aegis-nova-anomaly-intel/" target="_blank">Declassified Aegis Nova Anomaly Intel</a> post on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog.</p>
+<p><code>[1] 030650650638405073018520292040X06301630649407I</code></p>
+<p><code>[2] cvzgsom9kcou25c3</code></p>
+<p><code>[3] $1.00 - $0.68 $0.26 $0.33 $0.24 $0.62 $0.23 $0.65 $0.34 $0.64 $0.28</code></p>
+<p><span id="more-1022"></span></p>
+<h1>Code # 1</h1>
+<h2>Observations</h2>
+<p>Not much to indicate what cipher was used, go through some usual ciphers to see if you can find a pattern.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">– – A regular cipher but used differently . .</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Not to sure where to begin when I first saw that code but because of the number and letter combination I suspected some kind of morse manipulation. Here’s the string converted to morse</p>
+<p class="p1"><code>----- ...-- ----- -.... ..... ----- -.... ..... ----- -.... ...-- ---.. ....- ----- ..... ----- --... ...-- ----- .---- ---.. ..... ..--- ----- ..--- ----. ..--- ----- ....- ----- -..- ----- -.... ...-- ----- .---- -.... ...-- ----- -.... ....- ----. ....- ----- --... ..</code></p>
+<p class="p1">Notice how it starts with 5 dashes? Numbers in Ascii are in the 48 to 57 range. Let’s try grouping in pairs alternating between dashes and dots and then counting the dashes and dots to form the numbers</p>
+<table class=" table table-hover">
+<tbody>
+<tr>
+<td style="padding:2px;"><code>-----...</code></td>
+<td style="padding:2px;"><code>53</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>--------.........</code></td>
+<td style="padding:2px;"><code>89</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>------.........</code></td>
+<td style="padding:2px;"><code>69</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>------.......</code></td>
+<td style="padding:2px;"><code>67</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>-----......</code></td>
+<td style="padding:2px;"><code>56</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>------.....</code></td>
+<td style="padding:2px;"><code>65</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>-------......</code></td>
+<td style="padding:2px;"><code>76</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>-------.</code></td>
+<td style="padding:2px;"><code>71</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>-------.........</code></td>
+<td style="padding:2px;"><code>79</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>--------..</code></td>
+<td style="padding:2px;"><code>82</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>-------...</code></td>
+<td style="padding:2px;"><code>73</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>--------....</code></td>
+<td style="padding:2px;"><code>84</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>-------..</code></td>
+<td style="padding:2px;"><code>72</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>-------.......</code></td>
+<td style="padding:2px;"><code>77</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>-------.</code></td>
+<td style="padding:2px;"><code>71</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>-----.......</code></td>
+<td style="padding:2px;"><code>57</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>--------........</code></td>
+<td style="padding:2px;"><code>88</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>-----.....</code></td>
+<td style="padding:2px;"><code>55</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>--------.....</code></td>
+<td style="padding:2px;"><code>85</code></td>
+</tr>
+</tbody>
+</table>
+<p>We now have a valid Ascii string</p>
+<p class="p1"><code>53 89 69 67 56 65 76 71 79 82 73 84 72 77 71 57 88 55 85</code></p>
+<p class="p1"><code>5YEC8ALGORITHMG9X7U</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">All the ingredients for a code, looking for a 6 letter keyword</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">16 characters, the four numbers for the code are there. Make a 4×4 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="padding:3px;"><code>c</code></td>
+<td style="padding:3px;"><code>v</code></td>
+<td style="padding:3px;"><code>z</code></td>
+<td style="padding:3px;"><code>g</code></td>
+</tr>
+<tr>
+<td style="padding:3px;"><code>s</code></td>
+<td style="padding:3px;"><code>o</code></td>
+<td style="padding:3px;"><code>m</code></td>
+<td style="padding:3px;"><code>9</code></td>
+</tr>
+<tr>
+<td style="padding:3px;"><code>k</code></td>
+<td style="padding:3px;"><code>c</code></td>
+<td style="padding:3px;"><code>o</code></td>
+<td style="padding:3px;"><code>u</code></td>
+</tr>
+<tr>
+<td style="padding:3px;"><code>2</code></td>
+<td style="padding:3px;"><code>5</code></td>
+<td style="padding:3px;"><code>c</code></td>
+<td style="padding:3px;"><code>3</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read up from the <code>2</code></p>
+<p><code>2ksc5covcomz3u9g</code></p>
+<p></p></div></div>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>Seems like we need to play cashier !!</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">For the sub, think about what’s left in you pocket</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>The $1.00 – gives you what operation you need to do. From $1.00 subtract every value</p>
+<table class=" table table-hover" style="width:1px;">
+<tbody>
+<tr>
+<td style="padding:5px;"><code>$0.68</code></td>
+<td style="padding:5px;"><code>32</code></td>
+</tr>
+<tr>
+<td style="padding:5px;"><code>$0.26</code></td>
+<td style="padding:5px;"><code>74</code></td>
+</tr>
+<tr>
+<td style="padding:5px;"><code>$0.33</code></td>
+<td style="padding:5px;"><code>67</code></td>
+</tr>
+<tr>
+<td style="padding:5px;"><code>$0.24</code></td>
+<td style="padding:5px;"><code>76</code></td>
+</tr>
+<tr>
+<td style="padding:5px;"><code>$0.62</code></td>
+<td style="padding:5px;"><code>38</code></td>
+</tr>
+<tr>
+<td style="padding:5px;"><code>$0.23</code></td>
+<td style="padding:5px;"><code>77</code></td>
+</tr>
+<tr>
+<td style="padding:5px;"><code>$0.65</code></td>
+<td style="padding:5px;"><code>35</code></td>
+</tr>
+<tr>
+<td style="padding:5px;"><code>$0.34</code></td>
+<td style="padding:5px;"><code>66</code></td>
+</tr>
+<tr>
+<td style="padding:5px;"><code>$0.64</code></td>
+<td style="padding:5px;"><code>36</code></td>
+</tr>
+<tr>
+<td style="padding:5px;"><code>$0.28</code></td>
+<td style="padding:5px;"><code>72</code></td>
+</tr>
+</tbody>
+</table>
+<p>You are left with a valid Hex string for a code</p>
+<p class="p1"><code>2tgv8w5f6r</code></p>
+<p class="p1">For the keyword, think about what we just did. You gave $1.00 to pay for an item that was $0.68, the cashier gave you back $0.32 of “change”.</p>
+<p class="p1"><code>2tgv8changew5f6r</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1022" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/05/25/declassified-aegis-nova-anomaly-intel/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1022" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/05/25/declassified-aegis-nova-anomaly-intel/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1022" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/05/25/declassified-aegis-nova-anomaly-intel/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/05/25/declassified-aegis-nova-anomaly-intel/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

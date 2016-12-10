@@ -1,0 +1,57 @@
+<div class="entry-content">
+			<p>The <a href="http://investigate.ingress.com/2016/05/16/what-separates-us-from-ada/" target="_blank">What Separates Us From ADA</a> post on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog contained three codes hidden in the HTML.</p>
+<p>[1] ezya5kce5n9g4u3681</p>
+<p>[2] 2da82et83sn72ik84ca80lb97si61de76re71cn75os85aw75ta89hw69da89eh72ym85hc78ta66rc84sd75na79ff74oe77no84ra78et8</p>
+<p>[3] limibqn/yowltvnwsyiehgyuyowo</p>
+<p><span id="more-983"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>Look closely at the middle of the string, can you spot the passcode format ?</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Looking at the middle of the string you can see 5kce5n9g4u which could point to the prefix and suffix but then the rest doesn’t really look good.</p>
+<p>There are 18 characters, try reversing the first and last groups of 9 characters</p>
+<p class="p1"><code>5eck5ayze1863u4g9n</code></p>
+<p class="p1">We now have the right code format but need to find the right keyword substitution.</p>
+<p class="p1">Searching on Wikipedia we see a reference to a mountain called “Le Môle” that rises 1,863 meters. Mole is a valid keyword</p>
+<p class="p1"><code>5eck5moleu4g9n</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">Multiple pairs of letters and numbers but there is enough in there to guide you through what you need to search</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Letters and numbers don’t live well together</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Separate letters and numbers</p>
+<p class="p1"><code>daetsnikcalbsiderecnosawtahwdaehymhctarcsdnaffoenoraet</code></p>
+<p class="p1"><code>282837284809761767175857589698972857866847579747784788</code></p>
+<p class="p1">Seems like we have a phrase written in reverse</p>
+<p class="p1"><code>tear one off and scratch my head what was once red is black instead</code></p>
+<p class="p1">Remember The Riddler in Batman ? His original name was Edward Nygma or E. Nygma. Enigma is a known keyword. Let’s keep that aside for now.</p>
+<p class="p1">Let’s do the same reverse trick to the numbers and make pairs</p>
+<p class="p1"><code>88 74 87 74 79 75 74 86 68 75 82 79 89 69 85 75 85 71 76 71 67 90 84 82 73 82 82</code></p>
+<p class="p1">Good number distribution for Ascii. Convert decimal to Ascii</p>
+<p class="p1"><code>XJWJOKJVDKROYEUKUGLGCZTRIRR</code></p>
+<p class="p1">Not much, even ROT and Atbash don’t give anything. Now remember that we have the keyword which could serve as a key for Vigenere:</p>
+<p class="p1"><code>Passphrase: enigma</code></p>
+<p class="p1"><code>Message: XJWJOKJVDKROYEUKUGLGCZTRIRR</code></p>
+<p class="p1"><code>Result: TWODCKFIVEFOURMEIGHTUTHREEJ</code></p>
+<p class="p1"><code>2dck54 m8u3j</code></p>
+<p class="p1">Well 54 could mean 6 in Ascii but in this case it’s simple (or not so evident) Niantic math. 5+4=9</p>
+<p class="p1"><code>2dck9 m8u3j</code></p>
+<p class="p1">All that is left to do is to insert the enigma keyword</p>
+<p class="p1"><code>2dck9enigmam8u3j</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">Why would there be / in a code ? A glyph? Or maybe a it gives away the cipher</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Your fingers are probably currently resting on the cipher, you just need a mirror !</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">This type of cipher was used in a few consecutive posts in the past. The / gives it away as being a keyboard mirror cipher. At one point you’ll also remember some key elements of ciphers like in this case, YOW=TWO.</p>
+<p class="p1"><code>limibqn/yowltvnwsyiehgyuyowo</code></p>
+<p class="p1"><code>sevenpbztwosymbolteightrtwow</code></p>
+<p class="p1"><code>7pbz2symbolt8r2w</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-983" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/05/19/what-separates-us-from-ada/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-983" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/05/19/what-separates-us-from-ada/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-983" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/05/19/what-separates-us-from-ada/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/05/19/what-separates-us-from-ada/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

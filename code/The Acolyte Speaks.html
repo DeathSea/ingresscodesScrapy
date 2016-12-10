@@ -1,0 +1,44 @@
+<div class="entry-content">
+			<p>Three codes could be found in the HTML of the <a class="d-s ot-anchor" tabindex="0" title="The Acolyte Speaks" href="http://investigate.ingress.com/2016/07/13/the-acolyte-speaks/" target="_blank" rel="nofollow">The Acolyte Speaks</a> post on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog.</p>
+<p><code>[1] svsussuxuxrxtqrvrxtqturvuuuzuyrusr</code></p>
+<p><code>[2] udziafbmonazrzpblepktndzjndzbd</code></p>
+<p><code>[3] 12lncefl6dc,bag</code></p>
+<p><span id="more-1400"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>34 letters that seem to be in the range of R to Y. Paired that would be 17 characters which is good for a passcode.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Let’s start by making pairs</p>
+<p class="p1"><code>sv su ss ux ux rx tq rv rx tq tu rv uu uz uy ru sr</code></p>
+<p class="p1">Notice how lots of pairs start with S and look at where numbers should fall, they all start with U. Knowing that in Ascii numbers starts with either 4 or 5, how can we make U=5? Well U is 5 letters before Z.</p>
+<p class="p1">To make things a bit easier Atbash the string</p>
+<p class="p1"><code>he hf hh fc fc ic gj ie ic gj gf ie ff fa fb if hi</code></p>
+<p class="p1">Convert letters to numbers, a=0</p>
+<p class="p1"><code>74 75 77 52 52 82 69 84 82 69 65 84 55 50 51 85 78</code></p>
+<p class="p1">Convert decimal to Ascii</p>
+<p class="p1"><code>JKM44RETREAT723UN</code></p>
+<p></p></div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>30 letters, no specific range. Let’s go through the cipher routine.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Don’t think this cipher has been used since the passcode format change. A might help you :p</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Atbash, ROT, morse, transposition didn’t give any good results. Next option would be Vigenere but now that the passcode format doesn’t start with numbers it’s a bit harder to brute force. But… there is always Vigenere Autokey with A has the passphrase.</p>
+<p class="p1"><code>ujqsixeightglobaltwofivefivexg</code></p>
+<p class="p1">Note that they only way we knew that is that it has been used in the past.</p>
+<p class="p1"><code>ujq68global255xg</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">Mix of letters and numbers but that “,” should hint you on what cipher to use</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">You’ll need to look at the tool at the tip of your fingers in a different way</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">With that comma it hints to a classic keyboard mirror cipher. We’ve had a few in the past where it was 1=0, q=p, a=; and z=/ but this one is the other way round: 1=z q=a.</p>
+<p class="p1"><code>12lncefl6dc,bag</code></p>
+<p class="p1"><code>zxo63drone385qt</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1400" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/07/15/the-acolyte-speaks/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1400" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/07/15/the-acolyte-speaks/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1400" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/07/15/the-acolyte-speaks/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/07/15/the-acolyte-speaks/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

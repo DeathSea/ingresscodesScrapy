@@ -1,0 +1,44 @@
+<div class="entry-content">
+			<p>Today we’re launching a new tool to help find keywords in passcodes.</p>
+<p><a href="https://regex.ingress.codes">https://regex.ingress.codes</a></p>
+<p>It works the same way like the other one on the Internet but it’s actually updated!</p>
+<h2>How to use the finder</h2>
+<h3>Transposition</h3>
+<p>Sometimes you just want to know what keywords are possible to help spot a pattern in a code. For example:</p>
+<p><code>te68o5erezim2tk8uf</code></p>
+<p>The regular expression to find a possible keyword would be:</p>
+<p><code>^[te68o5erezim2tk8uf]{8}$</code></p>
+<p>The <code>^</code> and <code>$</code> denote the beginning and end of a string, essentially a whole word.</p>
+<p>The <code>[te68o5erezim2tk8uf]</code> denotes to look for a character within the <code>[]</code>.</p>
+<p>The <code>{8}</code> tells it to look for 8 of those characters, since the prefix/suffix are 5 characters each, there are 8 remaining for the keyword.</p>
+<p>Trying this example out reveals the keyword to be <code>timezero</code>, and we can now look for the full passcode:</p>
+<pre>te
+68
+<span class="codehighlight" style="color: #ff6600;">o</span>5
+<span style="color: #ff6600;"><span class="codehighlight">er</span>
+<span class="codehighlight">ez</span>
+<span class="codehighlight">im</span></span>
+2<span class="codehighlight" style="color: #ff6600;">t</span>
+k8
+uf</pre>
+<p><code>timezero</code> can be seen highlighted and we see a pattern for the passcode: <code>ufk82timezero568te</code>.</p>
+<h3>Substitution</h3>
+<p>If a code presents itself with a clean distribution and a correlation between letters/numbers, you can sometimes use the tool to find a keyword.</p>
+<p><code>a8bdacc6ccbbbaabbabcabb6b0b1ccccccaab0</code> would be split into pairs:</p>
+<p><code>a8 bd ac c6 cc bb ba ab ba bc ab b6 b0 b1 cc cc cc aa b0</code></p>
+<p>The pairs starting with <code>c</code> are in the same position as where numbers go, and you can now safely assume everything in the middle is a keyword.</p>
+<p><code>bb <span style="color: #ff6600;">ba</span> <span style="color: #ff00ff;">ab</span> <span style="color: #ff6600;">ba</span> bc <span style="color: #ff00ff;">ab</span> b6 b0 b1</code></p>
+<p>Looking for repeated sets, we see that <code>ba</code> and <code>ab</code> are repeated in the keyword. Creating a regular expression for it:</p>
+<p><code>^.(.)(.)\1.\2...$</code></p>
+<p>The <code>.</code> not enclosed in <code>()</code> denote any character we don’t generally care about.</p>
+<p>The <code>(.)</code> are captured to be reused in another part of the expression with <code>\1</code>, <code>\2</code>, etc., in the order in which they were captured.</p>
+<p>With our example, we see the only result being <code>detection</code>. If we compare the (uppercase) hexadecimal values of <code>detection</code> to the code:</p>
+<p><code>bb ba ab ba bc ab b6 b0 b1</code></p>
+<p><code>44 45 54 45 43 54 49 4f 4e</code></p>
+<p>We can now deduce the code was ciphered with a hexadecimal-atbash.</p>
+<p><code>57 42 53 39 33 44 45 54 45 43 54 49 4f 4e 33 33 33 55 4f</code></p>
+<p><code>WBS93DETECTION333UO</code></p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2226" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/12/08/passcode-keyword-finder/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2226" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/12/08/passcode-keyword-finder/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-2226" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/12/08/passcode-keyword-finder/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/12/08/passcode-keyword-finder/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

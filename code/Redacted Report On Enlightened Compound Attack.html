@@ -1,0 +1,397 @@
+<div class="entry-content">
+			<p>Inside the post <a href="http://investigate.ingress.com/2016/05/06/redacted-report-on-enlightened-compound-attack/" target="_blank">“Redacted Report On Enlightened Compound Attack”</a>, over at the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog, there were 3 codes hidden inside the source.</p>
+<p><code>[1] 501260111441501151011541011101111540501540501710</code><br>
+<code>[2] 805183547071637679886152507077</code><br>
+<code>[3] oofaull6agaz49b3</code></p>
+<p><span id="more-805"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>A lot of numbers, but not within ranges. A good length of 48.<br>
+Seems like we’ll need to rearrange it a bit.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;"><br>
+Make a grid of 2×24
+<table class=" table table-hover" style="width:1px;">
+<tbody>
+<tr>
+<td style="padding:2px;"><code>5</code></td>
+<td style="padding:2px;"><code>0</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>2</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>6</code></td>
+<td style="padding:2px;"><code>0</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>4</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>4</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>5</code></td>
+<td style="padding:2px;"><code>0</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>5</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>0</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>4</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>0</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>0</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>4</code></td>
+<td style="padding:2px;"><code>0</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>5</code></td>
+<td style="padding:2px;"><code>0</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>4</code></td>
+<td style="padding:2px;"><code>0</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>5</code></td>
+<td style="padding:2px;"><code>0</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>7</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>0</code></td>
+</tr>
+</tbody>
+</table>
+<p>Reverse each row</p>
+<table class=" table table-hover" style="width:1px;">
+<tbody>
+<tr>
+<td style="padding:2px;"><code>0</code></td>
+<td style="padding:2px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>2</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>0</code></td>
+<td style="padding:2px;"><code>6</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>4</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>4</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>0</code></td>
+<td style="padding:2px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>0</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>5</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>4</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>0</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>0</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>5</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>0</code></td>
+<td style="padding:2px;"><code>4</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>0</code></td>
+<td style="padding:2px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>5</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>0</code></td>
+<td style="padding:2px;"><code>4</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>0</code></td>
+<td style="padding:2px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>7</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>0</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+</tbody>
+</table>
+<p>Regroup everything into pairs of 3.<br>
+<code>052 106 114 114 051 115 105 114 101 110 115 104 055 104 057 101</code><br>
+Convert Decimal to ASCII<br>
+<code>4jrr3sirensh7h9e</code></p>
+<p>Alternatively you can use the shorter version:<br>
+Group the code into pairs of 2<br>
+<code>50 12 60 11 14 41 50 11 51 01 15 41 01 11 01 11 15 40 50 15 40 50 17 10</code><br>
+Reverse each pair<br>
+<code>05 21 06 11 41 14 05 11 15 10 51 14 10 11 10 11 51 04 05 51 04 05 71 01</code><br>
+Regroup into pairs of 3<br>
+<code>052 106 114 114 051 115 105 114 101 110 115 104 055 104 057 101</code><br>
+Convert decimal to ASCII<br>
+<code>4jrr3sirensh7h9e</code></p>
+<p></p></div></div>
+<hr>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>All numbers of a decent length, can point to some base conversion (Decimal, Hex, Octal). But some numbers do not line up.<br>
+</p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;"><br>
+Think about the passcode format and where what values should/could be.<br>
+See what <a href="http://multidec.web-lab.at/rects.php" target="_blank">Grids</a> you can form.<br>
+Try to rearrange the numbers to fit the ranges for a base conversion.<br>
+</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;"><br>
+Arrange the code into a 3×10 grid.
+<table class=" table table-hover" style="width:1px;">
+<tbody>
+<tr>
+<td style="padding:2px;"><code>8</code></td>
+<td style="padding:2px;"><code>0</code></td>
+<td style="padding:2px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>8</code></td>
+<td style="padding:2px;"><code>3</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>5</code></td>
+<td style="padding:2px;"><code>4</code></td>
+<td style="padding:2px;"><code>7</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>0</code></td>
+<td style="padding:2px;"><code>7</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>6</code></td>
+<td style="padding:2px;"><code>3</code></td>
+<td style="padding:2px;"><code>7</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>6</code></td>
+<td style="padding:2px;"><code>7</code></td>
+<td style="padding:2px;"><code>9</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>8</code></td>
+<td style="padding:2px;"><code>8</code></td>
+<td style="padding:2px;"><code>6</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>5</code></td>
+<td style="padding:2px;"><code>2</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>5</code></td>
+<td style="padding:2px;"><code>0</code></td>
+<td style="padding:2px;"><code>7</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>0</code></td>
+<td style="padding:2px;"><code>7</code></td>
+<td style="padding:2px;"><code>7</code></td>
+</tr>
+</tbody>
+</table>
+<p>Reverse each row</p>
+<table class=" table table-hover" style="width:1px">
+<tbody>
+<tr>
+<td style="padding:2px;"><code>5</code></td>
+<td style="padding:2px;"><code>0</code></td>
+<td style="padding:2px;"><code>8</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>3</code></td>
+<td style="padding:2px;"><code>8</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>7</code></td>
+<td style="padding:2px;"><code>4</code></td>
+<td style="padding:2px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>1</code></td>
+<td style="padding:2px;"><code>7</code></td>
+<td style="padding:2px;"><code>0</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>7</code></td>
+<td style="padding:2px;"><code>3</code></td>
+<td style="padding:2px;"><code>6</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>9</code></td>
+<td style="padding:2px;"><code>7</code></td>
+<td style="padding:2px;"><code>6</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>6</code></td>
+<td style="padding:2px;"><code>8</code></td>
+<td style="padding:2px;"><code>8</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>2</code></td>
+<td style="padding:2px;"><code>5</code></td>
+<td style="padding:2px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>7</code></td>
+<td style="padding:2px;"><code>0</code></td>
+<td style="padding:2px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>7</code></td>
+<td style="padding:2px;"><code>7</code></td>
+<td style="padding:2px;"><code>0</code></td>
+</tr>
+</tbody>
+</table>
+<p>Group up the numbers again, reading left to right. Make pairs while grouping them<br>
+<code>50 83 81 74 51 70 73 69 76 68 82 51 70 57 70</code><br>
+Convert decimal to ASCII for the solution<br>
+<code>2SQJ3FIELDR3F9F</code><br>
+</p></div></div>
+<hr>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>The right number of numbers are present, the length also looks right. Seems simple enough.<br>
+</p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;"><br>
+Everything is there, just need to <a href="http://multidec.web-lab.at/rects.php" target="_blank">rearrange</a> it all so that we can read it in the right format.<br>
+</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;"><br>
+Make a grid of 4×4 with the code
+<table class=" table table-hover" style="width:1px">
+<tbody>
+<tr>
+<td style="padding:2px;"><code>o</code></td>
+<td style="padding:2px;"><code>o</code></td>
+<td style="padding:2px;"><code>f</code></td>
+<td style="padding:2px;"><code>a</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>u</code></td>
+<td style="padding:2px;"><code>l</code></td>
+<td style="padding:2px;"><code>l</code></td>
+<td style="padding:2px;"><code>6</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>a</code></td>
+<td style="padding:2px;"><code>g</code></td>
+<td style="padding:2px;"><code>a</code></td>
+<td style="padding:2px;"><code>z</code></td>
+</tr>
+<tr>
+<td style="padding:2px;"><code>4</code></td>
+<td style="padding:2px;"><code>9</code></td>
+<td style="padding:2px;"><code>b</code></td>
+<td style="padding:2px;"><code>3</code></td>
+</tr>
+</tbody>
+</table>
+<p>Starting at the bottom left, read each column up for the solve.<br>
+<code>4auo9globalf3z6a</code><br>
+</p></div></div>
+<hr>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-805" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/05/09/redacted-report-on-enlightened-compound-attack/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-805" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/05/09/redacted-report-on-enlightened-compound-attack/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-805" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/05/09/redacted-report-on-enlightened-compound-attack/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/05/09/redacted-report-on-enlightened-compound-attack/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

@@ -1,0 +1,149 @@
+<div class="entry-content">
+			<p>Two codes were found hidden in the <a class="d-s ot-anchor" tabindex="0" title="Sumoya beneath the waves" href="http://investigate.ingress.com/2016/11/02/sumoya-beneath-the-waves/" target="_blank" rel="nofollow">Sumoya beneath the waves</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] xzxy60uxbq38rcuy3ffcpy38czzxqxj</code></p>
+<p><code>[2] -..-l..-.-s-----f--...7--..2..-.h..--f--..y..-.h-..g-...i-..-z-.-.g.-..v--.8--..7.-.-3-..b---g--.</code></p>
+<p><span id="more-2025"></span></p>
+<h1>Code # 1</h1>
+<h2>Observations</h2>
+<p>31 characters, letters and numbers don’t really have a particular range.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Reading by feeling</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>31 characters, first instinct is to convert to morse</p>
+<p class="p1"><code>-..- --.. -..- -.-- -.... ----- ..- -..- -... --.- ...-- ---.. .-. -.-. ..- -.-- ...-- ..-. ..-. -.-. .--. -.-- ...-- ---.. -.-. --.. --.. -..- --.- -..- .---</code></p>
+<p class="p1">We are left with 128 bits, perfect for groups of 8</p>
+<p class="p1"><code>-..---.. -..--.-- -....--- --..--.. --...--. -...---- -...-.-. -...--.- -...--.. -...-.-. -..--.-. --...--- --..-.-. --..--.. -..---.- -..-.---</code></p>
+<p class="p1">Convert – to 0 and . to 1</p>
+<p class="p1"><code>01100011 01100100 01111000 00110011 00111001 01110000 01110101 01110010 01110011 01110101 01100101 00111000 00110101 00110011 01100010 01101000</code></p>
+<p class="p1">Convert Binary to Ascii</p>
+<p class="p1"><code>cdx39pursue853bh</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">Looks like a mix of morse bits and what seems like a passcode format</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Keep only letters and numbers</p>
+<p class="p1"><code>lsf72hfyhgizgv873bg</code></p>
+<p class="p1">Atbash letters and numbers</p>
+<p class="p1"><code>ohu38substrate237yt</code></p>
+<p class="p1">That’s 1 passcode, now remove letters and numbers from the original string</p>
+<p class="p1"><code>-..- ..-.- ----- --... --.. ..-. ..-- --.. ..-. -.. -... -..- -.-. .-.. --. --.. .-.- -.. --- --.</code></p>
+<p class="p1">78 bits. 78 can be divided by 6 which could be braille</p>
+<p class="p1">Start by removing the spaces and make a 3×26 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 42px;"><code>-..</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>-..</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>-.-</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>---</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>---</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>-..</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>.--</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>...</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>.-.</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>..-</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>---</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>...</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>.-.</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>-..</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>-..</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>.-.</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>.--</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>.-.</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>.-.</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>.--</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>.--</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>...</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>-.-</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>-..</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>---</code></td>
+</tr>
+<tr>
+<td style="width: 42px;"><code>--.</code></td>
+</tr>
+</tbody>
+</table>
+<p>Use a transpose cipher to rotate everything counterclockwise 90 degrees</p>
+<table class=" table table-hover" style="width: 268px;">
+<tbody>
+<tr>
+<td style="width: 266px;"><code>------....-..--.......----</code></td>
+</tr>
+<tr>
+<td style="width: 266px;"><code>...--.-.-.-.-..------...--</code></td>
+</tr>
+<tr>
+<td style="width: 266px;"><code>..---.-..--.....-..--.-.-.</code></td>
+</tr>
+</tbody>
+</table>
+<p>Split for braille</p>
+<table class=" table table-hover" style="width: 383px;">
+<tbody>
+<tr>
+<td style="width: 377px;"><code>-- -- -- .. .. -. .- -. .. .. .. -- --</code></td>
+</tr>
+<tr>
+<td style="width: 377px;"><code>.. .- -. -. -. -. -. .- -- -- -. .. --</code></td>
+</tr>
+<tr>
+<td style="width: 377px;"><code>.. -- -. -. .- -. .. .. -. .- -. -. -.</code></td>
+</tr>
+</tbody>
+</table>
+<p>Convert braille to text</p>
+<p class="p1"><code>cyp25lie642mq</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2025" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/11/06/sumoya-beneath-the-waves/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2025" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/11/06/sumoya-beneath-the-waves/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-2025" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/11/06/sumoya-beneath-the-waves/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/11/06/sumoya-beneath-the-waves/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

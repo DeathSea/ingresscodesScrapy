@@ -1,0 +1,63 @@
+<div class="entry-content">
+			<p>From the extra storyline Media Item “<a href="http://investigate.ingress.com/2016/05/21/a-cryptic-message-from-nigel-moyer/" target="_blank">A cryptic message from Nigel Moyer</a>” post over on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> board, we found three hidden codes in the source code.</p>
+<p><code>[1] a9877e76ad9a7c7b967d8c8687a86faa6f</code><br>
+<code>[2] v6e2krom8qzo4</code><br>
+<code>[3] 7ytw0fbtzd0n9r</code></p>
+<p><span id="more-1021"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>Looks like Hex, but wrong way around when looking at the ranged for the passcode format.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>When we have numbers higher than letters, we have one cipher that can remedy that!</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Pair up the original string for easier handling<br>
+<code>a9 87 7e 76 ad 9a 7c 7b 96 7d 8c 86 87 a8 6f aa 6f</code><br>
+Using a special version of Atbash for Hex values (<code>0123456789ABCDEF</code> = <code>FEDCBA9876543210</code>), we get values that are much better for our ranges<br>
+<code>56 78 81 89 52 65 83 84 69 82 73 79 78 57 90 55 90</code></p>
+<p>Converting this from decimal to ASCII we get the following string<br>
+<code>8NQY4ASTERION9Z7Z</code></p>
+<p>Now we know <em>Asterion</em> is not a valid KW, so googling it brings us to the first king of Crete, “<a href="https://en.wikipedia.org/wiki/Asterion" target="_blank">Asterion</a>” who assumed the form of the <a href="https://en.wikipedia.org/wiki/Sacred_bull" target="_blank">Cretan Bull</a>. In Crete, the <a href="https://en.wikipedia.org/wiki/Minotaur" target="_blank">Minotaur</a> was known by its proper name <em>Asterion</em>.</p>
+<p>In this instance, we will sub <code>Minotaur</code> in, but keep the last letter of the original code (<code>n</code>).<br>
+This brings us to the final solution. But fear not, this is not the last strange keyword sub for today!<br>
+<code>8NQY4minotaurN9Z7Z</code></p>
+<p></p></div></div>
+<hr>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>Looks like everything is there, so maybe just a <em>simple</em> substitution.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Google will be needed, but look a step up and search for a bit more than just the normal.</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Taking the obvious first step, let us reverse the code<br>
+<code>4ozq8mork2e6v</code></p>
+<p>Googling for the entire middle part between the numbers (<code>mork</code>) you should find the sitcom <a href="https://en.wikipedia.org/wiki/Mork_%26_Mindy" target="_blank">Mork &amp; Mindy</a>.<br>
+We know <code>Mind</code> is a valid keyword and since we used the <code>k</code> for our googling, let us use the <code>y</code> from Mindy.</p>
+<p>Subbing all that into our code, we get our final solve! <em>Phew</em><br>
+<code>4ozq8MINDy2e6v</code></p>
+<p></p></div></div>
+<hr>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>Take a look at the normal steps, but there is a hidden thingy that needs to be done to get it valid.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>It is not just for letters 😉</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Looking at one of our first steps for decoding a passcode, we see that with ROT25 gives a valid keyword<br>
+<code>7xsv0easyc0m9q</code><br>
+But we know that <code>0</code> is not a valid number, so another step is needed.<br>
+Atbash will not work here since that will affect up our letters also.</p>
+<p>Looking back at ROT24, we see that it is the same as ROT-1.<br>
+We also know that ROT5 is generally used for numbers, so what if we use a ROT-1 of the numbers version also?<br>
+<code>6xsv9easyc9m8q</code></p>
+<p>And with that, we have a valid passcode, easy hu? 😛</p>
+<p>In cases like these, it is good to know how all the standard cipher can be used differently.<br>
+Today we had the special Atbash and the ROT-X for both Numbers and Letters.<br>
+</p></div></div>
+<hr>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1021" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/05/25/a-cryptic-message-from-nigel-moyer/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1021" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/05/25/a-cryptic-message-from-nigel-moyer/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1021" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/05/25/a-cryptic-message-from-nigel-moyer/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/05/25/a-cryptic-message-from-nigel-moyer/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

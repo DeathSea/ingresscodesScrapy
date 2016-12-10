@@ -1,0 +1,74 @@
+<div class="entry-content">
+			<p>Three codes were hidden in the HTML source of the <a class="d-s ot-anchor" tabindex="0" title="The Cycle" href="http://investigate.ingress.com/2016/10/24/the-cycle/" target="_blank" rel="nofollow">The Cycle</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] 3v2muomvjco4y9c8</code></p>
+<p><code>[2] f7a18b7ba0d268b80a68ddcbeb72fe</code></p>
+<p><code>[3] @.!.!.!.-.!.-.!.-.!.-.!.-.!.-.!.-.!.!.!.-.!.-.!.-.!.-.!.-.!.!.!.-.!.@.@|!|-|!|-‘!|-.@.’!|!|!|(@`-.!|#|!|!|(@|-@|@)`-|!.”!`-|!|..!|\/|`-‘!’!`!’#`-‘!’#`-‘!`-‘!`-‘!`-‘!`-‘!’!’!`-‘!`-‘!`-‘!`–#’!`-‘!’@`</code><br>
+<span id="more-1984"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>16 characters with the right amount of ingredients for a passcode.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Make a 4×4 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 35px;"><code>3</code></td>
+<td style="width: 35px;"><code>v</code></td>
+<td style="width: 37px;"><code>2</code></td>
+<td style="width: 51px;"><code>m</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>u</code></td>
+<td style="width: 35px;"><code>o</code></td>
+<td style="width: 37px;"><code>m</code></td>
+<td style="width: 51px;"><code>v</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>j</code></td>
+<td style="width: 35px;"><code>c</code></td>
+<td style="width: 37px;"><code>o</code></td>
+<td style="width: 51px;"><code>4</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>y</code></td>
+<td style="width: 35px;"><code>9</code></td>
+<td style="width: 37px;"><code>c</code></td>
+<td style="width: 51px;"><code>8</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read going up from the bottom left Y</p>
+<p class="p1"><code>yju39covcom284vm</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">Looks like hex but range is not good</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">It is hex but not to Ascii</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">When converting from Hex to Ascii, noticed that the Base64 box had a clean length but it didn’t look at a passcode. Tried reversing the string and same thing. I then made pairs</p>
+<p class="p1"><code>f7 a1 8b 7b a0 d2 68 b8 0a 68 dd cb eb 72 fe</code></p>
+<p class="p1">Reverse each pairs</p>
+<p class="p1"><code>7f 1a b8 b7 0a 2d 86 8b a0 86 dd bc be 27 ef</code></p>
+<p class="p1">Convert Hex to Base64</p>
+<p class="p1"><code>fxq4twothought28vifv</code></p>
+<p class="p1"><code>fxq42thought286fv</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">No solve has been found yet.</p>
+<p class="p1">Update: Thanks to agent @EcoliW3110 for the solve</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Here’s the trick to get the Ascii art:</p>
+<p class="p1">Convert ! to space, @ to 2 spaces and # to 3 spaces. There is a EN Dash before the last # sign that need to covert to —</p>
+<p class="p1"><code><span class="Apple-converted-space">  </span>. . . .-. .-. .-. .-. .-. .-. .-. . . .-. .-. .-. .-. .-. . . .-. .<span class="Apple-converted-space">  </span>.<span class="Apple-converted-space">  </span>| |-| |-‘ |-.<span class="Apple-converted-space">  </span>.’ | | |(<span class="Apple-converted-space">  </span>`-. | <span class="Apple-converted-space">  </span>| | |(<span class="Apple-converted-space">  </span>|-<span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">  </span>)`-| .” `-| |.. |\/|`-‘ ’ ` ’ <span class="Apple-converted-space">  </span>`-‘ ’ <span class="Apple-converted-space">  </span>`-‘ `-‘ `-‘ `-‘ `-‘ ’ ’ `-‘ `-‘ `-‘ `-- <span class="Apple-converted-space">  </span>’ `-‘ ’<span class="Apple-converted-space">  </span>`</code></p>
+<p class="p1">With a bit of tweaking into 3 rows you get</p>
+<p><code>  . . . .-. .-. .-..-. .-..-. .-. . . .-. .-. .-. .-. .-.. . .-. .  .</code><br>
+<code>  | |-| |-‘ |-. .’ | | |( `-. |   | | |(  |-  |  )`-| .” `-| |.. |\/|</code><br>
+<code> `-‘ ’ ` ’   `-‘ ’  `-‘ `-‘`-‘ `-‘ `-‘ ’ ’ `-‘ `-‘ `-‘ `--  ’ `-‘ ’ `</code></p>
+<p class="p1"><code>jhp67obscured924gm</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1984" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/10/28/the-cycle/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1984" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/10/28/the-cycle/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1984" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/10/28/the-cycle/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/10/28/the-cycle/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

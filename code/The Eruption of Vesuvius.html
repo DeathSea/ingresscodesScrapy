@@ -1,0 +1,72 @@
+<div class="entry-content">
+			<p>3 codes where hidden in <a href="http://investigate.ingress.com/2016/04/22/the-eruption-of-vesuvius/" target="_blank">The Eruption of Vesuvius</a> post on the <a href="http://investigate.ingress.com/" target="_blank">Investigate Ingress</a> blog.</p>
+<p><code>[1] wnndlxmvpvllxvylvxdmwlvmnxmdvwymwvwv</code></p>
+<p><code>[2] enevg8pa2o7dagy5</code></p>
+<p><code>[3] n13k23tn1137ufu3</code><br>
+<span id="more-655"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>All letters, most of them in the high range of the alphabet</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">8 is the only hint I can think of :p</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>After trying regular ciphers like Atbash, ROT, Vigenere and noticing that the letters where mostly in the upper range of the alphabet I converted them to numbers (a=0)<br>
+<code>22 13 13 3 11 23 12 21 15 21 11 11 23 21 24 11 21 23 3 12 22 11 21 12 13 23 12 3 21 22 24 12 22 21 22 21</code></p>
+<p>If you add up all the digits you get a sum of 128. This divided by 8 gives 16 which makes it a good candidate for binary run length encoding. Knowing also that numbers in 8 bit binary start with 00 and the fact that the first number is a 2 makes it even more obvious.</p>
+<p>Convert to binary run length encoding<br>
+<code>00110111 01110001 01100010 01101000 00110101 01100011 01100001 01101100 01110110 01101001 01101110 01110110 00110110 01100001 00110011 01100110</code></p>
+<p>Convert binary to Ascii</p>
+<p><code>7qbh5calvinv6a3f</code></p>
+<p></p></div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>4 numbers, just need to make them fall at the right place and the keyword is almost showing at the start of the string.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Make a 4×4 grid</p>
+<table class=" table table-hover">
+<tbody>
+<tr>
+<td><code>e</code></td>
+<td><code>n</code></td>
+<td><code>e</code></td>
+<td><code>v</code></td>
+</tr>
+<tr>
+<td><code>g</code></td>
+<td><code>8</code></td>
+<td><code>p</code></td>
+<td><code>a</code></td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td><code>o</code></td>
+<td><code>7</code></td>
+<td><code>d</code></td>
+</tr>
+<tr>
+<td><code>a</code></td>
+<td><code>g</code></td>
+<td><code>y</code></td>
+<td><code>5</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read in a spiral going left from 5</p>
+<p><code>5yga2genevad7o8p</code></p>
+<p></p></div></div>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>Way too many numbers but are they really numbers !</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">May6y y0u n33d to sp3@k d1ffer3nt1y</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Reverse the string<br>
+<code>3ufu7311nt32k31n</code></p>
+<p>Translate from Leetspeak<br>
+<code>3ufu7elinte2kein</code></p>
+<p>Change that <code>ei</code> to 8<br>
+<code>3ufu7elinte2k8n</code></p>
+<p></p></div></div>
+<p> </p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-655" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/04/25/the-eruption-of-vesuvius/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-655" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/04/25/the-eruption-of-vesuvius/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-655" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/04/25/the-eruption-of-vesuvius/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/04/25/the-eruption-of-vesuvius/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

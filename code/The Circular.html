@@ -1,0 +1,75 @@
+<div class="entry-content">
+			<p>Inside the Portal Clue post “<a href="http://investigate.ingress.com/2016/05/31/the-circular/" target="_blank">The Circular</a>“, on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress blog</a>, there where three clues hidden inside the source:</p>
+<p><code>[1] conogacedtcotcoenilnogatednepnogacedaennenogacedisocinogacedtnepnogidiakcedaennenoganogatpehnogaenneelgnairtsocinogacedatetnogidiakinogacediakar</code><br>
+<code>[2] emrwbhatmngkrylvcmwu</code><br>
+<code>[3] fsofznsfnefsfeesfsfeoetfzssensffioeiieeeiwiniiiieiioiiiiiiieinii</code></p>
+<p><span id="more-1144"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>One very long string, but looks like there are some things repeating themselves.<br>
+We will need to divide the string a bit and see what it reveals.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>After splitting, counting the edges might help you further.</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Seeing the words <code>octagon</code>, <code>triangle</code> and <code>line</code> in the text, we could assume that geometric shapes are being references here.<br>
+Divide the text up into meaningful geometric shape names.<br>
+<code>octdecagon octagon line octdecagon pendedecagon enneadecagon icosikaidigon pentagon enneadecagon heptagon triangle enneadecagon icosikaidigon tetrakaidecagon</code><br>
+With the help of Google and Wikipedia, we find this <a href="https://en.wikipedia.org/wiki/List_of_polygons#List_of_n-gons_by_Greek_numerical_prefixes" target="_blank">list of polygons</a>.<br>
+Replace each polygon with it’s value in the table, except for <code>line</code>, it has 2 “edges”.<br>
+<code>18 8 2 18 15 19 22 5 19 7 3 19 22 14</code></p>
+<p>Using the alphabet index of a=0..z=26, we get our pre-/suffixes<br>
+<code>SICSPTWFTHDTWO</code><br>
+<code>6CSP2 F3D2O</code></p>
+<p>When a code is missing it’s keyword, it generally is the name of either the process or the subject of the substitution.<br>
+In this case, we were working with <em>shapes</em> and <code>shape</code> is a known keyword. Subbing that in reveals our full passcode:<br>
+<code>6CSP2shapeF3D2O</code></p>
+<p></p></div></div>
+<hr>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>Only letters in the code, so assume that the numbers will be written out.<br>
+The normal ROT/Atbash/Rectangle/Skip doesn’t give any results.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>When the normal results give nothing, take the next step of “try these automatically first” ciphers.</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Using the <a href="http://rumkin.com/tools/cipher/vigenere-autokey.php" target="_blank">Autokey Vig</a> cipher with a passphrase of <code>a</code>, we get almost finished result:<br>
+<code>eijnothmantrayniuseq</code><br>
+Switch out the numbers for our final solve<br>
+<code>8jno3mantray9u7q</code></p>
+<p></p></div></div>
+<hr>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>Here we have a string that has a few letters repeating at the start and others repeating at the end.<br>
+Those infront are not all repeated in the second part, hinting at a two sectional code.<br>
+We can also semi see very familiar pairs.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>What happens when you cut in half and fold over?</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Make two lines of the entire string<br>
+<code>fsofznsfnefsfeesfsfeoetfzssensff<br>
+ioeiieeeiwiniiiieiioiiiiiiieinii</code></p>
+<p>Reverse only the second line to reveal two letter numbers!<br>
+<code>fsofznsfnefsfeesfsfeoetfzssensff<br>
+iinieiiiiiiioiieiiiiniwieeeiieoi</code></p>
+<p>Reading each columns, write down the numbers.<br>
+<code>56150965985648875658182506789745</code></p>
+<p>Making pairs of this shows us that they are not suitable for decimal/hex to text conversion.<br>
+But since we already had one reverse in this code today, we see that reversing the numbers gives us the ranges we need.<br>
+<code>54798770528185657884658956905165</code></p>
+<p>Pair them up<br>
+<code>54 79 87 70 52 81 85 65 78 84 65 89 56 90 51 65</code></p>
+<p>and finally convert from  decimal to text for the final solution<br>
+<code>6OWF4QUANTAY8Z3A</code></p>
+<p></p></div></div>
+<hr>
+<p>In addition to the three codes hidden in this post, we also had a Portal clue.<br>
+Both factions will always try and figure out what Portal is referred to by such posts and try to get to it first.<br>
+Can you determine which Portal this clue is referring to? You will need everything in the post (and subsequent hints posted later) to find this Portal.</p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1144" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/06/07/the-circular/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1144" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/06/07/the-circular/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1144" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/06/07/the-circular/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/06/07/the-circular/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

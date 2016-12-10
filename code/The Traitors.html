@@ -1,0 +1,62 @@
+<div class="entry-content">
+			<p>There were 2 codes found in <a href="http://investigate.ingress.com/2016/03/29/the-traitors/">The Traitors</a> post on the <a href="http://investigate.ingress.com/">Investigation Blog</a>.</p>
+<p><code>[1] c8bdaebdccbcb0aaadbeb8baabccbecab1<br>
+[2] 1123121114125231511123121111211334115212311111132222122<br>
+</code></p>
+<p><span id="more-224"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>The code’s character set is 0-9a-f, which is the hexadecimal space. The code’s length is 34, which is visible by 2. Splitting up the code into pairs:</p>
+<p><code>c8 bd ae bd cc bc b0 aa ad be b8 ba ab cc be ca b1</code></p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Pairs starting with c are in the numbers position in the standard passcode format (<code>#zzz#keywordz#z#z</code>).</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Atbash the hexadecimal values: <code>01234567 &lt;=&gt; 89abcdef</code>:</p>
+<p><code>37 42 51 42 33 43 4f 55 52 41 47 45 54 33 41 35 4e<br>
+7BQB3COURAGET3A5N<br>
+</code></p>
+<p></p></div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>The code is a long string of numbers, all with very low values (1 to 5). Adding up all the values gives us 102, which is 6 x 17.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Usually, a long string of numbers would mean <a href="https://en.wikipedia.org/wiki/Run-length_encoding">run-length encoding</a>.</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>The encoding gives us:</p>
+<p><code>010011101101011110110000011000100000101001110110101001011100011110100000110110001010101110011001101100</code></p>
+<p>Partitioning the string into blocks of 6:</p>
+<p><code>010011</code><br>
+<code>101101</code><br>
+<code>011110</code><br>
+<code>110000</code><br>
+<code>011000</code><br>
+<code>100000</code><br>
+<code>101001</code><br>
+<code>110110</code><br>
+<code>101001</code><br>
+<code>011100</code><br>
+<code>011110</code><br>
+<code>100000</code><br>
+<code>110110</code><br>
+<code>001010</code><br>
+<code>101110</code><br>
+<code>011001</code><br>
+<code>101100</code></p>
+<p>Treating each block as <code>ABCDEF, form a braille cell:</code></p>
+<p><code>AD</code><br>
+<code>BE</code><br>
+<code>CF</code></p>
+<p>The first few would be:</p>
+<p><code></code><code>00 11 01<br>
+11 00 11<br>
+10 11 10</code></p>
+<p>Which would be: <code>4XT</code></p>
+<p>Completing the remaining cells:</p>
+<p><code>4XTB2AUGUSTAG9N8M</code></p>
+<p></p></div></div>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-224" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/03/29/the-traitors/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-224" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/03/29/the-traitors/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-224" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/03/29/the-traitors/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/03/29/the-traitors/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

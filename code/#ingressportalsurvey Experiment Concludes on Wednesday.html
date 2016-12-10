@@ -1,0 +1,71 @@
+<div class="entry-content">
+			<p>Looking at the source of the <a href="http://investigate.ingress.com/2016/04/18/ingressportalsurvey-experiment-concludes-on-wednesday/">#ingressportalsurvey: Experiment Concludes on Wednesday</a> post, we find these codes:</p>
+<p><code><br>
+[1] a2n7dnaefetnk3gnesw3<br>
+[2] e8hsb0e0ivzxgn8eb9c5<br>
+[3] jsduhgbha8cne9i4fbg2<br>
+</code><br>
+<span id="more-620"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>The reversed string doesn’t give us a nice keyword to work with in the middle. There might be another step involved.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;"><br>
+Reverse Morse:<br>
+7GSEAW7KATELENAU3A8N
+<p>The prefix is a bit too large, though.<br>
+In a recent cipher, the single U in the prefix expanded to ‘YOU’. This is the other way around, so SEA becomes C.</p>
+<p><code>7GCW7KATELENAU3A8N</code><br>
+</p></div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>Running atbash against the code gives us:</p>
+<p><code>v2shy0v0reactm2vy1x5</code></p>
+<p>There is a keyword in the middle (<code>react</code>) with a weird set of characters surrounding it as the prefix and suffix.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Many of those characters are <code>v</code> and <code>x</code>, which could be interpreted as Roman numerals.</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p><code>v2shy0v0reactm2vy1x5</code><br>
+<code><br>
+v2 = 5+2 = 7<br>
+0v0 = 0+5+0 = 5<br>
+2v = 5-2 = 3<br>
+1x = 10-1 = 9<br>
+5 = v<br>
+</code><br>
+<code>7shy5reactm3y9v</code><br>
+</p></div></div>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>With 4 valid digits and lots of lowercase letters present, we should try transpositions first.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;"><br>
+<code>js</code><br>
+<code>du</code><br>
+<code>hg</code><br>
+<code>bh</code><br>
+<code>a8</code><br>
+<code>cn</code><br>
+<code>e9</code><br>
+<code>i4</code><br>
+<code>fb</code><br>
+<code>g2</code><br>
+Looking at the first column, we see that all letters from a to j are used exactly once.<br>
+Ordering alphabetically we get a valid prefix and suffix in the second column:<br>
+<code>a8</code><br>
+<code>bh</code><br>
+<code>cn</code><br>
+<code>du</code><br>
+<code>e9</code><br>
+<code>fb</code><br>
+<code>g2﻿</code><br>
+<code>hg</code><br>
+<code>i4</code><br>
+<code>js</code><br>
+<code>8hnu9b2g4s</code><br>
+Still missing a keyword, a common trick is to use a keyword that somehow relates to what has been done in previous steps, such as mirroring or – in our case – ordering:<br>
+<code>8hnu9orderedb2g4s</code><br>
+</div></div>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-620" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/04/20/ingressportalsurvey-experiment-concludes-on-wednesday/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-620" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/04/20/ingressportalsurvey-experiment-concludes-on-wednesday/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-620" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/04/20/ingressportalsurvey-experiment-concludes-on-wednesday/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/04/20/ingressportalsurvey-experiment-concludes-on-wednesday/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

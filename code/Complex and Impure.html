@@ -1,0 +1,67 @@
+<div class="entry-content">
+			<p>One code appeared hidden in the <a href="http://investigate.ingress.com/2016/04/14/complex-and-impure/" target="_blank">Complex and Impure</a> post on the <a href="http://investigate.ingress.com/" target="_blank">Investigate Ingress</a> blog.</p>
+<p class="p1"><code>&lt;span style="font-size: 01px; letter-spacing: 7px; line-height: 8px;"&gt;3122878787871638787211287631187118787875228732533187228787878761878787128787871187878787876487878787873287115124435487112287878754878787871118787168744112587124387354112287531187118764873112875122871878735878741871225333116874312258712443541871226111116874121158712221543128725872353122287512112687341287158722873335318787872228751238716878744112587878712287218754873187878722522287136411871253221187541122543487316431871253872211875411878722528787871218716428711258712416421871261532871126871187128715428711151128723534187128761111354418711533287215321128761132532218725113264871187218752632221528722871163322872533871126873212154287111631221878763438732638731872154211871631228715878787872187878711878787263111871544321633872215121346873287121544878787331687332215343878712633187215223335&lt;/span&gt;</code></p>
+<p><span id="more-545"></span></p>
+<h2 class="p1">Observations</h2>
+<p>Yeah it’s long, real long but… We know that 3 codes are usually released so we have to assume that there are 3 codes is there. Notice some numbers are always repeating. Notice the hint also.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">One code uses the 7s &amp; 8s, the 2 others use the rest of the string and use a ciphers that only need 2 bits.</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<h1>Code #1</h1>
+<p>To make thing easier you’ll need to find a cryptogram cipher. Here’s the one I use: <a href="http://rumkin.com/tools/cipher/cryptogram.php">Cryptogram Assistant</a></p>
+<p>Those repeating 7s &amp; 8s need to mean something.</p>
+<p>Start by making a 158×5 rectangle</p>
+<p>Row 1:<br>
+<code>31228787878716387872112876311871187878752287325331872287878787618787871287878711878787878764878787878732871151244354871122878787548787878711187871687441125871</code><br>
+Row 2:<code><br>
+24387354112287531187118764873112875122871878735878741871225333116874312258712443541871226111116874121158712221543128725872353122287512112687341287158722873335</code><br>
+Row 3:<br>
+<code>31878787222875123871687874411258787871228721875487318787872252228713641187125322118754112254348731643187125387221187541187872252878787121871642871125871241642</code><br>
+Row 4:<br>
+<code>18712615328711268711871287154287111511287235341871287611113544187115332872153211287611325322187251132648711872187526322215287228711633228725338711268732121542</code><br>
+Row 5:<br>
+<code>87111631221878763438732638731872154211871631228715878787872187878711878787263111871544321633872215121346873287121544878787331687332215343878712633187215223335</code></p>
+<p>How about we replace all the numbers by spaces except for the 7s and 8s. Because of word wrapping on this site here is what you should get using a monospace font:<br>
+<a href="https://i0.wp.com/ingress.codes/wp-content/uploads/2016/04/Complex-and-Impure-87-code.png?ssl=1" target="_blank"><img class="alignnone wp-image-555 size-large" src="https://i0.wp.com/ingress.codes/wp-content/uploads/2016/04/Complex-and-Impure-87-code.png?resize=648%2C46&amp;ssl=1" alt="Complex and Impure 87 code" srcset="https://i0.wp.com/ingress.codes/wp-content/uploads/2016/04/Complex-and-Impure-87-code.png?resize=1024%2C73&amp;ssl=1 1024w, https://i0.wp.com/ingress.codes/wp-content/uploads/2016/04/Complex-and-Impure-87-code.png?resize=300%2C21&amp;ssl=1 300w, https://i0.wp.com/ingress.codes/wp-content/uploads/2016/04/Complex-and-Impure-87-code.png?resize=768%2C55&amp;ssl=1 768w, https://i0.wp.com/ingress.codes/wp-content/uploads/2016/04/Complex-and-Impure-87-code.png?w=1296&amp;ssl=1 1296w, https://i0.wp.com/ingress.codes/wp-content/uploads/2016/04/Complex-and-Impure-87-code.png?w=1944&amp;ssl=1 1944w" sizes="(max-width: 648px) 100vw, 648px" data-recalc-dims="1"></a></p>
+<p>From the Ascii art:<br>
+<code>FOKPMEIITTWSFOY</code></p>
+<p><code>4KPM8IT2S4Y</code></p>
+<h1>Code #2</h1>
+<p>Remember the hint that came with the code? 01px surely means there is something binary in there.</p>
+<p>From the full string remove all the 7s &amp; 8s.<br>
+<code>31221632112631111522325331226112116432115124435411225411116441125124335411225311116431125122135411225333116431225124435411226111116412115122215431225235312225121126341215223335312225123164411251222154312252221364111253221154112254343164311253221154112252121164211251241642112615321126111215421115112235341126111135441115332215321126113253221251132641121526322215222116332225331126321215421116312216343326331215421116312215211126311115443216332215121346321215443316332215343126331215223335</code></p>
+<p>You are left with 488 character. Nicely divisible by 8. Make groups of 8.<br>
+<code>31221632 11263111 15223253 31226112 11643211 51244354 11225411 11644112 51243354 11225311 11643112 51221354 11225333 11643122 51244354 11226111 11641211 51222154 31225235 31222512 11263412 15223335 31222512 31644112 51222154 31225222 13641112 53221154 11225434 31643112 53221154 11225212 11642112 51241642 11261532 11261112 15421115 11223534 11261111 35441115 33221532 11261132 53221251 13264112 15263222 15222116 33222533 11263212 15421116 31221634 33263312 15421116 31221521 11263111 15443216 33221512 13463212 15443316 33221534 31263312 15223335</code></p>
+<p>Look at the distribution, notice how each group starts with a sequence of 2 odd numbers? We know that when converting 8 bit binary to Ascii the numbers characters start with 00. Replace odd numbers by 0 and even numbers by 1.<br>
+<code>00110101 00110000 00110100 00111001 00110100 00111001 00110100 00111001 00110001 00110000 00110001 00110001 00110000 00110011 00111001 00111000 00110100 00111001 00110100 00111001 00110101 00110000 00111001 00111001 00111001 00110111 00110001 00110001 00110101 00110001 00110001 00110101 00111001 00110111 00110001 00110001 00110000 00110001 00110000 00110000 00110001 00110001 00110100 00111001 00110111 00111001 00111000 00110101 00110001 00110101 00110001 00110001 00110010 00110000 00110101 00110001 00110101 00110001 00110001 00110001 00110000</code></p>
+<p>Convert 8 bit binary to Ascii<br>
+<code>5049494910110398494950999711511597110100114979851511205151110</code></p>
+<p>Still a weird string.  This has to be a decimal string that can convert to Ascii, just need to find the right split points. In Ascii numbers range from 48 to 57. Capital letters from 65 to 90 and lowercase letters from 97 to 122.<br>
+<code>50 49 49 49 101 103 98 49 49 50 99 97 115 115 97 110 100 114 97 98 51 51 120 51 51 110</code></p>
+<p>Convert Decimal to Ascii<br>
+<code>2111egb112cassandrab33x33n</code></p>
+<p>Almost there, simply add up the numbers (2111=2+1+1+1=5)<br>
+<code>5egb4cassandrab6x6n</code></p>
+<h1>Code #3</h1>
+<p>What else can we use to find that third code? Look at the sting we used for code #2:</p>
+<p><code>31221632112631111522325331226112116432115124435411225411116441125124335411225311116431125122135411225333116431225124435411226111116412115122215431225235312225121126341215223335312225123164411251222154312252221364111253221154112254343164311253221154112252121164211251241642112615321126111215421115112235341126111135441115332215321126113253221251132641121526322215222116332225331126321215421116312216343326331215421116312215211126311115443216332215121346321215443316332215343126331215223335</code></p>
+<p>Notice how 5s and 6s are never side by side compared to all other numbers? Could be a good split point.</p>
+<p><code>31221 32112 31111 2232 33122 11211 43211 12443 41122 41111 44112 12433 41122 31111 43112 12213 41122 33311 43122 12443 41122 11111 41211 12221 43122 23 31222 12112 34121 22333 31222 1231 44112 12221 43122 22213 41112 32211 41122 43431 43112 32211 41122 21211 42112 1241 42112 1 32112 11121 42111 11223 34112 11113 44111 33221 32112 1132 32212 1132 41121 2 32221 22211 33222 33112 32121 42111 31221 34332 33121 42111 31221 21112 31111 44321 33221 12134 32121 44331 33221 34312 33121 22333</code></p>
+<p>A lot of sequences of 5 numbers, a few others range from 2 to 4 characters. Again, the hint said 01px, what other cipher uses only 2 bits and has a maximum sequence of 5 characters? It has to be morse but which are – and .?</p>
+<p>We know that numbers in morse can use combinations of dots and dashes but they do not alternate (ie: ..—, -…. are valid but .-…, –..- are not). Looking at the first sequence <code>31221</code> the only way to get a valid morse number is by using 1&amp;2 to represent a bit and 3&amp;4 to represent the other.</p>
+<p>Replace 1&amp;2 by dots and 3&amp;4 by dashes</p>
+<p><code>-.... -.... -.... ..-. --... ..... --... ..--- -.... -.... --... ..--- -.... -.... --... ....- -.... ---.. --... ..--- -.... ..... -.... ..... --... .- -.... ..... --... ..--- -.... ..-. --... ..... --... ....- -.... -.... -.... ----. --... -.... -.... ..... -.... ..-. -.... . -.... ..... -.... ....- --... ....- --... --... -.... ..-. -.... ..-. -.... . -.... ..... --... --... -.... -.... -.... ----. --... -.... -.... ..... -.... ---.. --... ...-- -.... ----. --... ---.. --... ..---</code></p>
+<p>Convert Morse to text<br>
+<code>666F757266726674687265657A65726F7574666976656F6E656474776F6F6E6577666976656873697872</code></p>
+<p>Convert Hexadecimal to Ascii<br>
+<code>fourfrfthreezeroutfiveonedtwoonewfivehsixr</code></p>
+<p>Now this looks more and more like a code<br>
+<code>four frf three zero ut five one d two one w five h six r</code></p>
+<p><code>4FRF30UT51D21W5H6R</code></p>
+<p>Keyword seems a bit odd. Remember the days of Leetspeak? You can make out OUTSID but the 21 is out of place. 2+1=3 which is E is Leetspeak.</p>
+<p><code>4FRF3OUTSIDEW5H6R</code><br>
+All done !!!<br>
+</p></div></div>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-545" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/04/16/complex-and-impure/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-545" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/04/16/complex-and-impure/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-545" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/04/16/complex-and-impure/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/04/16/complex-and-impure/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

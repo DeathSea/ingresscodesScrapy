@@ -1,0 +1,134 @@
+<div class="entry-content">
+			<p><img class="aligncenter" src="https://i2.wp.com/investigate.ingress.com/wp-content/uploads/2016/06/AnotherWay.png?resize=648%2C514" data-recalc-dims="1"></p>
+<p>Three codes were found in the <a href="http://investigate.ingress.com/2016/06/21/another-way/" target="_blank">Another Way</a> post on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog</p>
+<p><code>[1] 9l7z4abommeqq5d2</code></p>
+<p><code>[2] 3HMnZyJBLvMCNvJnUPxB</code></p>
+<p><code>[3] 3b2a5a3b2b1a2a3b2b1a1c3b1b1b1a1a1a3b2c1a3a1b1c1a2b1a2a3a2b5a</code></p>
+<p><span id="more-1295"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>4 numbers and the rest letters, looks familiar.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Make a 4×4 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 36px;"><code>9</code></td>
+<td style="width: 36px;"><code>l</code></td>
+<td style="width: 36px;"><code>7</code></td>
+<td style="width: 63px;"><code>z</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>4</code></td>
+<td style="width: 36px;"><code>a</code></td>
+<td style="width: 36px;"><code>b</code></td>
+<td style="width: 63px;"><code>o</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>m</code></td>
+<td style="width: 36px;"><code>m</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 63px;"><code>q</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>q</code></td>
+<td style="width: 36px;"><code>5</code></td>
+<td style="width: 36px;"><code>d</code></td>
+<td style="width: 63px;"><code>2</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read down from the upper right Z</p>
+<p class="p1"><code>zoq27bedlam594mq</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">Mix of numbers, small cap and upper cap letters. This looks like a cipher we know.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Remember that the passcode format changed so it doesn’t need to start with M, N, O or P now</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">It does look like Base64 but doesn’t it usually start M, N, O or P? Not anymore, the passcode format has changed. Let’s try converting Base64 to text, nothing good.</p>
+<p class="p1">Reverse the sting</p>
+<p class="p1"><code>BxPUnJvNCMvLBJyZnMH3</code></p>
+<p class="p1">Still nothing good</p>
+<p class="p1">Let’s swap the cases</p>
+<p class="p1"><code>bXpuNjVncmVlbjYzNmh3</code></p>
+<p class="p1">Convert Base64 to text</p>
+<p class="p1"><code>mzn65green636hw</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p>Thanks goes out to <strong>yushi2000 </strong>for submitting the solve to us!</p>
+<p>It looks like HEX, but converting it just gives gibberish.<br>
+Will need to look further for alternatives.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Alternating values reminds you of what kind of code?<br>
+How many frequently used versions do we have of such kind of code?</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>We see that in the code there is a constant alternation between numbers and letters<br>
+This normally points to some form of binary/bit kind of code where we have only two characters (Binary, Morse, Braille)<br>
+We also see that within the code, we have no letter greater than <code>c</code> and no number greater than <code>5</code>.</p>
+<p>Let us assume that the value of a character indicates the repetition, then we’ll have a workable string of alternating 1’s and 0’s<br>
+So using the below index, we can substitute each value in the code</p>
+<table class=" table table-hover" style="width:1px">
+<tr>
+<th style="padding:5px"><strong>Symbol</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+<tr>
+<td style="padding:5px"><code>a</code></td>
+<td style="padding:5px"><code>0</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>b</code></td>
+<td style="padding:5px"><code>00</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>c</code></td>
+<td style="padding:5px"><code>000</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>1</code></td>
+<td style="padding:5px"><code>1</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>2</code></td>
+<td style="padding:5px"><code>11</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>3</code></td>
+<td style="padding:5px"><code>111</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>4</code></td>
+<td style="padding:5px"><code>1111</code></td>
+</tr>
+<tr>
+<td style="padding:5px"><code>5</code></td>
+<td style="padding:5px"><code>11111</code></td>
+</tr>
+</table>
+<p><code>111001101111101110011001011011100110010100011100100100101010111001100010111010010001011001011011101100111110</code><br>
+Because the length of this code <em>(108)</em> is only divisible by 6, we know what the next step would be 😉<br>
+Group up the code to form proper <a href="https://en.wikipedia.org/wiki/Braille" target="_blank">Braille</a> in the format of</p>
+<table class=" table table-hover" style="width:1px">
+<tr>
+<td>123456</td>
+<td> &gt; </td>
+<td>14<br>
+25<br>
+36</td>
+</tr>
+</table>
+<p><code>10 11 11 00 00 11 01 01 11 10 10 10 10 00 00 00 11 11<br>
+10 01 01 10 11 01 10 10 00 01 10 01 11 10 10 11 00 11<br>
+11 11 10 11 11 00 00 10 00 10 11 00 10 01 11 11 10 10</code></p>
+<p>Seeing <code>1</code> as dots and <code>0</code> and blank, we get the following Braille<br>
+<span style="font-size: 20pt;"><code><span style="font-family: icbraille;">v y n 8 7 d i s c o v e r 5 8 7 m q</span></code></span></p>
+<p>Translating this into text gives us the final solve:<br>
+<code>vyn87discover587mq</code></p>
+<p></p></div></div>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1295" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/06/27/another-way/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1295" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/06/27/another-way/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1295" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/06/27/another-way/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/06/27/another-way/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

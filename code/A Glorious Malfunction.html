@@ -1,0 +1,53 @@
+<div class="entry-content">
+			<p>There were 3 codes found in the <a class="alignnone size-medium wp-image-382" href="http://investigate.ingress.com/2016/04/06/a-glorious-malfunction">A Glorious Malfunction</a> blog post on the <a href="http://investigate.ingress.com/">Investigation Blog</a>.</p>
+<p><code>[1] snkqwoxxfjywephyytju<br>
+[2] dxclrearwtciroiotbpw<br>
+[3] qijjfcxafydsorpmegfs</code></p>
+<p><span id="more-372"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>The code was found in the image and you can notice that it has the same length of<br>
+<code>[2]</code> and <code>[3]</code> so they are probably related.<br>
+<strong>Note</strong>: The codes are already in the correct order and there is nothing that helps for reordering but finding some reference to a prefix/suffix/keyword.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Try to join the three strings and reverse, you may notice something.</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;"><br>
+Make one string from the three codes and you will get <strong>snkqwoxxfjywephyytjudxclrearwtciroiotbpwqijjfcxafydsorpmegfs</strong>.<br>
+Notice that reading backwards each three letters you find an interesting string, so reverse it might be a starting point: <strong>sfgemprosdyfaxcfjjiqwpbtoiorictwraerlcxdujtyyhpewyjfxxowqkns</strong>.
+<p>Reading each three letters is equal to <strong>skip 3</strong>:<br>
+<strong>serdafiportaldthwfokfmoyxjqbiiwecuypyxwngpsfcjwtocrrxjyejxqs</strong></p>
+<p>So as first passcode we got <em>serdafiportaldthwfok</em>.<br>
+<code>7rda5portald3w4k</code></p>
+<p></p></div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>The string can be divided into three:<br>
+<code><br>
+serdafiportaldthwfok<br>
+fmoyxjqbiiwecuypyxwn<br>
+gpsfcjwtocrrxjyejxqs<br>
+</code></p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Two strings of the same length, the one already <em>“passcoded”</em> might be a key for something.</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;"><br>
+Apply <a href="http://rumkin.com/tools/cipher/vigenere.php">Vigenére Cipher</a> on <em>fmoyxjqbiiwecuypyxwn</em> with <em>serdafiportaldthwfok</em> as passphrase to get <em>nixvxeimurderrficsid</em>.
+<p><code>9xvx8murderr5c6d</code></p>
+<p></p></div></div>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>We now have:<br>
+<code><br>
+serdafiportaldthwfok<br>
+nixvxeimurderrficsid<br>
+gpsfcjwtocrrxjyejxqs<br>
+</code></p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;"><br>
+Apply <a href="http://rumkin.com/tools/cipher/vigenere.php">Vigenére Cipher</a> on <em>gpsfcjwtocrrxjyejxqs</em> with <em>nixvxeimurderrficsid</em> as passphrase to get <em>thvkffohulongstwhfip</em>.
+<p><code>3vkf4hulongs2h5p</code></p>
+<p></p></div></div>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-372" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/04/12/a-glorious-malfunction/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-372" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/04/12/a-glorious-malfunction/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-372" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/04/12/a-glorious-malfunction/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/04/12/a-glorious-malfunction/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

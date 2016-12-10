@@ -1,0 +1,166 @@
+<div class="entry-content">
+			<p>Three codes were found hidden in the HTML source of the <a class="d-s ot-anchor" tabindex="0" title="Jahan responds to Acolyte" href="http://investigate.ingress.com/2016/07/14/jahan-responds-to-acolyte/" target="_blank" rel="nofollow">Jahan responds to Acolyte</a> post on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog.</p>
+<p><code>[1] 536295294837573075851535163630648515305072952951</code></p>
+<p><code>[2] 91717191707140408180328151414101424080607091814012403181401240318171</code></p>
+<p><code>[3] 74rstefrepnoitcvq387</code></p>
+<p><span id="more-1403"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>All numbers nothing good for Ascii range. We’ll need to dig in a bit further to find the cipher.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Beep beep bip</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Making pairs didn’t give anything that could make sense. I then wondered if morse reverse or swap would give a better range. Let’s convert the string to morse</p>
+<p class="p1"><code>..... ...-- -.... ..--- ----. ..... ..--- ----. ....- ---.. ...-- --... ..... --... ...-- ----- --... ..... ---.. ..... .---- ..... ...-- ..... .---- -.... ...-- -.... ...-- ----- -.... ....- ---.. ..... .---- ..... ...-- ----- ..... ----- --... ..--- ----. ..... ..--- ----. ..... .----</code></p>
+<p class="p1">It didn’t take long by seeing this to spot the cipher. Notice the distribution of dots and dashes ? Groups by pairs of dots and dashes and count how many there are to get the decimal value</p>
+<table class=" table table-hover" style="width: 205px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 183px; height: 24px;" colspan="3"><code>........---</code></td>
+<td style="width: 34px; height: 24px;"><code>83</code></td>
+</tr>
+<tr style="height: 24.7812px;">
+<td style="width: 183px; height: 24.7812px;" colspan="3"><code>......-------</code></td>
+<td style="width: 34px; height: 24.7812px;"><code>67</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 183px; height: 24px;" colspan="3"><code>........-------</code></td>
+<td style="width: 34px; height: 24px;"><code>87</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 183px; height: 24px;" colspan="3"><code>.....----.</code></td>
+<td style="width: 34px; height: 24px;"><code>54</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 183px; height: 24px;" colspan="3"><code>....----</code></td>
+<td style="width: 34px; height: 24px;"><code>54</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 183px; height: 24px;" colspan="3"><code>........--</code></td>
+<td style="width: 34px; height: 24px;"><code>82</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 183px; height: 24px;" colspan="3"><code>......---------</code></td>
+<td style="width: 34px; height: 24px;"><code>69</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 183px; height: 24px;" colspan="3"><code>........---</code></td>
+<td style="width: 34px; height: 24px;"><code>83</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 183px; height: 24px;" colspan="3"><code>........----</code></td>
+<td style="width: 34px; height: 24px;"><code>84</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 183px; height: 24px;" colspan="3"><code>........--</code></td>
+<td style="width: 34px; height: 24px;"><code>82</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 183px; height: 24px;" colspan="3"><code>......-----</code></td>
+<td style="width: 34px; height: 24px;"><code>65</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 183px; height: 24px;" colspan="3"><code>.......---</code></td>
+<td style="width: 34px; height: 24px;"><code>73</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 183px; height: 24px;" colspan="3"><code>.......--------</code></td>
+<td style="width: 34px; height: 24px;"><code>78</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 183px; height: 24px;" colspan="3"><code>........----</code></td>
+<td style="width: 34px; height: 24px;"><code>84</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 183px; height: 24px;" colspan="3"><code>........----</code></td>
+<td style="width: 34px; height: 24px;"><code>84</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 183px; height: 24px;" colspan="3"><code>........-------</code></td>
+<td style="width: 34px; height: 24px;"><code>87</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 183px; height: 24px;" colspan="3"><code>.....-------</code></td>
+<td style="width: 34px; height: 24px;"><code>57</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 183px; height: 24px;" colspan="3"><code>.....-------</code></td>
+<td style="width: 34px; height: 24px;"><code>57</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 183px; height: 24px;" colspan="3"><code>........-------</code></td>
+<td style="width: 34px; height: 24px;"><code>87</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 183px; height: 24px;" colspan="3"><code>.......----</code></td>
+<td style="width: 34px; height: 24px;"><code>74</code></td>
+</tr>
+</tbody>
+</table>
+<p class="p1">Now this is much better for Ascii range</p>
+<p class="p1"><code>83 67 87 54 54 82 69 83 84 82 65 73 78 84 84 87 57 57 87 74</code></p>
+<p class="p1">Convert decimal to Ascii</p>
+<p class="p1"><code>SCW66RESTRAINTTW99WJ</code></p>
+<p class="p1">Change the TW to 2</p>
+<p class="p1"><code>scw66restraint299wj</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">All numbers again, notice how 1 and 0 are repeating.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">look at it the other way round</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">As usual, making pairs always help</p>
+<p class="p1"><code>91 71 71 91 70 71 40 40 81 80 32 81 51 41 41 01 42 40 80 60 70 91 81 40 12 40 31 81 40 12 40 31 81 71</code></p>
+<p class="p1">Notice how the last numbers are always 0, 1 or 2?</p>
+<p class="p1">Reverse the string</p>
+<p class="p1"><code>17 18 13 04 21 04 18 13 04 21 04 18 19 07 06 08 04 24 10 14 14 15 18 23 08 18 04 04 17 07 19 17 17 19</code></p>
+<p class="p1">Looks like the range is between 00 and 25, convert numbers to letters (0=a)</p>
+<p class="p1"><code>RSNEVESNEVESTHGIEYKOOPSXISEERHTRRT</code></p>
+<p class="p1">Reverse</p>
+<p class="p1"><code>TRRTHREESIXSPOOKYEIGHTSEVENSEVENSR</code></p>
+<p class="p1"><code>trr36spooky877sr</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">All the ingredients are there, you guessed it: same old same old</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Make a 5×4 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 35px;"><code>7</code></td>
+<td style="width: 36px;"><code>4</code></td>
+<td style="width: 36px;"><code>r</code></td>
+<td style="width: 37px;"><code>s</code></td>
+<td style="width: 59px;"><code>t</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>e</code></td>
+<td style="width: 36px;"><code>f</code></td>
+<td style="width: 36px;"><code>r</code></td>
+<td style="width: 37px;"><code>e</code></td>
+<td style="width: 59px;"><code>p</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>n</code></td>
+<td style="width: 36px;"><code>o</code></td>
+<td style="width: 36px;"><code>i</code></td>
+<td style="width: 37px;"><code>t</code></td>
+<td style="width: 59px;"><code>v</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>v</code></td>
+<td style="width: 36px;"><code>q</code></td>
+<td style="width: 36px;"><code>3</code></td>
+<td style="width: 37px;"><code>8</code></td>
+<td style="width: 59px;"><code>7</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read left starting at the upper right T</p>
+<p class="p1"><code>tsr47perfection783qv</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1403" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/07/16/jahan-responds-to-acolyte/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1403" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/07/16/jahan-responds-to-acolyte/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1403" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/07/16/jahan-responds-to-acolyte/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/07/16/jahan-responds-to-acolyte/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

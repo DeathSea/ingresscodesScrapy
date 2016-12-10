@@ -1,0 +1,78 @@
+<div class="entry-content">
+			<p>Inside the post “<a href="http://investigate.ingress.com/2016/05/03/susanna-receives-a-clue/" target="_blank">Susanna receives a Clue</a>” over at the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog, there were 3 codes found inside the source and an additional one that can be seen on the image of the post.</p>
+<p><code>[1] 22122421122223132211321211131111121412132211122321141132131211111</code></p>
+<p><code>[2] uyuxqbq836ojp69rzb7rq4cbqxolj4zm﻿</code></p>
+<p><code>[3] wlblwnvvlvpvdbvenfwlldvweldldvmldmwvlnmdvwvpvdmeb</code></p>
+<p><code>[4] 200110001001101000011011000110010001101100011010100110011001100000011000000110000001100000011000000110000</code><br>
+<span id="more-789"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>All numbers, not inside the normal ASCII range and longer than normal<br>
+</p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;"><br>
+The highest number is a 4, which would make it ideal for repeating yourself and it starts with a 2.<br>
+</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;"><br>
+Perform a Run Length Encoding with the numbers, starting with 0<br>
+<code>0011011001111001011001100111011100110100011011010111010101101111011011100110101100111001011110100011011101101010</code><br>
+This gives a nice 112 character long string, which can be nicely grouped into pieces of 8<br>
+<code>00110110 01111001 01100110 01110111 00110100 01101101 01110101 01101111 01101110 01101011 00111001 01111010 00110111 01101010</code><br>
+Convert binary to ASCII for the final solve<br>
+<code>6yfw4muonk9z7j</code><br>
+</div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;"><br>
+</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;"><br>
+Convert each character to it’s Morse code<br>
+<code>..- -.-- ..- -..- --.- -... --.- ---.. ...-- -.... --- .--- .--. -.... ----. .-. --.. -... --... .-. --.- ....- -.-. -... --.- -..- --- .-.. .--- ....- --.. -- ﻿</code><br>
+Converting <code>.</code> to <code>0</code> and <code>-</code> to <code>1</code>, we get something that we can once again divide nicely into 8 groups<br>
+<code>00110110 01100111 01100011 01111000 00111000 01110111 01101000 01111001 01100100 01100001 01101000 01101010 00110110 01111010 00111000 01110011</code><br>
+Converting binary to ASCII, we get our solve<br>
+<code>6gcx8whydahj6z8s</code><br>
+</div></div>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;"><br>
+Sofar we had two binary solves, one involving RLE. Might it be that it is needed again?<br>
+</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;"><br>
+Obviously we cannot run alphabet characters through a RLE cipher, but we can convert them to their alphabet index first.<br>
+Convert each character to it’s <a href="http://multidec.web-lab.at/abc.php" target="_blank">alphabet index</a>, where a=0 and z=25:<br>
+<code>22 11 1 11 22 13 21 21 11 21 15 21 3 1 21 4 13 5 22 11 11 3 21 22 4 11 3 11 3 21 12 11 3 12 22 21 11 13 12 3 21 22 21 15 21 3 12 4 1</code><br>
+This looks promising, we are starting with a 2 again and no number higher than 5.<br>
+Let us group up the numbers<br>
+<code>221111122132121112115213121413522111132122411311321121131222211113123212221152131241</code><br>
+and then perform a Run Length Encoding with them<br>
+<code>00110101011001000110110101101000001101110110111101110000011001010111001001100001011101000110100101110110011001010111011000110110011010000011011101100001</code><br>
+What do you know, another long string that can be grouped into 8 groups<br>
+<code>00110101 01100100 01101101 01101000 00110111 01101111 01110000 01100101 01110010 01100001 01110100 01101001 01110110 01100101 01110110 00110110 01101000 00110111 01100001</code><br>
+Finally convert binary to ASCII for the solve<br>
+<code>5dmh7operativev6h7a</code><br>
+</div></div>
+<h1>Code #4</h1>
+<h2>Observations</h2>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;"><br>
+Look at all the information in the picture<br>
+</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;"><br>
+Taking the obvious first, we see a long string of <code>1</code> and <code>0</code>, with a single <code>2</code> in there.<br>
+Read out the entire string, starting from the single <code>2</code><br>
+<code>200110001001101000011011000110010001101100011010100110011001100000011000000110000001100000011000000110000</code><br>
+Reading the <code>2</code> as a hint to binary and seeing that the remaining character’s length is divisible by 8, let us group them<br>
+<code>00110001 00110100 00110110 00110010 00110110 00110101 00110011 00110000 00110000 00110000 00110000 00110000 00110000</code><br>
+Converting Binary to ASCII we get<br>
+<code>1462653000000</code><br>
+Recognize that it look very much like a <a href="https://en.wikipedia.org/wiki/Unix_time" target="_blank">Unix timestamp</a>, we use an <a href="http://www.unixtimestamp.com/index.php" target="_blank">Timestamp Epoch</a> convert and get the UTC date and time of<br>
+<code>2016-05-07T20:30:00+00:00</code>
+<p>So now we have a date and time, but that doesn’t mean much, lets have a look at the other clues.<br>
+The filename of image was <code>lccn-n96059244.jpg</code><br>
+Googling a bit, we see that <code>lccn</code> stands for <a href="https://en.wikipedia.org/wiki/Library_of_Congress_Control_Number" target="_blank">Library of Congress Control Number</a>.<br>
+Taking that knowledge, we search their database and find that <code>n96059244</code> points to <a href="http://id.loc.gov/authorities/names/n96059244.html" target="_blank">Tim Hawkinson</a>, which corresponds with what looks to be in the image.<br>
+Over at the University of California, San Diego, there is a Stuart collection which includes the Tim Hawkinson <a href="http://stuartcollection.ucsd.edu/artist/hawkinson.html" target="_blank">Bear</a>.<br>
+So it seems that something might happen at or around the bear on the 7th May 2016 at 20:30, which was confirmed later in the post <a href="http://investigate.ingress.com/2016/05/05/a-mission-in-san-diego/" target="_blank">“A Mission in San Diego”</a><br>
+</p></div></div>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-789" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/05/07/susanna-receives-a-clue/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-789" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/05/07/susanna-receives-a-clue/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-789" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/05/07/susanna-receives-a-clue/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/05/07/susanna-receives-a-clue/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

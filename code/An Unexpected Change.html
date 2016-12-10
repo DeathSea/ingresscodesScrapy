@@ -1,0 +1,136 @@
+<div class="entry-content">
+			<p>Three codes were found hidden in the <a href="http://investigate.ingress.com/2016/05/13/an-unexpected-change/" target="_blank">An Unexpected Change</a> post on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog.</p>
+<p><code>[1] 381151434509433943461145465257314611065346450337</code></p>
+<p><code>[2] 204-255-000-178-236-093-000-020-168-118-255-122-044-022-008-255-222-173-019-136-008-179-139-109-080-200-120-220-220-220-110-127-128-255-064-064-239-204-000-197-179-088-228-113-122-100-084-082-218-145-000-255-000-255-101-067-033-236-213-064</code></p>
+<p><code>[3] bguvrytrhdbgtrqdyhtwonrwfxyhsskz</code></p>
+<p><span id="more-962"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>48 numbers, nothing pointing to decimal. Pairs range from 00 to 53.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">You’ll NeEd 2 fInd THe iNDex==</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>There are 24 pairs and number are ranging from 00 to 53. 24 can be divided by 4 which would make it a good candidate for Base64. We just need this <a href="https://en.wikipedia.org/wiki/Base64" target="_blank">index</a></p>
+<p>Make pairs</p>
+<p class="p1"><code>38 11 51 43 45 09 43 39 43 46 11 45 46 52 57 31 46 11 06 53 46 45 03 37</code></p>
+<p class="p1">Find their corresponding Base64 characters in the index provided above</p>
+<p class="p1"><code>mLzrtJrnruLtu05fuLG1utDl</code></p>
+<p class="p1">Base64 passcode strings usually start with a capital M or N. Swap cases</p>
+<p class="p1"><code>MlZRTjRNRUlTU05FUlg1UTdL</code></p>
+<p class="p1">Convert Base64 to Ascii</p>
+<p class="p1"><code>2VQN4MEISSNERX5Q7K</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">60 numbers ranging from 000 to 255.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Hope you know the right names for the colours of the rainbow</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">000 to 255 can represent RGB values for colours. To make it easier convert the RGB values to Hex.</p>
+<p class="p1">Ex.: 204-255-000 = ccff00</p>
+<p class="p1">Once you have all the Hex values you need to find the corresponding colour name. Some have many names, the best index can be found here</p>
+<table class=" table table-hover" style="width: 291px; height: 700px;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 83px; height: 24px; text-align: center;"><strong>Hex</strong></td>
+<td style="width: 192px; height: 24px; text-align: center;"><strong>Name</strong></td>
+</tr>
+<tr style="height: 22px;">
+<td style="width: 83px; height: 22px;"><code>ccff00</code></td>
+<td style="width: 192px; height: 22px;"><code>Fluorescent yellow</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 83px; height: 24px;"><code>b2ec5d</code></td>
+<td style="width: 192px; height: 24px;"><code>Inchworm</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 83px; height: 24px;"><code>0014a8</code></td>
+<td style="width: 192px; height: 24px;"><code>Zaffre</code></td>
+</tr>
+<tr style="height: 2px;">
+<td style="width: 83px; height: 2px;"><code>76ff7a</code></td>
+<td style="width: 192px; height: 2px;"><code>Screamin' Green</code></td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 83px; height: 29px;"><code>2c1608</code></td>
+<td style="width: 192px; height: 29px;"><code>Zinnwaldite Brown</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 83px; height: 24px;"><code>ffdead</code></td>
+<td style="width: 192px; height: 24px;"><code>NavajoWhite</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 83px; height: 24px;"><code>138808</code></td>
+<td style="width: 192px; height: 24px;"><code>India Green</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 83px; height: 24px;"><code>b38b6d</code></td>
+<td style="width: 192px; height: 24px;"><code>Light Taupe</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 83px; height: 24px;"><code>50c878</code></td>
+<td style="width: 192px; height: 24px;"><code>Emerald Paris Green</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 83px; height: 24px;"><code>dcdcdc</code></td>
+<td style="width: 192px; height: 24px;"><code>Gainsboro</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 83px; height: 24px;"><code>6e7f80</code></td>
+<td style="width: 192px; height: 24px;"><code>AuroMetalSaurus</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 83px; height: 24px;"><code>ff4040</code></td>
+<td style="width: 192px; height: 24px;"><code>Coral Red</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 83px; height: 24px;"><code>efcc00</code></td>
+<td style="width: 192px; height: 24px;"><code>Yellow (Munsell)</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 83px; height: 24px;"><code>c5b358</code></td>
+<td style="width: 192px; height: 24px;"><code>Vegas Gold</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 83px; height: 24px;"><code>e4717a</code></td>
+<td style="width: 192px; height: 24px;"><code>Tango pink</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 83px; height: 24px;"><code>645452</code></td>
+<td style="width: 192px; height: 24px;"><code>Wenge</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 83px; height: 24px;"><code>da9100</code></td>
+<td style="width: 192px; height: 24px;"><code>Harvest gold</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 83px; height: 24px;"><code>ff00ff</code></td>
+<td style="width: 192px; height: 24px;"><code>Fuchsia</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 83px; height: 24px;"><code>654321</code></td>
+<td style="width: 192px; height: 24px;"><code>Otter Brown</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 83px; height: 24px;"><code>ecd540</code></td>
+<td style="width: 192px; height: 24px;"><code>Sandstorm</code></td>
+</tr>
+</tbody>
+</table>
+<p>Now take the first letter of each colour name</p>
+<p class="p1"><code>fizsznilegacyvtwhfos</code></p>
+<p class="p1"><code>5zsz9legacyv2h4s</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">32 letters, go through your normal routine of ciphers.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Felix Delastelle might give you a hand</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Well after Atbash, ROT, Rectangle and morse don’t give anything, there are always 2 ciphers that we seem to forget and make you facepalm yourself: Bifid and Playfair.</p>
+<p class="p1">Bifid gives</p>
+<p class="p1"><code>eightyzbsixstruggleseightsthreeu</code></p>
+<p class="p1"><code>8yzb6struggles8s3u</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-962" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/05/16/an-unexpected-change/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-962" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/05/16/an-unexpected-change/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-962" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/05/16/an-unexpected-change/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/05/16/an-unexpected-change/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

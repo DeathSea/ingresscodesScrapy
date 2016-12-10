@@ -1,0 +1,143 @@
+<div class="entry-content">
+			<p>Three codes were found hidden in the <a class="d-s ot-anchor" tabindex="0" title="ADA’s Odd Behavior" href="http://investigate.ingress.com/2016/06/23/adas-odd-behavior/" target="_blank" rel="nofollow">ADA’s Odd Behavior</a> post on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog.</p>
+<p><code>[1] funneaoredekunnesrriysetmnftvhneooer</code></p>
+<p><code>[2] 7f7a7baca998899a7d8a96ada8ad8899</code></p>
+<p><code>[3] yyb23dse245xv</code></p>
+<p><span id="more-1313"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>36 letters, from the start of the string, looks like fun :p</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>After ROT and Atbash didn’t give anything, try rectangles.</p>
+<p>Make a 6×6 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 37px;"><code>f</code></td>
+<td style="width: 36px;"><code>u</code></td>
+<td style="width: 36px;"><code>n</code></td>
+<td style="width: 36px;"><code>n</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 66px;"><code>a</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>o</code></td>
+<td style="width: 36px;"><code>r</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 36px;"><code>d</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 66px;"><code>k</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>u</code></td>
+<td style="width: 36px;"><code>n</code></td>
+<td style="width: 36px;"><code>n</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 36px;"><code>s</code></td>
+<td style="width: 66px;"><code>r</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>r</code></td>
+<td style="width: 36px;"><code>i</code></td>
+<td style="width: 36px;"><code>y</code></td>
+<td style="width: 36px;"><code>s</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 66px;"><code>t</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>m</code></td>
+<td style="width: 36px;"><code>n</code></td>
+<td style="width: 36px;"><code>f</code></td>
+<td style="width: 36px;"><code>t</code></td>
+<td style="width: 36px;"><code>v</code></td>
+<td style="width: 66px;"><code>h</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>n</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 36px;"><code>o</code></td>
+<td style="width: 36px;"><code>o</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 66px;"><code>r</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read down from upper right A</p>
+<p class="p1"><code>akrthreesevendestoneyfourninefourmn</code></p>
+<p class="p1">Change the spelled out numbers to real numbers</p>
+<p class="p1"><code>akr37dest1ny494mn</code></p>
+<p class="p1">Finally change that 1 to i</p>
+<p class="p1"><code>akr37destiny494mn</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">Looks like hex but the conversion gives nothing good. We need to do one manipulation and it’s been used often before.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Let’s start by making pairs</p>
+<p class="p1"><code>7f 7a 7b ac a9 98 89 9a 7d 8a 96 ad a8 ad 88 99</code></p>
+<p class="p1">Looking at where numbers should fall, they all start with A. We have seen this pattern in the past and it was “hex atbash” that gives decimal values.</p>
+<p class="p1">Here’s the index</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 35px;">0</td>
+<td style="width: 36px;">1</td>
+<td style="width: 37px;">2</td>
+<td style="width: 36px;">3</td>
+<td style="width: 37px;">4</td>
+<td style="width: 37px;">5</td>
+<td style="width: 37px;">6</td>
+<td style="width: 37px;">7</td>
+<td style="width: 37px;">8</td>
+<td style="width: 37px;">9</td>
+<td style="width: 37px;">a</td>
+<td style="width: 37px;">b</td>
+<td style="width: 37px;">c</td>
+<td style="width: 37px;">d</td>
+<td style="width: 37px;">e</td>
+<td style="width: 49px;">f</td>
+</tr>
+<tr>
+<td style="width: 35px;">f</td>
+<td style="width: 36px;">e</td>
+<td style="width: 37px;">d</td>
+<td style="width: 36px;">c</td>
+<td style="width: 37px;">b</td>
+<td style="width: 37px;">a</td>
+<td style="width: 37px;">9</td>
+<td style="width: 37px;">8</td>
+<td style="width: 37px;">7</td>
+<td style="width: 37px;">6</td>
+<td style="width: 37px;">5</td>
+<td style="width: 37px;">4</td>
+<td style="width: 37px;">3</td>
+<td style="width: 37px;">2</td>
+<td style="width: 37px;">1</td>
+<td style="width: 49px;">0</td>
+</tr>
+</tbody>
+</table>
+<p>Converting all the pairs gives</p>
+<p class="p1"><code>80 85 84 53 56 67 76 65 82 75 69 52 57 52 77 66</code></p>
+<p class="p1">Convert decimal to Ascii</p>
+<p class="p1"><code>PUT58CLARKE494MB</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p>It’s the right passcode format, go through your usual routine.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Nothing with ROT and Atbash, since we have the right passcode pattern morse could be a good way to go</p>
+<p>Let’s convert the string to morse</p>
+<p class="p1"><code>-.-- -.-- -... ..--- ...-- -.. ... . ..--- ....- ..... -..- ...-</code></p>
+<p class="p1">Reverse the string</p>
+<p class="p1"><code>-... -..- ..... -.... ---.. . ... ..- --... ---.. ...- --.- --.-</code></p>
+<p class="p1">Convert morse to text</p>
+<p class="p1"><code>BX568ESU78VQQ</code></p>
+<p class="p1">Reverse</p>
+<p class="p1"><code>QQV87USE865XB</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1313" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/06/29/adas-odd-behavior/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1313" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/06/29/adas-odd-behavior/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1313" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/06/29/adas-odd-behavior/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/06/29/adas-odd-behavior/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

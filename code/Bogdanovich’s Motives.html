@@ -1,0 +1,164 @@
+<div class="entry-content">
+			<p>Three codes could be found in the <a class="d-s ot-anchor" tabindex="0" title="Bogdanovich’s Motives" href="http://investigate.ingress.com/2016/11/25/bogdanovichs-motives/" target="_blank" rel="nofollow">Bogdanovich’s Motives</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] p3a4fhdy4esph4p6</code></p>
+<p><code>[2] cp0qffzzx17lr8jv5prqfrcpb</code></p>
+<p><code>[3] 7r8v5ihbesuog7b4</code></p>
+<p><span id="more-2163"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>16 characters with all the right ingredients for a passcode.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Make a 4×4 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 36px;"><code>p</code></td>
+<td style="width: 36px;"><code>3</code></td>
+<td style="width: 36px;"><code>a</code></td>
+<td style="width: 50px;"><code>4</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>f</code></td>
+<td style="width: 36px;"><code>h</code></td>
+<td style="width: 36px;"><code>d</code></td>
+<td style="width: 50px;"><code>y</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>4</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 36px;"><code>s</code></td>
+<td style="width: 50px;"><code>p</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>h</code></td>
+<td style="width: 36px;"><code>4</code></td>
+<td style="width: 36px;"><code>p</code></td>
+<td style="width: 50px;"><code>6</code></td>
+</tr>
+</tbody>
+</table>
+<p>Reverse rows 1 &amp; 3</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 36px;"><code>4</code></td>
+<td style="width: 36px;"><code>a</code></td>
+<td style="width: 36px;"><code>3</code></td>
+<td style="width: 57px;"><code>p</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>f</code></td>
+<td style="width: 36px;"><code>h</code></td>
+<td style="width: 36px;"><code>d</code></td>
+<td style="width: 57px;"><code>y</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>p</code></td>
+<td style="width: 36px;"><code>s</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 57px;"><code>4</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>h</code></td>
+<td style="width: 36px;"><code>4</code></td>
+<td style="width: 36px;"><code>p</code></td>
+<td style="width: 57px;"><code>6</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read going up from the lower left H</p>
+<p class="p1"><code>hpf44shaped364yp</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">25 characters, mix of letters with no particular range and numbers.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">With a string like this, morse is usually a good start</p>
+<p class="p1"><code>-.-. .--. ----- --.- ..-. ..-. --.. --.. -..- .---- --... .-.. .-. ---.. .--- ...- ..... .--. .-. --.- ..-. .-. -.-. .--. -...</code></p>
+<p>There are 102 characters which can be divided by 6. Let’s try braille. Make a 3×44 grid</p>
+<p><code>-.-</code><br>
+<code> ..-</code><br>
+<code> -.-</code><br>
+<code> ---</code><br>
+<code> ---</code><br>
+<code> .-.</code><br>
+<code> .-.</code><br>
+<code> ..-</code><br>
+<code> .--</code><br>
+<code> ..-</code><br>
+<code> -..</code><br>
+<code> -..</code><br>
+<code> -.-</code><br>
+<code> ---</code><br>
+<code> --.</code><br>
+<code> ...</code><br>
+<code> -..</code><br>
+<code> .-.</code><br>
+<code> ---</code><br>
+<code> ...</code><br>
+<code> ---</code><br>
+<code> ...</code><br>
+<code> -..</code><br>
+<code> ...</code><br>
+<code> .--</code><br>
+<code> ..-</code><br>
+<code> .--</code><br>
+<code> .-.</code><br>
+<code> .-.</code><br>
+<code> .-.</code><br>
+<code> -.-</code><br>
+<code> ..-</code><br>
+<code> -.-</code><br>
+<code> ...</code></p>
+<p>Use a transpose cipher to rotate everything 90 degrees counterclockwise</p>
+<p><code>-.---.....-----.-.-.-.-.......-.-.</code><br>
+<code> ...----.-....--..--.-...-.----....</code><br>
+<code> -----..---..--....-.-...---...---.</code></p>
+<p>Groups for braille</p>
+<p><code>-. -- -. .. .. -- -- -. -. -. -. -. .. .. .. -. -.</code><br>
+<code> .. .- -- -. -. .. .- -. .- -. -. .. -. -- -- .. ..</code><br>
+<code> -- -- -. .- -- .. -- .. .. -. -. .. -- -. .. -- -.</code></p>
+<p>Convert braille to text</p>
+<p><code>uyr58cybella863uk</code></p>
+<p></p></div></div>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>Again, 16 characters with all the right ingredients</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Make a 4×4 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 36px;"><code>7</code></td>
+<td style="width: 36px;"><code>r</code></td>
+<td style="width: 36px;"><code>8</code></td>
+<td style="width: 48px;"><code>v</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>5</code></td>
+<td style="width: 36px;"><code>i</code></td>
+<td style="width: 36px;"><code>h</code></td>
+<td style="width: 48px;"><code>b</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 36px;"><code>s</code></td>
+<td style="width: 36px;"><code>u</code></td>
+<td style="width: 48px;"><code>o</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>g</code></td>
+<td style="width: 36px;"><code>7</code></td>
+<td style="width: 36px;"><code>b</code></td>
+<td style="width: 48px;"><code>4</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read going down from the upper right V</p>
+<p class="p1"><code>vbo48hubris775eg</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2163" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/11/29/bogdanovichs-motives/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2163" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/11/29/bogdanovichs-motives/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-2163" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/11/29/bogdanovichs-motives/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/11/29/bogdanovichs-motives/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

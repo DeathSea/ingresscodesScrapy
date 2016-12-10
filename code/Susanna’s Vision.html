@@ -1,0 +1,220 @@
+<div class="entry-content">
+			<p>Three codes could be found in the HTLM source of the <a class="d-s ot-anchor" tabindex="0" title="Susanna’s Vision" href="http://investigate.ingress.com/2016/10/10/susannas-vision/" target="_blank" rel="nofollow">Susanna’s Vision</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] 6016013114535501011611101411501611711511557525121911</code></p>
+<p><code>[2] 30.05.4754.09.42.34.848&amp;09.06.3506.21.09.26.974</code></p>
+<p><code>[3] 20n98e22i13c83f38o99q30f56s74t63e61v93v79w26e25n10e55r97e68n19z87i59e81o52u</code></p>
+<p><span id="more-1923"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>52 numbers, look closely at the distribution.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>There are lots of 1 that are repeating, could mean Ascii. Reverse the string</p>
+<p class="p1"><code>1191215257551151171161051141011161101055354113106106</code></p>
+<p class="p1">Split to get valid Ascii range</p>
+<p class="p1"><code>119 121 52 57 55 115 117 116 105 114 101 116 110 105 53 54 113 106 106</code></p>
+<p class="p1">Convert decimal to Ascii</p>
+<p class="p1"><code>wy497sutiretni56qjj</code></p>
+<p class="p1">Reverse</p>
+<p class="p1"><code>jjq65interitus794yw</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">Well not much I can say about that one but there is a pattern and 1 character that points to it.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">That &amp; seems to indicate something, let’s split the string there</p>
+<p class="p1"><code>30.05.4754.09.42.34.848</code></p>
+<p class="p1"><code>09.06.3506.21.09.26.974</code></p>
+<p class="p1">Those two string are date and time</p>
+<p><code>DD.MM.YYYY.HH.MM.SS</code><br>
+<code> 30.05.4754.09.42.34.848</code></p>
+<p><code>DD.MM.YYYY.HH.MM.SS</code><br>
+<code> 09.06.3506.21.09.26.974</code></p>
+<p>For now remove the extra numbers (848 &amp; 974) at the end of both string. Convert the strings from normal time to Unix timestamp</p>
+<p class="p1"><code>87867452554</code></p>
+<p class="p1"><code>48485250566</code></p>
+<p class="p1">Reinsert the extra numbers (848 &amp; 974) at the end of both string.</p>
+<p class="p1"><code>87867452554848</code></p>
+<p class="p1"><code>48485250566974</code></p>
+<p class="p1">Join both string and make pairs</p>
+<p class="p1"><code>87 86 74 52 55 48 48 48 48 52 50 56 69 74</code></p>
+<p class="p1">Convert decimal to Ascii</p>
+<p class="p1"><code>WVJ470000428EJ</code></p>
+<p class="p1">We used time to get the code, substitue 0000 for timezero</p>
+<p class="p1"><code>wvj47timezero428ej</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">A mix of two digits followed by a letter.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">The obvious thing to do is to make groups of 3</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 37px;"><code>20n</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>98e</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>22i</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>13c</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>83f</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>38o</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>99q</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>30f</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>56s</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>74t</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>63e</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>61v</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>93v</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>79w</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>26e</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>25n</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>10e</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>55r</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>97e</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>68n</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>19z</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>87i</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>59e</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>81o</code></td>
+</tr>
+<tr>
+<td style="width: 37px;"><code>52u</code></td>
+</tr>
+</tbody>
+</table>
+<p>Looking at the letter distribution, they are good to spell out numbers. We need to reorder them using the numbers in ascending order</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 39px;"><code>10e</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>13c</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>19z</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>20n</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>22i</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>25n</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>26e</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>30f</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>38o</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>52u</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>55r</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>56s</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>59e</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>61v</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>63e</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>68n</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>74t</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>79w</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>81o</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>83f</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>87i</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>93v</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>97e</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>98e</code></td>
+</tr>
+<tr>
+<td style="width: 39px;"><code>99q</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read the letters</p>
+<p class="p1"><code>eczninefourseventwofiveeq</code></p>
+<p class="p1">We now have the prefix and suffix</p>
+<p class="p1"><code>ecz94725eq</code></p>
+<p class="p1">For the keyword we had to reorder the letters to get the prefix and suffix, keyword is ordered</p>
+<p class="p1"><code>ecz94ordered725eq</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1923" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/10/14/susannas-vision/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1923" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/10/14/susannas-vision/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1923" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/10/14/susannas-vision/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/10/14/susannas-vision/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

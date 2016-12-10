@@ -1,0 +1,203 @@
+<div class="entry-content">
+			<p>Three codes can be found in the HTML of the <a href="http://investigate.ingress.com/2016/05/26/scott-and-anne-the-voice/" target="_blank">Scott And Anne: The Voice</a> post on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog.</p>
+<p><code>[1] reorccocrccorreccorreorrecccocrccoreccoccocrcocccorroeccorrrorrecco</code></p>
+<p><code>[2] \51\35\04/06/27\26/18\12\06/18\17/17\09/24\20/19\37</code></p>
+<p><code>[3] uwbhfvzirareeznxsasdkizdf</code></p>
+<p><span id="more-1056"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>All repeating sequences of C, E, O &amp; R. Go through your usual cipher routine.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Atbash will easily reveal the solution</p>
+<p class="p1"><code>ivlixxlxixxliivxxliivliivxxxlxixxlivxxlxxlxixlxxxliilvxxliiiliivxxl</code></p>
+<p>Those are all roman numeral but something is off. Reverse the string and split at every L</p>
+<p class="p1"><code>lxxvii liii lxxv lii lxxx lxix lxx lxxvi lxxix lxxxvii lvii lxxvii lxxix lxxi lvi</code></p>
+<p class="p1">Convert roman numerals to decimal</p>
+<p class="p1"><code>77 53 75 52 80 69 70 76 79 87 57 77 79 71 56</code></p>
+<p class="p1">Convert decimal to Ascii</p>
+<p class="p1"><code>M5K4PEFLOW9MOG8</code></p>
+<p class="p1">Reverse</p>
+<p class="p1"><code>8GOM9WOLFEP4K5M</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p>Numbers with either / or \ in front of them. Surely some kind of Niantic math</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Niantic usually substitute -,+,* &amp; / by something else when it comes to math</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>The string starts with 51 which when converted from decimal to Ascii gives 2. Let’s substitute \ with + and / with – and do the math</p>
+<p>Start at 0 then add or subtract the corresponding value of the code</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td></td>
+<td>Op</td>
+<td>Num</td>
+<td>Result</td>
+</tr>
+<tr>
+<td><code>\</code></td>
+<td><code>+</code></td>
+<td><code>51</code></td>
+<td><code>51</code></td>
+</tr>
+<tr>
+<td><code>\</code></td>
+<td><code>+</code></td>
+<td><code>35</code></td>
+<td><code>86</code></td>
+</tr>
+<tr>
+<td><code>\</code></td>
+<td><code>+</code></td>
+<td><code>4</code></td>
+<td><code>90</code></td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td><code>-</code></td>
+<td><code>6</code></td>
+<td><code>84</code></td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td><code>-</code></td>
+<td><code>27</code></td>
+<td><code>57</code></td>
+</tr>
+<tr>
+<td><code>\</code></td>
+<td><code>+</code></td>
+<td><code>26</code></td>
+<td><code>83</code></td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td><code>-</code></td>
+<td><code>18</code></td>
+<td><code>65</code></td>
+</tr>
+<tr>
+<td><code>\</code></td>
+<td><code>+</code></td>
+<td><code>12</code></td>
+<td><code>77</code></td>
+</tr>
+<tr>
+<td><code>\</code></td>
+<td><code>+</code></td>
+<td><code>6</code></td>
+<td><code>83</code></td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td><code>-</code></td>
+<td><code>18</code></td>
+<td><code>65</code></td>
+</tr>
+<tr>
+<td><code>\</code></td>
+<td><code>+</code></td>
+<td><code>17</code></td>
+<td><code>82</code></td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td><code>-</code></td>
+<td><code>17</code></td>
+<td><code>65</code></td>
+</tr>
+<tr>
+<td><code>\</code></td>
+<td><code>+</code></td>
+<td><code>9</code></td>
+<td><code>74</code></td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td><code>-</code></td>
+<td><code>24</code></td>
+<td><code>50</code></td>
+</tr>
+<tr>
+<td><code>\</code></td>
+<td><code>+</code></td>
+<td><code>20</code></td>
+<td><code>70</code></td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td><code>-</code></td>
+<td><code>19</code></td>
+<td><code>51</code></td>
+</tr>
+<tr>
+<td><code>\</code></td>
+<td><code>+</code></td>
+<td><code>37</code></td>
+<td><code>88</code></td>
+</tr>
+</tbody>
+</table>
+<p class="p1">Get all the results</p>
+<p class="p1"><code>51 86 90 84 57 83 65 77 83 65 82 65 74 50 70 51 88</code></p>
+<p class="p1">Convert decimal to Ascii</p>
+<p class="p1"><code>3VZT9SAMSARAJ2F3X</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">25 characters all letters, look carefully to find the key.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Can you see the keyword already in the code? If so you have found your key</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Looking carefully at the code you can see the keyword Nzeer in the middle written in reverse.</p>
+<p class="p1">Let’s reverse the code</p>
+<p class="p1"><code>fdzikdsasxnzeerarizvfhbwu</code></p>
+<p class="p1">Remove the Nzeer part, this will become your passphrase</p>
+<p class="p1"><code>fdzikdsasxarizvfhbwu</code></p>
+<p class="p1">Use Vigenere to reveal the prefix and suffix</p>
+<p class="p1">Passphrase: <code>nzeer</code></p>
+<p class="p1">Message: <code>fdzikdsasxarizvfhbwu</code></p>
+<p class="p1">Result: <code><span class="s1">sevetqtwognsevesixsd</span></code></p>
+<p class="p1">Looks like we have it but something is off. Make a 5×4 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td><code>s</code></td>
+<td><code>e</code></td>
+<td><code>v</code></td>
+<td><code>e</code></td>
+<td><code>t</code></td>
+</tr>
+<tr>
+<td><code>q</code></td>
+<td><code>t</code></td>
+<td><code>w</code></td>
+<td><code>o</code></td>
+<td><code>g</code></td>
+</tr>
+<tr>
+<td><code>n</code></td>
+<td><code>s</code></td>
+<td><code>e</code></td>
+<td><code>v</code></td>
+<td><code>e</code></td>
+</tr>
+<tr>
+<td><code>s</code></td>
+<td><code>i</code></td>
+<td><code>x</code></td>
+<td><code>s</code></td>
+<td><code>d</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read right from bottom left</p>
+<p><code>sixsdnseveqtwogsevet</code></p>
+<p><code>6sdn7 q2g7t</code></p>
+<p>Now reinsert the Nzeer keyword</p>
+<p class="p1"><code>6sdn7nzeerq2g7t</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1056" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/05/31/scott-and-anne-the-voice/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1056" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/05/31/scott-and-anne-the-voice/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1056" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/05/31/scott-and-anne-the-voice/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/05/31/scott-and-anne-the-voice/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

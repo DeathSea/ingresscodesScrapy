@@ -1,0 +1,410 @@
+<div class="entry-content">
+			<p>Three codes were hidden in the HTML source code of the <a class="d-s ot-anchor" tabindex="0" title="Aglow" href="http://investigate.ingress.com/2016/08/12/aglow/" target="_blank" rel="nofollow">Aglow</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] eeovsseiifsxotsuaernvsceienxtnrwy</code></p>
+<p><code>[2] 0100110000100000010100001100001010001101001101000001010100010000101100110101000010011000010011000101001100000110111</code></p>
+<p><code>[3] 0iimxiixxxiicmiiccicixixxixim0xiixmicxxiximicxxixiicim0cicicixm0iciximcixxx</code></p>
+<p><span id="more-1697"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>33 characters, you can make out a few written numbers in there.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Make a 3×11 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 35px;"><code>e</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 69px;"><code>o</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>v</code></td>
+<td style="width: 36px;"><code>s</code></td>
+<td style="width: 69px;"><code>s</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>e</code></td>
+<td style="width: 36px;"><code>i</code></td>
+<td style="width: 69px;"><code>i</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>f</code></td>
+<td style="width: 36px;"><code>s</code></td>
+<td style="width: 69px;"><code>x</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>o</code></td>
+<td style="width: 36px;"><code>t</code></td>
+<td style="width: 69px;"><code>s</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>u</code></td>
+<td style="width: 36px;"><code>a</code></td>
+<td style="width: 69px;"><code>e</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>r</code></td>
+<td style="width: 36px;"><code>n</code></td>
+<td style="width: 69px;"><code>v</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>s</code></td>
+<td style="width: 36px;"><code>c</code></td>
+<td style="width: 69px;"><code>e</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>i</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 69px;"><code>n</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>x</code></td>
+<td style="width: 36px;"><code>t</code></td>
+<td style="width: 69px;"><code>n</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>r</code></td>
+<td style="width: 36px;"><code>w</code></td>
+<td style="width: 69px;"><code>y</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read down from the upper left E</p>
+<p class="p1"><code>evefoursixresistancetwosixsevenny</code></p>
+<p class="p1"><code>eve46resistance267ny</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">115 characters, looks like binary but grouping of 8 is impossible.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">You’ll need the help of a French Telegraph engineer</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">115 characters in groups of five would make 23 characters. There is a cipher that is not used often that uses words with a length of 5 bits using 0 &amp; 1. The cipher is called <a href="https://en.wikipedia.org/wiki/Baudot_code">baudot code</a>. You can use this <a href="http://www.dcode.fr/baudot-code">tool</a> to quickly decode baudot.</p>
+<p class="p1">Make groups of 5</p>
+<p class="p1"><code>01001 10000 10000 00101 00001 10000 10100 01101 00110 10000 01010 10001 00001 01100 11010 10000 10011 00001 00110 00101 00110 00001 10111</code></p>
+<p class="p1">Convert Baudot to text</p>
+<p class="p1"><code>DTTSETHFITRZENGTWEISIEQ</code></p>
+<p class="p1">Convert all 2 letter numbers to numbers</p>
+<p class="p1"><code>dtt735tr0ng286eq</code></p>
+<p class="p1">Using leet speach</p>
+<p class="p1"><code>dtt73strong286eq</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">Roman numerals but a few 0 were added.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Notice that the string starts with a 0. This probably hints to binary. The first step is to split each characters of the string and convert them from roman numerals to numbers</p>
+<table class=" table table-hover" style="width: 97px;">
+<tbody>
+<tr>
+<td style="width: 31px;"><code>0</code></td>
+<td style="width: 54px;"><code>0</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>m</code></td>
+<td style="width: 54px;"><code>1000</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>x</code></td>
+<td style="width: 54px;"><code>10</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>x</code></td>
+<td style="width: 54px;"><code>10</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>x</code></td>
+<td style="width: 54px;"><code>10</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>x</code></td>
+<td style="width: 54px;"><code>10</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>c</code></td>
+<td style="width: 54px;"><code>100</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>m</code></td>
+<td style="width: 54px;"><code>1000</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>c</code></td>
+<td style="width: 54px;"><code>100</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>c</code></td>
+<td style="width: 54px;"><code>100</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>c</code></td>
+<td style="width: 54px;"><code>100</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>x</code></td>
+<td style="width: 54px;"><code>10</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>x</code></td>
+<td style="width: 54px;"><code>10</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>x</code></td>
+<td style="width: 54px;"><code>10</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>x</code></td>
+<td style="width: 54px;"><code>10</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>m</code></td>
+<td style="width: 54px;"><code>1000</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>0</code></td>
+<td style="width: 54px;"><code>0</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>x</code></td>
+<td style="width: 54px;"><code>10</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>x</code></td>
+<td style="width: 54px;"><code>10</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>m</code></td>
+<td style="width: 54px;"><code>1000</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>c</code></td>
+<td style="width: 54px;"><code>100</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>x</code></td>
+<td style="width: 54px;"><code>10</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>x</code></td>
+<td style="width: 54px;"><code>10</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>x</code></td>
+<td style="width: 54px;"><code>10</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>m</code></td>
+<td style="width: 54px;"><code>1000</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>c</code></td>
+<td style="width: 54px;"><code>100</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>x</code></td>
+<td style="width: 54px;"><code>10</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>x</code></td>
+<td style="width: 54px;"><code>10</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>x</code></td>
+<td style="width: 54px;"><code>10</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>c</code></td>
+<td style="width: 54px;"><code>100</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>m</code></td>
+<td style="width: 54px;"><code>1000</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>0</code></td>
+<td style="width: 54px;"><code>0</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>c</code></td>
+<td style="width: 54px;"><code>100</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>c</code></td>
+<td style="width: 54px;"><code>100</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>c</code></td>
+<td style="width: 54px;"><code>100</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>x</code></td>
+<td style="width: 54px;"><code>10</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>m</code></td>
+<td style="width: 54px;"><code>1000</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>0</code></td>
+<td style="width: 54px;"><code>0</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>c</code></td>
+<td style="width: 54px;"><code>100</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>x</code></td>
+<td style="width: 54px;"><code>10</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>m</code></td>
+<td style="width: 54px;"><code>1000</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>c</code></td>
+<td style="width: 54px;"><code>100</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>i</code></td>
+<td style="width: 54px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>x</code></td>
+<td style="width: 54px;"><code>10</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>x</code></td>
+<td style="width: 54px;"><code>10</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>x</code></td>
+<td style="width: 54px;"><code>10</code></td>
+</tr>
+</tbody>
+</table>
+<p class="p1">You now have a long string of 0 &amp; 1</p>
+<p class="p1"><code>011100010111010101110010001110010011001101101011011000010111010001100101011011000110010101101110011000010011001100110100001100110110001001101010</code></p>
+<p class="p1">Make groups of 8</p>
+<p class="p1"><code>01110001 01110101 01110010 00111001 00110011 01101011 01100001 01110100 01100101 01101100 01100101 01101110 01100001 00110011 00110100 00110011 01100010 01101010</code></p>
+<p class="p1">Convert binary to Ascii</p>
+<p class="p1"><code>qur93katelena343bj</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1697" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/08/16/aglow/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1697" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/08/16/aglow/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1697" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/08/16/aglow/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/08/16/aglow/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

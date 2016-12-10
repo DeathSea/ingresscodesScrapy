@@ -1,0 +1,70 @@
+<div class="entry-content">
+			<p>Within the post <a href="http://investigate.ingress.com/2016/05/08/pacs-weekly-wrap-up-may-8-2016/" target="_blank">PAC’s Weekly Wrap-up: May 8, 2016</a> over at the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog, there were three codes hidden inside the html source.</p>
+<p><code>[1] bSnRrIcAnSrFbTtPoPiBaLmTbSrF</code><br>
+<code>[2] 2UOZ9-61dzc-60X20-W5C9N﻿</code><br>
+<code>[3] 1320p2218z1319214210919l12y20j0908﻿</code></p>
+<p><span id="more-908"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>We see a pattern of lowercase followed by uppercase.<br>
+In the given order it does not point to anything specific, the normal ROT, Atbash, etc do not give anything useful and Base64 doesn’t match (That normally starts with M, N or O).</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>When looking in a mirror, what do the pairs say?</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>The repeating lowercase and uppercase tells me that there is something going on with the pairs.<br>
+Let us reverse the string to see something better.<br>
+<code>FrSbTmLaBiPoPtTbFrSnAcIrRnSb</code><br>
+Splitting the pairs of upper and lowercases reveals more information that we can use.<br>
+<code>Fr Sb Tm La Bi Po Pt Tb Fr Sn Ac Ir Rn Sb</code><br>
+Did you notice that all the pairs seem like Element Symbols from the <a href="https://en.wikipedia.org/wiki/Periodic_table#Overview" target="_blank">Periodic Table</a>?<br>
+What is also fitting is that <a href="https://en.wikipedia.org/wiki/Tin" target="_blank">Sn</a>, <a href="https://en.wikipedia.org/wiki/Antimony" target="_blank">Sb</a> and <a href="https://en.wikipedia.org/wiki/Lanthanum" target="_blank">La</a> all have Atomic numbers within the Numbers range, looks like we are on the right track, so replace all symbols with their atomic numbers from the Periodic Table.<br>
+<code>87 51 69 57 83 84 78 65 87 50 89 77 86 51</code><br>
+Convert from decimal to ASCII<br>
+<code>W3E9STNAW2YMV3</code><br>
+Reverse the string for our final solve.<br>
+<code>3VMY2WANTS9E3W</code></p>
+<p></p></div></div>
+<hr>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>We see what seems to be a valid prefix and suffix, but the middle two sections seem out of place.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>What does the most widely used web tool tell you?</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Start off with the assumption that the prefix and suffix are valid for now, so focus on figuring out if the middle part can be demystified.<br>
+With puzzles like these, I like to throw the unknown into <a href="http://www.google.com" target="_blank">Google</a> and see what it spits out.<br>
+For this code, that is exactly what was needed.</p>
+<p>Googling “<code>61dzc-60X20</code>” give the top most hit for the YouTube video <a href="https://www.youtube.com/watch?v=61DZC-60x20" target="_blank">“Journey™ Launch Trailer”</a>.<br>
+Journey is a valid keyword in our realm, so try that first before we spend the two minutes to watch the video.<br>
+<code>2UOZ9journeyW5C9N</code><br>
+That was it! Sometimes the solves are quick and simple like this one.</p>
+<p></p></div></div>
+<hr>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>A mixture of lots of numbers and only 5 letters.<br>
+This points to converting what we have into something more useful first.<br>
+Due to the placement of the letters, I am thinking that ROT and Atbash won’t give something useful.<br>
+But the start looks like something that we had already considered for this batch of codes.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Look for meaningful pairs’ish</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Taking a look at the code, we see that it starts with <code>13</code>, which could be converted to <code>M</code> and <code>N</code> when using <a href="http://multidec.web-lab.at/n2t.php" target="_blank"><em>alphabet indexes</em></a> of <em>A=1..Z=26</em> or <em>A=0..Z=25</em> respectively.<br>
+We know that if a <strong>Base64</strong> string starts with <em>M</em>, <em>N</em> or <em>O</em>, that it could lead to a valid passcode, so follow this rabbit hole down a little bit.</p>
+<p>Split up the code into meaningful numbers that fit inside the range of an alphabet index (1-26 or 0-25), making sure that the original letters are alone.<br>
+<code>13 20 p 22 18 z 13 19 21 4 21 09 19 l 12 y 20 j 09 08</code><br>
+Convert numbers to letters with an alphabet index of A=0..Z=25<br>
+<code>N  U  p W  S  z N  T  V  E V  J  T  l M  y U  j J  I</code><br>
+We keep all characters convertet from numbers as capital letters.<br>
+<code>NUpWSzNTVEVJTlMyUjJI</code><br>
+Use a simple <a href="http://multidec.web-lab.at/mc.php" target="_blank">Base64 to Text</a> decoder for the final solution.<br>
+<code>5JVK3STEINS2R2H</code></p>
+<p>P.S. In the near future, we will release an article that will explain more on how to spot Base64 conversions and other uses for it.</p>
+<p></p></div></div>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-908" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/05/12/pacs-weekly-wrap-up-may-8-2016/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-908" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/05/12/pacs-weekly-wrap-up-may-8-2016/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-908" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/05/12/pacs-weekly-wrap-up-may-8-2016/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/05/12/pacs-weekly-wrap-up-may-8-2016/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

@@ -1,0 +1,112 @@
+<div class="entry-content">
+			<p>Three codes were found hidden in the HTML of the <a href="http://investigate.ingress.com/2016/05/18/pointed-inquiries/" target="_blank">Pointed Inquiries</a> post on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog.</p>
+<p><code>[1] 8kccxupt9stn9ogu3omy</code></p>
+<p><code>[2] ab87888aa97c96987d967b7c97af77ad9a</code></p>
+<p><code>[3] 8lmw8qaprzdehv2t3g</code></p>
+<p><span id="more-997"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>Right amount of letters and numbers for a code, just need to find a way to rearrange them.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">There is a substitution in there but that song title was used way to many times</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>When a code starts with a number I usually try skip first. Skip of 2 gives</p>
+<p class="p1"><code>8cxp9t9g3mkcutsnouoy</code></p>
+<p class="p1">Let’s split that</p>
+<p class="p1"><code>8cxp9t9g3m kcuts no uoy</code></p>
+<p class="p1">So we have to find a substitution for Stuck on you. Searching on Google gives a movie and a few songs. You’ll need to dig deep but a group called Failure made a song called Stuck on you. You’ll probably see the cover Paramore made before you get the Failure reference.</p>
+<p class="p1"><code>8cxp9failuret9g3m</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p>Good distribution for hex but not in the right range.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">It’s hex to dec but you’ll need to work out the range</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Let’s start by making pairs to see if we can spot something</p>
+<p class="p1"><code>ab 87 88 8a a9 7c 96 98 7d 96 7b 7c 97 af 77 ad 9a</code></p>
+<p class="p1">Notice how the number positions all start with A ? We know that in hex to Ascii numbers start with 3. In the past hex “atbash” was used but it’s usually C than becomes 3. Let’s look at that hex “Atbash” again:</p>
+<table class=" table table-hover" style="width: 14px;">
+<tbody>
+<tr>
+<td style="width: 10px;">0</td>
+<td style="width: 10px;">F</td>
+</tr>
+<tr>
+<td style="width: 10px;">1</td>
+<td style="width: 10px;">E</td>
+</tr>
+<tr>
+<td style="width: 10px;">2</td>
+<td style="width: 10px;">D</td>
+</tr>
+<tr>
+<td style="width: 10px;">3</td>
+<td style="width: 10px;">C</td>
+</tr>
+<tr>
+<td style="width: 10px;">4</td>
+<td style="width: 10px;">B</td>
+</tr>
+<tr>
+<td style="width: 10px;">5</td>
+<td style="width: 10px;">A</td>
+</tr>
+<tr>
+<td style="width: 10px;">6</td>
+<td style="width: 10px;">9</td>
+</tr>
+<tr>
+<td style="width: 10px;">7</td>
+<td style="width: 10px;">8</td>
+</tr>
+<tr>
+<td style="width: 10px;">8</td>
+<td style="width: 10px;">7</td>
+</tr>
+<tr>
+<td style="width: 10px;">9</td>
+<td style="width: 10px;">6</td>
+</tr>
+<tr>
+<td style="width: 10px;">A</td>
+<td style="width: 10px;">5</td>
+</tr>
+<tr>
+<td style="width: 10px;">B</td>
+<td style="width: 10px;">4</td>
+</tr>
+<tr>
+<td style="width: 10px;">C</td>
+<td style="width: 10px;">3</td>
+</tr>
+<tr>
+<td style="width: 10px;">D</td>
+<td style="width: 10px;">2</td>
+</tr>
+<tr>
+<td style="width: 10px;">E</td>
+<td style="width: 10px;">1</td>
+</tr>
+<tr>
+<td style="width: 10px;">F</td>
+<td style="width: 10px;">0</td>
+</tr>
+</tbody>
+</table>
+<p>Interesting how A=5. Notice also that in the code numbers from 0 to 5 are not used. Let’s convert the code using that index<br>
+<code>ab 87 88 8a a9 7c 96 98 7d 96 7b 7c 97 af 77 ad 9a</code><br>
+<code>54 78 77 75 56 83 69 67 82 69 84 83 68 50 88 52 65</code></p>
+<p>The conversion now gives a valid decimal to Ascii string.</p>
+<p class="p1"><code>6NMK8SECRETSD2X4A</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p>Code format is right there, just go through your regular cipher routine.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>ROT+11 is the way to go. Don’t forget to apply the same thing to numbers, to make it easy you can simple add 1 to all numbers.</p>
+<p class="p1"><code>9wxh9blackopsg3e4r</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-997" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/05/21/pointed-inquiries/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-997" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/05/21/pointed-inquiries/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-997" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/05/21/pointed-inquiries/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/05/21/pointed-inquiries/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

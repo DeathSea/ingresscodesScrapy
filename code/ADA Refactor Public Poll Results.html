@@ -1,0 +1,376 @@
+<div class="entry-content">
+			<p>Three codes could found in the <a class="d-s ot-anchor" tabindex="0" title="ADA Refactor Public Poll Results" href="http://investigate.ingress.com/2016/07/20/ada-refactor-public-poll-results/" target="_blank" rel="nofollow">ADA Refactor Public Poll Results</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] 119.981.112.50.515.14.11.18.112.525.55.535.19.111</code></p>
+<p><code>[2] 78.811.715.57.55.810.615.614.813.613.615.57.58.511.813.814</code></p>
+<p><code>[3] 08-3_0800_08-3_05-3_05-1_0600_0603_0701_05-2_0500_05-5_0700_0702</code></p>
+<p><span id="more-1578"></span></p>
+<p>Ok are you ready for some Niantic math…</p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>All numbers separated by dots. Try to find a pattern that fits the passcode format.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">How can you divide things up</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Looking at the string you can see that the numbers starting with 5 are exactly where numbers would fall in the passcode format. Here’s some Niantic math at work, first step is that the first digit of every number will be used as the first digit of the Ascii value. The next digits are to be divided by the first digit to give you the rest of the answer. Oh and if your answer is 14 simply add a 0 to make 104. Not clear? Here’s the full answer.</p>
+<table class=" table table-hover" style="width: 317px;">
+<tbody>
+<tr>
+<td style="width: 33px;"></td>
+<td style="width: 27px; text-align: center;">First digit</td>
+<td style="width: 10px; text-align: center;">Last digits</td>
+<td style="width: 10px; text-align: center;">Last/First</td>
+<td style="width: 60px; text-align: center;">Combine first &amp; Answer</td>
+</tr>
+<tr>
+<td style="width: 33px;"><code>119</code></td>
+<td style="width: 27px; text-align: center;"><code>1</code></td>
+<td style="width: 10px; text-align: center;"><code>19</code></td>
+<td style="width: 10px; text-align: center;"><code>19</code></td>
+<td style="width: 60px; text-align: center;"><code>119</code></td>
+</tr>
+<tr>
+<td style="width: 33px;"><code>981</code></td>
+<td style="width: 27px; text-align: center;"><code>9</code></td>
+<td style="width: 10px; text-align: center;"><code>81</code></td>
+<td style="width: 10px; text-align: center;"><code>9</code></td>
+<td style="width: 60px; text-align: center;"><code>99</code></td>
+</tr>
+<tr>
+<td style="width: 33px;"><code>112</code></td>
+<td style="width: 27px; text-align: center;"><code>1</code></td>
+<td style="width: 10px; text-align: center;"><code>12</code></td>
+<td style="width: 10px; text-align: center;"><code>12</code></td>
+<td style="width: 60px; text-align: center;"><code>112</code></td>
+</tr>
+<tr>
+<td style="width: 33px;"><code>50</code></td>
+<td style="width: 27px; text-align: center;"><code>5</code></td>
+<td style="width: 10px; text-align: center;"><code>0</code></td>
+<td style="width: 10px; text-align: center;"><code>0</code></td>
+<td style="width: 60px; text-align: center;"><code>50</code></td>
+</tr>
+<tr>
+<td style="width: 33px;"><code>515</code></td>
+<td style="width: 27px; text-align: center;"><code>5</code></td>
+<td style="width: 10px; text-align: center;"><code>15</code></td>
+<td style="width: 10px; text-align: center;"><code>3</code></td>
+<td style="width: 60px; text-align: center;"><code>53</code></td>
+</tr>
+<tr>
+<td style="width: 33px;"><code>14</code></td>
+<td style="width: 27px; text-align: center;"><code>1</code></td>
+<td style="width: 10px; text-align: center;"><code>4</code></td>
+<td style="width: 10px; text-align: center;"><code>4</code></td>
+<td style="width: 60px; text-align: center;"><code>104</code></td>
+</tr>
+<tr>
+<td style="width: 33px;"><code>11</code></td>
+<td style="width: 27px; text-align: center;"><code>1</code></td>
+<td style="width: 10px; text-align: center;"><code>1</code></td>
+<td style="width: 10px; text-align: center;"><code>1</code></td>
+<td style="width: 60px; text-align: center;"><code>101</code></td>
+</tr>
+<tr>
+<td style="width: 33px;"><code>18</code></td>
+<td style="width: 27px; text-align: center;"><code>1</code></td>
+<td style="width: 10px; text-align: center;"><code>8</code></td>
+<td style="width: 10px; text-align: center;"><code>8</code></td>
+<td style="width: 60px; text-align: center;"><code>108</code></td>
+</tr>
+<tr>
+<td style="width: 33px;"><code>112</code></td>
+<td style="width: 27px; text-align: center;"><code>1</code></td>
+<td style="width: 10px; text-align: center;"><code>12</code></td>
+<td style="width: 10px; text-align: center;"><code>12</code></td>
+<td style="width: 60px; text-align: center;"><code>112</code></td>
+</tr>
+<tr>
+<td style="width: 33px;"><code>525</code></td>
+<td style="width: 27px; text-align: center;"><code>5</code></td>
+<td style="width: 10px; text-align: center;"><code>25</code></td>
+<td style="width: 10px; text-align: center;"><code>5</code></td>
+<td style="width: 60px; text-align: center;"><code>55</code></td>
+</tr>
+<tr>
+<td style="width: 33px;"><code>55</code></td>
+<td style="width: 27px; text-align: center;"><code>5</code></td>
+<td style="width: 10px; text-align: center;"><code>5</code></td>
+<td style="width: 10px; text-align: center;"><code>1</code></td>
+<td style="width: 60px; text-align: center;"><code>51</code></td>
+</tr>
+<tr>
+<td style="width: 33px;"><code>535</code></td>
+<td style="width: 27px; text-align: center;"><code>5</code></td>
+<td style="width: 10px; text-align: center;"><code>35</code></td>
+<td style="width: 10px; text-align: center;"><code>7</code></td>
+<td style="width: 60px; text-align: center;"><code>57</code></td>
+</tr>
+<tr>
+<td style="width: 33px;"><code>19</code></td>
+<td style="width: 27px; text-align: center;"><code>1</code></td>
+<td style="width: 10px; text-align: center;"><code>9</code></td>
+<td style="width: 10px; text-align: center;"><code>9</code></td>
+<td style="width: 60px; text-align: center;"><code>109</code></td>
+</tr>
+<tr>
+<td style="width: 33px;"><code>111</code></td>
+<td style="width: 27px; text-align: center;"><code>1</code></td>
+<td style="width: 10px; text-align: center;"><code>11</code></td>
+<td style="width: 10px; text-align: center;"><code>11</code></td>
+<td style="width: 60px; text-align: center;"><code>111</code></td>
+</tr>
+</tbody>
+</table>
+<p class="p1"><code>119 99 112 50 53 104 101 108 112 55 51 57 109 111</code></p>
+<p class="p1">Convert decimal to Ascii</p>
+<p class="p1"><code>wcp25help739mo</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">Again, all numbers separated by dots. The cipher used for code #1 should help you find what to do.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">We have those numbers starting with 5 in the right place for the numbers in the passcode format. This should mean that first digit of every number is good for Ascii. Now we need to find the second digit of the Ascii values.</p>
+<p class="p1">Notice how the rest of the digits for every numbers are always higher than the first one? You’ll need to do subtractions for this one</p>
+<table class=" table table-hover" style="width: 449px;">
+<tbody>
+<tr style="height: 48px;">
+<td style="width: 27px; height: 48px;"></td>
+<td style="width: 70px; height: 48px; text-align: center;">First digit</td>
+<td style="width: 74px; height: 48px; text-align: center;">Last digits</td>
+<td style="width: 70px; height: 48px; text-align: center;">Last-First</td>
+<td style="width: 178px; height: 48px; text-align: center;">Combine First &amp; Answer</td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 27px; height: 24px;"><code>78</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>7</code></td>
+<td style="width: 74px; height: 24px; text-align: center;"><code>8</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>1</code></td>
+<td style="width: 178px; height: 24px; text-align: center;"><code>71</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 27px; height: 24px;"><code>811</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>8</code></td>
+<td style="width: 74px; height: 24px; text-align: center;"><code>11</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>3</code></td>
+<td style="width: 178px; height: 24px; text-align: center;"><code>83</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 27px; height: 24px;"><code>715</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>7</code></td>
+<td style="width: 74px; height: 24px; text-align: center;"><code>15</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>8</code></td>
+<td style="width: 178px; height: 24px; text-align: center;"><code>78</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 27px; height: 24px;"><code>57</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>5</code></td>
+<td style="width: 74px; height: 24px; text-align: center;"><code>7</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>2</code></td>
+<td style="width: 178px; height: 24px; text-align: center;"><code>52</code></td>
+</tr>
+<tr style="height: 24.5625px;">
+<td style="width: 27px; height: 24.5625px;"><code>55</code></td>
+<td style="width: 70px; height: 24.5625px; text-align: center;"><code>5</code></td>
+<td style="width: 74px; height: 24.5625px; text-align: center;"><code>5</code></td>
+<td style="width: 70px; height: 24.5625px; text-align: center;"><code>0</code></td>
+<td style="width: 178px; height: 24.5625px; text-align: center;"><code>50</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 27px; height: 24px;"><code>810</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>8</code></td>
+<td style="width: 74px; height: 24px; text-align: center;"><code>10</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>2</code></td>
+<td style="width: 178px; height: 24px; text-align: center;"><code>82</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 27px; height: 24px;"><code>615</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>6</code></td>
+<td style="width: 74px; height: 24px; text-align: center;"><code>15</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>9</code></td>
+<td style="width: 178px; height: 24px; text-align: center;"><code>69</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 27px; height: 24px;"><code>614</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>6</code></td>
+<td style="width: 74px; height: 24px; text-align: center;"><code>14</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>8</code></td>
+<td style="width: 178px; height: 24px; text-align: center;"><code>68</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 27px; height: 24px;"><code>813</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>8</code></td>
+<td style="width: 74px; height: 24px; text-align: center;"><code>13</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>5</code></td>
+<td style="width: 178px; height: 24px; text-align: center;"><code>85</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 27px; height: 24px;"><code>613</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>6</code></td>
+<td style="width: 74px; height: 24px; text-align: center;"><code>13</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>7</code></td>
+<td style="width: 178px; height: 24px; text-align: center;"><code>67</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 27px; height: 24px;"><code>615</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>6</code></td>
+<td style="width: 74px; height: 24px; text-align: center;"><code>15</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>9</code></td>
+<td style="width: 178px; height: 24px; text-align: center;"><code>69</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 27px; height: 24px;"><code>57</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>5</code></td>
+<td style="width: 74px; height: 24px; text-align: center;"><code>7</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>2</code></td>
+<td style="width: 178px; height: 24px; text-align: center;"><code>52</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 27px; height: 24px;"><code>58</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>5</code></td>
+<td style="width: 74px; height: 24px; text-align: center;"><code>8</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>3</code></td>
+<td style="width: 178px; height: 24px; text-align: center;"><code>53</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 27px; height: 24px;"><code>511</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>5</code></td>
+<td style="width: 74px; height: 24px; text-align: center;"><code>11</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>6</code></td>
+<td style="width: 178px; height: 24px; text-align: center;"><code>56</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 27px; height: 24px;"><code>813</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>8</code></td>
+<td style="width: 74px; height: 24px; text-align: center;"><code>13</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>5</code></td>
+<td style="width: 178px; height: 24px; text-align: center;"><code>85</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="width: 27px; height: 24px;"><code>814</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>8</code></td>
+<td style="width: 74px; height: 24px; text-align: center;"><code>14</code></td>
+<td style="width: 70px; height: 24px; text-align: center;"><code>6</code></td>
+<td style="width: 178px; height: 24px; text-align: center;"><code>86</code></td>
+</tr>
+</tbody>
+</table>
+<p class="p1"><code>71 83 78 52 50 82 69 68 85 67 69 52 53 56 85 86</code></p>
+<p class="p1">Convert decimal to Ascii</p>
+<p class="p1"><code>GSN42REDUCE458UV</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">All numbers again. You’ll need to find what the split is but if you have followed the first two codes you should not have a problem.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">_ is the split</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Again those 05 when you use _ as a split fall right where the numbers should be in the passcode format. This one is all written out for you on what you have to do. Here’s how</p>
+<table class=" table table-hover" style="width: 252px;">
+<tbody>
+<tr>
+<td style="width: 47px;"></td>
+<td style="width: 47px; text-align: center;">First pair</td>
+<td style="width: 47px; text-align: center;">Second pair</td>
+<td style="width: 47px; text-align: center;">First+Second</td>
+<td style="width: 47px; text-align: center;">Combine first and answer</td>
+</tr>
+<tr>
+<td style="width: 47px; text-align: center;"><code>08-3</code></td>
+<td style="width: 47px; text-align: center;"><code>08</code></td>
+<td style="width: 47px; text-align: center;"><code>-3</code></td>
+<td style="width: 47px; text-align: center;"><code>5</code></td>
+<td style="width: 47px; text-align: center;"><code>85</code></td>
+</tr>
+<tr>
+<td style="width: 47px; text-align: center;"><code>0800</code></td>
+<td style="width: 47px; text-align: center;"><code>08</code></td>
+<td style="width: 47px; text-align: center;"><code>00</code></td>
+<td style="width: 47px; text-align: center;"><code>8</code></td>
+<td style="width: 47px; text-align: center;"><code>88</code></td>
+</tr>
+<tr>
+<td style="width: 47px; text-align: center;"><code>08-3</code></td>
+<td style="width: 47px; text-align: center;"><code>08</code></td>
+<td style="width: 47px; text-align: center;"><code>-3</code></td>
+<td style="width: 47px; text-align: center;"><code>5</code></td>
+<td style="width: 47px; text-align: center;"><code>85</code></td>
+</tr>
+<tr>
+<td style="width: 47px; text-align: center;"><code>05-3</code></td>
+<td style="width: 47px; text-align: center;"><code>05</code></td>
+<td style="width: 47px; text-align: center;"><code>-3</code></td>
+<td style="width: 47px; text-align: center;"><code>2</code></td>
+<td style="width: 47px; text-align: center;"><code>52</code></td>
+</tr>
+<tr>
+<td style="width: 47px; text-align: center;"><code>05-1</code></td>
+<td style="width: 47px; text-align: center;"><code>05</code></td>
+<td style="width: 47px; text-align: center;"><code>-1</code></td>
+<td style="width: 47px; text-align: center;"><code>4</code></td>
+<td style="width: 47px; text-align: center;"><code>54</code></td>
+</tr>
+<tr>
+<td style="width: 47px; text-align: center;"><code>0600</code></td>
+<td style="width: 47px; text-align: center;"><code>06</code></td>
+<td style="width: 47px; text-align: center;"><code>00</code></td>
+<td style="width: 47px; text-align: center;"><code>6</code></td>
+<td style="width: 47px; text-align: center;"><code>66</code></td>
+</tr>
+<tr>
+<td style="width: 47px; text-align: center;"><code>0603</code></td>
+<td style="width: 47px; text-align: center;"><code>06</code></td>
+<td style="width: 47px; text-align: center;"><code>03</code></td>
+<td style="width: 47px; text-align: center;"><code>9</code></td>
+<td style="width: 47px; text-align: center;"><code>69</code></td>
+</tr>
+<tr>
+<td style="width: 47px; text-align: center;"><code>0701</code></td>
+<td style="width: 47px; text-align: center;"><code>07</code></td>
+<td style="width: 47px; text-align: center;"><code>01</code></td>
+<td style="width: 47px; text-align: center;"><code>8</code></td>
+<td style="width: 47px; text-align: center;"><code>78</code></td>
+</tr>
+<tr>
+<td style="width: 47px; text-align: center;"><code>05-2</code></td>
+<td style="width: 47px; text-align: center;"><code>05</code></td>
+<td style="width: 47px; text-align: center;"><code>-2</code></td>
+<td style="width: 47px; text-align: center;"><code>3</code></td>
+<td style="width: 47px; text-align: center;"><code>53</code></td>
+</tr>
+<tr>
+<td style="width: 47px; text-align: center;"><code>0500</code></td>
+<td style="width: 47px; text-align: center;"><code>05</code></td>
+<td style="width: 47px; text-align: center;"><code>00</code></td>
+<td style="width: 47px; text-align: center;"><code>5</code></td>
+<td style="width: 47px; text-align: center;"><code>55</code></td>
+</tr>
+<tr>
+<td style="width: 47px; text-align: center;"><code>05-5</code></td>
+<td style="width: 47px; text-align: center;"><code>05</code></td>
+<td style="width: 47px; text-align: center;"><code>-5</code></td>
+<td style="width: 47px; text-align: center;"><code>0</code></td>
+<td style="width: 47px; text-align: center;"><code>50</code></td>
+</tr>
+<tr>
+<td style="width: 47px; text-align: center;"><code>0700</code></td>
+<td style="width: 47px; text-align: center;"><code>07</code></td>
+<td style="width: 47px; text-align: center;"><code>00</code></td>
+<td style="width: 47px; text-align: center;"><code>7</code></td>
+<td style="width: 47px; text-align: center;"><code>77</code></td>
+</tr>
+<tr>
+<td style="width: 47px; text-align: center;"><code>0702</code></td>
+<td style="width: 47px; text-align: center;"><code>07</code></td>
+<td style="width: 47px; text-align: center;"><code>02</code></td>
+<td style="width: 47px; text-align: center;"><code>9</code></td>
+<td style="width: 47px; text-align: center;"><code>79</code></td>
+</tr>
+</tbody>
+</table>
+<p class="p1"><code>85 88 85 52 54 66 69 78 53 55 50 77 79</code></p>
+<p class="p1">Convert decimal to Ascii</p>
+<p class="p1"><code>UXU46BEN572MO</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1578" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/07/22/ada-refactor-public-poll-results/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1578" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/07/22/ada-refactor-public-poll-results/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1578" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/07/22/ada-refactor-public-poll-results/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/07/22/ada-refactor-public-poll-results/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

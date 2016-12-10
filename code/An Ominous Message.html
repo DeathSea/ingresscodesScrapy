@@ -1,0 +1,233 @@
+<div class="entry-content">
+			<p>Three codes could be found hidden in the <a class="d-s ot-anchor" tabindex="0" title="An Ominous Message" href="http://investigate.ingress.com/2016/11/07/an-ominous-message/" target="_blank" rel="nofollow">An Ominous Message</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] 1pl8pzccvlor8fx5yxypq3qrc</code></p>
+<p><code>[2] 17af051421170817212515190521201820j142104Gd1405P18</code></p>
+<p><code>[3] 4emhjd8e2vauj46k</code></p>
+<p><span id="more-2081"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>25 characters, no particular range.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Feel it</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>With a range like that, morse is usually a good option</p>
+<p class="p1"><code>.---- .--. .-.. ---.. .--. --.. -.-. -.-. ...- .-.. --- .-. ---.. ..-. -..- ..... -.-- -..- -.-- .--. --.- ...-- --.- .-. -.-.</code></p>
+<p class="p1">That’s 102 bits which can be divided by six to form braille</p>
+<p class="p1">Make a 3×34 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 46px;"><code>.--</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>--.</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>--.</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>.-.</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>.--</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>-..</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>.--</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>.--</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>..-</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>.-.</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>-.-</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>...</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>.-.</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>-..</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>---</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>.-.</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>---</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>...</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>.-.</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>-..</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>-..</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>...</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>-.-</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>--.</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>.--</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>.--</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>.--</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>.--</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>.-.</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>..-</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>---</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>.-.</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>-.-</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>.-.</code></td>
+</tr>
+</tbody>
+</table>
+<p>Use a transpose cipher to rotate everything 90 degrees counterclockwise</p>
+<table class=" table table-hover" style="width: 348px;">
+<tbody>
+<tr>
+<td style="width: 344px;"><code>.--..-....-..--.-..--.--......-.-.</code></td>
+</tr>
+<tr>
+<td style="width: 344px;"><code>-----.--.-..-.---.-....------.--.-</code></td>
+</tr>
+<tr>
+<td style="width: 344px;"><code>-...-.---.-...-.-.....-.----.--.-.</code></td>
+</tr>
+</tbody>
+</table>
+<p>Split for braille</p>
+<table class=" table table-hover" style="width: 507px;">
+<tbody>
+<tr>
+<td style="width: 503px;"><code>.- -. .- .. .. -. .- -. -. .- -. -- .. .. .. -. -.</code></td>
+</tr>
+<tr>
+<td style="width: 503px;"><code>-- -- -. -- .- .. -. -- -. -. .. .- -- -- -. -- .-</code></td>
+</tr>
+<tr>
+<td style="width: 503px;"><code>-. .. -. -- -. -. .. -. -. .. .. -. -- -- .- -. -.</code></td>
+</tr>
+</tbody>
+</table>
+<p>Convert braille to text</p>
+<p class="p1"><code>ths79kirlian775ro</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">A good mix of numbers, lowercase and uppercase letters</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">This could be Base64, start by making pairs with the numbers and separate letters</p>
+<p class="p1"><code>17 a f 05 14 21 17 08 17 21 25 15 19 05 21 20 18 20 j 14 21 04 G d 14 05 P 18</code></p>
+<p class="p1">Convert numbers to letters using a=0, lowercase letters to numbers and convert uppercase to lowercase</p>
+<p class="p1"><code>R05FOVRIRVZPTFVUSU9OVEg3OFpS</code></p>
+<p class="p1">Convert Base64 to text</p>
+<p class="p1"><code>GNE9THEVOLUTIONTH78ZR</code></p>
+<p class="p1"><code>gne93evolution378zr</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">16 characters with the right amount of numbers for a valid passcode</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Make a 4×4 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 35px;"><code>4</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 37px;"><code>m</code></td>
+<td style="width: 52px;"><code>h</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>j</code></td>
+<td style="width: 36px;"><code>d</code></td>
+<td style="width: 37px;"><code>8</code></td>
+<td style="width: 52px;"><code>e</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>2</code></td>
+<td style="width: 36px;"><code>v</code></td>
+<td style="width: 37px;"><code>a</code></td>
+<td style="width: 52px;"><code>u</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>j</code></td>
+<td style="width: 36px;"><code>4</code></td>
+<td style="width: 37px;"><code>6</code></td>
+<td style="width: 52px;"><code>k</code></td>
+</tr>
+</tbody>
+</table>
+<p class="p1">Reorder columns (3, 2, 4, 1)</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 36px;"><code>m</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 36px;"><code>h</code></td>
+<td style="width: 52px;"><code>4</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>8</code></td>
+<td style="width: 36px;"><code>d</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 52px;"><code>j</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>a</code></td>
+<td style="width: 36px;"><code>v</code></td>
+<td style="width: 36px;"><code>u</code></td>
+<td style="width: 52px;"><code>2</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>6</code></td>
+<td style="width: 36px;"><code>4</code></td>
+<td style="width: 36px;"><code>k</code></td>
+<td style="width: 52px;"><code>j</code></td>
+</tr>
+</tbody>
+</table>
+<p class="p1"><code>meh48dejavu264kj</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2081" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/11/11/an-ominous-message/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2081" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/11/11/an-ominous-message/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-2081" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/11/11/an-ominous-message/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/11/11/an-ominous-message/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

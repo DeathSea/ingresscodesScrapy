@@ -1,0 +1,119 @@
+<div class="entry-content">
+			<p>Three codes could be found hidden in the <a class="d-s ot-anchor" tabindex="0" title="Jahan’s Call" href="http://investigate.ingress.com/2016/08/30/jahans-call/" target="_blank" rel="nofollow">Jahan’s Call</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] up32zd6dzo2ele5o</code></p>
+<p><code>[2] uagimlnvgirqdkemzroopokroskxss</code></p>
+<p><code>[3] dffeffedyvyflfeweeeledeefwneddyfvf</code></p>
+<p><span id="more-1762"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>Right amount of numbers for a passcode format, same old cipher !</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Make a 4×4 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 36px;"><code>u</code></td>
+<td style="width: 36px;"><code>p</code></td>
+<td style="width: 36px;"><code>3</code></td>
+<td style="width: 64px;"><code>2</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>z</code></td>
+<td style="width: 36px;"><code>d</code></td>
+<td style="width: 36px;"><code>6</code></td>
+<td style="width: 64px;"><code>d</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>z</code></td>
+<td style="width: 36px;"><code>o</code></td>
+<td style="width: 36px;"><code>2</code></td>
+<td style="width: 64px;"><code>e</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>l</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 36px;"><code>5</code></td>
+<td style="width: 64px;"><code>o</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read in a spiral form the lower right O</p>
+<p class="p1"><code>oed23puzzle526do</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">30 letters without any specific range. If you go through your cipher routine you will eventually find it.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Rot, Vigenere and morse didn’t give anything to work with. After that I usually try BiFid</p>
+<p class="p1"><code>sweeightninenoweightthreesixdx</code></p>
+<p class="p1"><code>swe89now836dx</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">34 letters, notice that some are repeating quit a lot.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">First convert letters to numbers using a=0</p>
+<p class="p1"><code>3 5 5 4 5 5 4 3 24 21 24 5 11 5 4 22 4 4 4 11 4 3 4 4 5 22 13 4 3 3 24 5 21 5</code></p>
+<p class="p1">Notice how no single digit is higher than 5 ? Let’s make pairs</p>
+<p class="p1"><code>35 54 55 43 24 21 24 51 15 42 24 44 11 43 44 52 21 34 33 24 52 15</code></p>
+<p class="p1">Starting to look more and more like a Polybius square. Use the grid below for each pairs</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 10px;"></td>
+<td style="width: 9px;">1</td>
+<td style="width: 15px;">2</td>
+<td style="width: 10px;">3</td>
+<td style="width: 10px;">4</td>
+<td style="width: 47px;">5</td>
+</tr>
+<tr>
+<td style="width: 10px;">1</td>
+<td style="width: 9px;">a</td>
+<td style="width: 15px;">b</td>
+<td style="width: 10px;">c</td>
+<td style="width: 10px;">d</td>
+<td style="width: 47px;">e</td>
+</tr>
+<tr>
+<td style="width: 10px;">2</td>
+<td style="width: 9px;">f</td>
+<td style="width: 15px;">g</td>
+<td style="width: 10px;">h</td>
+<td style="width: 10px;">j</td>
+<td style="width: 47px;">k</td>
+</tr>
+<tr>
+<td style="width: 10px;">3</td>
+<td style="width: 9px;">l</td>
+<td style="width: 15px;">m</td>
+<td style="width: 10px;">n</td>
+<td style="width: 10px;">o</td>
+<td style="width: 47px;">p</td>
+</tr>
+<tr>
+<td style="width: 10px;">4</td>
+<td style="width: 9px;">q</td>
+<td style="width: 15px;">r</td>
+<td style="width: 10px;">s</td>
+<td style="width: 10px;">t</td>
+<td style="width: 47px;">u</td>
+</tr>
+<tr>
+<td style="width: 10px;">5</td>
+<td style="width: 9px;">v</td>
+<td style="width: 15px;">w</td>
+<td style="width: 10px;">x</td>
+<td style="width: 10px;">y</td>
+<td style="width: 47px;">z</td>
+</tr>
+</tbody>
+</table>
+<p class="p1"><code>pyzsifiveritastwfoniwe</code></p>
+<p class="p1"><code>pyz65veritas249we</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1762" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/09/03/jahans-call/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1762" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/09/03/jahans-call/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1762" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/09/03/jahans-call/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/09/03/jahans-call/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

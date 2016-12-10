@@ -1,0 +1,58 @@
+<div class="entry-content">
+			<p>Three codes could be found in the <a class="d-s ot-anchor" tabindex="0" title="A Trance across Time" href="http://investigate.ingress.com/2016/08/09/a-trance-across-time/" target="_blank" rel="nofollow">A Trance across Time</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] jxk12ivgivzg183ic</code></p>
+<p><code>[2] axxzqqzzzzz88pozrcq8fjcpf1jpqp</code></p>
+<p><code>[3] 52639432433243329271536373328142336332435172</code></p>
+<p><span id="more-1682"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>Passcode format is there, go through your usual cipher routine.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Atbash the letters and numbers to get</p>
+<p class="p1"><code>qcp98retreat927rx</code></p>
+<p class="p1">Invalid? Remember that you need to find the reverse for the keyword. Reverse of retreat is advance.</p>
+<p class="p1"><code>qcp98advance927rx</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">30 characters without any specific range.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">If your first instinct is to use -. you are right. You’ll need a first step before using that.</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Converting to morse give a good range of 120 characters</p>
+<p class="p1"><code>.- -..- -..- --.. --.- --.- --.. --.. --.. --.. --.. ---.. ---.. .--. --- --.. .-. -.-. --.- ---.. ..-. .--- -.-. .--. ..-. .---- .--- .--. --.- .--.</code></p>
+<p class="p1">Groups of 8 gives</p>
+<p class="p1"><code>.--..--. .---..-- .---.--- ..--..-- ..--..-- ..---..- --...--. -----... -.-.-.-- .----... .-..---- .-..--.. .-..---- .---.--. --.-.--.</code></p>
+<p class="p1">If .=0 and -=1 the start is good for binary to Ascii but then the rest doesn’t add up.</p>
+<p class="p1">Let’s try reversing the original string first</p>
+<p class="p1"><code>pqpj1fpcjf8qcrzop88zzzzzqqzxxa</code></p>
+<p class="p1">Convert this to morse</p>
+<p class="p1"><code>.--. --.- .--. .--- .---- ..-. .--. -.-. .--- ..-. ---.. --.- -.-. .-. --.. --- .--. ---.. ---.. --.. --.. --.. --.. --.. --.- --.- --.. -..- -..- .-</code></p>
+<p class="p1">Make groups of 8</p>
+<p class="p1"><code>.--.--.- .--..--- .----..- ..--.-.- ..---..- .---..-- .--.-..- .--..--- .--.---. .---..-- ..--..-- ..--..-- ..--.--- .---..-. .--..-.-</code></p>
+<p class="p1">We now have a perfect string to convert to binary. dots=0 dashes=1</p>
+<p class="p1"><code>01101101 01100111 01111001 00110101 00111001 01110011 01101001 01100111 01101110 01110011 00110011 00110011 00110111 01110010 01100101</code></p>
+<p class="p1">Convert binary to Ascii</p>
+<p class="p1"><code>mgy59signs337re</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">44 numbers, try to find what numbers appear often to help you find the cipher.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">You might want to phone a friend</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Let’s start by making pairs to see what we have</p>
+<p class="p1"><code>52 63 94 32 43 32 43 32 92 71 53 63 73 32 81 42 33 63 32 43 51 72</code></p>
+<p class="p1">Not a good range for hex or decimal but notice how the last number of every pairs is between 1 &amp; 4? That could indicate a phone cipher</p>
+<p class="p1">Reverse the string of pairs</p>
+<p class="p1"><code>27 15 34 23 36 33 24 18 23 37 36 35 17 29 23 34 23 34 23 49 36 25</code></p>
+<p class="p1">Using the phone cipher convert everything to letters (ex: 27 is the second letter of 7 on a phone which is q)</p>
+<p class="p1">You should get</p>
+<p class="p1"><code>qjieofhterolpxeieiezok</code></p>
+<p class="p1">Reverse</p>
+<p class="p1"><code>kozeieiexplorethfoeijq</code></p>
+<p class="p1"><code>koz88explore348jq</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1682" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/08/12/a-trance-across-time/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1682" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/08/12/a-trance-across-time/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1682" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/08/12/a-trance-across-time/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/08/12/a-trance-across-time/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

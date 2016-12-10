@@ -1,0 +1,113 @@
+<div class="entry-content">
+			<p>Two codes were hidden in the <a class="d-s ot-anchor" tabindex="0" title="Via Noir: Anomaly Intel – I" href="http://investigate.ingress.com/2016/10/30/via-noir-anomaly-intel-i/" target="_blank" rel="nofollow">Via Noir: Anomaly Intel – I</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] NGP64XRERORAZGRLM488XP</code></p>
+<p><code>[2] 1#Z1T1!1!D4!S4!B!F1@1R1A!1!B!J2G@U#F%V#2F1$R1!K!2!J</code></p>
+<p><span id="more-2009"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>Passcode format is there, go through your usual cipher routine.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Atbash letters and numbers</p>
+<p class="p1"><code>MTK46CIVILIZATION622CK</code></p>
+<p class="p1">Invalide. We used atbash so we need to find the opposite of civilization. Nature is the valid keyword</p>
+<p class="p1"><code>mtk46nature622ck</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">A mix of pretty much everything. Be careful, there are actually 2 passcodes in there</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Split.split-split.</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Tried a few different split points the only interesting one was to split at letters</p>
+<p class="p1"><code>1# 1 1!1! 4! 4! ! 1@1 1 !1! ! 2 @ # % #2 1$ 1! !2!</code></p>
+<p class="p1">We now have two types of bits, numbers and symbols. Symbols can be converted to numbers and that would be perfect for a morse RLE</p>
+<p class="p1">Numbers are amount of dashes and symbols converted to numbers are dots</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 59px;"><code>1#</code></td>
+<td style="width: 115px;"><code>-...</code></td>
+</tr>
+<tr>
+<td style="width: 59px;"><code>1</code></td>
+<td style="width: 115px;"><code>-</code></td>
+</tr>
+<tr>
+<td style="width: 59px;"><code>1!1!</code></td>
+<td style="width: 115px;"><code>-.-.</code></td>
+</tr>
+<tr>
+<td style="width: 59px;"><code>4!</code></td>
+<td style="width: 115px;"><code>----.</code></td>
+</tr>
+<tr>
+<td style="width: 59px;"><code>4!</code></td>
+<td style="width: 115px;"><code>----.</code></td>
+</tr>
+<tr>
+<td style="width: 59px;"><code>!</code></td>
+<td style="width: 115px;"><code>.</code></td>
+</tr>
+<tr>
+<td style="width: 59px;"><code>1@1</code></td>
+<td style="width: 115px;"><code>-..-</code></td>
+</tr>
+<tr>
+<td style="width: 59px;"><code>1</code></td>
+<td style="width: 115px;"><code>-</code></td>
+</tr>
+<tr>
+<td style="width: 59px;"><code>!1!</code></td>
+<td style="width: 115px;"><code>.-.</code></td>
+</tr>
+<tr>
+<td style="width: 59px;"><code>!</code></td>
+<td style="width: 115px;"><code>.</code></td>
+</tr>
+<tr>
+<td style="width: 59px;"><code>2</code></td>
+<td style="width: 115px;"><code>--</code></td>
+</tr>
+<tr>
+<td style="width: 59px;"><code>@</code></td>
+<td style="width: 115px;"><code>..</code></td>
+</tr>
+<tr>
+<td style="width: 59px;"><code>#</code></td>
+<td style="width: 115px;"><code>...</code></td>
+</tr>
+<tr>
+<td style="width: 59px;"><code>%</code></td>
+<td style="width: 115px;"><code>.....</code></td>
+</tr>
+<tr>
+<td style="width: 59px;"><code>#2</code></td>
+<td style="width: 115px;"><code>...--</code></td>
+</tr>
+<tr>
+<td style="width: 59px;"><code>1$</code></td>
+<td style="width: 115px;"><code>-....</code></td>
+</tr>
+<tr>
+<td style="width: 59px;"><code>1!</code></td>
+<td style="width: 115px;"><code>-.</code></td>
+</tr>
+<tr>
+<td style="width: 59px;"><code>!2!</code></td>
+<td style="width: 115px;"><code>.--.</code></td>
+</tr>
+</tbody>
+</table>
+<p class="p1"><code>-... - -.-. ----. ----. . -..- - .-. . -- .. ... ..... ...-- -.... -. .--.</code></p>
+<p class="p1">Convert morse to text</p>
+<p class="p1"><code>BTC99EXTREMIS536NP</code></p>
+<p class="p1">Now from the original string we had letters</p>
+<p class="p1"><code>ZTDSBFRABJGUFVFRKJ</code></p>
+<p class="p1">Rot 13 gives</p>
+<p class="p1"><code>MGQFOSENOWTHSISEXW</code></p>
+<p class="p1"><code>mgq47now367xw</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2009" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/11/03/via-noir-anomaly-intel-i/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2009" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/11/03/via-noir-anomaly-intel-i/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-2009" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/11/03/via-noir-anomaly-intel-i/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/11/03/via-noir-anomaly-intel-i/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

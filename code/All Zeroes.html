@@ -1,0 +1,58 @@
+<div class="entry-content">
+			<p>Three codes were found in the <a class="d-s ot-anchor" tabindex="0" title="All Zeroes" href="http://investigate.ingress.com/2016/07/19/all-zeroes/" target="_blank" rel="nofollow">All Zeroes</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] hga430368kd</code></p>
+<p><code>[2] jppypl25qxx3fyy2fpvuy3jucyfuxm</code></p>
+<p><code>[3] &amp;&amp;&amp;.^^^.&amp;.%.^^.%.@.%.^^.#.*.@@.*.&amp;&amp;&amp;.&amp;</code></p>
+<p><span id="more-1574"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>You can see the passcode format, you’ll need to be creative to find the keyword</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>We have the prefix, a 0 for keyword and the suffix</p>
+<p class="p1"><code>hga43 0 368kd</code></p>
+<p class="p1">This is not an easy one to explain for keyword so I’ll go right to the point. 0 is glyph for all. Yep creative thinking !!!</p>
+<p class="p1"><code>hga43all368kd</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">30 characters, a mix of letters and number without any specific range. Lots of repeats.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Check the solves from yesterday</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">A string like this usually indicates that the first step is morse.</p>
+<p class="p1"><code>.--- .--. .--. -.-- .--. .-.. ..--- ..... --.- -..- -..- ...-- ..-. -.-- -.-- ..--- ..-. .--. ...- ..- -.-- ...-- .--- ..- -.-. -.-- ..-. ..- -..- --</code></p>
+<p class="p1">We have 120 characters. Two options, groups of 6 for braille or groups of 8 for binary. Binary is easier to spot, let’s try it</p>
+<p class="p1"><code>.---.--. .--.-.-- .--..-.. ..---... ..--.--. .--..-.. .--..-.- .---.--. .---..-. .--....- ..--.--. ..--.--- ..--.-.- .--..-.. .--..---</code></p>
+<p class="p1">Notice how every first bit is a dot? Dots=0 Dashes=1</p>
+<p class="p1"><code>01110110 01101011 01100100 00111000 00110110 01100100 01100101 01110110 01110010 01100001 00110110 00110111 00110101 01100100 01100111</code></p>
+<p class="p1">Convert binary to Ascii</p>
+<p class="p1"><code>vkd86devra675dg</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">All symbols separated by dots.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">How do you usually convert symbols then think why they are repeating.</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Symbols usually convert to numbers, &amp;=7, ^=6… then gives a decimal to Ascii sequence but in this case the symbols are repeating between 1 to 3 times. Your keyboard has 3 rows right ?</p>
+<p class="p1">So &amp;&amp;&amp; is the 7th character of the 3rd row which is m. Keep converting the rest of the string to get</p>
+<table class=" table table-hover" width="43">
+<tbody>
+<tr>
+<td width="43"><code>&amp;&amp;&amp;.^^^.&amp;.%.^^.%.@.%.^^.#.*.@@.*.&amp;&amp;&amp;.&amp;</code></td>
+</tr>
+<tr>
+<td><code>m   n     u t h tw t h   e i s i m   u</code></td>
+</tr>
+</tbody>
+</table>
+<p class="p1">We now have the prefix and suffix</p>
+<p class="p1"><code>mnuthtw theisimu</code></p>
+<p class="p1">or</p>
+<p class="p1"><code>mnu32 386mu</code></p>
+<p class="p1">The ciphers used symbols which is a valid keyword.</p>
+<p class="p1"><code>mnu32symbols386mu</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1574" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/07/21/all-zeroes/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1574" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/07/21/all-zeroes/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1574" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/07/21/all-zeroes/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/07/21/all-zeroes/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

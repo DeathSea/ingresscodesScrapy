@@ -1,0 +1,61 @@
+<div class="entry-content">
+			<p>Inside the <a href="http://investigate.ingress.com/2016/04/27/autobacs-emerges-into-portal-network/" target="_blank">AUTOBACS emerges into Portal Network</a> post on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog, there were three codes hidden in the source:</p>
+<p><code>[1] uijtsruwtrswszszswtsrustrvrvuztuuiq<br>
+[2] p2ucylfclcyxbycc1xxuycqbqi<br>
+[3] 3uoa3mirrorr4j2k</code></p>
+<p><span id="more-717"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>The length of 35 characters means this is not a transposition path we’ll need to follow.<br>
+</p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;"><br>
+La la laa … “Now I know my ABC’s. Next time won’t you sing with me” … la la laa…<br>
+</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;"><br>
+Convert each letter to an <a href="http://multidec.web-lab.at/abc.php" target="_blank">alphabet index</a> where <code>A = 25</code> and <code>Z = 0</code><br>
+<code>5 17 16 6 7 8 5 3 6 8 7 3 7 0 7 0 7 3 6 7 8 5 7 6 8 4 8 4 5 0 6 5 5 17 9</code><br>
+Group up the numbers into pairs<br>
+<code>51 71 66 78 53 68 73 70 70 73 67 85 76 84 84 50 65 51 79</code><br>
+Convert from decimal to ASCII<br>
+<code>3GBN5DIFFICULTT2A3O</code>
+<p>
+As a side note: One way of noticing that this decoding path is needed is that when you Atbash the text, notice that the resulting characters have alphabet index values that look like the Decimal values for numbers and letters.<br>
+</p></div></div>
+<hr>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>Only two numbers in the code and it is too long to hide away the other two numbers via transposition.<br>
+So some form of conversion will be needed.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>What do you see when you first hear, then feel the letters?</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">First convert it all to Morse<br>
+<code>.--. ..--- ..- -.-. -.-- .-.. ..-. -.-. .-.. -.-. -.-- -..- -... -.-- -.-. -.-. .---- -..- -..- ..- -.-- -.-. --.- -... --.- ..</code>
+<p>Ignoring the spaces, make groups of 6.<br>
+<code>.--... ---..- -.-.-. --.-.. ..-.-. -..-.. -.-.-. ---..- -...-. ---.-. -.-..- ----.. --..-. .--.-- -.-.-- .--... --.-..</code></p>
+<p>Braille is “written” as<br>
+<code>14<br>
+25<br>
+36</code><br>
+so reading our code as<br>
+<code>.--...</code><br>
+<code>123456</code><br>
+and seeing <code>.</code> as blank and <code>-</code> as bumps, convert the entire thing to Braille.<br>
+<span style="font-size: 14pt;"><code><span style="font-family: icbraille;">2 v o f 9 c o v e r u p h 7 z 2 f</span></code></span></p>
+<p>Reading the Braille out gives us the final code<br>
+<code>2vof9coveruph7z2f</code><br>
+</p></div></div>
+<hr>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>Just follow the instructions 😉</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>The keyword here tells us exactly what to do: Mirror it, aka reverse.<br>
+Reverse the prefix and suffix for the final code<br>
+<code>3aou3mirrork2j4r</code></p>
+<p></p></div></div>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-717" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/04/29/autobacs-emerges-into-portal-network/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-717" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/04/29/autobacs-emerges-into-portal-network/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-717" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/04/29/autobacs-emerges-into-portal-network/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/04/29/autobacs-emerges-into-portal-network/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

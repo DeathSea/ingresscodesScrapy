@@ -1,0 +1,85 @@
+<div class="entry-content">
+			<p>Three codes were hidden in the <a class="d-s ot-anchor" tabindex="0" title="Discoveries from Seattle" href="http://investigate.ingress.com/2016/10/31/discoveries-from-seattle/" target="_blank" rel="nofollow">Discoveries from Seattle</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1]</code><code>&amp;#8211; <span class="Apple-converted-space">      </span>&amp;#8211;<span class="Apple-converted-space">  </span>&amp;#8211;<span class="Apple-converted-space">      </span>&amp;#8211; <span class="Apple-converted-space">    </span>&amp;#8211;<span class="Apple-converted-space">        </span>&amp;#8211;<span class="Apple-converted-space">        </span>&amp;#8211; <span class="Apple-converted-space">    </span>&amp;#8211; <span class="Apple-converted-space">      </span>&amp;#8211; <span class="Apple-converted-space">    </span>&amp;#8212; <span class="Apple-converted-space">    </span>&amp;#8211;<span class="Apple-converted-space">    </span>&amp;#8211; <span class="Apple-converted-space">    </span>&amp;#8212; <span class="Apple-converted-space">    </span>&amp;#8211;<span class="Apple-converted-space">    </span>&amp;#8211; <span class="Apple-converted-space">      </span>&amp;#8211;<span class="Apple-converted-space">        </span>&amp;#8211;<span class="Apple-converted-space">        </span>&amp;#8211; <span class="Apple-converted-space">    </span>&amp;#8211;</code></p>
+<p><code>[2] )()))&amp;)%!$!()&amp;^)%)*)%)*!#)*)!!)</code></p>
+<p><code>[3] y9hls5b6ii5yeplp3c</code></p>
+<p><span id="more-2014"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>Lots of spaces separated by unicode characters.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>&amp;#8211 is the unicode value for Endash, convert to -. &amp;#8212 is the unicode value for Emdash, convert to — and count the number of spaces between each unicode characters</p>
+<p class="p1"><code>-7-2-6-5-8-8-5-7-5--5-4-5--5-4-7-8-8-5-</code></p>
+<p class="p1">The — should be -0- because there was no space</p>
+<p class="p1"><code>-7-2-6-5-8-8-5-7-5-0-5-4-5-0-5-4-7-8-8-5-</code></p>
+<p class="p1">We can now see a good Ascii range, remove dahses and pair numbers</p>
+<p class="p1"><code>72 65 88 57 50 54 50 54 78 85</code></p>
+<p class="p1">Convert decimal to Ascii</p>
+<p class="p1"><code>HAX92626NU</code></p>
+<p class="p1">To make the code spaces were used, space is a valid keyword</p>
+<p class="p1"><code>hax92space626nu</code></p>
+<p class="p1"></p></div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>31 symbols</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Convert symbols to numbers</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 290px;"><code>)()))&amp;)%!$!()&amp;^)%)*)%)*!#)*)!!)</code></td>
+</tr>
+<tr>
+<td style="width: 290px;"><code>0900070514190760508050813080110</code></td>
+</tr>
+</tbody>
+</table>
+<p>Not Ascii range for sure. We have 31 characters so one of them might be the keyword. Let’s try to make pairs leave one character as a single digit. The only thing that seems logical is</p>
+<p class="p1"><code>09 00 07 05 14 19 07 6 05 08 05 08 13 08 01 10</code></p>
+<p>This gives a good range for a number to letter conversion using a=0. Leave the 6 as it is.</p>
+<p class="p1"><code>jahfoth 6 fifinibk</code></p>
+<p class="p1"><code>jah43 6 559bk</code></p>
+<p class="p1">Tried VI, verum and inveniri, all came back invalid. Convert 6 back to ^ which is the operator for power</p>
+<p class="p1"><code>jah43power559bk</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">18 characters with the right amount of numbers for a passcode</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Make a 6×3 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 35px;"><code>y</code></td>
+<td style="width: 36px;"><code>9</code></td>
+<td style="width: 36px;"><code>h</code></td>
+<td style="width: 37px;"><code>l</code></td>
+<td style="width: 37px;"><code>s</code></td>
+<td style="width: 55px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>b</code></td>
+<td style="width: 36px;"><code>6</code></td>
+<td style="width: 36px;"><code>i</code></td>
+<td style="width: 37px;"><code>i</code></td>
+<td style="width: 37px;"><code>5</code></td>
+<td style="width: 55px;"><code>y</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>e</code></td>
+<td style="width: 36px;"><code>p</code></td>
+<td style="width: 36px;"><code>l</code></td>
+<td style="width: 37px;"><code>p</code></td>
+<td style="width: 37px;"><code>3</code></td>
+<td style="width: 55px;"><code>c</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read going down from upper left Y</p>
+<p class="p1"><code>ybe96phillips535yc</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2014" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/11/04/discoveries-from-seattle/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2014" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/11/04/discoveries-from-seattle/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-2014" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/11/04/discoveries-from-seattle/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/11/04/discoveries-from-seattle/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

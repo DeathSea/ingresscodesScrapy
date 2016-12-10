@@ -1,0 +1,88 @@
+<div class="entry-content">
+			<p>Three codes appeared hidden throughout the <a href="https://plus.google.com/+HRichardLoeb/posts/8fpfstL7PmE" target="_blank">OLW’s Power Cube Stockpiles</a> post on Investigate.Ingress</p>
+<p><code>[1] X6X2869XX992X6X896979295X293X696X5X2X1X59697</code><br>
+<code>[2] c99c909dcb8f9e96918b94cb8cca9d</code><br>
+<code>[3] hylitzikpkbbrdqrzzwblcxfa</code><br>
+<span id="more-525"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>All numbers except for that X that seems to appear randomly throughout the code</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>This is not an easy one to try and put some logic into it but here goes:</p>
+<p>Start by making pairs</p>
+<p><code>X6 X2 86 9X X9 92 X6 X8 96 97 92 95 X2 93 X6 96 X5 X2 X1 X5 96 97</code></p>
+<p>Here is how you need to interpret each pairs: (a*10)+b</p>
+<p>Example: 86=(8*10)+6=86</p>
+<p>Why you should look at it this way? It will all make sense once you get to 9X</p>
+<p>Now X is the roman numeral for 10 so:</p>
+<p><code>X6=(10x10)+6=106</code><br>
+<code>X2=(10x10)+2=102</code><br>
+<code>86=(8*10)+6=86</code><br>
+<code>9X=(9*10)+10=100</code><br>
+<code>92=(9*10)+2=92</code><br>
+<code>X6=(10*10)+6=106</code><br>
+<code>X8=(10*10)+8=108</code><br>
+<code>96=(9*10)+6=96</code><br>
+<code>97=(9*10)+7=97</code><br>
+<code>92=(9*10)+2=92</code><br>
+<code>95=(9*10)+5=95</code><br>
+<code>X2=(10x10)+2=102</code><br>
+<code>93=(9*10)+3=93</code><br>
+<code>X6=(10x10)+6=106</code><br>
+<code>96=(9*10)+6=96</code><br>
+<code>X5=(10*10)+5=105</code><br>
+<code>X2=(10*10)+2=102</code><br>
+<code>X1=(10*10)+1=101</code><br>
+<code>X5=(10*10)+5=105</code><br>
+<code>96=(9*10)+6=96</code><br>
+<code>97=(9*10)+7=97</code></p>
+<p>Resulting string:<br>
+<code>106 102 86 100 92 106 108 96 97 92 95 102 93 106 96 105 102 101 105 96 97</code></p>
+<p>Not really a good Decimal to Ascii string but looking at the distribution the lowest number is 86 and highest 108.<br>
+108-86=22 this could hint to a numbers to letters string. Just need to find the right number to subtract from.</p>
+<p>Assuming that the highest number of the code would be XX it would give us (10*10)+10=110</p>
+<p>So from 110 subtract all values above (110-106, 110-102,…) to get:<br>
+<code>4 8 24 10 1 18 4 2 14 13 18 15 8 17 4 14 5 8 9 5 14 13</code></p>
+<p>Convert numbers to letters (a=0)<br>
+<code>EIYKBSECONSPIREOFIJFON</code></p>
+<p><code>8ykb7conspireo5j4n</code></p>
+<p></p></div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>Converting Hexadecimal to Ascii doesn’t give anything good but it really looks like Hex.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Atbash isn’t always A-Z</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Making pairs will somewhat reveal the encode<br>
+<code>c9 9c 90 9d cb 8f 9e 96 91 8b 94 cb 8c ca 9d</code></p>
+<p>Looking at where the numbers should fall in the regular passcode format you can notice that they all start with C<br>
+In Hexadecimal values 30 to 39 convert 0 to 9 in Ascii. How can we make C=3 ?</p>
+<p>Hexadecimal Atbash:<br>
+0123456789ABCDEF<br>
+FEDCBA9876543210</p>
+<p><code>c9 9c 90 9d cb 8f 9e 96 91 8b 94 cb 8c ca 9d</code><br>
+<code> 36 63 6f 62 34 70 61 69 6e 74 6b 34 73 35 62</code></p>
+<p>Convert Hexadecimal to Ascii<br>
+<code>6cob4paintk4s5b</code></p>
+<p></p></div></div>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>All letters, so many possibilities, need to try each and everyone…</p>
+<p>Atbash? Rot? Morse? Playfair? BiFid?</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Well none of them gave something except for ROT-3 which gave<br>
+<code>evifqwfhmhyyoanowwtyizucx</code></p>
+<p>That five was actually just pure coincidence</p>
+<p>When all else fails I usually try to brute Vigenere the string.</p>
+<p>The way I do it is to put in TWO, THREE, FOUR and so on as the passphrase using the Vigenere Autokey cipher. This will sometime reveal a keyword to use to decode the string. In this case still nothing.</p>
+<p>When even that fails remember to always try Vigenere Autokey with abcdefghijkl…. or simply “a” and bingo!</p>
+<p>Vigenere Autokey with A will reveal<br>
+<code>hruofuowtrkradnevesjcaxis</code></p>
+<p>Reverse<br>
+<code>sixacjsevendarkrtwoufourh</code></p>
+<p><code>6acj7darkr2u4h</code></p>
+<p></p></div></div>
+<p> </p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-525" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/04/15/olws-power-cube-stockpiles/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-525" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/04/15/olws-power-cube-stockpiles/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-525" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/04/15/olws-power-cube-stockpiles/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/04/15/olws-power-cube-stockpiles/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

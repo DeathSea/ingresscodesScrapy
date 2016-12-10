@@ -1,0 +1,85 @@
+<div class="entry-content">
+			<p>Within the intriguing <a href="http://investigate.ingress.com/2016/05/09/an-engineered-escape/" target="_blank">An Engineered Escape</a> post on the <a href="http://investigate.ingress.com" target="_blank">Investigate Ingress</a> blog, there was this time only two codes hidden in the source.</p>
+<p>[1] <code>iuczvtotqaxnzticbol</code><br>
+[2] <code>5554%e%7f%%^f5555e^9515b5%5b%5%@f$535e5&amp;amp;f$g(5%%d51%%%f%@55f$%457f$53</code></p>
+<p><span id="more-914"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>This code has a length of 19 characters, so that excludes rectangles from the start.<br>
+No explicit numbers or things that we could make numbers in all the right positions, so we’ll probably need some cipher first.<br>
+When running this code through the normal initial checks, there is something that draws our attention.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>What do you see at the end?<br>
+Did you see the cow?</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Running the code through the Multi-ROT, we see that with ROT 20 we have a good looking, albeit reversed, string.<br>
+<code>cowtpninkurhtncwvif</code><br>
+Since the written numbers are in reverse order, turn around the string<br>
+<code>fivwcnthrukninptwoc</code><br>
+Substitute out the numbers to see what we have left.<br>
+<code>5wcn3uk9p2c</code><br>
+Now we know that <code>u</code> is not a valid keyword, so a substitute will be needed.<br>
+It can resemble a few glyphs which are all valid keywords (<code>present</code>/<code>now</code>, <code>potential</code>), but they all lead to invalid codes this time.</p>
+<p>Think back to the days before Smartphones and Instant Messengers, back to when you only had 160 characters for a Short Text Message, back when abbreviations made sense to use.<br>
+From that we recall that <code>you</code> can also be written as <code>u</code>.<br>
+This is also be called <a href="https://en.wikipedia.org/wiki/Leet" target="_blank">1337-Speak</a> (Leet-speak).</p>
+<p>Substitute the u with you for the final solve.<br>
+<code>5wcn3youk9p2c</code></p>
+<p></p></div></div>
+<hr>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>We have a range of numbers, letters and symbols.<br>
+Since there were only two codes hidden in the sourcecode, it is safe to assume that this code might contain two different passcodes.<br>
+Part of the &lt;span&gt; tag where this code was hidden, we have a hint of <code>font-size: 3px;</code>.</p>
+<p>We also notice a lone HTML encoded character in the string: <code>&amp;amp;</code> is the HTML encoding for <code>&amp;</code></p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">
+<p>There are two rabbit holes down which you can tumble towards valid passcodes.<br>
+Look at the hint and what we see in the code.</p>
+<p></p></div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Let us assume for now that the HTML encoded <code>&amp;amp;</code> should be decoded first, replace that section with just an <code>&amp;</code>.<br>
+We can always code back later if we do get stuck.</p>
+<hr>
+<h4>First code</h4>
+<p>For the first code, separate the different types of characters that we have in the code to see the rabbit hole.</p>
+<pre>
+     e  f   f    e     b   b    f    e  f g    d     f    f     f   
+    % %  %%^      ^      %  % %@ $     &amp; $ ( %%   %%% %@   $%    $  
+5554   7     5555  9515 5 5  5    535 5     5   51      55   457  53
+</pre>
+<p>Remember that the hint was <code>3</code>, which fits nicely with our groups and what they show us.</p>
+<p>See that there are never two letters next to each other and we have a good spread of the other two lines?<br>
+Also notice that when thinking of the passcode format that we are looking for, that the numbers parts of the format has 5 symbols between two letters?</p>
+<p>There is one cipher that has 3 different “symbols” where numbers are 5 “symbols” long: <a href="https://en.wikipedia.org/wiki/Morse_code" target="_blank">Morse</a> (<code>.</code> <code>-</code> and the separator)<br>
+Read numbers as <code>.</code>, symbols as <code>-</code> and letters as separators<br>
+<code>....- -. --- .... -.... .-. -.-- -... .- - -.-- ..--- --.. --... -..</code><br>
+Convert morse to text for the solve<br>
+<code>4NOH6RYBATY2Z7D</code></p>
+<hr>
+<h4>Second code</h4>
+<p>For this second code, we’ll need to do something that you probably already thought of:<br>
+What happens when you convert those symbols to their <a href="https://ingress.codes/wp-content/uploads/2016/05/Keyboard-Layout-QWERTY.png" target="_blank">QWERTY-Keyboard US</a> layout equivalent?</p>
+<p>In the original code (after the &amp;amp; replacement), substitute all the symbols with their QWERTY-US layout equivalent numbers and convert all the letters to their <a href="http://multidec.web-lab.at/abc.php" target="_blank">alphabet index</a> where a=0 and z=25<br>
+<code>55545457555655555469515155515552545354575469555351555552555454575453</code><br>
+Group the numbers into pairs of 2<br>
+<code>55 54 54 57 55 56 55 55 54 69 51 51 55 51 55 52 54 53 54 57 54 69 55 53 51 55 55 52 55 54 54 57 54 53</code><br>
+Convert this from Decimal to Text<br>
+<code>766978776E33737465696E753774766965</code></p>
+<p>Interesting, another bunch of numbers with some <code>E</code> in there, that might point to a Hex conversion now.<br>
+Pair up the characters again into pairs of 2<br>
+<code>76 69 78 77 6E 33 73 74 65 69 6E 75 37 74 76 69 65</code><br>
+Convert from Hex to Text for what seems to be almost a finished passcode.<br>
+<code>vixwn3steinu7tvie</code><br>
+Substituting the roman numerals with numbers, we get a formatted, but invalid passcode<br>
+<code>6xwn3steinu7t6e</code></p>
+<p>Although <code>stein</code> is a valid keyword in general, it is not the keyword that would make this a valid passcode.<br>
+From the <a href="https://niantic.schlarp.com" target="_blank">Niantic Project Wiki</a> we learned that <em>Stein</em> is the first name for <em>Stein Lightman</em>.<br>
+Substitute <code>stein</code> with <code>lightman</code> for the final solution.<br>
+<code>6xwn3lightmanu7t6e</code><br>
+</p></div></div>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-914" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/05/13/an-engineered-escape/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-914" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/05/13/an-engineered-escape/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-914" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/05/13/an-engineered-escape/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/05/13/an-engineered-escape/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>

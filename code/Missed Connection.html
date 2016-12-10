@@ -1,0 +1,93 @@
+<div class="entry-content">
+			<p>Three codes could be found hidden in the <a class="d-s ot-anchor" tabindex="0" title="Missed Connection" href="http://investigate.ingress.com/2016/07/22/missed-connection/" target="_blank" rel="nofollow">Missed Connection</a> post on the Investigate Ingress blog.</p>
+<p><code>[1] luc28mnoxmkt732ni</code></p>
+<p><code>[2] xvezefedddfdnacgenzhfgfgxed</code></p>
+<p><code>[3] m3m3b79cnx8k</code></p>
+<p><span id="more-1604"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>The passcode format is right there, go through your usual cipher routine.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Atbash and ROT didn’t give anything, next step is morse.</p>
+<p class="p1"><code>.-.. ..- -.-. ..--- ---.. -- -. --- -..- -- -.- - --... ...-- ..--- -. ..</code></p>
+<p class="p1">You’ll need to reverse and swap the morse code to get the right passcode</p>
+<p class="p1"><code>-- -. ...-- ..--- ---.. . .-. .. .--. ... -. .. --... ...-- -.-. .-- --.-</code></p>
+<p class="p1">Convert morse to text</p>
+<p class="p1"><code>MN328ERIPSNI73CWQ</code></p>
+<p class="p1">Reverse</p>
+<p class="p1"><code>QWC37INSPIRE823NM</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p>All letters, no particular range.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Nop not morse this time, more like numbers</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>My first instinct was to see if morse would give a pattern but nothing came out. Let’s try converting letters to numbers (a=0)</p>
+<p class="p1"><code>23 21 4 25 4 5 4 3 3 3 5 3 13 0 2 6 4 13 25 7 5 6 5 6 23 4 3</code></p>
+<p class="p1">Now let’s pair them up.</p>
+<p class="p1"><code>23 21 42 54 54 33 35 31 30 26 41 32 57 56 56 23 43</code></p>
+<p class="p1">A few 5 in there could mean Ascii numbers but the rest is not in the right range, should be in the 6, 7 &amp; 8 range. Notice how they are in the 2, 3 &amp; 4 range? Let’s atbash those numbers (1=9 and 0=0)</p>
+<p class="p1"><code>87 89 68 56 56 77 75 79 70 84 69 78 53 54 54 87 67</code></p>
+<p class="p1">Convert decimal to Ascii</p>
+<p class="p1"><code>WYD88MKOFTEN566WC</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">All the right ingredients, that same old cipher again.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Make a 4×3 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 36px;"><code>m</code></td>
+<td style="width: 35px;"><code>3</code></td>
+<td style="width: 37px;"><code>m</code></td>
+<td style="width: 97px;"><code>3</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>b</code></td>
+<td style="width: 35px;"><code>7</code></td>
+<td style="width: 37px;"><code>9</code></td>
+<td style="width: 97px;"><code>c</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>n</code></td>
+<td style="width: 35px;"><code>x</code></td>
+<td style="width: 37px;"><code>8</code></td>
+<td style="width: 97px;"><code>k</code></td>
+</tr>
+</tbody>
+</table>
+<p class="p1">Read down from the upper left M</p>
+<p class="p1"><code>mbn37xm983ck</code></p>
+<p class="p1">Invalid ? Reverse the second row</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 36px;"><code>m</code></td>
+<td style="width: 35px;"><code>3</code></td>
+<td style="width: 37px;"><code>m</code></td>
+<td style="width: 62px;"><code>3</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>c</code></td>
+<td style="width: 35px;"><code>9</code></td>
+<td style="width: 37px;"><code>7</code></td>
+<td style="width: 62px;"><code>b</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>n</code></td>
+<td style="width: 35px;"><code>x</code></td>
+<td style="width: 37px;"><code>8</code></td>
+<td style="width: 62px;"><code>k</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read down from the upper left M</p>
+<p class="p1"><code>mcn39xm783bk</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1604" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/07/24/missed-connection/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1604" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/07/24/missed-connection/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-1604" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/07/24/missed-connection/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/07/24/missed-connection/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>
