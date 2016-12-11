@@ -1,0 +1,37 @@
+$def with (content)
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+	<style type="text/css">
+		.passcode{
+			width: 300px;
+			word-break: break-all;
+		}
+		td{
+			word-break: break-all;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="/static/bootstrap.min.css">
+</head>
+<body>
+<input type="text" name="" id='query'>
+<table class="table table-striped">
+	<tr>
+		<th>passcode</th>
+		<th>title</th>
+		<th>source</th>
+		<th>filename</th>
+		<th>decode_method_tags</th>
+	</tr>
+	$for item in content:
+		<tr>
+			<td class="passcode">$item.passcode</td>
+			<td>$item.title</td>
+			<td><a href='$item.source'>$item.source</a></td>
+			<td><a href='$item.filename.replace("\\","/")'>$item.filename</a></td>
+			<td>$item.decode_method_tags</td>
+		</tr>
+</table>
+</body>
+</html>
