@@ -759,3 +759,6 @@ qrfrvrifveohujghxbug 	Acolyte’s Compound Attacked 	https://ingress.codes/2016/
 aa98998fa87b8d968898ad76aa87 	Stockpiles 	https://ingress.codes/2016/04/13/stockpiles/ 	code\Stockpiles.html 	decimal,hexadecimal atbash,Keyboard,phone
 ttyouuyyteyiiwyoytuuiptwiettir 	Stockpiles 	https://ingress.codes/2016/04/13/stockpiles/ 	code\Stockpiles.html 	decimal,hexadecimal atbash,Keyboard,phone
 jdnjoruulruonxubsdtgmkvfu0jnuyl0t1 	Stockpiles 	https://ingress.codes/2016/04/13/stockpiles/ 	code\Stockpiles.html 	decimal,hexadecimal atbash,Keyboard,phone
+cq2bs9le4f35vd 	Hank Johnson Nigel’s Long Journey 	https://ingress.codes/2016/12/10/hank-johnson-nigels-long-journey/ 	code\Hank Johnson Nigel’s Long Journey.html 	rot,transposition
+qdw11zmshlhfttk668sj 	Hank Johnson Nigel’s Long Journey 	https://ingress.codes/2016/12/10/hank-johnson-nigels-long-journey/ 	code\Hank Johnson Nigel’s Long Journey.html 	rot,transposition
+zsn64joejwbeobt833ha 	Hank Johnson Nigel’s Long Journey 	https://ingress.codes/2016/12/10/hank-johnson-nigels-long-journey/ 	code\Hank Johnson Nigel’s Long Journey.html 	rot,transposition
