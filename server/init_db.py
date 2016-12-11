@@ -1,4 +1,4 @@
-import sqlite3
+import sqlite3,os
 db = sqlite3.connect("test.db")
 
 c = db.cursor()
@@ -14,7 +14,7 @@ c.execute("""create table if not exists passcode (
 c.execute("delete from passcode;")
 c.execute("update sqlite_sequence set seq=1 where name=\"passcode\"")
 content = None
-with open('..\\code_post_map.txt','r') as f:
+with open('..'+os.sep+'code_post_map.txt','r') as f:
 	content = f.read()
 rows = []
 if content is not None:

@@ -8,6 +8,7 @@ urls = (
 app = web.application(urls, globals())
 render = web.template.render('templates/')
 db = web.database(dbn='sqlite',db='test.db')
+sep = os.sep
 # for x in db.select('passcode'):
 # 	print x
 class index:
@@ -20,10 +21,10 @@ class html:
 		content = '404 not found'
 		print html_name
 		try:
-			f = open('..\\code\\%s.html'%html_name,"r")
+			f = open('..'+sep+'code'+sep+'%s.html'%html_name,"r")
 			content = f.read()
 			f.close()
-		except p:
+		except Exception,p:
 			print p
 		return render.pagemodel(title=html_name,content=content)
 
