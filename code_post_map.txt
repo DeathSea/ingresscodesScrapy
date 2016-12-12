@@ -762,3 +762,6 @@ jdnjoruulruonxubsdtgmkvfu0jnuyl0t1 	Stockpiles 	https://ingress.codes/2016/04/13
 cq2bs9le4f35vd 	Hank Johnson Nigel’s Long Journey 	https://ingress.codes/2016/12/10/hank-johnson-nigels-long-journey/ 	code\Hank Johnson Nigel’s Long Journey.html 	rot,transposition
 qdw11zmshlhfttk668sj 	Hank Johnson Nigel’s Long Journey 	https://ingress.codes/2016/12/10/hank-johnson-nigels-long-journey/ 	code\Hank Johnson Nigel’s Long Journey.html 	rot,transposition
 zsn64joejwbeobt833ha 	Hank Johnson Nigel’s Long Journey 	https://ingress.codes/2016/12/10/hank-johnson-nigels-long-journey/ 	code\Hank Johnson Nigel’s Long Journey.html 	rot,transposition
+epy35tgylmgp055bb 	Hank Johnson Oliver’s Workspace 	https://ingress.codes/2016/12/11/hank-johnson-olivers-workspace/ 	code\Hank Johnson Oliver’s Workspace.html 	keyword substitution,rot,transposition
+nt9atr86bj4odrd7f 	Hank Johnson Oliver’s Workspace 	https://ingress.codes/2016/12/11/hank-johnson-olivers-workspace/ 	code\Hank Johnson Oliver’s Workspace.html 	keyword substitution,rot,transposition
+n8cpue7fco2ree95t 	Hank Johnson Oliver’s Workspace 	https://ingress.codes/2016/12/11/hank-johnson-olivers-workspace/ 	code\Hank Johnson Oliver’s Workspace.html 	keyword substitution,rot,transposition
