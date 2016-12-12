@@ -19,7 +19,7 @@ class index:
 class html:
 	def GET(self,html_name):
 		content = '404 not found'
-		print html_name
+		# print html_name
 		try:
 			f = open('..'+sep+'code'+sep+'%s.html'%html_name,"r")
 			content = f.read()
