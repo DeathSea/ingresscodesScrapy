@@ -2,11 +2,11 @@
 import scrapy
 class postSpider(scrapy.Spider):
 	name = "post"
-	start_urls = []
+	start_urls = ['https://ingress.codes/2016/12/12/the-challenges-ahead/','https://ingress.codes/2016/12/13/the-finish-line/']
 
 	def parse(self,response):
 		#fuck window dir
-		this_post_title = response.css("h1.entry-title::text").extract_first().replace("|","").replace("<","").replace(">","").replace("\\","").replace("/","").replace(":","").replace("?","").replace("*","").replace("\"","")
+		this_post_title = response.css("h1.entry-title::text").extract_first().replace("|","").replace("<","").replace(">","").replace("\\","").replace("/","").replace(":","").replace("?","").replace("*","").replace("\"","").replace(u"\u2019","'")
 		this_post_content = response.css("div.entry-content").extract_first().encode("utf-8")
 		this_post_tag = response.css("div.tagcloud").extract_first()
 		tags = []
