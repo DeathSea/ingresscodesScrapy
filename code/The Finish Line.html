@@ -1,0 +1,77 @@
+<div class="entry-content">
+			<p>Three codes were hidden in <a class="d-s ot-anchor" tabindex="0" title="The Finish Line" href="http://investigate.ingress.com/2016/12/09/the-finish-line/" target="_blank" rel="nofollow">The Finish Line</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] Z5MmZuJBVLgDJ5wDMHJm4r3y</code></p>
+<p><code>[2] 5e9z8tsbbyamq3f4</code></p>
+<p><code>[3] bur37sfyiep432noc</code></p>
+<p><span id="more-2287"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>24 characters with a mix of numbers, capital and lowercase letters.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>24 characters, numbers, capital and lowercase letters can only mean Base64. Decoding as is doesn’t reveal anything good. Let’s try reversing the string</p>
+<p class="p1"><code>y3r4mJHMDw5JDgLVBJuZmM5Z</code></p>
+<p class="p1">Still doesn’t decode right. Let’s change the case of the letters</p>
+<p class="p1"><code>Y3R4MjhmdW5jdGlvbjUzMm5z</code></p>
+<p class="p1">Convert Base64 to text</p>
+<p class="p1"><code>ctx28function532ns</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">16 characters with just the right ingredients for a valid passcode. Same old cipher !</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Make a 4×4 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 35px;"><code>5</code></td>
+<td style="width: 36px;"><code>z</code></td>
+<td style="width: 36px;"><code>9</code></td>
+<td style="width: 61px;"><code>z</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>8</code></td>
+<td style="width: 36px;"><code>t</code></td>
+<td style="width: 36px;"><code>s</code></td>
+<td style="width: 61px;"><code>b</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>b</code></td>
+<td style="width: 36px;"><code>y</code></td>
+<td style="width: 36px;"><code>a</code></td>
+<td style="width: 61px;"><code>m</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>q</code></td>
+<td style="width: 36px;"><code>3</code></td>
+<td style="width: 36px;"><code>f</code></td>
+<td style="width: 61px;"><code>4</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read going down from the upper right Z</p>
+<p class="p1"><code>zbm49safety358bq</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">17 characters, try to spot the keyword to help you figure out the rearrange</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Using the new <a href="https://regex.ingress.codes">Regex Keyword Finder</a> created by agent @SQL input the following string: <code>^[bur37sfyiep432noc]{7}$</code></p>
+<p class="p1">This will give you a list of 7 letter keywords that can be contained in the string. The four results are</p>
+<p class="p1">Inspire</p>
+<p class="p1">Oneiric</p>
+<p class="p1">Rubicon</p>
+<p class="p1">Success</p>
+<p class="p1">Out of these, only Rubicon is valid as the others have repeating letters that are not in the code.</p>
+<p class="p1">Let’s split the string to see how we can make up Rubicon</p>
+<p class="p1"><code>bur37sfy i ep432noc</code></p>
+<p class="p1">Reverse the first and last groups of 8</p>
+<p class="p1"><code>yfs73rubicon234pe</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2287" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/12/13/the-finish-line/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2287" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/12/13/the-finish-line/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-2287" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/12/13/the-finish-line/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/12/13/the-finish-line/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div><div class="tagcloud">
+
+	          <a href="https://ingress.codes/tag/base64/">base64</a> <a href="https://ingress.codes/tag/reverse/">reverse</a> <a href="https://ingress.codes/tag/transposition/">transposition</a> 
+	      </div>
