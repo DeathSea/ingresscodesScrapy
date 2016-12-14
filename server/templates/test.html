@@ -29,7 +29,7 @@ $def with (content)
 			<td class="passcode">$item.passcode</td>
 			<td>$item.title</td>
 			<td><a href='$item.source'>$item.source</a></td>
-			<td><a href='$item.filename.replace("\\","/")'>$item.filename</a></td>
+			<td><a href='$item.filename.replace("\\","/").replace("#","%23")'>$item.filename</a></td>
 			<td>$item.decode_method_tags</td>
 		</tr>
 </table>
