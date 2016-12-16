@@ -1,0 +1,105 @@
+<div class="entry-content">
+			<p>Three codes were hidden in the HTML source of the <a class="d-s ot-anchor" tabindex="0" title="Resistance claim #Ingress161210" href="http://investigate.ingress.com/2016/12/11/resistance-claim-ingress161210" target="_blank" rel="nofollow">Resistance claim #Ingress161210</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] g7oyecd7t2ieyt66</code></p>
+<p><code>[2] 10r658s7eybiywq49vpb</code></p>
+<p><code>[3] KO?&amp;!FH BE%A!”$F=</code></p>
+<p><span id="more-2291"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>16 characters with the right amount of numbers. You’ll need to spot the keyword to get everything in order.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Let’s try to get the keywords. Using <a href="https://regex.ingress.codes">Regex Keyword Finder</a>  we can use <code>^[g7oyecd7t2ieyt66]{6}$ to get </code>the keyword <code>Deceit.</code></p>
+<p>Make a 4×4 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 35px;"><code>g</code></td>
+<td style="width: 36px;"><code>7</code></td>
+<td style="width: 36px;"><code>o</code></td>
+<td style="width: 60px;"><code>y</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>e</code></td>
+<td style="width: 36px;"><code>c</code></td>
+<td style="width: 36px;"><code>d</code></td>
+<td style="width: 60px;"><code>7</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>t</code></td>
+<td style="width: 36px;"><code>2</code></td>
+<td style="width: 36px;"><code>i</code></td>
+<td style="width: 60px;"><code>e</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>y</code></td>
+<td style="width: 36px;"><code>t</code></td>
+<td style="width: 36px;"><code>6</code></td>
+<td style="width: 60px;"><code>6</code></td>
+</tr>
+</tbody>
+</table>
+<p>You can see where the letters of the keyword are, you’ll need to rearrange the columns as 4, 3, 1, 2</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 36px;"><code>y</code></td>
+<td style="width: 36px;"><code>o</code></td>
+<td style="width: 36px;"><code>g</code></td>
+<td style="width: 56px;"><code>7</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>7</code></td>
+<td style="width: 36px;"><code>d</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 56px;"><code>c</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 36px;"><code>i</code></td>
+<td style="width: 36px;"><code>t</code></td>
+<td style="width: 56px;"><code>2</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>6</code></td>
+<td style="width: 36px;"><code>6</code></td>
+<td style="width: 36px;"><code>y</code></td>
+<td style="width: 56px;"><code>t</code></td>
+</tr>
+</tbody>
+</table>
+<p class="p1"><code>yog77deceit266yt</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">20 characters. Try to spot the passcode format then you’ll have to do the same with what’s at the end of your fingertips.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Looking at the string we see somewhat of the passcode format written in reverse. Let’s reverse the string.</p>
+<p class="p1"><code>bpv94qwyibye7s856r01</code></p>
+<p class="p1">Not much of a keyword, Atbash and Rot don’t give anything to work with. That 01 at the end gives a good hint. It should be a letter, if you use a keyboard flip it becomes 10 which can be converted to roman numeral X. Let’s try a keyboard flip: 1=0, q=p, a=;, z=/</p>
+<p class="p1"><code>nqm27potenti4l365u10</code></p>
+<p class="p1">Convert 4 to A from leetspeak and 10 to X from roman numeral</p>
+<p class="p1"><code>nqm27potential365ux</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">Yeah well it’s that kind of string that you look at and just have to play around to see what ranges you get. If you see something familiar but with a few typos you are on the right track.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">After trying a few thing I converted the string to decimal</p>
+<p class="p1"><code>75 79 63 38 33 70 72 32 66 69 37 65 33 8221 36 70 61</code></p>
+<p class="p1">Few things are popping out. First those 38 &amp; 33 at position 4 &amp; 5 indicate that the range can be Hex. That 8221 is obviously off, simply change that right quotation mark to a regular quotation mark</p>
+<p class="p1"><code>KO?&amp;!FH BE%A!"$F=</code></p>
+<p class="p1">Convert Ascii to decimal</p>
+<p class="p1"><code>75 79 63 38 33 70 72 32 66 69 37 65 33 34 36 70 61</code></p>
+<p class="p1">Convert Hex to Ascii</p>
+<p class="p1"><code>uyc83pr2fi7e346pa</code></p>
+<p class="p1">We clearly have a good prefix and suffix. For the keyword, not sure if it’s a typo in the code or if there is a special manipulation to get it right but we can figure out that profile is the right keyword</p>
+<p class="p1"><code>uyc83profile346pa</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2291" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/12/14/resistance-claim-ingress161210/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2291" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/12/14/resistance-claim-ingress161210/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-2291" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/12/14/resistance-claim-ingress161210/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/12/14/resistance-claim-ingress161210/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div><div class="tagcloud">
+
+	          <a href="https://ingress.codes/tag/decimal/">decimal</a> <a href="https://ingress.codes/tag/hexadecimal/">hexadecimal</a> <a href="https://ingress.codes/tag/keyboard-flip/">keyboard flip</a> <a href="https://ingress.codes/tag/leetspeak/">Leetspeak</a> <a href="https://ingress.codes/tag/reverse/">reverse</a> <a href="https://ingress.codes/tag/roman-numerals/">roman numerals</a> <a href="https://ingress.codes/tag/transposition/">transposition</a> 
+	      </div>

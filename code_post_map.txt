@@ -771,3 +771,9 @@ fb3i8hs9n78z 	The Challenges Ahead 	https://ingress.codes/2016/12/12/the-challen
 Z5MmZuJBVLgDJ5wDMHJm4r3y 	The Finish Line 	https://ingress.codes/2016/12/13/the-finish-line/ 	code\The Finish Line.html 	base64,reverse,transposition
 5e9z8tsbbyamq3f4 	The Finish Line 	https://ingress.codes/2016/12/13/the-finish-line/ 	code\The Finish Line.html 	base64,reverse,transposition
 bur37sfyiep432noc 	The Finish Line 	https://ingress.codes/2016/12/13/the-finish-line/ 	code\The Finish Line.html 	base64,reverse,transposition
+g7oyecd7t2ieyt66 	Resistance claim #Ingress161210 	https://ingress.codes/2016/12/14/resistance-claim-ingress161210/ 	code\Resistance claim #Ingress161210.html 	decimal,hexadecimal,keyboard flip,Leetspeak,reverse,roman numerals,transposition
+10r658s7eybiywq49vpb 	Resistance claim #Ingress161210 	https://ingress.codes/2016/12/14/resistance-claim-ingress161210/ 	code\Resistance claim #Ingress161210.html 	decimal,hexadecimal,keyboard flip,Leetspeak,reverse,roman numerals,transposition
+KO?&!FH BE%A!”$F= 	Resistance claim #Ingress161210 	https://ingress.codes/2016/12/14/resistance-claim-ingress161210/ 	code\Resistance claim #Ingress161210.html 	decimal,hexadecimal,keyboard flip,Leetspeak,reverse,roman numerals,transposition
+m26mkczz426e 	The Message in the Missions 	https://ingress.codes/2016/12/15/the-message-in-the-missions/ 	code\The Message in the Missions.html 	atbash,keyword substitution,reverse
+ovw78open675sm 	The Message in the Missions 	https://ingress.codes/2016/12/15/the-message-in-the-missions/ 	code\The Message in the Missions.html 	atbash,keyword substitution,reverse
+cgl23orev557cz 	The Message in the Missions 	https://ingress.codes/2016/12/15/the-message-in-the-missions/ 	code\The Message in the Missions.html 	atbash,keyword substitution,reverse
