@@ -21,7 +21,7 @@ class html:
 		content = '404 not found'
 		# print html_name
 		try:
-			f = open('..'+sep+'code'+sep+'%s.html'%html_name,"r")
+			f = open('..'+sep+'code'+sep+'%s.html'%html_name.encode("u8"),"r")
 			content = f.read()
 			f.close()
 		except Exception,p:
