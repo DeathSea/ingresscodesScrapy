@@ -1,0 +1,57 @@
+<div class="entry-content">
+			<p>Three codes were hidden in the HTML source of the <a class="d-s ot-anchor" tabindex="0" title="Your responses: The Tecthulhu and the Japan Message" href="http://investigate.ingress.com/2016/12/14/your-responses-the-tecthulhu-and-the-japan-message/" target="_blank" rel="nofollow">Your responses: The Tecthulhu and the Japan Message</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] WiFCIU8hWCRLIUgjTClYXlImUyFYJU0hUSZJIVgkTSFRKkkhVyVNKUIkTCFHJlY=</code></p>
+<p><code>[2] bfi71qvwr685nu</code></p>
+<p><code>[3] yqjb34nosonj375</code></p>
+<p><span id="more-2311"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>Capital letters, lowercase and numbers. The equal sign gives it away for the first step.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Clearly this is Base64, convert to text</p>
+<p class="p1"><code>Z!B!O!X$K!H#L)X^R&amp;S!X%M!Q&amp;I!X$M!Q*I!W%M)B$L!G&amp;V</code></p>
+<p class="p1">We now have alternating letters and symbols. Use a skip of 2 to split them</p>
+<p><code>ZBOXKHLXRSXMQIXMQIWMBLGV!!!$!#)^&amp;!%!&amp;!$!*!%)$!&amp;</code></p>
+<p><code>ZBOXKHLXRSXMQIXMQIWMBLGV</code><br>
+<code> !!!$!#)^&amp;!%!&amp;!$!*!%)$!&amp;</code></p>
+<p>Convert the symbols to their respective numbers on the keyboard</p>
+<p class="p1"><code>11141306715171418150417</code></p>
+<p class="p1">We now have 23 numbers. Range for Ascii is not valid. Let’s try to split to see if we can get a range for numbers to letters</p>
+<p class="p1"><code>11 14 13 06 7 15 17 14 18 15 04 17</code></p>
+<p class="p1">Ignore that 7 for now and convert the rest to letters using a=0</p>
+<p class="p1">LONG7PROSPER</p>
+<p class="p1">Convert that 7 back to symbol</p>
+<p class="p1">LONG&amp;PROSPER</p>
+<p class="p1">The word missing from the quote is live</p>
+<p class="p1">Vigenere autokey the string of letters with the passphrase live</p>
+<p class="p1"><code>OTTTWOSEVEFIVESEVEEIGHCN</code></p>
+<p class="p1"><code>ott27live578cn</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">Passcode format is there</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Don’t be misled by the keyword, this is not a star wars theme</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Atbash letters and numbers gives</p>
+<p class="p1"><code>yur39jedi425mf</code></p>
+<p class="p1">That jedi keyword was probably there to mislead people with all the star wars hype going on. You need to switch the first three letters (yur) with the first three letters of the keyword (jed)</p>
+<p class="p1"><code>jed39yuri425mf</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">15 characters with the right amount of numbers for a valid passcode.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">A regex search reveal that boson should be the keyword. Trying to use rectangle to get everything in order doesn’t work. Let’s split in groups of 1, 2 , 3, 4 and 5</p>
+<p class="p1"><code>y qj b34 noso nj375</code></p>
+<p class="p1">Reverse each group</p>
+<p class="p1"><code>y jq 43b oson 573jn</code></p>
+<p class="p1"><code>yjq43boson573jn</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2311" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/12/18/your-responses-the-tecthulhu-and-the-japan-message/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2311" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/12/18/your-responses-the-tecthulhu-and-the-japan-message/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-2311" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/12/18/your-responses-the-tecthulhu-and-the-japan-message/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/12/18/your-responses-the-tecthulhu-and-the-japan-message/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div><div class="tagcloud">
+
+	          <a href="https://ingress.codes/tag/atbash/">atbash</a> <a href="https://ingress.codes/tag/base64/">base64</a> <a href="https://ingress.codes/tag/reverse/">reverse</a> <a href="https://ingress.codes/tag/skip/">skip</a> <a href="https://ingress.codes/tag/swap/">swap</a> 
+	      </div>

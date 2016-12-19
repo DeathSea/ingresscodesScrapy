@@ -1,0 +1,105 @@
+<div class="entry-content">
+			<p>Three codes were hidden in the <a class="d-s ot-anchor" tabindex="0" title="Hank Johnson: The Dimensional Layer and the XM Layer" href="http://investigate.ingress.com/2016/12/13/hank-johnson-the-dimensional-layer-and-the-xm-layer/" target="_blank" rel="nofollow">Hank Johnson: The Dimensional Layer and the XM Layer</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] hllijkhfflnhhqqnnnnqrpmjjkkmprqh</code></p>
+<p><code>[2] .rattlesn,akemich.aelm,ash.aggerst,onema.car,thursincl,a.irwhee.l,erblack,wo.odh.ampt,oncholmon,deleycapric,o.rn</code></p>
+<p><code>[3] )@!@)#&amp;^@$&amp;*!^!^</code></p>
+<p><span id="more-2305"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>32 letters, you’ll need to dig a bit to get the right range.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">It’s in the key of A !!</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>First started with letters to numbers to see if it would give a good Ascii range but nothing good. Then tried Atbash, Rot and a few others and nothing came out. When all else fails, try Vigenere Autokey with “A” as the passphrase</p>
+<p class="p1"><code>hehbicfafghahjhghghjihfefffhijha</code></p>
+<p class="p1">Now the letters are all in the A to J range or 0 to 9. Convert letters to numbers</p>
+<p class="p1"><code>74718250567079767679875455578970</code></p>
+<p class="p1">Make pairs</p>
+<p class="p1"><code>74 71 82 50 56 70 79 76 76 79 87 54 55 57 89 70</code></p>
+<p class="p1">Convert decimal to Ascii</p>
+<p class="p1"><code>JGR28FOLLOW679YF</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">You can clearly see words in there but dots and commas are mixing them up. Your first step will be to find the good split for these words.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">Once you split them up the one that contains only a comma, replace it with semicolon</div></div>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">These words are all names of islands in the Great Barrier Reef</p>
+<p class="p1"><code>.rattlesn,ake mich.aelm,as h.aggerst,one ma.car,thur sincl,a.ir whee.l,er black,wo.od h.ampt,on cholmon,deley capric,o.rn</code></p>
+<p class="p1">You’ll need to count the letters before each commas and dots to make up a decimal number. Commas indicate the tens, dots the ones. Note the in “cholmon,deley” that comma should be a semicolon because the value is 77.</p>
+<table class=" table table-hover" style="width: 183px;">
+<tbody>
+<tr>
+<td style="width: 163px;" colspan="3"><code>.rattlesn,ake</code></td>
+<td style="width: 32px;"><code>80</code></td>
+</tr>
+<tr>
+<td style="width: 163px;" colspan="3"><code>mich.aelm,as</code></td>
+<td style="width: 32px;"><code>84</code></td>
+</tr>
+<tr>
+<td style="width: 163px;" colspan="3"><code>h.aggerst,one</code></td>
+<td style="width: 32px;"><code>81</code></td>
+</tr>
+<tr>
+<td style="width: 163px;" colspan="3"><code>ma.car,thur</code></td>
+<td style="width: 32px;"><code>52</code></td>
+</tr>
+<tr>
+<td style="width: 163px;" colspan="3"><code>sincl,a.ir</code></td>
+<td style="width: 32px;"><code>56</code></td>
+</tr>
+<tr>
+<td style="width: 163px;" colspan="3"><code>whee.l,er</code></td>
+<td style="width: 32px;"><code>54</code></td>
+</tr>
+<tr>
+<td style="width: 163px;" colspan="3"><code>black,wo.od</code></td>
+<td style="width: 32px;"><code>57</code></td>
+</tr>
+<tr>
+<td style="width: 163px;" colspan="3"><code>h.ampt,on</code></td>
+<td style="width: 32px;"><code>51</code></td>
+</tr>
+<tr>
+<td style="width: 163px;" colspan="3"><code>cholmon,deley</code></td>
+<td style="width: 32px;"><code>77</code></td>
+</tr>
+<tr>
+<td style="width: 163px;" colspan="3"><code>capric,o.rn</code></td>
+<td style="width: 32px;"><code>76</code></td>
+</tr>
+</tbody>
+</table>
+<p class="p1"><code>80 84 81 52 56 54 57 51 77 76</code></p>
+<p class="p1">Convert decimal to Ascii</p>
+<p class="p1"><code>PTQ48693ML</code></p>
+<p class="p1">Great Barrier Reef, barrier is a valid keyword</p>
+<p class="p1"><code>ptq48barrier93ml</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">16 symbols</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Let’s start by converting the symbols to their respective numbers on the keyboard</p>
+<p class="p1"><code>0212037624781616</code></p>
+<p class="p1">Making pairs doesn’t give a good range for either numbers to letters or ascii. Let’s see how we can split things up to get a passcode format</p>
+<p class="p1"><code>02 12 03 76 2 478 16 16</code></p>
+<p class="p1">In this way we have 3 pairs for letters, then 2 numbers, a 2 for the keyword, 4 numbers and 2 pairs for letters</p>
+<p class="p1">Convert numbers to letters where needed</p>
+<p class="p1"><code>cmd76 2 478qq</code></p>
+<p class="p1">Now we need a keyword substitution for 2 or @. Few theories:</p>
+<ol>
+<li class="p1">@ for 2, convert to letters is C then substitue as see, probable Niantic error for seek that can be substituted for search</li>
+<li class="p1">Glyph for search sort of resembles @</li>
+</ol>
+<p>Who knows, the valid keyword was search</p>
+<p class="p1"><code>cmd76search478qq</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2305" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/12/17/hank-johnson-the-dimensional-layer-and-the-xm-layer/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2305" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/12/17/hank-johnson-the-dimensional-layer-and-the-xm-layer/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-2305" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/12/17/hank-johnson-the-dimensional-layer-and-the-xm-layer/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/12/17/hank-johnson-the-dimensional-layer-and-the-xm-layer/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div><div class="tagcloud">
+
+	          <a href="https://ingress.codes/tag/decimal/">decimal</a> <a href="https://ingress.codes/tag/internet-search/">internet search</a> <a href="https://ingress.codes/tag/keyword-substitution/">keyword substitution</a> <a href="https://ingress.codes/tag/letters-to-numbers/">letters to numbers</a> <a href="https://ingress.codes/tag/numbers-to-letters/">numbers to letters</a> <a href="https://ingress.codes/tag/vigenere-autokey/">vigenere autokey</a> 
+	      </div>
