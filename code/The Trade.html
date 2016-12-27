@@ -1,0 +1,393 @@
+<div class="entry-content">
+			<pre><sub>&lt;meta 3/7&gt;viruvqq&lt;/meta&gt;&lt;format&gt;#xxx#keywordx#x#x&lt;/format&gt;</sub></pre>
+<p>Three codes could be found hidden in <a class="d-s ot-anchor" tabindex="0" title="The Trade" href="http://investigate.ingress.com/2016/12/23/the-trade/" target="_blank" rel="nofollow">The Trade</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] 5385p5059406306206305105363647u63636l4952ot</code></p>
+<p><code>[2] 1.8.9.16.18.23.25.31.34.38.39.47.49.53.56.58.59.61.64.71.74.81.84.88.90.93.95.101.104.108.112.119.121.124.125.133.135.139.142.151.155.162</code></p>
+<p><code>[3] qu9gntzjt!!nqsvjfou!!wofft</code></p>
+<p><span id="more-2356"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>Mostly all numbers but the range is really not Ascii</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Hint">Hint</div><div class="spoiler-body" style="display: none;">It’s a counting game</div></div>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Even by removing those letters the range isn’t good for Ascii and Pulot doesn’t really mean anything related to Ingress. Let’s convert the string to morse</p>
+<p class="p1"><code>..... ...-- ---.. ..... .--. ..... ----- ..... ----. ....- ----- -.... ...-- ----- -.... ..--- ----- -.... ...-- ----- ..... .---- ----- ..... ...-- -.... ...-- -.... ....- --... ..- -.... ...-- -.... ...-- -.... .-.. ....- ----. ..... ..--- --- -</code></p>
+<p class="p1">That’s a good spread of dots and dashes. Remove the space and split at each ending sequence of dashes</p>
+<p class="p1"><code>........----- ........-- ......----- .....---- .....------- .......-------- ......--------- .......------- ......--------- ........--- .......--- ........--- .....-- .......--- .......--- .....- ......----- ........-------</code></p>
+<p class="p1">Now count the number of dots and dashes</p>
+<table class=" table table-hover" style="width: 192px;">
+<tbody>
+<tr>
+<td style="width: 167px;" colspan="2"><code>........-----</code></td>
+<td style="width: 27px;"><code>85</code></td>
+</tr>
+<tr>
+<td style="width: 167px;" colspan="2"><code>........--</code></td>
+<td style="width: 27px;"><code>82</code></td>
+</tr>
+<tr>
+<td style="width: 167px;" colspan="2"><code>......-----</code></td>
+<td style="width: 27px;"><code>65</code></td>
+</tr>
+<tr>
+<td style="width: 167px;" colspan="2"><code>.....----</code></td>
+<td style="width: 27px;"><code>54</code></td>
+</tr>
+<tr>
+<td style="width: 167px;" colspan="2"><code>.....-------</code></td>
+<td style="width: 27px;"><code>57</code></td>
+</tr>
+<tr>
+<td style="width: 167px;" colspan="2"><code>.......--------</code></td>
+<td style="width: 27px;"><code>78</code></td>
+</tr>
+<tr>
+<td style="width: 167px;" colspan="2"><code>......---------</code></td>
+<td style="width: 27px;"><code>69</code></td>
+</tr>
+<tr>
+<td style="width: 167px;" colspan="2"><code>.......-------</code></td>
+<td style="width: 27px;"><code>77</code></td>
+</tr>
+<tr>
+<td style="width: 167px;" colspan="2"><code>......---------</code></td>
+<td style="width: 27px;"><code>69</code></td>
+</tr>
+<tr>
+<td style="width: 167px;" colspan="2"><code>........---</code></td>
+<td style="width: 27px;"><code>83</code></td>
+</tr>
+<tr>
+<td style="width: 167px;" colspan="2"><code>.......---</code></td>
+<td style="width: 27px;"><code>73</code></td>
+</tr>
+<tr>
+<td style="width: 167px;" colspan="2"><code>........---</code></td>
+<td style="width: 27px;"><code>83</code></td>
+</tr>
+<tr>
+<td style="width: 167px;" colspan="2"><code>.....--</code></td>
+<td style="width: 27px;"><code>52</code></td>
+</tr>
+<tr>
+<td style="width: 167px;" colspan="2"><code>.......---</code></td>
+<td style="width: 27px;"><code>73</code></td>
+</tr>
+<tr>
+<td style="width: 167px;" colspan="2"><code>.......---</code></td>
+<td style="width: 27px;"><code>73</code></td>
+</tr>
+<tr>
+<td style="width: 167px;" colspan="2"><code>.....-</code></td>
+<td style="width: 27px;"><code>51</code></td>
+</tr>
+<tr>
+<td style="width: 167px;" colspan="2"><code>......-----</code></td>
+<td style="width: 27px;"><code>65</code></td>
+</tr>
+<tr>
+<td style="width: 167px;" colspan="2"><code>........-------</code></td>
+<td style="width: 27px;"><code>87</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>85 82 65 54 57 78 69 77 69 83 73 83 52 73 73 51 65 87</code></p>
+<p>Convert decimal to Ascii</p>
+<p><code>URA69NEMESIS4II3AW</code></p>
+<p>Convert II from roman numeral to number</p>
+<p><code>ura69nemesis423aw</code></p>
+<p></p></div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>Another counting game</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>The sequence of number is increasing. Let’s subtract the preceding number from the following one. Assume the sequence starts at 1-0, then 8-1, 9-8…</p>
+<table class=" table table-hover" style="width: 98px;">
+<tbody>
+<tr>
+<td style="width: 51px;"><code>1</code></td>
+<td style="width: 35px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>8</code></td>
+<td style="width: 35px;"><code>7</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>9</code></td>
+<td style="width: 35px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>16</code></td>
+<td style="width: 35px;"><code>7</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>18</code></td>
+<td style="width: 35px;"><code>2</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>23</code></td>
+<td style="width: 35px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>25</code></td>
+<td style="width: 35px;"><code>2</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>31</code></td>
+<td style="width: 35px;"><code>6</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>34</code></td>
+<td style="width: 35px;"><code>3</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>38</code></td>
+<td style="width: 35px;"><code>4</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>39</code></td>
+<td style="width: 35px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>47</code></td>
+<td style="width: 35px;"><code>8</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>49</code></td>
+<td style="width: 35px;"><code>2</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>53</code></td>
+<td style="width: 35px;"><code>4</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>56</code></td>
+<td style="width: 35px;"><code>3</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>58</code></td>
+<td style="width: 35px;"><code>2</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>59</code></td>
+<td style="width: 35px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>61</code></td>
+<td style="width: 35px;"><code>2</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>64</code></td>
+<td style="width: 35px;"><code>3</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>71</code></td>
+<td style="width: 35px;"><code>7</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>74</code></td>
+<td style="width: 35px;"><code>3</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>81</code></td>
+<td style="width: 35px;"><code>7</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>84</code></td>
+<td style="width: 35px;"><code>3</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>88</code></td>
+<td style="width: 35px;"><code>4</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>90</code></td>
+<td style="width: 35px;"><code>2</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>93</code></td>
+<td style="width: 35px;"><code>3</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>95</code></td>
+<td style="width: 35px;"><code>2</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>101</code></td>
+<td style="width: 35px;"><code>6</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>104</code></td>
+<td style="width: 35px;"><code>3</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>108</code></td>
+<td style="width: 35px;"><code>4</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>112</code></td>
+<td style="width: 35px;"><code>4</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>119</code></td>
+<td style="width: 35px;"><code>7</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>121</code></td>
+<td style="width: 35px;"><code>2</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>124</code></td>
+<td style="width: 35px;"><code>3</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>125</code></td>
+<td style="width: 35px;"><code>1</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>133</code></td>
+<td style="width: 35px;"><code>8</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>135</code></td>
+<td style="width: 35px;"><code>2</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>139</code></td>
+<td style="width: 35px;"><code>4</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>142</code></td>
+<td style="width: 35px;"><code>3</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>151</code></td>
+<td style="width: 35px;"><code>9</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>155</code></td>
+<td style="width: 35px;"><code>4</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>162</code></td>
+<td style="width: 35px;"><code>7</code></td>
+</tr>
+</tbody>
+</table>
+<p>Put all the results together</p>
+<p><code>171725263418243212373734232634472318243947</code></p>
+<p>Make pairs</p>
+<p><code>17 17 25 26 34 18 24 32 12 37 37 34 23 26 34 47 23 18 24 39 47</code></p>
+<p>Notice how the first digits are in the range of 1 to 4. This could be a phone cipher. The first digit of each pair indicates how many presses of the second digit you need to do on your phone keyboard to get the right letter</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 46px;"><code>17</code></td>
+<td style="width: 56px;"><code>p</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>17</code></td>
+<td style="width: 56px;"><code>p</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>25</code></td>
+<td style="width: 56px;"><code>k</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>26</code></td>
+<td style="width: 56px;"><code>n</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>34</code></td>
+<td style="width: 56px;"><code>i</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>18</code></td>
+<td style="width: 56px;"><code>t</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>24</code></td>
+<td style="width: 56px;"><code>h</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>32</code></td>
+<td style="width: 56px;"><code>c</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>12</code></td>
+<td style="width: 56px;"><code>a</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>37</code></td>
+<td style="width: 56px;"><code>r</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>37</code></td>
+<td style="width: 56px;"><code>r</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>34</code></td>
+<td style="width: 56px;"><code>i</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>23</code></td>
+<td style="width: 56px;"><code>e</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>26</code></td>
+<td style="width: 56px;"><code>n</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>34</code></td>
+<td style="width: 56px;"><code>i</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>47</code></td>
+<td style="width: 56px;"><code>s</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>23</code></td>
+<td style="width: 56px;"><code>e</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>18</code></td>
+<td style="width: 56px;"><code>t</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>24</code></td>
+<td style="width: 56px;"><code>h</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>39</code></td>
+<td style="width: 56px;"><code>y</code></td>
+</tr>
+<tr>
+<td style="width: 46px;"><code>47</code></td>
+<td style="width: 56px;"><code>s</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>ppknithcarrienisethys</code></p>
+<p><code>ppk93carrie973ys</code></p>
+<p></p></div></div>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>26 characters, lowercase letters, number a symbols.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Those !! could be converted to 11. If so we can convert them to letters using a=0 which would give L.</p>
+<p class="p1"><code>qu9gntzjtLnqsvjfouLwofft</code></p>
+<p class="p1">We now have 24 characters with capital and lower case letters and numbers. Perfect for Base64 but change the case of all the letters</p>
+<p class="p1"><code>QU9GNTZJTlNQSVJFOUlWOFFT</code></p>
+<p class="p1">Convert Base64 to text</p>
+<p class="p1"><code>AOF56INSPIRE9IV8QS</code></p>
+<p class="p1">And finally convert that IV to 4 from roman numeral</p>
+<p class="p1"><code>aof56inspire948qs</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2356" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2016/12/27/the-trade/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2356" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2016/12/27/the-trade/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-2356" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2016/12/27/the-trade/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2016/12/27/the-trade/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div><div class="tagcloud">
+
+	          <a href="https://ingress.codes/tag/base64/">base64</a> <a href="https://ingress.codes/tag/decimal/">decimal</a> <a href="https://ingress.codes/tag/math/">math</a> <a href="https://ingress.codes/tag/morse/">morse</a> <a href="https://ingress.codes/tag/phone/">phone</a> <a href="https://ingress.codes/tag/roman-numerals/">roman numerals</a> 
+	      </div>

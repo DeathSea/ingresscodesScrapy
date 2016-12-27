@@ -798,3 +798,18 @@ ps5vt2vo29nm6ez 	Sitrep Nomad 	https://ingress.codes/2016/12/20/sitrep-nomad/ 	c
 msfqjtcjj2548293 	Hank Johnson Beneath 	https://ingress.codes/2016/12/21/hank-johnson-beneath/ 	code\Hank Johnson Beneath.html 	skip,transposition
 w725939276rakqkr 	Hank Johnson Beneath 	https://ingress.codes/2016/12/21/hank-johnson-beneath/ 	code\Hank Johnson Beneath.html 	skip,transposition
 sinirdtsirlaedep 	Hank Johnson Beneath 	https://ingress.codes/2016/12/21/hank-johnson-beneath/ 	code\Hank Johnson Beneath.html 	skip,transposition
+IV4rXmRHNXljMmw0T0RrMU5YTnhmeVQxeVo= 	#FoodforPAC 	https://ingress.codes/2016/12/23/foodforpac/ 	code\#FoodforPAC.html 	base64,keyword substitution
+!^+^dG5yc2l4ODk1NXNxfyT1yZ 	#FoodforPAC 	https://ingress.codes/2016/12/23/foodforpac/ 	code\#FoodforPAC.html 	base64,keyword substitution
+ae2hptorZeWtlanwasHdRa0earHeJhltZsXkRr3abm3nNipeehHtNdpneaHsF.1 	#FoodforPAC 	https://ingress.codes/2016/12/23/foodforpac/ 	code\#FoodforPAC.html 	base64,keyword substitution
+x3ae9ercaviti3yt5mo2 	Hank Johnson Layers of Devra 	https://ingress.codes/2016/12/24/hank-johnson-layers-of-devra/ 	code\Hank Johnson Layers of Devra.html 	transposition
+ti3dm2oi72nf7to 	Hank Johnson Layers of Devra 	https://ingress.codes/2016/12/24/hank-johnson-layers-of-devra/ 	code\Hank Johnson Layers of Devra.html 	transposition
+xmsinifoiaicelhfitwsdk 	Hank Johnson Layers of Devra 	https://ingress.codes/2016/12/24/hank-johnson-layers-of-devra/ 	code\Hank Johnson Layers of Devra.html 	transposition
+5385p5059406306206305105363647u63636l4952ot 	The Trade 	https://ingress.codes/2016/12/27/the-trade/ 	code\The Trade.html 	base64,decimal,math,morse,phone,roman numerals
+1.8.9.16.18.23.25.31.34.38.39.47.49.53.56.58.59.61.64.71.74.81.84.88.90.93.95.101.104.108.112.119.121.124.125.133.135.139.142.151.155.162 	The Trade 	https://ingress.codes/2016/12/27/the-trade/ 	code\The Trade.html 	base64,decimal,math,morse,phone,roman numerals
+qu9gntzjt!!nqsvjfou!!wofft 	The Trade 	https://ingress.codes/2016/12/27/the-trade/ 	code\The Trade.html 	base64,decimal,math,morse,phone,roman numerals
+esg71xnoe291rl 	Hank Johnson A Prime Radio 	https://ingress.codes/2016/12/25/hank-johnson-a-prime-radio/ 	code\Hank Johnson A Prime Radio.html 	atbash,decimal,letters to numbers,morse,roman numerals,swap,transposition
+aiikpiym85c5i45 	Hank Johnson A Prime Radio 	https://ingress.codes/2016/12/25/hank-johnson-a-prime-radio/ 	code\Hank Johnson A Prime Radio.html 	atbash,decimal,letters to numbers,morse,roman numerals,swap,transposition
+exqxsuuurwnuxtxswsvbkwutuuwzxr 	Hank Johnson A Prime Radio 	https://ingress.codes/2016/12/25/hank-johnson-a-prime-radio/ 	code\Hank Johnson A Prime Radio.html 	atbash,decimal,letters to numbers,morse,roman numerals,swap,transposition
+5d2b2awdshhxq4y7 	Hidden Talents 	https://ingress.codes/2016/12/26/hidden-talents/ 	code\Hidden Talents.html 	atbash,keyword substitution,reverse,transposition
+zqfle8z3au4jz8ir2w 	Hidden Talents 	https://ingress.codes/2016/12/26/hidden-talents/ 	code\Hidden Talents.html 	atbash,keyword substitution,reverse,transposition
+mv867ivkzsh83zac 	Hidden Talents 	https://ingress.codes/2016/12/26/hidden-talents/ 	code\Hidden Talents.html 	atbash,keyword substitution,reverse,transposition
