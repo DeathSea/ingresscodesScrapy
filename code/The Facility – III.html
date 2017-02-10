@@ -1,0 +1,45 @@
+<div class="entry-content">
+			<p>One code could be found in <a class="d-s ot-anchor" tabindex="0" title="The Facility – III" href="http://investigate.ingress.com/2017/01/17/the-facility-iii/" target="_blank" rel="nofollow">The Facility – III</a> post on the Investigate Ingress blog.</p>
+<p><code>[1] $5f&amp;g&amp;4&amp;g5%7$&amp;4eg&amp;5&amp;$&amp;$5e4&amp;7$&amp;5fg$5%%^$4e7%e$4%7^%%4&amp;&amp;&amp;7$5&amp;^%f4^6f%4%f^4$f7$^5g%6%%^6$5&amp;^&amp;h5$5g$4&amp;%$5$^5e&amp;%f6f5$^%%6$h$7$4&amp;5%$^6$6%%&amp;e6$6e%5he^$6%5&amp;e$4ggf5%geh4</code><br>
+<span id="more-2549"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>There is definitely a range in there. Remember, there are usually three passcodes</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>The first thing to notice is that numbers a always single. Let’s split at numbers</p>
+<p><code>$ f&amp;g&amp; &amp;g % $&amp; eg&amp; &amp;$&amp;$ e &amp; $&amp; fg$ %%^$ e %e$ % ^%% &amp;&amp;&amp; $ &amp;^%f ^ f% %f^ $f $^ g% %%^ $ &amp;^&amp;h $ g$ &amp;%$ $^ e&amp;%f f $^%% $h$ $ &amp; %$^ $ %%&amp;e $ e% he^$ % &amp;e$ ggf %geh</code></p>
+<p>Convert to morse, Symbols=. letters=-</p>
+<p class="p1"><code>. -.-. .- . .. --. .... - . .. --. .... - .-. . ... ... . ...- . -. .-. .- .. -. ... . ...- . -. ... .. -..- - .... .-. . . ... . ...- . -. --.. . .-. --- .---</code></p>
+<p class="p1">Convert morse to text</p>
+<p class="p1"><code>ECAEIGHTEIGHTRESSEVENRAINSEVENSIXTHREESEVENZEROJ</code></p>
+<p class="p1"><code>eca88res7rain76370j</code></p>
+<p class="p1">Convert from Leetspeak</p>
+<p class="p1"><code>eca88restraint637oj</code></p>
+<p class="p1">There is a total of 160 characters in the string. 160 can be divided by 8, could be some binary in there. Let’s make groups of 8</p>
+<p class="p1"><code>$5f&amp;g&amp;4&amp; g5%7$&amp;4e g&amp;5&amp;$&amp;$5 e4&amp;7$&amp;5f g$5%%^$4 e7%e$4%7 ^%%4&amp;&amp;&amp;7 $5&amp;^%f4^ 6f%4%f^4 $f7$^5g% 6%%^6$5&amp; ^&amp;h5$5g$ 4&amp;%$5$^5 e&amp;%f6f5$ ^%%6$h$7 $4&amp;5%$^6 $6%%&amp;e6$ 6e%5he^$ 6%5&amp;e$4g gf5%geh4</code></p>
+<p class="p1">We know that for it to have a valid Ascii range all the groups should start by 0. We currently have too many different characters at the start of each groups. Let’s convert everything to numbers, symbols to their respective numbers on the keyboard and letters to numbers using a=0</p>
+<p class="p1"><code>45576747 65574744 67574745 44774755 64555644 47544457 65547777 45765546 65545564 45746565 65566457 67754564 47545465 47556554 65564747 44755466 46557464 64557464 65574446 65556474</code></p>
+<p class="p1">Notice how each string now either start with a 4 or 6. Let’s try even numbers=0 odds=1</p>
+<p class="p1"><code>01110101 01110100 01110101 00110111 00111000 01100011 01101111 01101100 01101100 01100101 01100011 01110100 01101001 01110110 01100101 00111000 00111000 00111000 01110000 01110010</code></p>
+<p class="p1">Convert binary to Ascii</p>
+<p class="p1"><code>utu78collective888pr</code></p>
+<p class="p1">Now are you ready for the real magic…</p>
+<p class="p1">160 characters can also be grouped in 5. Take the number string that you made for the second code and split them in 5s</p>
+<p class="p1"><code>45576 74765 57474 46757 47454 47747 55645 55644 47544 45765 54777 74576 55466 55455 64457 46565 65566 45767 75456 44754 54654 75565 54655 64747 44755 46646 55746 46455 74646 55744 46655 56474</code></p>
+<p class="p1">We already used even/odd, we only have 4, 5, 6 &amp; 7 as digits, let’s try 4&amp;5=0 6&amp;7=1</p>
+<p class="p1"><code>00011 10110 01010 01101 01000 01101 00100 00100 01000 00110 00111 10011 00011 00000 10001 01010 10011 00111 10001 00100 00100 10010 00100 10101 00100 01101 00101 01000 10101 00100 01100 01010</code></p>
+<p class="p1">Now convert those binary values to decimal</p>
+<p class="p1"><code>03 22 10 13 08 13 04 04 08 06 07 19 03 00 17 10 19 07 17 04 04 18 08 21 08 13 05 08 21 08 12 10</code></p>
+<p class="p1">Convert numbers to letters using a=0</p>
+<p class="p1"><code>DWKNINEEIGHTDARKTHREESEVENFIVEMK</code></p>
+<p class="p1"><code>dwk98dark375mk</code></p>
+<p class="p1">Kudos to whoever encoded this. Just brilliant</p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2549" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2017/01/21/the-facility-iii/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2549" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2017/01/21/the-facility-iii/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-2549" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2017/01/21/the-facility-iii/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2017/01/21/the-facility-iii/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div><div class="tagcloud">
+
+	          <a href="https://ingress.codes/tag/binary/">binary</a> <a href="https://ingress.codes/tag/decimal/">decimal</a> <a href="https://ingress.codes/tag/letters-to-numbers/">letters to numbers</a> <a href="https://ingress.codes/tag/morse/">morse</a> <a href="https://ingress.codes/tag/numbers-to-letters/">numbers to letters</a> 
+	      </div>

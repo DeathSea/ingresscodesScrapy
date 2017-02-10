@@ -1,0 +1,211 @@
+<div class="entry-content">
+			<p>Three codes were hidden in the <a href="http://investigate.ingress.com/2017/01/31/unverified-document-claims-global-shard-manifestation-event/">Unverified Document claims Global Shard Manifestation Event</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] tk385eezru7k8deo</code></p>
+<p><code>[2] tunqmonalafrlsbnstilevvrxpkfr</code></p>
+<p><code>[3] 89755052556983676580695354876064</code></p>
+<p><span id="more-2606"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>16 characters with the right amount of numbers for a valid passcode</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Make a 2×8 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 35px;"><code>t</code></td>
+<td style="width: 59px;"><code>k</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>3</code></td>
+<td style="width: 59px;"><code>8</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>5</code></td>
+<td style="width: 59px;"><code>e</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>e</code></td>
+<td style="width: 59px;"><code>z</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>r</code></td>
+<td style="width: 59px;"><code>u</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>7</code></td>
+<td style="width: 59px;"><code>k</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>8</code></td>
+<td style="width: 59px;"><code>d</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>e</code></td>
+<td style="width: 59px;"><code>o</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read in a zigzag pattern from the lower left E</p>
+<p><code>eod87kureze538kt</code></p>
+<p></p></div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>A tune in the key of A !!!</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Vigenere autokey with “A”</p>
+<p><code>tbmeightsixurbanfourninetwora</code></p>
+<p><code>tbm86urban492ra</code></p>
+<p></p></div></div>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>Good range of numbers but you’ll need to do a manipulation first</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Make pairs</p>
+<p><code>89 75 50 52 55 69 83 67 65 80 69 53 54 87 60 64</code></p>
+<p>Converting decimal to Ascii reveals the keyword Escape but the prefix and suffix don’t work.</p>
+<p>Think of it as a 2×16 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 35px;"><code>8</code></td>
+<td style="width: 68px;"><code>9</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>7</code></td>
+<td style="width: 68px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>5</code></td>
+<td style="width: 68px;"><code>0</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>5</code></td>
+<td style="width: 68px;"><code>2</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>5</code></td>
+<td style="width: 68px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>6</code></td>
+<td style="width: 68px;"><code>9</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>8</code></td>
+<td style="width: 68px;"><code>3</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>6</code></td>
+<td style="width: 68px;"><code>7</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>6</code></td>
+<td style="width: 68px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>8</code></td>
+<td style="width: 68px;"><code>0</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>6</code></td>
+<td style="width: 68px;"><code>9</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>5</code></td>
+<td style="width: 68px;"><code>3</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>5</code></td>
+<td style="width: 68px;"><code>4</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>8</code></td>
+<td style="width: 68px;"><code>7</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>6</code></td>
+<td style="width: 68px;"><code>0</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>6</code></td>
+<td style="width: 68px;"><code>4</code></td>
+</tr>
+</tbody>
+</table>
+<p>Reverse the first column</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 35px;"><code>6</code></td>
+<td style="width: 51px;"><code>9</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>6</code></td>
+<td style="width: 51px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>8</code></td>
+<td style="width: 51px;"><code>0</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>5</code></td>
+<td style="width: 51px;"><code>2</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>5</code></td>
+<td style="width: 51px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>6</code></td>
+<td style="width: 51px;"><code>9</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>8</code></td>
+<td style="width: 51px;"><code>3</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>6</code></td>
+<td style="width: 51px;"><code>7</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>6</code></td>
+<td style="width: 51px;"><code>5</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>8</code></td>
+<td style="width: 51px;"><code>0</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>6</code></td>
+<td style="width: 51px;"><code>9</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>5</code></td>
+<td style="width: 51px;"><code>3</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>5</code></td>
+<td style="width: 51px;"><code>4</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>5</code></td>
+<td style="width: 51px;"><code>7</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>7</code></td>
+<td style="width: 51px;"><code>0</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>69 65 80 52 55 69 83 67 65 80 69 53 54 57 70 84</code></p>
+<p>Convert decimal to Ascii</p>
+<p><code>EAP47ESCAPE569FT</code></p>
+<p></p></div></div>
+<p> </p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2606" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2017/02/03/unverified-document-claims-global-shard-manifestation-event/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2606" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2017/02/03/unverified-document-claims-global-shard-manifestation-event/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-2606" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2017/02/03/unverified-document-claims-global-shard-manifestation-event/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2017/02/03/unverified-document-claims-global-shard-manifestation-event/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div><div class="tagcloud">
+
+	          <a href="https://ingress.codes/tag/decimal/">decimal</a> <a href="https://ingress.codes/tag/reverse/">reverse</a> <a href="https://ingress.codes/tag/transposition/">transposition</a> <a href="https://ingress.codes/tag/vigenere-autokey/">vigenere autokey</a> 
+	      </div>

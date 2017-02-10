@@ -1,0 +1,111 @@
+<div class="entry-content">
+			<p>Three codes were hidden in the <a href="http://investigate.ingress.com/2017/02/05/compromised-xm-briefing-pt1-the-niantic-project/">Compromised XM Briefing (Pt1) – The Niantic Project</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] qh161eaoruvrd75oux</code></p>
+<p><code>[2] r7vtz2emw63woec7ia</code></p>
+<p><code>[3] ooiaulgfqvoiamlcktmzrrqtpeomzopi</code></p>
+<p><span id="more-2626"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>Passcode format is there in reverse, go through your usual cipher routine.</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Rot and Atbash didn’t give anything. Morse is next on the list</p>
+<p class="p1"><code>--.- .... .---- -.... .---- . .- --- .-. ..- ...- .-. -.. --... ..... --- ..- -..-</code></p>
+<p class="p1">Reverse the morse string</p>
+<p class="p1"><code>-..- -.. --- ..... ...-- ..- .-. -... -.. .-. --- -. . ----. ....- ----. .... -.--</code></p>
+<p class="p1">Convert morse to text</p>
+<p class="p1"><code>XDO53URBDRONE949HY</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">18 characters with the right amount of numbers for a valid passcode. You might want to search the keyword first.</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Doing a Regex search indicates that only Creative and Timezero are possible keywords. Make a 3×6 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 34px;"><code>r</code></td>
+<td style="width: 37px;"><code>7</code></td>
+<td style="width: 71px;"><code>v</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>t</code></td>
+<td style="width: 37px;"><code>z</code></td>
+<td style="width: 71px;"><code>2</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>e</code></td>
+<td style="width: 37px;"><code>m</code></td>
+<td style="width: 71px;"><code>w</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>6</code></td>
+<td style="width: 37px;"><code>3</code></td>
+<td style="width: 71px;"><code>w</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>o</code></td>
+<td style="width: 37px;"><code>e</code></td>
+<td style="width: 71px;"><code>c</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>7</code></td>
+<td style="width: 37px;"><code>i</code></td>
+<td style="width: 71px;"><code>a</code></td>
+</tr>
+</tbody>
+</table>
+<p>The letter distribution is better for Creative. Shift column 1 up by 4, 2 down by 4 and 3 down by 3</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 34px;"><code>o</code></td>
+<td style="width: 37px;"><code>m</code></td>
+<td style="width: 76px;"><code>w</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>7</code></td>
+<td style="width: 37px;"><code>3</code></td>
+<td style="width: 76px;"><code>c</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>r</code></td>
+<td style="width: 37px;"><code>e</code></td>
+<td style="width: 76px;"><code>a</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>t</code></td>
+<td style="width: 37px;"><code>i</code></td>
+<td style="width: 76px;"><code>v</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>e</code></td>
+<td style="width: 37px;"><code>7</code></td>
+<td style="width: 76px;"><code>2</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>6</code></td>
+<td style="width: 37px;"><code>z</code></td>
+<td style="width: 76px;"><code>w</code></td>
+</tr>
+</tbody>
+</table>
+<p class="p1"><code>omw73creative726zw</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">No particular letter range. This CIPHER is not used often</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Tried a few cipher, then got to Bifid to get</p>
+<p class="p1"><code>muothreetwobifidseventhreeninebo</code></p>
+<p><code>muo32bifid739bo</code></p>
+<p>Bifid is a cipher</p>
+<p><code>muo32cipher739bo</code></p>
+<p></p></div></div>
+<p> </p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2626" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2017/02/08/compromised-xm-briefing-pt1-the-niantic-project/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2626" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2017/02/08/compromised-xm-briefing-pt1-the-niantic-project/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-2626" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2017/02/08/compromised-xm-briefing-pt1-the-niantic-project/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2017/02/08/compromised-xm-briefing-pt1-the-niantic-project/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div><div class="tagcloud">
+
+	          <a href="https://ingress.codes/tag/bifid/">Bifid</a> <a href="https://ingress.codes/tag/morse/">morse</a> <a href="https://ingress.codes/tag/reverse/">reverse</a> <a href="https://ingress.codes/tag/transposition/">transposition</a> 
+	      </div>

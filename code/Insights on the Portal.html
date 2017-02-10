@@ -1,0 +1,190 @@
+<div class="entry-content">
+			<p>Three codes could be found in the <a class="d-s ot-anchor" tabindex="0" title="Insights on the Portal" href="http://investigate.ingress.com/2017/01/01/insights-on-the-portal/" target="_blank" rel="nofollow">Insights on the Portal</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] uys7odms45o87tygim</code></p>
+<p><code>[2] 867475505103124290965550527966</code></p>
+<p><code>[3] 4vj87c92evvrade</code></p>
+<p><span id="more-2469"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>18 characters with the right amount of numbers</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Making a 3×6 grid reveals something interesting in the middle column</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 35px;"><code>u</code></td>
+<td style="width: 36px;"><code>y</code></td>
+<td style="width: 52px;"><code>s</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>7</code></td>
+<td style="width: 36px;"><code>o</code></td>
+<td style="width: 52px;"><code>d</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>m</code></td>
+<td style="width: 36px;"><code>s</code></td>
+<td style="width: 52px;"><code>4</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>5</code></td>
+<td style="width: 36px;"><code>o</code></td>
+<td style="width: 52px;"><code>8</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>7</code></td>
+<td style="width: 36px;"><code>t</code></td>
+<td style="width: 52px;"><code>y</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>g</code></td>
+<td style="width: 36px;"><code>i</code></td>
+<td style="width: 52px;"><code>m</code></td>
+</tr>
+</tbody>
+</table>
+<p>If you start reading at the lower right M and the middle column you can make out the word Myosoti and adding the upper right S gives Myosotis. To get valid prefix and suffix you need to reverse rows 2, 4 &amp; 6</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 35px;"><code>s</code></td>
+<td style="width: 35px;"><code>y</code></td>
+<td style="width: 51px;"><code>u</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>7</code></td>
+<td style="width: 35px;"><code>o</code></td>
+<td style="width: 51px;"><code>d</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>4</code></td>
+<td style="width: 35px;"><code>s</code></td>
+<td style="width: 51px;"><code>m</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>5</code></td>
+<td style="width: 35px;"><code>o</code></td>
+<td style="width: 51px;"><code>8</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>y</code></td>
+<td style="width: 35px;"><code>t</code></td>
+<td style="width: 51px;"><code>7</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>g</code></td>
+<td style="width: 35px;"><code>i</code></td>
+<td style="width: 51px;"><code>m</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read going down from the upper right U</p>
+<p class="p1"><code>udm87myosotis745yg</code></p>
+<p class="p1">The myosotis flower is also know as forget-me-not</p>
+<p class="p1"><code>udm87forget745yg</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code # 2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">All numbers but part of the range doesn’t look good for Ascii</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Let’s start by making pairs to see if we can spot a pattern</p>
+<p class="p1"><code>86 74 75 50 51 03 12 42 90 96 55 50 52 79 66</code></p>
+<p class="p1">Looks like we have a good prefix and suffix, let’s change those from decimal to Ascii</p>
+<p class="p1"><code>VJK23 0312429096 724OB</code></p>
+<p class="p1">The middle part has 10 numbers, could be ISBN-10 book codes. Searching on Google gives a book called Gain</p>
+<p class="p1"><code>vjk23gain724ob</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">Right amount of numbers for a valid passcode</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Making rectangle didn’t give anything that looked like a passcode. Let’s try to find the keyword first. Since we have 15 characters we know the keyword is 5 letters. You can <a href="https://regex.ingress.codes">use</a> this site to make a regex search to find the keyword. Check the help section, the string you need to input for the search is <code>^[4vj87c92evvrade]{5}$</code></p>
+<p class="p1">The only result that is shown is Devra.</p>
+<p class="p1">Going back to rectanlges, make a 5×3 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 36px;"><code>4</code></td>
+<td style="width: 36px;"><code>v</code></td>
+<td style="width: 36px;"><code>j</code></td>
+<td style="width: 36px;"><code>8</code></td>
+<td style="width: 50px;"><code>7</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>c</code></td>
+<td style="width: 36px;"><code>9</code></td>
+<td style="width: 36px;"><code>2</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 50px;"><code>v</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>v</code></td>
+<td style="width: 36px;"><code>r</code></td>
+<td style="width: 36px;"><code>a</code></td>
+<td style="width: 36px;"><code>d</code></td>
+<td style="width: 50px;"><code>e</code></td>
+</tr>
+</tbody>
+</table>
+<p>In the bottom row you have all the letters needed to spell devra. Reorder the columns as 4, 5, 1, 2, &amp; 3</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 35px;"><code>8</code></td>
+<td style="width: 36px;"><code>7</code></td>
+<td style="width: 36px;"><code>4</code></td>
+<td style="width: 37px;"><code>v</code></td>
+<td style="width: 60px;"><code>j</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>e</code></td>
+<td style="width: 36px;"><code>v</code></td>
+<td style="width: 36px;"><code>c</code></td>
+<td style="width: 37px;"><code>9</code></td>
+<td style="width: 60px;"><code>2</code></td>
+</tr>
+<tr>
+<td style="width: 35px;"><code>d</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 36px;"><code>v</code></td>
+<td style="width: 37px;"><code>r</code></td>
+<td style="width: 60px;"><code>a</code></td>
+</tr>
+</tbody>
+</table>
+<p>Now reorder rows as 2, 3 &amp; 1</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 36px;"><code>v</code></td>
+<td style="width: 36px;"><code>c</code></td>
+<td style="width: 36px;"><code>9</code></td>
+<td style="width: 61px;"><code>2</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>d</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 36px;"><code>v</code></td>
+<td style="width: 36px;"><code>r</code></td>
+<td style="width: 61px;"><code>a</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>8</code></td>
+<td style="width: 36px;"><code>7</code></td>
+<td style="width: 36px;"><code>4</code></td>
+<td style="width: 36px;"><code>v</code></td>
+<td style="width: 61px;"><code>j</code></td>
+</tr>
+</tbody>
+</table>
+<p class="p1"><code>evc92devra874vj</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2469" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2017/01/05/insights-on-the-portal/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2469" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2017/01/05/insights-on-the-portal/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-2469" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2017/01/05/insights-on-the-portal/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2017/01/05/insights-on-the-portal/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div><div class="tagcloud">
+
+	          <a href="https://ingress.codes/tag/decimal/">decimal</a> <a href="https://ingress.codes/tag/keyword-substitution/">keyword substitution</a> <a href="https://ingress.codes/tag/transposition/">transposition</a> 
+	      </div>

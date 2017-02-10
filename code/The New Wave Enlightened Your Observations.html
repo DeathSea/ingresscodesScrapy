@@ -1,0 +1,241 @@
+<div class="entry-content">
+			<p>Three codes could be found in <a class="d-s ot-anchor" tabindex="0" title="The New Wave Enlightened: Your Observations" href="http://investigate.ingress.com/2017/01/04/the-new-wave-enlightened-your-observations/" target="_blank" rel="nofollow">The New Wave Enlightened: Your Observations</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] p5abl2o2em7rwcpl5w</code></p>
+<p><code>[2] nxzehgfgfekfhmtgltzw</code></p>
+<p><code>[3] 羊レ尺几工んモ了廾尺ヨ巨丁ら廿片凡己丹卞井尺巳モ乍工レ臣乍亜レ巨互甲</code></p>
+<p><span id="more-2480"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>18 characters with the right amount of numbers to get a passcode</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Make a 6×3 grid</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr>
+<td style="width: 36px;"><code>p</code></td>
+<td style="width: 36px;"><code>5</code></td>
+<td style="width: 36px;"><code>a</code></td>
+<td style="width: 36px;"><code>b</code></td>
+<td style="width: 37px;"><code>l</code></td>
+<td style="width: 54px;"><code>2</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>o</code></td>
+<td style="width: 36px;"><code>2</code></td>
+<td style="width: 36px;"><code>e</code></td>
+<td style="width: 36px;"><code>m</code></td>
+<td style="width: 37px;"><code>7</code></td>
+<td style="width: 54px;"><code>r</code></td>
+</tr>
+<tr>
+<td style="width: 36px;"><code>w</code></td>
+<td style="width: 36px;"><code>c</code></td>
+<td style="width: 36px;"><code>p</code></td>
+<td style="width: 36px;"><code>l</code></td>
+<td style="width: 37px;"><code>5</code></td>
+<td style="width: 54px;"><code>w</code></td>
+</tr>
+</tbody>
+</table>
+<p>You can almost make out the keyword in the middle. Reverse the middle row</p>
+<table class=" table table-hover" style="width: 1px;">
+<tbody>
+<tr style="height: 24.7812px;">
+<td style="height: 24.7812px; width: 36px;"><code>p</code></td>
+<td style="height: 24.7812px; width: 36px;"><code>5</code></td>
+<td style="height: 24.7812px; width: 36px;"><code>a</code></td>
+<td style="height: 24.7812px; width: 36px;"><code>b</code></td>
+<td style="height: 24.7812px; width: 37px;"><code>l</code></td>
+<td style="height: 24.7812px; width: 57px;"><code>2</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 36px;"><code>r</code></td>
+<td style="height: 24px; width: 36px;"><code>7</code></td>
+<td style="height: 24px; width: 36px;"><code>m</code></td>
+<td style="height: 24px; width: 36px;"><code>e</code></td>
+<td style="height: 24px; width: 37px;"><code>2</code></td>
+<td style="height: 24px; width: 57px;"><code>o</code></td>
+</tr>
+<tr style="height: 24px;">
+<td style="height: 24px; width: 36px;"><code>w</code></td>
+<td style="height: 24px; width: 36px;"><code>c</code></td>
+<td style="height: 24px; width: 36px;"><code>p</code></td>
+<td style="height: 24px; width: 36px;"><code>l</code></td>
+<td style="height: 24px; width: 37px;"><code>5</code></td>
+<td style="height: 24px; width: 57px;"><code>w</code></td>
+</tr>
+</tbody>
+</table>
+<p>Read going down from the upper left P</p>
+<p><code>prw57campbell252ow</code></p>
+<p></p></div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>20 characters. Look carefully at the start of the string</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Rot, Atbash, Morse, Rectangle and a few other ciphers didn’t give anything. We have 20 characters and we know that we need at least 10 for prefix and suffix. Let’s split the string in two</p>
+<p><code>nxzehgfgfe</code><br>
+<code>kfhmtgltzw</code></p>
+<p>On the first string, aside from the 3 letters at the start, they could all be converted to numbers. Let’s assume this is the prefix and suffix, we would get</p>
+<p class="p1"><code>nxz47656fe</code></p>
+<p class="p1">Now we need to find the keyword that is hidden in the second string. Let’s try vigenere.</p>
+<p class="p1">Passphrase: <code>nxzehgfgfe</code></p>
+<p class="p1">Message: <code>kfhmtgltzw</code></p>
+<p class="p1">Result: <code>xiiimagnus</code></p>
+<p class="p1"><code>nxz4713magnus656fe</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #3</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">A mix of Chinese and Japanese characters. What do they look like !</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p class="p1">Don’t waste time trying to translate those characters. Look at them carefully and you can start making out letters of the alphabet</p>
+<table class=" table table-hover" style="width: 76px;">
+<tbody>
+<tr>
+<td style="width: 34px;"><code>羊</code></td>
+<td style="width: 30px;"><code>y</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>レ</code></td>
+<td style="width: 30px;"><code>v</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>尺</code></td>
+<td style="width: 30px;"><code>r</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>几</code></td>
+<td style="width: 30px;"><code>n</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>工</code></td>
+<td style="width: 30px;"><code>i</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>ん</code></td>
+<td style="width: 30px;"><code>n</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>モ</code></td>
+<td style="width: 30px;"><code>e</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>了</code></td>
+<td style="width: 30px;"><code>t</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>廾</code></td>
+<td style="width: 30px;"><code>h</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>尺</code></td>
+<td style="width: 30px;"><code>r</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>ヨ</code></td>
+<td style="width: 30px;"><code>e</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>巨</code></td>
+<td style="width: 30px;"><code>e</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>丁</code></td>
+<td style="width: 30px;"><code>t</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>ら</code></td>
+<td style="width: 30px;"><code>s</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>廿</code></td>
+<td style="width: 30px;"><code>u</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>片</code></td>
+<td style="width: 30px;"><code>k</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>凡</code></td>
+<td style="width: 30px;"><code>a</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>己</code></td>
+<td style="width: 30px;"><code>z</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>丹</code></td>
+<td style="width: 30px;"><code>a</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>卞</code></td>
+<td style="width: 30px;"><code>t</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>井</code></td>
+<td style="width: 30px;"><code>h</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>尺</code></td>
+<td style="width: 30px;"><code>r</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>巳</code></td>
+<td style="width: 30px;"><code>e</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>モ</code></td>
+<td style="width: 30px;"><code>e</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>乍</code></td>
+<td style="width: 30px;"><code>f</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>工</code></td>
+<td style="width: 30px;"><code>i</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>レ</code></td>
+<td style="width: 30px;"><code>v</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>臣</code></td>
+<td style="width: 30px;"><code>e</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>乍</code></td>
+<td style="width: 30px;"><code>f</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>亜</code></td>
+<td style="width: 30px;"><code>i</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>レ</code></td>
+<td style="width: 30px;"><code>v</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>巨</code></td>
+<td style="width: 30px;"><code>e</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>互</code></td>
+<td style="width: 30px;"><code>s</code></td>
+</tr>
+<tr>
+<td style="width: 34px;"><code>甲</code></td>
+<td style="width: 30px;"><code>o</code></td>
+</tr>
+</tbody>
+</table>
+<p class="p1"><code>yvr93tsukasa355so</code></p>
+<p class="p1"></p></div></div>
+<p class="p1">
+</p><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2480" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2017/01/08/the-new-wave-enlightened-your-observations/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2480" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2017/01/08/the-new-wave-enlightened-your-observations/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-2480" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2017/01/08/the-new-wave-enlightened-your-observations/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2017/01/08/the-new-wave-enlightened-your-observations/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div><div class="tagcloud">
+
+	          <a href="https://ingress.codes/tag/ascii-art/">ASCII Art</a> <a href="https://ingress.codes/tag/letters-to-numbers/">letters to numbers</a> <a href="https://ingress.codes/tag/reverse/">reverse</a> <a href="https://ingress.codes/tag/transposition/">transposition</a> <a href="https://ingress.codes/tag/vigenere/">vigenere</a> 
+	      </div>
