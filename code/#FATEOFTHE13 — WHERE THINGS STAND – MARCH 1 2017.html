@@ -1,0 +1,410 @@
+<div class="entry-content">
+			<p>Three codes were hidden on the <a href="http://investigate.ingress.com/2017/03/01/fateofthe13-where-things-stand-march-1-2017/">#FATEOFTHE13 — WHERE THINGS STAND – MARCH 1 2017</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] A8goMWwgBDwkBapbNnge</code></p>
+<p><code>[2] 21071211172117071721121117201211172018062107172021071721210717121721210721071707170717121707172121071211170717121720172017202107172011202107112017211707</code></p>
+<p><code>[3] 56227777337777444328266444897777332288</code></p>
+<p><span id="more-2719"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>It looks exactly like what you are thinking but you need a simple manipulation first</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>A good mix of upper and lowercase characters and numbers has got to be Base64. A straight convert doesn’t give anything. Start with Atbash</p>
+<p class="p1"><code>Z2tlNDdtYWdpYzkyMmtv</code></p>
+<p class="p1">Convert Base64 to Ascii</p>
+<p class="p1"><code>gke47magic922ko</code></p>
+<p class="p1"></p></div></div>
+<h1 class="p1">Code #2</h1>
+<h2 class="p1">Observations</h2>
+<p class="p1">There is a pattern in there that will help you construct the index</p>
+<p class="p1"></p><div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Not to sure how to explain this one but there is a total of 152 bits. I first made groups of 8</p>
+<p><code>21071211 17211707 17211211 17201211 17201806 21071720 21071721 21071712 17212107 21071707 17071712 17071721 21071211 17071712 17201720 17202107 17201120 21071120 17211707</code></p>
+<p>Let’s group them by the passcode format</p>
+<table class=" table table-hover" style="width: 466px;">
+<tbody>
+<tr>
+<td style="text-align: center; width: 150px;">Prefix</td>
+<td style="text-align: center; width: 150px;">Keyword</td>
+<td style="text-align: center; width: 148px;">Suffix</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 150px;"><code>21071211</code></td>
+<td style="text-align: center; width: 150px;"><code>21071720</code></td>
+<td style="text-align: center; width: 148px;"><code>17201720</code></td>
+</tr>
+<tr>
+<td style="text-align: center; width: 150px;"><code>17211707</code></td>
+<td style="text-align: center; width: 150px;"><code>21071721</code></td>
+<td style="text-align: center; width: 148px;"><code>17202107</code></td>
+</tr>
+<tr>
+<td style="text-align: center; width: 150px;"><code>17211211</code></td>
+<td style="text-align: center; width: 150px;"><code>21071712</code></td>
+<td style="text-align: center; width: 148px;"><code>17201120</code></td>
+</tr>
+<tr>
+<td style="text-align: center; width: 150px;"><code>17201211</code></td>
+<td style="text-align: center; width: 150px;"><code>17212107</code></td>
+<td style="text-align: center; width: 148px;"><code>21071120</code></td>
+</tr>
+<tr>
+<td style="text-align: center; width: 150px;"><code>17201806</code></td>
+<td style="text-align: center; width: 150px;"><code>21071707</code></td>
+<td style="text-align: center; width: 148px;"><code>17211707</code></td>
+</tr>
+<tr>
+<td style="text-align: center; width: 150px;"><code> </code></td>
+<td style="text-align: center; width: 150px;"><code>17071712</code></td>
+<td style="text-align: center; width: 148px;"><code> </code></td>
+</tr>
+<tr>
+<td style="text-align: center; width: 150px;"><code> </code></td>
+<td style="text-align: center; width: 150px;"><code>17071721</code></td>
+<td style="text-align: center; width: 148px;"><code> </code></td>
+</tr>
+<tr>
+<td style="text-align: center; width: 150px;"><code> </code></td>
+<td style="text-align: center; width: 150px;"><code>21071211</code></td>
+<td style="text-align: center; width: 148px;"><code> </code></td>
+</tr>
+<tr>
+<td style="text-align: center; width: 150px;"><code> </code></td>
+<td style="text-align: center; width: 150px;"><code>17071712</code></td>
+<td style="text-align: center; width: 148px;"><code> </code></td>
+</tr>
+</tbody>
+</table>
+<p>We are looking for a 9 letter keyword with repeating letters at the 6th and 9th position</p>
+<p>Using the regex expression ^…..(.)..\1$ to search the keyword list, the only possible result is KNOWLEDGE</p>
+<p>We can now build the index using the Ascii values and assuming that the numbers are grouped in 4</p>
+<table class=" table table-hover" style="width: 236px;">
+<tbody>
+<tr>
+<td style="width: 114px; text-align: center;"><code> </code></td>
+<td style="width: 53px; text-align: center;"><code>Letter</code></td>
+<td style="width: 53px; text-align: center;"><code>Ascii</code></td>
+</tr>
+<tr>
+<td style="width: 114px; text-align: center;"><code>2107 1720</code></td>
+<td style="width: 53px; text-align: center;"><code>K</code></td>
+<td style="width: 53px; text-align: center;"><code>75</code></td>
+</tr>
+<tr>
+<td style="width: 114px; text-align: center;"><code>2107 1721</code></td>
+<td style="width: 53px; text-align: center;"><code>N</code></td>
+<td style="width: 53px; text-align: center;"><code>78</code></td>
+</tr>
+<tr>
+<td style="width: 114px; text-align: center;"><code>2107 1712</code></td>
+<td style="width: 53px; text-align: center;"><code>O</code></td>
+<td style="width: 53px; text-align: center;"><code>79</code></td>
+</tr>
+<tr>
+<td style="width: 114px; text-align: center;"><code>1721 2107</code></td>
+<td style="width: 53px; text-align: center;"><code>W</code></td>
+<td style="width: 53px; text-align: center;"><code>87</code></td>
+</tr>
+<tr>
+<td style="width: 114px; text-align: center;"><code>2107 1707</code></td>
+<td style="width: 53px; text-align: center;"><code>L</code></td>
+<td style="width: 53px; text-align: center;"><code>76</code></td>
+</tr>
+<tr>
+<td style="width: 114px; text-align: center;"><code>1707 1712</code></td>
+<td style="width: 53px; text-align: center;"><code>E</code></td>
+<td style="width: 53px; text-align: center;"><code>69</code></td>
+</tr>
+<tr>
+<td style="width: 114px; text-align: center;"><code>1707 1721</code></td>
+<td style="width: 53px; text-align: center;"><code>D</code></td>
+<td style="width: 53px; text-align: center;"><code>68</code></td>
+</tr>
+<tr>
+<td style="width: 114px; text-align: center;"><code>2107 1211</code></td>
+<td style="width: 53px; text-align: center;"><code>G</code></td>
+<td style="width: 53px; text-align: center;"><code>71</code></td>
+</tr>
+<tr>
+<td style="width: 114px; text-align: center;"><code>1707 1712</code></td>
+<td style="width: 53px; text-align: center;"><code>E</code></td>
+<td style="width: 53px; text-align: center;"><code>69</code></td>
+</tr>
+</tbody>
+</table>
+<p>So far the index is</p>
+<table class=" table table-hover" style="width: 94px;">
+<tbody>
+<tr>
+<td style="width: 32px;"><code>0</code></td>
+<td style="width: 50px;"><code> </code></td>
+</tr>
+<tr>
+<td style="width: 32px;"><code>1</code></td>
+<td style="width: 50px;"><code>1211</code></td>
+</tr>
+<tr>
+<td style="width: 32px;"><code>2</code></td>
+<td style="width: 50px;"><code> </code></td>
+</tr>
+<tr>
+<td style="width: 32px;"><code>3</code></td>
+<td style="width: 50px;"><code> </code></td>
+</tr>
+<tr>
+<td style="width: 32px;"><code>4</code></td>
+<td style="width: 50px;"><code> </code></td>
+</tr>
+<tr>
+<td style="width: 32px;"><code>5</code></td>
+<td style="width: 50px;"><code>1720</code></td>
+</tr>
+<tr>
+<td style="width: 32px;"><code>6</code></td>
+<td style="width: 50px;"><code>1707</code></td>
+</tr>
+<tr>
+<td style="width: 32px;"><code>7</code></td>
+<td style="width: 50px;"><code>2107</code></td>
+</tr>
+<tr>
+<td style="width: 32px;"><code>8</code></td>
+<td style="width: 50px;"><code>1721</code></td>
+</tr>
+<tr>
+<td style="width: 32px;"><code>9</code></td>
+<td style="width: 50px;"><code>1712</code></td>
+</tr>
+</tbody>
+</table>
+<p>Which gives us</p>
+<table class=" table table-hover" width="559">
+<tbody>
+<tr>
+<td style="text-align: center;" width="43">Prefix</td>
+<td style="text-align: center;" width="43"></td>
+<td style="text-align: center;" width="43">Keyword</td>
+<td style="text-align: center;" width="43"></td>
+<td style="text-align: center;" width="43">Suffix</td>
+<td style="text-align: center;" width="43"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>2107 1211</code></td>
+<td style="text-align: center;"><code>71</code></td>
+<td style="text-align: center;"><code>2107 1720</code></td>
+<td style="text-align: center;"><code>75</code></td>
+<td style="text-align: center;"><code>1720 1720</code></td>
+<td style="text-align: center;"><code>55</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1721 1707</code></td>
+<td style="text-align: center;"><code>86</code></td>
+<td style="text-align: center;"><code>2107 1721</code></td>
+<td style="text-align: center;"><code>78</code></td>
+<td style="text-align: center;"><code>1720 2107</code></td>
+<td style="text-align: center;"><code>57</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1721 1211</code></td>
+<td style="text-align: center;"><code>81</code></td>
+<td style="text-align: center;"><code>2107 1712</code></td>
+<td style="text-align: center;"><code>79</code></td>
+<td style="text-align: center;"><code>1720 1120</code></td>
+<td style="text-align: center;"><code>5?</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1720 1211</code></td>
+<td style="text-align: center;"><code>51</code></td>
+<td style="text-align: center;"><code>1721 2107</code></td>
+<td style="text-align: center;"><code>87</code></td>
+<td style="text-align: center;"><code>2107 1120</code></td>
+<td style="text-align: center;"><code>7?</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1720 1806</code></td>
+<td style="text-align: center;"><code>5?</code></td>
+<td style="text-align: center;"><code>2107 1707</code></td>
+<td style="text-align: center;"><code>76</code></td>
+<td style="text-align: center;"><code>1721 1707</code></td>
+<td style="text-align: center;"><code>86</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code> </code></td>
+<td style="text-align: center;"><code> </code></td>
+<td style="text-align: center;"><code>1707 1712</code></td>
+<td style="text-align: center;"><code>69</code></td>
+<td style="text-align: center;"><code> </code></td>
+<td style="text-align: center;"><code> </code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code> </code></td>
+<td style="text-align: center;"><code> </code></td>
+<td style="text-align: center;"><code>1707 1721</code></td>
+<td style="text-align: center;"><code>68</code></td>
+<td style="text-align: center;"><code> </code></td>
+<td style="text-align: center;"><code> </code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code> </code></td>
+<td style="text-align: center;"><code> </code></td>
+<td style="text-align: center;"><code>2107 1211</code></td>
+<td style="text-align: center;"><code>71</code></td>
+<td style="text-align: center;"><code> </code></td>
+<td style="text-align: center;"><code> </code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code> </code></td>
+<td style="text-align: center;"><code> </code></td>
+<td style="text-align: center;"><code>1707 1712</code></td>
+<td style="text-align: center;"><code>69</code></td>
+<td style="text-align: center;"><code> </code></td>
+<td style="text-align: center;"><code> </code></td>
+</tr>
+</tbody>
+</table>
+<p><code>71 86 81 51 5? 75 78 79 87 76 69 68 71 69 55 57 5? 7? 86</code></p>
+<p>Where missing values for 1120 &amp; 1806. Using a bit of brute force the full index is</p>
+<table class=" table table-hover" style="width: 78px;">
+<tbody>
+<tr>
+<td style="width: 31px;"><code>1</code></td>
+<td style="width: 37px;"><code>1211</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>2</code></td>
+<td style="width: 37px;"><code> </code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>3</code></td>
+<td style="width: 37px;"><code>1806</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>4</code></td>
+<td style="width: 37px;"><code>1120</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>5</code></td>
+<td style="width: 37px;"><code>1720</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>6</code></td>
+<td style="width: 37px;"><code>1707</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>7</code></td>
+<td style="width: 37px;"><code>2107</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>8</code></td>
+<td style="width: 37px;"><code>1721</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>9</code></td>
+<td style="width: 37px;"><code>1712</code></td>
+</tr>
+<tr>
+<td style="width: 31px;"><code>0</code></td>
+<td style="width: 37px;"><code> </code></td>
+</tr>
+</tbody>
+</table>
+<p>Which gives us the following string</p>
+<p><code>71 86 81 51 53 75 78 79 87 76 69 68 71 69 55 57 54 74 86</code></p>
+<p>Convert decimal to Ascii</p>
+<p><code>GVQ35KNOWLEDGE796JV</code></p>
+<p></p></div></div>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>Lots of repeating numbers, you might want to phone a friend</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>This is clearly a phone cipher</p>
+<table class=" table table-hover" style="width: 100px;">
+<tbody>
+<tr>
+<td style="width: 51px;"><code>5</code></td>
+<td style="width: 39px;"><code>j</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>6</code></td>
+<td style="width: 39px;"><code>m</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>22</code></td>
+<td style="width: 39px;"><code>b</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>7777</code></td>
+<td style="width: 39px;"><code>s</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>33</code></td>
+<td style="width: 39px;"><code>e</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>7777</code></td>
+<td style="width: 39px;"><code>s</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>444</code></td>
+<td style="width: 39px;"><code>i</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>3</code></td>
+<td style="width: 39px;"><code>d</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>2</code></td>
+<td style="width: 39px;"><code>a</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>8</code></td>
+<td style="width: 39px;"><code>t</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>2</code></td>
+<td style="width: 39px;"><code>a</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>66</code></td>
+<td style="width: 39px;"><code>n</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>444</code></td>
+<td style="width: 39px;"><code>i</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>8</code></td>
+<td style="width: 39px;"><code>t</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>9</code></td>
+<td style="width: 39px;"><code>w</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>7777</code></td>
+<td style="width: 39px;"><code>s</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>33</code></td>
+<td style="width: 39px;"><code>e</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>22</code></td>
+<td style="width: 39px;"><code>b</code></td>
+</tr>
+<tr>
+<td style="width: 51px;"><code>88</code></td>
+<td style="width: 39px;"><code>u</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>jmbsesidatanitwsebu</code></p>
+<p><code>jmb76data927bu</code></p>
+<p></p></div></div>
+<p> </p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2719" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2017/03/05/fateofthe13-where-things-stand-march-1-2017/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2719" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2017/03/05/fateofthe13-where-things-stand-march-1-2017/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-2719" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2017/03/05/fateofthe13-where-things-stand-march-1-2017/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2017/03/05/fateofthe13-where-things-stand-march-1-2017/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div><div class="tagcloud">
+
+	          <a href="https://ingress.codes/tag/atbash/">atbash</a> <a href="https://ingress.codes/tag/base64/">base64</a> <a href="https://ingress.codes/tag/decimal/">decimal</a> <a href="https://ingress.codes/tag/phone/">phone</a> <a href="https://ingress.codes/tag/unknown/">unknown</a> 
+	      </div>

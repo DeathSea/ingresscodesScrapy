@@ -1,0 +1,45 @@
+<div class="entry-content">
+			<p>Three codes were hidden in the <a href="http://investigate.ingress.com/2017/02/20/compromised-xm-briefing-pt3-the-past/">Compromised XM Briefing (Pt3) – The Past</a> post on the <a href="http://investigate.ingress.com">Investigate Ingress</a> blog.</p>
+<p><code>[1] 3n2x2a2f2e3c3d2s3f2o3h2w3j2s2e2d2g3d2p</code></p>
+<p><code>[2] 6861663335660007413236366b67</code></p>
+<p><code>[3] johnson4yn13db2</code></p>
+<p><span id="more-2684"></span></p>
+<h1>Code #1</h1>
+<h2>Observations</h2>
+<p>Alternating letters and numbers. Regex will help you find the keyword</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Not sure if I have the right method but here is how I got it:</p>
+<p>Make pairs</p>
+<p class="p1"><code>3n 2x 2a 2f 2e 3c 3d 2s 3f 2o 3h 2w 3j 2s 2e 2d 2g 3d 2p</code></p>
+<p> The keyword section logically his <code>3c 3d 2s 3f 2o 3h 2w 3j 2s</code>. Using the Regex string <code>^..(.).....\1$</code> reveal that the only possible keyword is operative.</p>
+<p>The decimal values to get <code>OPERATIVE</code> are <code>79 80 69 82 65 84 73 86 69</code>. The formula to get these numbers is <code>(n*26)+(l-1)</code> where n is number and l is letter using a=0</p>
+<p>Do the math for each pairs</p>
+<p class="p1"><code>90 74 53 56 55 79 80 69 82 65 84 73 86 69 55 54 57 80 66</code></p>
+<p class="p1">Convert decimal to Ascii</p>
+<p><code>ZJ587OPERATIVE769PB</code></p>
+<p>There is probably a mistake in the code, the 2a should be 3a which would give 77 which convert M</p>
+<p><code>ZJM87OPERATIVE769PB</code></p>
+<p></p></div></div>
+<h1>Code #2</h1>
+<h2>Observations</h2>
+<p>Range looks like hex</p>
+<div class="spoiler-wrap"><div class="spoiler-head collapsed" title="Solution">Solution</div><div class="spoiler-body" style="display: none;">
+<p>Make pairs</p>
+<p><code>68 61 66 33 35 66 00 07 41 32 36 36 6b 67</code></p>
+<p>Convert hex to Ascii</p>
+<p><code>haf35fA266kg</code></p>
+<p>The prefix and suffix work great but we need a keyword substitution</p>
+<p>Searching 66000741 on Wikipedia gives the NRHP Reference to Danger Cave</p>
+<p><code>haf35danger266kg</code></p>
+<p></p></div></div>
+<h1>Code #3</h1>
+<h2>Observations</h2>
+<p>No decoding is necessary</p>
+<p> </p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2684" class="share-twitter sd-button share-icon no-text" href="https://ingress.codes/2017/02/23/compromised-xm-briefing-pt3-the-past/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2684" class="share-facebook sd-button share-icon no-text" href="https://ingress.codes/2017/02/23/compromised-xm-briefing-pt3-the-past/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-2684" class="share-google-plus-1 sd-button share-icon no-text" href="https://ingress.codes/2017/02/23/compromised-xm-briefing-pt3-the-past/?share=google-plus-1" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://ingress.codes/2017/02/23/compromised-xm-briefing-pt3-the-past/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-end"></ul></div></div></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div><div class="tagcloud">
+
+	          <a href="https://ingress.codes/tag/decimal/">decimal</a> <a href="https://ingress.codes/tag/hexadecimal/">hexadecimal</a> <a href="https://ingress.codes/tag/keyword-substitution/">keyword substitution</a> <a href="https://ingress.codes/tag/letters-to-numbers/">letters to numbers</a> <a href="https://ingress.codes/tag/math/">math</a> 
+	      </div>
